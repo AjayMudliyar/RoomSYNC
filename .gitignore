@@ -1,0 +1,67 @@
+# Environment variables & secrets (never commit real secrets)
+.env
+.env.*
+!.env.example
+.envrc
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.Python
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Django / Celery local runtime artifacts
+services/backend/staticfiles/
+services/backend/media/
+*.sqlite3
+celerybeat-schedule*
+
+# Node / JS / TS / Expo
+node_modules/
+.pnpm-store/
+dist/
+build/
+.turbo/
+.expo/
+*.tsbuildinfo
+.eslintcache
+*.log
+
+# Playwright / Vitest
+test-results/
+playwright-report/
+playwright/.cache/
+blob-report/
+coverage/
+
+# Android native build artifacts & signing keys (managed by Expo prebuild if generated)
+apps/android/android/
+apps/android/ios/
+*.jks
+*.keystore
+*.pem
+*.key
+
+# Local volumes / storage / backups
+.docker-data/
+*.sql.gz
+*.dump
+
+# OS & editor & OneDrive temp files
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.swp
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

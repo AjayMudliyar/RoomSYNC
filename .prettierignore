@@ -1,0 +1,6 @@
+dist/
+node_modules/
+.expo/
+coverage/
+packages/contracts/src/generated/
+

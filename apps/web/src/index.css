@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "@roomsync/design-tokens/css";
+
+@theme {
+  --font-sans:
+    "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --color-canvas: var(--rs-surface-canvas);
+  --color-card: var(--rs-surface-card);
+  --color-surface-low: var(--rs-surface-low);
+  --color-surface-base: var(--rs-surface-base);
+  --color-ink: var(--rs-text-primary);
+  --color-navy: var(--rs-text-brand);
+  --color-secondary-ink: var(--rs-text-secondary);
+  --color-muted-ink: var(--rs-text-muted);
+  --color-teal: var(--rs-action-teal);
+  --color-teal-hover: var(--rs-action-teal-hover);
+  --color-indigo-accent: var(--rs-accent-indigo);
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--rs-surface-canvas);
+    color: var(--rs-text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}

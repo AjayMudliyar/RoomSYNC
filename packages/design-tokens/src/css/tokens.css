@@ -1,0 +1,58 @@
+/* Canonical Warm Tech Harmony Tokens (ADR-003 WCAG 2.1 AA Reconciled) */
+:root {
+  --rs-surface-canvas: #faf8ff;
+  --rs-surface-card: #ffffff;
+  --rs-surface-low: #f2f3ff;
+  --rs-surface-base: #eaedff;
+  --rs-surface-high: #e2e7ff;
+  --rs-surface-highest: #dae2fd;
+  --rs-surface-dim: #d2d9f4;
+
+  --rs-border-subtle: #e2e8f0;
+  --rs-border-variant: #c8c5d0;
+  --rs-border-focus: #006a61;
+
+  --rs-text-primary: #131b2e;
+  --rs-text-brand: #1e1b4b;
+  --rs-text-secondary: #47464f;
+  --rs-text-muted: #5c5b66;
+  --rs-text-on-dark: #ffffff;
+  --rs-outline-icon: #787680;
+
+  --rs-brand-navy: #1e1b4b;
+  --rs-brand-navy-deep: #070235;
+  --rs-brand-primary-fixed: #e3dfff;
+  --rs-brand-on-primary-fixed: #181445;
+
+  --rs-action-teal: #006a61;
+  --rs-action-teal-hover: #005049;
+  --rs-action-teal-container: #86f2e4;
+  --rs-action-teal-fixed: #89f5e7;
+  --rs-action-teal-tint: #ecfdf5;
+
+  --rs-accent-emerald-decorative: #059669;
+  --rs-accent-indigo: #4f46e5;
+  --rs-accent-indigo-hover: #4338ca;
+  --rs-accent-indigo-tint: #eef2ff;
+
+  --rs-status-warning: #b45309;
+  --rs-status-warning-bg: #fffbeb;
+  --rs-status-warning-fixed: #653e00;
+  --rs-status-warning-fixed-bg: #ffddb8;
+  --rs-status-danger: #ba1a1a;
+  --rs-status-danger-bg: #fef2f2;
+  --rs-status-danger-fixed: #93000a;
+  --rs-status-danger-fixed-bg: #ffdad6;
+  --rs-status-danger-border: #fecaca;
+  --rs-status-info: #0369a1;
+  --rs-status-info-bg: #f0f9ff;
+
+  --rs-radius-md: 12px;
+  --rs-radius-lg: 16px;
+  --rs-radius-xl: 24px;
+  --rs-radius-full: 9999px;
+
+  --rs-shadow-small: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --rs-shadow-card: 0 4px 14px 0 rgba(30, 27, 75, 0.06);
+  --rs-shadow-modal: 0 20px 40px -15px rgba(30, 27, 75, 0.16);
+}

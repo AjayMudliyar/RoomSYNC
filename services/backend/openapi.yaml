@@ -1,0 +1,54 @@
+openapi: 3.0.3
+info:
+  title: RoomSync Public API
+  version: 0.1.0
+  description: Authoritative compatibility-first roommate discovery API.
+paths:
+  /api/v1/system/status/:
+    get:
+      operationId: system_status_retrieve
+      description: Minimal M0 public system status endpoint verifying DRF envelopes
+        and OpenAPI generation.
+      tags:
+      - System
+      security:
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SystemStatusEnvelope'
+          description: ''
+components:
+  schemas:
+    ResponseMeta:
+      type: object
+      properties:
+        request_id:
+          type: string
+      required:
+      - request_id
+    SystemStatusData:
+      type: object
+      properties:
+        service:
+          type: string
+        status:
+          type: string
+        api_version:
+          type: string
+      required:
+      - api_version
+      - service
+      - status
+    SystemStatusEnvelope:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/SystemStatusData'
+        meta:
+          $ref: '#/components/schemas/ResponseMeta'
+      required:
+      - data
+      - meta

@@ -1,0 +1,157 @@
+name: RoomSync CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  js-ts:
+    name: JS / TS Workspace (Web, Android & Shared Packages)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "pnpm"
+      - name: Install workspace dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Check Prettier formatting
+        run: pnpm format:check
+      - name: Lint TypeScript packages and apps
+        run: pnpm lint
+      - name: Typecheck TypeScript packages and apps
+        run: pnpm typecheck
+      - name: Run JavaScript/TypeScript unit tests
+        run: pnpm test
+      - name: Build shared packages and Web SPA
+        run: pnpm build
+      - name: Validate Expo Android configuration
+        env:
+          EXPO_NO_TELEMETRY: "1"
+        run: pnpm --filter @roomsync/android exec expo config --type public >/dev/null
+
+  matching:
+    name: Matching Service (FastAPI / Python 3.12)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: services/matching
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - name: Sync dependencies
+        run: uv sync --frozen
+      - name: Lint matching service
+        run: uv run ruff check .
+      - name: Typecheck matching service
+        run: uv run mypy .
+      - name: Run matching service tests
+        env:
+          ENVIRONMENT: test
+          INTERNAL_SERVICE_TOKEN: ci-matching-test-token
+        run: uv run pytest
+
+  backend:
+    name: Backend Service (Django / DRF / PostgreSQL / Redis)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: services/backend
+    services:
+      db:
+        image: postgres:16.8-alpine3.21
+        env:
+          POSTGRES_DB: roomsync_test
+          POSTGRES_USER: roomsync
+          POSTGRES_PASSWORD: roomsync_ci_password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd="pg_isready -U roomsync -d roomsync_test"
+          --health-interval=5s
+          --health-timeout=5s
+          --health-retries=10
+      redis:
+        image: redis:7.4.2-alpine3.21
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd="redis-cli ping"
+          --health-interval=5s
+          --health-timeout=3s
+          --health-retries=10
+    env:
+      ENVIRONMENT: test
+      DJANGO_SETTINGS_MODULE: config.settings.test
+      DJANGO_SECRET_KEY: ci-ephemeral-django-secret-key
+      INTERNAL_SERVICE_TOKEN: ci-internal-service-token
+      POSTGRES_DB: roomsync_test
+      POSTGRES_USER: roomsync
+      POSTGRES_PASSWORD: roomsync_ci_password
+      POSTGRES_HOST: 127.0.0.1
+      POSTGRES_PORT: "5432"
+      DATABASE_URL: postgresql://roomsync:roomsync_ci_password@127.0.0.1:5432/roomsync_test
+      REDIS_URL: redis://127.0.0.1:6379/0
+      CELERY_BROKER_URL: redis://127.0.0.1:6379/1
+      CELERY_RESULT_BACKEND: redis://127.0.0.1:6379/2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - name: Sync dependencies
+        run: uv sync --frozen
+      - name: Apply Django migrations
+        run: uv run python manage.py migrate --noinput
+      - name: Verify no pending unapplied migrations
+        run: uv run python manage.py migrate --check
+      - name: Verify no ungenerated model migrations
+        run: uv run python manage.py makemigrations --check --dry-run
+      - name: Lint backend service
+        run: uv run ruff check .
+      - name: Typecheck backend service
+        run: uv run mypy .
+      - name: Run backend test suite against PostgreSQL
+        run: uv run pytest
+      - name: Validate OpenAPI schema determinism
+        run: |
+          uv run python manage.py spectacular --file /tmp/openapi.yaml --validate
+          diff -u openapi.yaml /tmp/openapi.yaml
+
+  contracts-drift:
+    name: OpenAPI TypeScript Contracts Drift Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "pnpm"
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm contracts:generate
+      - run: git diff --exit-code packages/contracts/src/generated/openapi.ts
+
+  docker-build:
+    name: Docker Compose & Image Build Verification
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare ephemeral CI env file
+        run: cp .env.example .env
+      - name: Validate Compose configuration
+        run: docker compose config --quiet
+      - name: Build backend and matching container images
+        run: docker compose build backend matching
+

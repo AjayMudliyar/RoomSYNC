@@ -1,0 +1,25 @@
+{
+  "name": "roomsync-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RoomSync compatibility-first roommate discovery platform monorepo",
+  "packageManager": "pnpm@10.34.9",
+  "engines": {
+    "node": ">=20.19.4"
+  },
+  "scripts": {
+    "dev:web": "pnpm --filter @roomsync/web dev",
+    "dev:android": "pnpm --filter @roomsync/android start",
+    "build": "pnpm -r --if-present build",
+    "build:web": "pnpm --filter @roomsync/web build",
+    "lint": "pnpm -r --if-present lint",
+    "format:check": "prettier --check \"apps/**/*.{ts,tsx,js,jsx,json,css}\" \"packages/**/*.{ts,tsx,js,jsx,json,css}\"",
+    "format": "prettier --write \"apps/**/*.{ts,tsx,js,jsx,json,css}\" \"packages/**/*.{ts,tsx,js,jsx,json,css}\"",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "contracts:generate": "pnpm --filter @roomsync/contracts generate"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}

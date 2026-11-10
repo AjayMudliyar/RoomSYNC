@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "RoomSync",
+    "slug": "roomsync",
+    "version": "0.1.0",
+    "scheme": "roomsync",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#faf8ff",
+    "android": {
+      "package": "in.roomsync.app",
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": ["expo-router", "expo-font", "expo-secure-store"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
