@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-container":"#1e1b4b","tertiary-container":"#331d00","tertiary":"#140900","primary-fixed-dim":"#c4c1fb","background":"#faf8ff","surface-dim":"#d2d9f4","surface-container-low":"#f2f3ff","secondary-container":"#86f2e4","on-secondary":"#ffffff","surface-variant":"#dae2fd","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#653e00","tertiary-fixed-dim":"#ffb95f","secondary-fixed":"#89f5e7","on-surface":"#131b2e","on-primary-fixed-variant":"#444173","surface-tint":"#5b598c","on-tertiary-container":"#c07a00","on-secondary-fixed-variant":"#005049","on-tertiary-fixed":"#2a1700","inverse-on-surface":"#eef0ff","on-error":"#ffffff","on-background":"#131b2e","surface-container-highest":"#dae2fd","outline-variant":"#c8c5d0","error-container":"#ffdad6","surface-container-high":"#e2e7ff","inverse-surface":"#283044","on-primary":"#ffffff","on-secondary-container":"#006f66","on-primary-container":"#8683ba","surface-container":"#eaedff","on-primary-fixed":"#181445","tertiary-fixed":"#ffddb8","primary-fixed":"#e3dfff","on-error-container":"#93000a","surface-container-lowest":"#ffffff","surface":"#faf8ff","outline":"#787680","inverse-primary":"#c4c1fb","error":"#ba1a1a","secondary":"#006a61","on-surface-variant":"#47464f","primary":"#070235","surface-bright":"#faf8ff","secondary-fixed-dim":"#6bd8cb","on-secondary-fixed":"#00201d"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-desktop":"2rem","space-xl":"2.5rem","space-xs":"0.25rem","space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","margin-mobile":"1rem","margin-desktop":"3rem","margin":"1.5rem","gutter-mobile":"1rem","gutter":"1.5rem"},fontFamily:{"label-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"title-sm":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"display-md":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"400"}],"metric-display":["32px",{lineHeight:"36px",letterSpacing:"-0.03em",fontWeight:"800"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.015em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><button aria-label="Go back" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-primary truncate">Property Details</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Share property" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[20px]">share</span></button><button aria-label="More actions" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[20px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-32">
+<!-- Image Gallery Hero Carousel -->
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A modern sunlit Bangalore luxury high-rise apartment living room with warm teakwood accents, contemporary minimal furniture, vibrant indoor plants, polished terrazzo flooring, and floor-to-ceiling glass doors opening onto a lush tropical balcony under morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-IsNsxPDiQpmFzUcFxI99kRDidw15KrhyJ-x0Y7gdWgI98B7uhMdK8qqKUDw_1leDisKZL4qOCEsx0gYWRhMEg2098dv1-5bAJ-ohPknrZYtz7QXB9mbwvFfKLM0PAVvHRH2s28Wq10eFiDL15smwm7VaWJYh8tIbdMhEr10FdCwTMBIrHi-jmwRKf7PLLGdkISdlHHAaYhMtCkZw0gVGQC8PUfGq-uz_9Ic_JyPT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-primary/20 pointer-events-none"></div>
+<!-- Gallery Badges Overlay -->
+<div class="absolute top-4 left-4 flex items-center gap-2">
+<button class="bg-surface/90 backdrop-blur-md text-on-surface px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-secondary">view_in_ar</span>
+<span class="font-label-md text-label-md">360° Virtual Tour</span>
+</button>
+</div>
+<div class="absolute top-4 right-4">
+<span class="bg-primary/75 backdrop-blur-md text-on-primary px-3 py-1 rounded-full font-label-md text-label-md tracking-wider">
+        1 / 8 Photos
+      </span>
+</div>
+<!-- Title Badge on Image -->
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<div class="flex flex-col gap-1">
+<span class="inline-flex items-center gap-1 bg-secondary text-on-secondary px-2.5 py-0.5 rounded-full font-label-sm text-label-sm w-fit shadow-sm">
+<span class="material-symbols-outlined text-[12px]">verified</span> Pre-Inspected
+        </span>
+<p class="text-surface font-headline-sm text-headline-sm text-white drop-shadow-md">Indiranagar 100ft Road</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface/90 backdrop-blur-md text-on-surface flex items-center justify-center shadow-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]">photo_library</span>
+</button>
+</div>
+</div>
+<!-- Government Deed Verification Banner -->
+<div class="bg-surface-container-high px-4 py-3 flex items-start gap-3 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0 mt-0.5 text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface">Kaveri 2.0 Deed Verified</span>
+<span class="material-symbols-outlined text-[15px] text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Govt land records cross-checked. Zero brokerage guarantee with verified titleholder escrow protection.</p>
+</div>
+</div>
+<div class="px-4 flex flex-col gap-5 mt-4">
+<!-- Quick Specs Row -->
+<div class="flex items-center justify-between bg-surface-container-low p-3.5 rounded-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">bed</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Bedrooms</p>
+<p class="font-title-sm text-title-sm text-on-surface">3 Attached</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">square_foot</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Super Area</p>
+<p class="font-title-sm text-title-sm text-on-surface">1,850 sq.ft</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">stairs</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Floor</p>
+<p class="font-title-sm text-title-sm text-on-surface">4 of 6 (East)</p>
+</div>
+</div>
+</div>
+<!-- Core Financials & Pod Split Interactive Box -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-3">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Full Apartment Rent</span>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-display text-metric-display text-primary">₹72,000</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ month</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-label-md">Maintenance ₹4,500/mo included</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Security Escrow</span>
+<p class="font-title-md text-title-md text-on-surface">₹2,00,000</p>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full text-on-surface-variant inline-block mt-0.5">100% Refundable</span>
+</div>
+</div>
+<!-- Pod Equal Split Hero Card -->
+<div class="bg-primary-container text-on-primary rounded-xl p-4 flex flex-col gap-3 relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-container/10 pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">groups</span>
+<span class="font-title-sm text-title-sm text-on-primary">RoomSync Pod Split</span>
+</div>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-0.5 rounded-full">3 Beds Ready</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-metric-display text-metric-display text-white">₹24,000</span>
+<span class="font-body-sm text-body-sm text-surface-variant">/ person avg.</span>
+</div>
+<span class="font-body-sm text-body-sm text-surface-variant">Equal share basis</span>
+</div>
+<!-- Interactive Room Weighted Split Toggle -->
+<div class="bg-surface/10 rounded-lg p-2.5 flex flex-col gap-2 backdrop-blur-sm">
+<div class="flex justify-between items-center text-surface-variant font-label-sm text-label-sm">
+<span>Room-by-Room Dynamic Split</span>
+<span class="text-secondary-fixed font-label-md">Calibrated</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container-lowest/15 rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-surface-variant truncate">Master Suite</span>
+<span class="font-title-sm text-title-sm text-white">₹26,000</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Private Balcony</span>
+</div>
+<div class="bg-surface-container-lowest/15 rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-surface-variant truncate">Room 2</span>
+<span class="font-title-sm text-title-sm text-white">₹23,000</span>
+<span class="font-label-sm text-label-sm text-surface-variant">Corner Park View</span>
+</div>
+<div class="bg-surface-container-lowest/15 rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-surface-variant truncate">Room 3</span>
+<span class="font-title-sm text-title-sm text-white">₹23,000</span>
+<span class="font-label-sm text-label-sm text-surface-variant">Work Nook</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Move-in & Lease Specifications -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+<h2 class="font-title-md text-title-md text-on-surface">Lease &amp; Availability</h2>
+<div class="grid grid-cols-2 gap-3">
+<div class="flex items-center gap-2.5 bg-surface-container-low p-2.5 rounded-xl">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">key</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Availability</p>
+<p class="font-title-sm text-title-sm text-on-surface">Ready to Move</p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 bg-surface-container-low p-2.5 rounded-xl">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Lock-in Period</p>
+<p class="font-title-sm text-title-sm text-on-surface">11 Months</p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 bg-surface-container-low p-2.5 rounded-xl">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">event_repeat</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Notice Period</p>
+<p class="font-title-sm text-title-sm text-on-surface">1 Month</p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 bg-surface-container-low p-2.5 rounded-xl">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">chair</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Furnishing</p>
+<p class="font-title-sm text-title-sm text-on-surface">Semi-Furnished</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Location & Commute Intelligence -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Location &amp; Commute</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">100ft Road, HAL 2nd Stage, Indiranagar</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">pin_drop</span>
+</div>
+<!-- Map Display Container -->
+<div class="w-full h-36 bg-cover bg-center rounded-xl relative overflow-hidden flex items-end p-2.5" data-location="100ft Road, Indiranagar, Bengaluru, Karnataka, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB82unXCXb53CqOt8buKbaMMKRf3BbK0tOYdqJuRBOsZ0TYPTXNc8XeN2O46YEltzrFj2-pFJuMJhu8thMTNbnJJ74wqX8mJrJmwB2gbZlcZV4u9f0JVUI3BMcetmjmqWuTpYK-S7FgSCiFxA5jJIU5dcoyuQpSmIyHQElsgHbW-EQO7IYSJNvi48U_Hylgt_VRzpz5oQIYW2wleji9BI_OEt6FNEwD_NrrGrtfcRpk')">
+<div class="absolute inset-0 bg-primary/20"></div>
+<a class="relative z-10 bg-surface/95 backdrop-blur-sm text-primary px-3 py-1.5 rounded-lg font-label-sm text-label-sm flex items-center gap-1.5 shadow-md" href="https://maps.google.com/?q=Indiranagar+100ft+Road+Bengaluru" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-secondary">directions</span>
+<span>Open in Google Maps</span>
+</a>
+</div>
+<!-- Commute Badges -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">train</span>
+<span class="font-body-sm text-body-sm text-on-surface">Indiranagar Metro (Purple Line)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">6 min walk (600m)</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">apartment</span>
+<span class="font-body-sm text-body-sm text-on-surface">Embassy GolfLinks (EGL)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">12 min drive</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">shopping_bag</span>
+<span class="font-body-sm text-body-sm text-on-surface">Nature's Basket &amp; Supermarkets</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">100m away</span>
+</div>
+</div>
+</div>
+<!-- Room-by-Room Breakdown -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-on-surface">Room Architecture</h2>
+<span class="font-label-sm text-label-sm text-secondary">All Private Baths</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Room 1 -->
+<div class="p-3 bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-on-surface">Master Bedroom</span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.2 rounded-full">Suite</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">220 sq.ft · East Balcony · Walk-in Closet</p>
+</div>
+<div class="text-right">
+<p class="font-title-sm text-title-sm text-primary">₹26k</p>
+<span class="font-label-sm text-label-sm text-secondary">Available</span>
+</div>
+</div>
+<!-- Room 2 -->
+<div class="p-3 bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-on-surface">Bedroom 2</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">180 sq.ft · Attached Bath · French Windows</p>
+</div>
+<div class="text-right">
+<p class="font-title-sm text-title-sm text-primary">₹23k</p>
+<span class="font-label-sm text-label-sm text-secondary">Available</span>
+</div>
+</div>
+<!-- Room 3 -->
+<div class="p-3 bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-on-surface">Bedroom 3</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">175 sq.ft · Attached Bath · Built-in Work Desk</p>
+</div>
+<div class="text-right">
+<p class="font-title-sm text-title-sm text-primary">₹23k</p>
+<span class="font-label-sm text-label-sm text-secondary">Available</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Verified Amenities Grid -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-on-surface">Amenities &amp; Facilities</h2>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">verified</span> Physical Inspection Done
+        </span>
+</div>
+<!-- Essential Facilities Verified -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">In-Unit Verified Infrastructure</span>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex items-center gap-2 p-2 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
+<span class="font-body-sm text-body-sm text-on-surface">100% DG Backup</span>
+</div>
+<div class="flex items-center gap-2 p-2 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[20px]">shield</span>
+<span class="font-body-sm text-body-sm text-on-surface">24/7 Gated Guard</span>
+</div>
+<div class="flex items-center gap-2 p-2 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[20px]">propane_tank</span>
+<span class="font-body-sm text-body-sm text-on-surface">Piped Gas Line</span>
+</div>
+<div class="flex items-center gap-2 p-2 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[20px]">directions_car</span>
+<span class="font-body-sm text-body-sm text-on-surface">2 Reserved Car Spots</span>
+</div>
+<div class="flex items-center gap-2 p-2 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[20px]">router</span>
+<span class="font-body-sm text-body-sm text-on-surface">Airtel/Jio 1Gbps Ready</span>
+</div>
+<div class="flex items-center gap-2 p-2 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[20px]">water_drop</span>
+<span class="font-body-sm text-body-sm text-on-surface">Cauvery &amp; Borewell</span>
+</div>
+</div>
+</div>
+<!-- Society Amenities -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Prestige Society Amenities</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="bg-surface-container-high text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">pool</span> Infinity Pool
+          </span>
+<span class="bg-surface-container-high text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">fitness_center</span> 2-Floor Gym
+          </span>
+<span class="bg-surface-container-high text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">sports_tennis</span> Badminton Court
+          </span>
+<span class="bg-surface-container-high text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">park</span> Rooftop Lounge
+          </span>
+</div>
+</div>
+</div>
+<!-- House Rules & Coliving Compatibility -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+<h2 class="font-title-md text-title-md text-on-surface">House Policies &amp; Compatibility</h2>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-2.5 bg-surface-container-low rounded-xl flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">smoke_free</span>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface">Non-Smoking</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Allowed on private balcony only</p>
+</div>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-xl flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">pets</span>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface">Pet Welcoming</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cats &amp; small dogs approved</p>
+</div>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-xl flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">nightlight</span>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface">Quiet Hours</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">11:00 PM – 7:00 AM</p>
+</div>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-xl flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">group_add</span>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface">Guests Policy</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Notify Pod WhatsApp chat</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Owner / Landlord Dossier -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Verified Direct Owner</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">Zero Brokerage</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="Distinguished mature South Indian retired army officer with warm smile, salt-and-pepper hair, wearing a crisp linen formal shirt in a bright home study background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl94iZrDQ1okAIjQz26NW9J1ueIFmXwgTWpkemy_9tGx9NVCLF3NVgrrjKlcZm4Q0M7pnasKWUswoGDE68jeAoLNLJn3eT2VAuVUiAqrHqkW2A01a-OYtPTZ-szOH-M-qDHpEsLfsk6UkshqrS5JmHtRP-r7iZm6qS-y5Ob5V3SXauUDeRwsN4AhoUcBeaNQHNfZOaX9T0_Acm5M_-1LhkIo5rj3-83fNffhvn07PH"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 bg-secondary rounded-full flex items-center justify-center text-white text-[10px]">
+            ✓
+          </span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Col. Suresh Nair (Retd.)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kaveri 2.0 Authenticated Landlord</p>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">5 yrs on RoomSync</span>
+<span class="text-on-surface-variant text-[10px]">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Flats Managed</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">timer</span>
+<span class="font-body-sm text-body-sm text-on-surface">Responds within 2 hours</span>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-semibold">100% Rate</span>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Action Bar -->
+<div class="fixed bottom-0 inset-x-0 z-40 bg-surface/95 backdrop-blur-xl px-4 py-3 pb-safe shadow-[0_-4px_24px_rgba(0,0,0,0.08)] flex items-center justify-between gap-3">
+<div class="flex flex-col min-w-0">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary">₹24,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/bed</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">₹72k total · 3 Beds</span>
+</div>
+<div class="flex items-center gap-2 flex-1 max-w-[260px] justify-end">
+<!-- Secondary CTA: Share with Pod -->
+<button aria-label="Share listing with Pod roommates" class="h-11 px-3 rounded-xl bg-surface-container text-primary font-title-sm text-title-sm flex items-center justify-center gap-1 active:scale-95 transition-transform" id="sharePodBtn">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+</button>
+<!-- Primary CTA: Schedule Visit -->
+<button class="h-11 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm flex-1 flex items-center justify-center gap-1.5 shadow-md shadow-secondary/20 active:scale-95 transition-transform" id="scheduleVisitBtn">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span class="truncate">Schedule Visit</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for Schedule Visit feedback
+  document.getElementById('scheduleVisitBtn')?.addEventListener('click', function() {
+    const originalText = this.innerHTML;
+    this.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Connecting...</span>';
+    setTimeout(() => {
+      this.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Slot Requested</span>';
+      this.classList.remove('bg-secondary');
+      this.classList.add('bg-primary');
+    }, 600);
+  });
+
+  // Micro-interaction for Pod sharing
+  document.getElementById('sharePodBtn')?.addEventListener('click', function() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Prestige Palms Suites 3BHK on RoomSync',
+        text: 'Check out this 3BHK on 100ft Rd Indiranagar! Rent split comes to ₹24,000/person with attached baths.',
+        url: window.location.href
+      }).catch(() => {});
+    } else {
+      const icon = this.querySelector('span');
+      if (icon) {
+        icon.innerText = 'done';
+        setTimeout(() => icon.innerText = 'group_add', 1500);
+      }
+    }
+  });
+</script></main></body></html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"tertiary-fixed":"#ffddb8","error":"#ba1a1a","tertiary":"#140900","surface-bright":"#faf8ff","surface-container-low":"#f2f3ff","secondary-container":"#86f2e4","on-surface":"#131b2e","primary-fixed":"#e3dfff","surface-container-highest":"#dae2fd","on-secondary-fixed-variant":"#005049","on-tertiary-fixed-variant":"#653e00","tertiary-fixed-dim":"#ffb95f","on-secondary-container":"#006f66","inverse-surface":"#283044","outline-variant":"#c8c5d0","on-secondary-fixed":"#00201d","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#6bd8cb","surface-tint":"#5b598c","surface":"#faf8ff","on-tertiary-container":"#c07a00","error-container":"#ffdad6","on-error":"#ffffff","surface-container":"#eaedff","on-background":"#131b2e","on-error-container":"#93000a","surface-dim":"#d2d9f4","secondary":"#006a61","on-primary":"#ffffff","surface-container-high":"#e2e7ff","primary-fixed-dim":"#c4c1fb","on-tertiary":"#ffffff","on-secondary":"#ffffff","on-primary-fixed-variant":"#444173","inverse-primary":"#c4c1fb","secondary-fixed":"#89f5e7","primary-container":"#1e1b4b","tertiary-container":"#331d00","on-surface-variant":"#47464f","surface-variant":"#dae2fd","outline":"#787680","on-tertiary-fixed":"#2a1700","background":"#faf8ff","primary":"#070235","on-primary-container":"#8683ba","on-primary-fixed":"#181445","inverse-on-surface":"#eef0ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","space-lg":"1.5rem","gutter":"1.5rem","space-xs":"0.25rem","space-xl":"2.5rem","margin-desktop":"3rem","margin-mobile":"1rem","gutter-desktop":"2rem","margin":"1.5rem","space-sm":"0.5rem","space-md":"1rem"},"fontFamily":{"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-md":["Plus Jakarta Sans"]},"fontSize":{"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"metric-display":["32px",{"lineHeight":"36px","letterSpacing":"-0.03em","fontWeight":"800"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"title-sm":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"display-md":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">sync_alt</span></div><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">RoomSync</span></div><div class="h-5 w-px bg-outline-variant/60 hidden sm:block"></div><div class="hidden sm:flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-md text-label-md text-on-surface-variant font-medium">New Member Onboarding</span></div></div><nav class="flex items-center gap-space-sm" data-active-classes="bg-surface-container-high text-on-surface font-bold rounded-full"><a class="hidden sm:inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="support" href="#">Support</a><a class="hidden sm:inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="faq" href="#">FAQ</a><a class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="save-and-exit" href="#">Save &amp; Exit</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs ring-2 ring-surface-container-high"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></nav></div></header><main class="w-full pt-16 bg-surface flex-1 flex flex-col items-center justify-start"><div class="flex flex-col w-full">
+<!-- Progress Section -->
+<section class="w-full bg-surface-container-low py-space-md">
+<div class="max-w-4xl mx-auto px-margin-mobile sm:px-margin md:px-margin-desktop flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-bold tracking-wider uppercase">Step 2 of 4 • Accommodation Requirements</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">50% Completed</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full rounded-full bg-secondary w-1/2 transition-all duration-500 ease-out"></div>
+</div>
+</div>
+</section>
+<!-- Header Horizon -->
+<header class="w-full py-space-xl">
+<div class="max-w-4xl mx-auto px-margin-mobile sm:px-margin md:px-margin-desktop flex flex-col items-start gap-space-xs">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+        Step 2 of 4: Housing Horizon
+      </span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Where and how do you want to live?</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        Clearly establish your budget and target zones so we only introduce flatmates looking in the exact same corridors.
+      </p>
+</div>
+</header>
+<!-- Main Accommodation Form Canvas -->
+<main class="w-full pb-space-xl">
+<div class="max-w-4xl mx-auto px-margin-mobile sm:px-margin md:px-margin-desktop flex flex-col gap-space-xl">
+<!-- Module 1: Target City & Preferred Neighborhoods -->
+<section class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Target City &amp; Preferred Neighborhoods</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Selected micro-markets cluster your compatibility index</p>
+</div>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Required</span>
+</div>
+<!-- City Selector Pills -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Primary City</label>
+<div class="flex flex-wrap gap-space-xs" id="city-selector">
+<button class="city-btn px-space-md py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary text-on-primary font-bold" type="button">Bengaluru</button>
+<button class="city-btn px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" type="button">Mumbai</button>
+<button class="city-btn px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" type="button">Pune</button>
+<button class="city-btn px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" type="button">Delhi NCR</button>
+<button class="city-btn px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" type="button">Hyderabad</button>
+</div>
+</div>
+<!-- Locality Selector & Map Preview Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Selected Neighborhood Hubs</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">4 active zones</span>
+</label>
+<div class="flex flex-wrap gap-space-xs items-center p-space-sm bg-surface-container-low rounded-xl min-h-[96px]" id="locality-container">
+<span class="locality-tag inline-flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold shadow-sm transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                Indiranagar
+                <button aria-label="Remove Indiranagar" class="hover:opacity-75 flex items-center" onclick="this.parentElement.remove()" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="locality-tag inline-flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold shadow-sm transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                Domlur Corridor
+                <button aria-label="Remove Domlur Corridor" class="hover:opacity-75 flex items-center" onclick="this.parentElement.remove()" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="locality-tag inline-flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold shadow-sm transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                Koramangala (IRR)
+                <button aria-label="Remove Koramangala" class="hover:opacity-75 flex items-center" onclick="this.parentElement.remove()" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="locality-tag inline-flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold shadow-sm transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                HSR Layout Sector 1–3
+                <button aria-label="Remove HSR Layout" class="hover:opacity-75 flex items-center" onclick="this.parentElement.remove()" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<button class="inline-flex items-center gap-1 px-space-sm py-1.5 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+                Add locality (e.g. Cambridge Layout, HAL)
+              </button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Roommates in these cluster pockets will rank 35% higher in your lifestyle match feed.</p>
+</div>
+<!-- Static Location Cluster Representation -->
+<div class="lg:col-span-5 rounded-xl overflow-hidden relative shadow-sm min-h-[160px] flex flex-col justify-end p-space-sm bg-surface-container" data-location="Indiranagar, Bengaluru, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSUemrG3N9ljyX0ZCohFNz2jbQ6UzVVP018FjCzon_ZCvJbO8vipyM7sz2p_UgjOvRKGVVtymHy9ZoGja_OI7BKZzwY4nv786eeJPQKOFWLkEiUSQk_9Nuvf_yAou1u7UTY4bLUr726kPDyyFqiEGtLG33GObHF8BlEbYP_QoaWvhwbi-DWq9wtWxLB3bsPxEL6knqDOZxH0Oq6fNEd24arzc2SYXIr5rIzeJmnMIE')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<div class="relative z-10 flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">travel_explore</span>
+<span class="font-label-md text-label-md font-bold">East Hub Corridor</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest/20 backdrop-blur-md">Tier 1 Match Density</span>
+</div>
+</div>
+</div>
+<!-- Commute Buffer Radius Slider -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">directions_subway</span>
+<label class="font-title-sm text-title-sm text-primary" for="commute-range">Commute Buffer Radius</label>
+</div>
+<span class="font-label-md text-label-md px-space-sm py-0.5 rounded-full bg-primary text-on-primary font-bold" id="radius-val">Within 3 km of office / metro</span>
+</div>
+<input class="w-full accent-secondary h-2 bg-surface-container-highest rounded-lg cursor-pointer" id="commute-range" max="4" min="1" oninput="updateRadiusLabel(this.value)" step="1" type="range" value="2"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant px-1">
+<span class="font-semibold">1 km (Walkable)</span>
+<span class="font-bold text-secondary">3 km (Ideal)</span>
+<span>5 km</span>
+<span>8 km (Max Metro Corridor)</span>
+</div>
+</div>
+</section>
+<!-- Module 2: Monthly Rent & Budget Calibration (Per Person) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">currency_rupee</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Monthly Rent &amp; Budget Calibration</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calibrate personal limits for exact room splits</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Private Split Model</span>
+</div>
+</div>
+<!-- Important Notice Pill -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-tertiary-fixed/30 text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px] text-on-tertiary-container">info</span>
+<span class="font-body-sm text-body-sm font-semibold">Important Notice: All budget figures reflect rent per individual, NOT entire apartment rent.</span>
+</div>
+<!-- Rent Range Visualizer -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Minimum Monthly Target</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-md text-display-md text-primary font-bold">₹18,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ month</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Basement floor / Standard rooms</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Maximum Budget Cap</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-md text-display-md text-secondary font-bold">₹25,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ month</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Attached master suite ceiling</span>
+</div>
+</div>
+<!-- Sweet Spot Visual Bar -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md font-bold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+              ₹20,000 – ₹25,000 Sweet Spot
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">82% of Koramangala listings match</span>
+</div>
+<div class="relative w-full h-3 bg-surface-container-highest rounded-full overflow-hidden my-1">
+<div class="absolute left-1/4 w-1/2 h-full bg-secondary rounded-full shadow-inner"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Private room in a gated, premium 2BHK or 3BHK high-rise society.</span>
+</div>
+<!-- Security Deposit Capability -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">account_balance_wallet</span>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">Deposit Flexibility Ceiling</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standard Bangalore landlord deposit norms</span>
+</div>
+</div>
+<span class="inline-flex items-center px-space-md py-1.5 rounded-full bg-surface-container-highest font-label-md text-label-md text-primary font-bold">
+            ₹60,000 – ₹80,000 (2–3 months share)
+          </span>
+</div>
+</section>
+<!-- Module 3: Move-in Timeline & Lease Length -->
+<section class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Move-in Timeline &amp; Lease Horizon</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Align exact lease cycles to avoid vacant rent penalties</p>
+</div>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Sync Vital</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Target Date Picker Simulation -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Target Move-in Date</label>
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">event_available</span>
+<span class="font-title-md text-title-md text-primary font-bold">August 1, 2025</span>
+</div>
+<button class="text-secondary font-label-md text-label-md hover:underline font-semibold" type="button">Change Date</button>
+</div>
+<!-- Flexibility Toggle -->
+<label class="flex items-center gap-space-sm mt-space-xs cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface font-medium">Flexible window (±7 to 15 days)</span>
+</label>
+</div>
+<!-- Lease Duration -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Minimum Lease Duration</label>
+<div class="flex flex-col gap-space-xs">
+<label class="flex items-center justify-between p-space-sm px-space-md rounded-xl bg-secondary-container/40 text-on-secondary-container cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="accent-secondary" name="lease_duration" type="radio" value="11"/>
+<span class="font-label-md text-label-md font-bold">11 Months (Standard Bangalore Lease)</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-extrabold text-secondary">Recommended</span>
+</label>
+<label class="flex items-center justify-between p-space-sm px-space-md rounded-xl bg-surface-container-low text-on-surface cursor-pointer hover:bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<input class="accent-secondary" name="lease_duration" type="radio" value="6"/>
+<span class="font-label-md text-label-md font-medium">6 Months Short Lease</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Limited Inventory</span>
+</label>
+<label class="flex items-center justify-between p-space-sm px-space-md rounded-xl bg-surface-container-low text-on-surface cursor-pointer hover:bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<input class="accent-secondary" name="lease_duration" type="radio" value="12+"/>
+<span class="font-label-md text-label-md font-medium">12+ Months Long Horizon</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Renewal Preferred</span>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Module 4: Property & Room Architecture Preferences -->
+<section class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">apartment</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Property &amp; Room Architecture</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Set boundaries for individual square footage and shared community</p>
+</div>
+</div>
+</div>
+<!-- Room Type Options (Selection Grid) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Desired Room Type</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- Card 1: Selected -->
+<div class="room-type-card relative p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md cursor-pointer transition-all ring-2 ring-secondary" onclick="toggleSelection(this)">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">bathroom</span>
+</div>
+<div>
+<h3 class="font-title-sm text-title-sm text-primary font-bold">Private Room with Attached Bath</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Most popular in 3BHK gated apartments</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">stars</span>
+<span>Matches 68% of candidates</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="room-type-card relative p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md cursor-pointer transition-all hover:bg-surface-container-low" onclick="toggleSelection(this)">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">deck</span>
+</div>
+<div>
+<h3 class="font-title-sm text-title-sm text-primary font-semibold">Private Room with Dedicated Balcony</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Natural light and private outdoor slice</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center"></div>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Higher rent variance</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="room-type-card relative p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md cursor-pointer transition-all hover:bg-surface-container-low" onclick="toggleSelection(this)">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">bed</span>
+</div>
+<div>
+<h3 class="font-title-sm text-title-sm text-primary font-semibold">Shared Master Bedroom (2 people)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Twin beds, halved budget load</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center"></div>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Maximum savings</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="room-type-card relative p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md cursor-pointer transition-all hover:bg-surface-container-low" onclick="toggleSelection(this)">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+</div>
+<div>
+<h3 class="font-title-sm text-title-sm text-primary font-semibold">Team Up for a Fresh Lease</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hunt fresh unfurnished/semi 2BHK/3BHK together</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center"></div>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Full flat freedom</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Total Roommates Preference & Furnishing -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg pt-space-sm">
+<!-- Segmented Roommate Count -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Total Flatmates in Apartment</label>
+<div class="p-1 rounded-xl bg-surface-container-low flex items-center gap-1">
+<button class="w-1/3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" type="button">1 Flatmate<br/><span class="text-label-sm font-normal">2BHK Unit</span></button>
+<button class="w-1/3 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary font-bold shadow-sm transition-all" type="button">2 Flatmates<br/><span class="text-label-sm text-secondary font-bold">3BHK (Ideal)</span></button>
+<button class="w-1/3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" type="button">3+ Flatmates<br/><span class="text-label-sm font-normal">Large Villa</span></button>
+</div>
+</div>
+<!-- Furnishing Radio Cards -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Furnishing Grade Needed</label>
+<div class="flex flex-col gap-space-xs">
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="accent-secondary" name="furnishing" type="radio" value="fully"/>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Fully Furnished</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Beds, AC, Fridge, Washing Machine, WiFi</span>
+</div>
+</div>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input class="accent-secondary" name="furnishing" type="radio" value="semi"/>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">Semi-Furnished</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Wardrobes, geysers, modular kitchen cabinets</span>
+</div>
+</div>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input class="accent-secondary" name="furnishing" type="radio" value="unfurnished"/>
+<div>
+<span class="font-label-md text-label-md font-medium text-on-surface block">Unfurnished</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bring your own furniture setup</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Module 5: Parking & Amenities Checklist -->
+<section class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">local_convenience_store</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Parking &amp; Lifestyle Amenities</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select non-negotiables for your prospective shared flat</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">5 Selected</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-sm" id="amenities-grid">
+<!-- Amenity 1: Two Wheeler (Checked) -->
+<label class="amenity-chip flex items-center justify-between p-space-sm px-space-md rounded-xl bg-secondary-container/40 text-on-secondary-container cursor-pointer transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">two_wheeler</span>
+<span class="font-label-md text-label-md font-semibold">Two-Wheeler Parking</span>
+</div>
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" onchange="handleAmenityToggle(this)" type="checkbox"/>
+</label>
+<!-- Amenity 2: Four Wheeler -->
+<label class="amenity-chip flex items-center justify-between p-space-sm px-space-md rounded-xl bg-surface-container-low text-on-surface cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">directions_car</span>
+<span class="font-label-md text-label-md font-medium">Four-Wheeler Parking</span>
+</div>
+<input class="w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" onchange="handleAmenityToggle(this)" type="checkbox"/>
+</label>
+<!-- Amenity 3: Washing Machine (Checked) -->
+<label class="amenity-chip flex items-center justify-between p-space-sm px-space-md rounded-xl bg-secondary-container/40 text-on-secondary-container cursor-pointer transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">local_laundry_service</span>
+<span class="font-label-md text-label-md font-semibold">In-Unit Washing Machine</span>
+</div>
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" onchange="handleAmenityToggle(this)" type="checkbox"/>
+</label>
+<!-- Amenity 4: Fiber WiFi (Checked) -->
+<label class="amenity-chip flex items-center justify-between p-space-sm px-space-md rounded-xl bg-secondary-container/40 text-on-secondary-container cursor-pointer transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">wifi</span>
+<span class="font-label-md text-label-md font-semibold">High-Speed Fiber WiFi</span>
+</div>
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" onchange="handleAmenityToggle(this)" type="checkbox"/>
+</label>
+<!-- Amenity 5: Power Backup (Checked) -->
+<label class="amenity-chip flex items-center justify-between p-space-sm px-space-md rounded-xl bg-secondary-container/40 text-on-secondary-container cursor-pointer transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span class="font-label-md text-label-md font-semibold">Power Backup 100%</span>
+</div>
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" onchange="handleAmenityToggle(this)" type="checkbox"/>
+</label>
+<!-- Amenity 6: Cook/Maid Facility (Checked) -->
+<label class="amenity-chip flex items-center justify-between p-space-sm px-space-md rounded-xl bg-secondary-container/40 text-on-secondary-container cursor-pointer transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">skillet</span>
+<span class="font-label-md text-label-md font-semibold">Cook / Maid Pre-arranged</span>
+</div>
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" onchange="handleAmenityToggle(this)" type="checkbox"/>
+</label>
+<!-- Amenity 7: Balcony Space -->
+<label class="amenity-chip flex items-center justify-between p-space-sm px-space-md rounded-xl bg-surface-container-low text-on-surface cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">balcony</span>
+<span class="font-label-md text-label-md font-medium">Spacious Balcony Access</span>
+</div>
+<input class="w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" onchange="handleAmenityToggle(this)" type="checkbox"/>
+</label>
+</div>
+</section>
+<!-- Bottom Action Navigation Bar -->
+<footer class="w-full flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-sm pb-space-lg">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-xl bg-surface-container text-on-surface font-title-sm text-title-sm hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          Back to Basic Profile
+        </a>
+<div class="flex flex-col sm:items-end gap-1 w-full sm:w-auto">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-3.5 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm shadow-md hover:bg-primary/95 hover:shadow-lg transition-all active:scale-[0.98]" type="button">
+            Save &amp; Proceed to Lifestyle Questionnaire (15 mins)
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">psychology</span>
+            Next: The 8-dimension coliving algorithm questions.
+          </span>
+</div>
+</footer>
+</div>
+</main>
+</div>
+<script>
+  function updateRadiusLabel(val) {
+    const label = document.getElementById('radius-val');
+    const mapping = {
+      '1': 'Within 1 km of office / metro (Walkable)',
+      '2': 'Within 3 km of office / metro',
+      '3': 'Within 5 km of office / metro',
+      '4': 'Within 8 km of office / metro (Max corridor)'
+    };
+    label.innerText = mapping[val] || 'Within 3 km of office / metro';
+  }
+
+  function handleAmenityToggle(input) {
+    const parent = input.closest('label');
+    if (input.checked) {
+      parent.classList.remove('bg-surface-container-low', 'text-on-surface');
+      parent.classList.add('bg-secondary-container/40', 'text-on-secondary-container');
+    } else {
+      parent.classList.add('bg-surface-container-low', 'text-on-surface');
+      parent.classList.remove('bg-secondary-container/40', 'text-on-secondary-container');
+    }
+  }
+
+  function toggleSelection(element) {
+    document.querySelectorAll('.room-type-card').forEach(card => {
+      card.classList.remove('ring-2', 'ring-secondary');
+      const badge = card.querySelector('.w-5.h-5');
+      if (badge) {
+        badge.innerHTML = '';
+        badge.className = 'w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center';
+      }
+    });
+    
+    element.classList.add('ring-2', 'ring-secondary');
+    const currentBadge = element.querySelector('.w-5.h-5');
+    if (currentBadge) {
+      currentBadge.className = 'w-5 h-5 rounded-full bg-secondary flex items-center justify-center text-on-secondary';
+      currentBadge.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span>';
+    }
+  }
+
+  // City Selector Toggles
+  document.querySelectorAll('#city-selector .city-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#city-selector .city-btn').forEach(b => {
+        b.className = 'city-btn px-space-md py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface hover:bg-surface-container-high';
+      });
+      btn.className = 'city-btn px-space-md py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary text-on-primary font-bold';
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_6px_rgba(0,0,0,0.03)]"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop py-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-center md:text-left"><div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md"><span class="material-symbols-outlined text-[16px]">lock</span><span>End-to-end encrypted lifestyle onboarding</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 RoomSync Technologies India Pvt. Ltd. All rights reserved.</p><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><span class="inline-flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span>Tier-1 Trust &amp; Safety</span><span>•</span><span class="inline-flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-secondary">shield</span>Aadhaar &amp; SSO Ready</span></div></div></footer></body></html>

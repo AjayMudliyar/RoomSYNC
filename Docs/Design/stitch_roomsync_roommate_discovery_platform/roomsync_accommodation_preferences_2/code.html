@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>RoomSync - Trust-First Roommate &amp; Housing Matching</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary": "#070235",
+          "on-secondary": "#ffffff",
+          "outline": "#787680",
+          "tertiary-fixed-dim": "#ffb95f",
+          "on-secondary-fixed": "#00201d",
+          "on-tertiary-fixed": "#2a1700",
+          "on-error": "#ffffff",
+          "inverse-primary": "#c4c1fb",
+          "on-tertiary-fixed-variant": "#653e00",
+          "surface-variant": "#dae2fd",
+          "on-surface": "#131b2e",
+          "on-secondary-fixed-variant": "#005049",
+          "primary-fixed-dim": "#c4c1fb",
+          "surface-dim": "#d2d9f4",
+          "on-background": "#131b2e",
+          "secondary-fixed": "#89f5e7",
+          "on-primary-fixed-variant": "#444173",
+          "on-primary": "#ffffff",
+          "surface": "#faf8ff",
+          "background": "#faf8ff",
+          "surface-tint": "#5b598c",
+          "secondary-container": "#86f2e4",
+          "inverse-on-surface": "#eef0ff",
+          "on-primary-fixed": "#181445",
+          "surface-bright": "#faf8ff",
+          "inverse-surface": "#283044",
+          "on-error-container": "#93000a",
+          "surface-container-high": "#e2e7ff",
+          "secondary": "#006a61",
+          "on-surface-variant": "#47464f",
+          "secondary-fixed-dim": "#6bd8cb",
+          "tertiary": "#140900",
+          "tertiary-fixed": "#ffddb8",
+          "surface-container-low": "#f2f3ff",
+          "tertiary-container": "#331d00",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-highest": "#dae2fd",
+          "on-primary-container": "#8683ba",
+          "primary-fixed": "#e3dfff",
+          "error-container": "#ffdad6",
+          "on-tertiary": "#ffffff",
+          "outline-variant": "#c8c5d0",
+          "on-secondary-container": "#006f66",
+          "on-tertiary-container": "#c07a00",
+          "surface-container": "#eaedff",
+          "error": "#ba1a1a",
+          "primary-container": "#1e1b4b"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "gutter": "1.5rem",
+          "margin-desktop": "3rem",
+          "space-lg": "1.5rem",
+          "margin-mobile": "1rem",
+          "gutter-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "margin": "1.5rem",
+          "space-xl": "2.5rem",
+          "gutter-desktop": "2rem"
+        },
+        "fontFamily": {
+          "headline-md": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "title-sm": ["Plus Jakarta Sans"],
+          "title-md": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "display-md": ["Plus Jakarta Sans"],
+          "display-lg": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "headline-lg-mobile": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "metric-display": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "body-md": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "headline-md": ["22px", {"lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "title-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600"}],
+          "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+          "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+          "display-md": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700"}],
+          "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+          "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "metric-display": ["32px", {"lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+          "headline-sm": ["18px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "headline-lg": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(7,2,53,0.04)]"><div class="h-28 max-w-7xl mx-auto px-margin-desktop flex flex-col justify-between pt-3 pb-0"><div class="flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-2"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">group_work</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">RoomSync</span><span class="material-symbols-outlined text-secondary text-[16px]" title="Verified Enterprise Network">verified</span></div></div></div><div class="h-5 w-px bg-outline-variant/40 hidden lg:block"></div><div class="hidden lg:flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-high/60 hover:bg-surface-container-high text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span><span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Bengaluru, KA</span><span class="material-symbols-outlined text-[14px] text-on-surface-variant">keyboard_arrow_down</span></div></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-14 py-2 bg-surface-container-lowest border-0 rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-[0_1px_4px_rgba(0,0,0,0.03)]" placeholder="Search verified roommates, societies, tech parks..." type="text"/><div class="absolute right-2.5 flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-surface-container-high text-outline text-[10px] font-bold font-label-sm"><span>⌘</span><span>K</span></div></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2"><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Incoming Requests"><span class="material-symbols-outlined text-[20px]">person_add</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] flex items-center justify-center font-bold">3</span></button><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Secure Chats"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] flex items-center justify-center font-bold">2</span></button></div><div class="h-7 w-px bg-outline-variant/40"></div><div class="flex items-center gap-2.5 pl-1"><div class="flex flex-col items-end"><div class="flex items-center gap-1.5"><span class="font-title-sm text-title-sm text-primary font-bold">Aarav Sharma</span><span class="px-1.5 py-0.2 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-[9px] font-bold tracking-wide uppercase">Aadhaar</span></div><div class="flex items-center gap-1"><span class="text-[10px] font-label-sm font-semibold text-on-surface-variant">Swiggy SSO</span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="text-[10px] font-label-sm text-outline">HSR Layout</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-secondary/30"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div><div class="flex items-center justify-between border-t border-surface-container-high/60 pt-1 pb-1"><nav class="flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-secondary"><a class="py-1.5 text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm transition-colors" data-path="discover" href="#">Discover</a><a class="py-1.5 text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm transition-colors" data-path="accommodation" href="#">Accommodation</a><a class="py-1.5 text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm transition-colors" data-path="roommate-groups" href="#">Roommate Groups</a><a class="py-1.5 text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm transition-colors" data-path="trust-safety" href="#">Trust &amp; Safety</a></nav><div class="flex items-center gap-2 text-on-surface-variant"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Hub</span><span class="font-label-sm text-label-sm font-semibold text-primary">Settings &amp; Account Management</span></div></div></div></header><main class="w-full pt-28 bg-surface min-h-[calc(100vh-14rem)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-space-md">
+<!-- Top Breadcrumb & Status Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-outline">Settings</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-label-md text-label-md font-semibold text-secondary">Housing Configuration</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-label-md text-label-md font-bold text-primary">Accommodation Preferences</span>
+</div>
+<!-- Active Pod Sync Indicator Chip -->
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container shadow-sm">
+<div class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-secondary">groups</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide">
+          Linked to Indiranagar 3BHK Tech Pod (Syncing 2/3 members)
+        </span>
+<span class="material-symbols-outlined text-[14px] text-secondary/80 ml-1">sync</span>
+</div>
+</div>
+<!-- Main Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Left Persistent Settings Navigation Sidebar -->
+<aside class="lg:col-span-3 flex flex-col gap-space-md sticky top-32">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="px-space-xs pb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Account Hub</span>
+<p class="font-headline-sm text-headline-sm text-primary font-bold mt-0.5">Preferences</p>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-colors">person</span>
+<span class="font-title-sm text-title-sm">Profile &amp; Identity</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-container/60 text-on-secondary-container font-bold">SSO</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-colors">psychology</span>
+<span class="font-title-sm text-title-sm">Lifestyle &amp; Habits</span>
+</div>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</a>
+<!-- Active Sidebar Item -->
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg bg-primary text-on-primary shadow-sm font-bold" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">home_work</span>
+<span class="font-title-sm text-title-sm text-on-primary">Accommodation</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">arrow_right</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-colors">verified_user</span>
+<span class="font-title-sm text-title-sm">Trust &amp; Verification</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-colors">diversity_3</span>
+<span class="font-title-sm text-title-sm">Pod Group Settings</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">3/3</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-colors">notifications</span>
+<span class="font-title-sm text-title-sm">Alerts &amp; Match Ping</span>
+</div>
+</a>
+</nav>
+<!-- Pod Horizon Snapshot Card -->
+<div class="mt-space-md p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">hub</span>
+<span class="font-label-md text-label-md font-bold text-primary">Pod Horizon Status</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+              Changes auto-recalculate match scores for your linked pod with <strong>Rohan M.</strong> (Razorpay) and <strong>Kavya T.</strong> (CRED).
+            </p>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 82%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-1 block">82% group overlap score</span>
+</div>
+</div>
+<!-- Quick Help Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<p class="font-title-sm text-title-sm font-bold text-primary">Zero-Brokerage Guarantee</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">All matched properties are directly authenticated owners or vetted build-to-rent operators in Bengaluru.</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Right Column: Accommodation Preferences Editor -->
+<main class="lg:col-span-9 flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">Housing Horizon</span>
+<span class="font-label-sm text-label-sm text-outline">Updated 2 days ago</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight mt-1">
+                Accommodation &amp; Housing Horizon Preferences
+              </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl">
+                Define your budget boundaries, target micro-markets, and property specs for both individual and pod searches.
+              </p>
+</div>
+<!-- Quick Pod Badge -->
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-low shrink-0 self-start md:self-auto">
+<div class="flex -space-x-1.5">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm flex items-center justify-center text-[10px] font-bold">AS</div>
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary font-label-sm flex items-center justify-center text-[10px] font-bold">RM</div>
+<div class="w-6 h-6 rounded-full bg-surface-variant text-primary font-label-sm flex items-center justify-center text-[10px] font-bold">KT</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary">3-Person Pod</span>
+</div>
+</div>
+</div>
+<!-- Section 1: Target Locality & Micro-Markets -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-2.5 mb-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary">Target Locality &amp; Micro-Markets</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select target hubs within reasonable transit time to tech corridors.</p>
+</div>
+</div>
+<!-- Primary City Picker -->
+<div class="mb-space-md">
+<label class="font-label-lg text-label-lg font-bold text-primary block mb-2">Primary Metro Area</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">check</span>
+                Bengaluru
+              </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
+                Mumbai
+              </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
+                Pune
+              </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
+                Delhi NCR
+              </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
+                Hyderabad
+              </button>
+</div>
+</div>
+<!-- Selected Neighborhood Hubs -->
+<div class="mb-space-lg">
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-lg text-label-lg font-bold text-primary">Selected Micro-Markets &amp; Neighborhoods</label>
+<span class="font-body-sm text-body-sm text-outline">4 micro-markets active</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">star</span>
+<span>Indiranagar (Priority #1)</span>
+<button class="hover:text-error transition-colors flex items-center">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold">
+<span>Domlur Corridor</span>
+<button class="hover:text-error transition-colors flex items-center">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold">
+<span>Defence Colony</span>
+<button class="hover:text-error transition-colors flex items-center">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold">
+<span>Koramangala 4th/5th Block</span>
+<button class="hover:text-error transition-colors flex items-center">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-lowest text-secondary hover:bg-secondary-container/20 font-label-md text-label-md font-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+                Add Locality
+              </button>
+</div>
+</div>
+<!-- Commute Buffer Radius Slider Visual -->
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+<div>
+<span class="font-title-sm text-title-sm font-bold text-primary block">Commute Buffer Radius</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Calibrated from Embassy GolfLinks &amp; Bagmane Tech Park</span>
+</div>
+<div class="px-2.5 py-1 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-title-sm text-title-sm font-extrabold text-secondary">Within 3.0 km</span>
+<span class="font-label-sm text-label-sm text-outline"> of office / metro</span>
+</div>
+</div>
+<!-- Custom Slider UI representation -->
+<div class="relative py-3">
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-fixed-dim via-secondary to-primary" style="width: 42%;"></div>
+</div>
+<!-- Active Thumb -->
+<div class="absolute top-1/2 -translate-y-1/2 left-[42%] -ml-3 w-6 h-6 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center cursor-pointer">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+</div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant pt-1 font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span>1 km (Walkable • 10 min)</span>
+</div>
+<div class="flex items-center gap-1 font-bold text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>3 km (Ideal Sweet Spot • 15 min Cab)</span>
+</div>
+<div class="flex items-center gap-1 text-outline">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span>8 km (Max Outer Belt)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Budget Calibration (INR per person) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-2.5 mb-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">currency_rupee</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary">Individual Budget Calibration</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calibrate personal monthly rent affordability per flatmate.</p>
+</div>
+</div>
+<!-- Critical Clarification Note -->
+<div class="p-3 rounded-lg bg-surface-container-high/60 flex items-start gap-2.5 mb-space-md">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-bold text-primary">Individual Scale:</strong> All budget sliders calibrate <em>individual rent per person</em>, NOT the entire flat cost. In a 3BHK flat of ₹72,000, your 1-share target matches the range below.
+            </p>
+</div>
+<!-- Dual Slider Rent Range Mockup -->
+<div class="mb-space-lg">
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-lg text-label-lg font-bold text-primary">Monthly Individual Rent Share Range</label>
+<div class="flex items-center gap-1.5 font-title-sm text-title-sm font-bold text-primary">
+<span class="text-secondary">₹20,000</span>
+<span class="text-outline">—</span>
+<span class="text-secondary">₹26,000</span>
+<span class="font-label-sm text-label-sm text-outline font-normal">/ month</span>
+</div>
+</div>
+<!-- Visual dual slider representation -->
+<div class="p-space-md rounded-xl bg-surface-container-low mb-2">
+<div class="relative py-4">
+<!-- Base track -->
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full relative">
+<!-- Highlighted range: 25% to 65% -->
+<div class="absolute left-[25%] right-[35%] h-full bg-secondary rounded-full"></div>
+<!-- Recommended sweet spot overlay -->
+<div class="absolute left-[33%] right-[40%] -top-1 bottom-0 h-4.5 bg-secondary-container/80 rounded-full flex items-center justify-center">
+<span class="font-label-sm text-[9px] uppercase font-bold text-on-secondary-container tracking-wider">Optimal ₹22k–₹25k</span>
+</div>
+</div>
+<!-- Min Thumb -->
+<div class="absolute top-1/2 -translate-y-1/2 left-[25%] -ml-3 w-6 h-6 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center cursor-pointer">
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+<!-- Max Thumb -->
+<div class="absolute top-1/2 -translate-y-1/2 left-[65%] -ml-3 w-6 h-6 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center cursor-pointer">
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+</div>
+<div class="flex justify-between items-center text-outline font-label-sm text-label-sm pt-2">
+<span>Min: ₹12,000</span>
+<span class="text-secondary font-semibold">Median 3BHK share in Indiranagar: ₹24,500</span>
+<span>Max: ₹45,000+</span>
+</div>
+</div>
+</div>
+<!-- Security Deposit & Exclusions Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Security Deposit Ceiling -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-title-sm text-title-sm font-bold text-primary">Security Deposit Share</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold">2-3 Months</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Estimated 1/3rd share of owner deposit</p>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="font-title-sm text-title-sm font-bold text-primary">₹60,000 – ₹80,000</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+</div>
+</div>
+<!-- Exclusions Toggle Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex-1">
+<span class="font-title-sm text-title-sm font-bold text-primary block">Food &amp; Maid Exclusions</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Exclude cook &amp; maid costs from rent figures (Show as separate line-item ~₹4,500/mo).
+                </p>
+</div>
+<!-- Active Switch -->
+<button class="w-12 h-6 rounded-full bg-secondary p-0.5 flex items-center transition-colors shrink-0" type="button">
+<div class="w-5 h-5 rounded-full bg-on-secondary shadow-sm translate-x-6 transition-transform"></div>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 3: Move-in Window & Lease Terms -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-2.5 mb-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary">Move-in Horizon &amp; Lease Terms</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Synchronize timelines with existing tenant vacate notices.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Target Move-in Date with Buffer -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<label class="font-label-lg text-label-lg font-bold text-primary block mb-1">Target Move-in Date</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Includes automatic flexible search filter</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex-1 flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">event_available</span>
+<span class="font-title-sm text-title-sm font-bold text-primary">August 25, 2025</span>
+</div>
+<div class="px-3 py-2.5 rounded-xl bg-surface-container-high font-label-md text-label-md font-bold text-on-surface shrink-0">
+                  ± 7 Days
+                </div>
+</div>
+</div>
+<!-- Lease Duration Radio Group -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<label class="font-label-lg text-label-lg font-bold text-primary block mb-1">Preferred Lease Duration</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Governs lock-in penalty clauses</p>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<!-- 6 Months -->
+<label class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest text-center cursor-pointer hover:bg-surface transition-colors">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">6 Mos</span>
+<span class="font-label-sm text-label-sm text-outline">Short-term</span>
+</label>
+<!-- 11 Months (Active Selection) -->
+<label class="flex flex-col items-center justify-center p-2 rounded-lg bg-primary text-on-primary text-center cursor-pointer shadow-sm">
+<span class="font-title-sm text-title-sm font-bold text-on-primary">11 Mos</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">BLR Standard</span>
+</label>
+<!-- 12+ Months -->
+<label class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest text-center cursor-pointer hover:bg-surface transition-colors">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">12+ Mos</span>
+<span class="font-label-sm text-label-sm text-outline">Multi-year</span>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Property & Room Architecture -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-2.5 mb-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">apartment</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary">Property &amp; Room Architecture</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Physical layout, privacy requirements, and fitments.</p>
+</div>
+</div>
+<!-- Flat Archetype Checkboxes -->
+<div class="mb-space-md">
+<label class="font-label-lg text-label-lg font-bold text-primary block mb-2">Flat Archetype</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+<!-- 2BHK (Checked) -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low cursor-pointer">
+<div class="w-5 h-5 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm font-bold text-primary block">2BHK</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cozy, dual-occupancy</span>
+</div>
+</div>
+<!-- 3BHK (Checked - Pod Default) -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-secondary-container/40 text-on-secondary-container cursor-pointer">
+<div class="w-5 h-5 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm font-bold text-primary">3BHK</span>
+<span class="font-label-sm text-[9px] px-1 rounded bg-secondary text-on-secondary font-bold">Pod Match</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Optimal space-to-cost ratio</span>
+</div>
+</div>
+<!-- 4BHK / Duplex (Unchecked) -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<div class="w-5 h-5 rounded-md bg-surface-container-highest flex items-center justify-center shrink-0"></div>
+<div>
+<span class="font-title-sm text-title-sm font-bold text-primary block">4BHK / Duplex</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Large tech villa/penthouse</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Desired Room Type Pills -->
+<div class="mb-space-md">
+<label class="font-label-lg text-label-lg font-bold text-primary block mb-2">Desired Room Type</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-3.5 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">bathtub</span>
+<span>Private Room with Attached Bath</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">deck</span>
+<span>Private Room with Balcony</span>
+</button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">bed</span>
+<span>Shared Master Bedroom</span>
+</button>
+</div>
+</div>
+<!-- Furnishing & Density Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Furnishing Grade -->
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between mb-1">
+<span class="font-title-sm text-title-sm font-bold text-primary">Furnishing Grade</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Selected</span>
+</div>
+<p class="font-headline-sm text-headline-sm font-bold text-secondary mb-1">Fully Furnished</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Must include: ACs in bedrooms, queen/king beds with mattresses, dedicated study desks, washing machine, double-door fridge, and fiber router.
+              </p>
+</div>
+<!-- Household Density Preference -->
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between mb-1">
+<span class="font-title-sm text-title-sm font-bold text-primary">Household Density</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">group</span>
+</div>
+<p class="font-headline-sm text-headline-sm font-bold text-primary mb-1">2 – 3 Flatmates Max</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Preference: 3BHK with 1 room repurposed as dedicated WFH studio / guest space, or max 3 working professionals.
+              </p>
+</div>
+</div>
+</section>
+<!-- Section 5: Non-Negotiable Amenities Checklist -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary">Non-Negotiable Amenities Checklist</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Listings failing these parameters are automatically excluded from Pod digests.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-secondary-container/50 text-on-secondary-container font-bold hidden sm:block">5 Active Flags</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-sm">
+<!-- Item 1 -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="w-5 h-5 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-sm text-title-sm font-bold text-primary truncate">High-Speed Fiber Wi-Fi</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Airtel/Jio 300+ Mbps</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="w-5 h-5 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-sm text-title-sm font-bold text-primary truncate">100% DG Power Backup</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Mandatory for WFH spikes</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="w-5 h-5 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-sm text-title-sm font-bold text-primary truncate">In-Unit Washing Machine</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Front/Top load automatic</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="w-5 h-5 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-sm text-title-sm font-bold text-primary truncate">Two-Wheeler / Car Park</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Covered basement slot</p>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="w-5 h-5 rounded-md bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-sm text-title-sm font-bold text-primary truncate">Cook &amp; Maid Pre-Arranged</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Vetted society staff</p>
+</div>
+</div>
+<!-- Item 6: Optional Add Button -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest text-outline hover:text-primary hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="w-5 h-5 rounded-md bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-sm text-title-sm font-bold truncate">Add Custom Amenity</p>
+<p class="font-label-sm text-label-sm text-outline">e.g., Gated Gym, Balcony</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Action Footer with Save & Toast -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm sticky bottom-4 z-20 flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">cloud_done</span>
+<span>Draft saved locally. Ready to push to Indiranagar Tech Pod.</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="w-1/2 sm:w-auto px-4 py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-sm text-title-sm font-bold transition-colors" type="button">
+              Discard Changes
+            </button>
+<button class="w-1/2 sm:w-auto px-6 py-2.5 rounded-xl bg-secondary hover:bg-secondary/90 text-on-secondary font-title-sm text-title-sm font-bold shadow-md hover:shadow-lg flex items-center justify-center gap-2 transition-all" id="updatePrefBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Update Housing Preferences</span>
+</button>
+</div>
+</div>
+<!-- Feedback Toast Notification (Controlled by Vanilla JS) -->
+<div class="fixed bottom-20 right-6 z-50 bg-primary text-on-primary px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="w-7 h-7 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div>
+<p class="font-title-sm text-title-sm font-bold text-on-primary">Preferences updated.</p>
+<p class="font-body-sm text-body-sm text-inverse-primary">Accommodation feeds refreshed &amp; pod members notified.</p>
+</div>
+<button class="text-on-primary/60 hover:text-on-primary ml-2" id="closeToastBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</main>
+</div>
+</div>
+</div>
+<script>
+  // Toast Notification Micro-interaction
+  const updateBtn = document.getElementById('updatePrefBtn');
+  const toast = document.getElementById('toastNotification');
+  const closeToast = document.getElementById('closeToastBtn');
+
+  if (updateBtn && toast) {
+    updateBtn.addEventListener('click', () => {
+      // Show toast
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      // Auto hide after 4.5 seconds
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 4500);
+    });
+  }
+
+  if (closeToast && toast) {
+    closeToast.addEventListener('click', () => {
+      toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface py-space-xl mt-space-xl"><div class="max-w-7xl mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-5 gap-space-lg mb-space-lg"><div class="md:col-span-2 space-y-space-sm"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[18px]">group_work</span></div><span class="font-headline-sm text-headline-sm font-bold text-primary">RoomSync India</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Engineering radical trust, corporate SSO verification, and psychological compatibility matching for young professionals across Bengaluru, Pune, Hyderabad, and NCR.</p><div class="flex items-center gap-2 pt-2"><span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">ISO 27001 Certified</span><span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm">DPDP Act 2023 Compliant</span></div></div><div class="space-y-space-xs"><div class="font-title-sm text-title-sm font-bold text-primary">Trust &amp; Safety</div><ul class="space-y-1 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Aadhaar Vault Protocol</a></li><li><a class="hover:text-primary transition-colors" href="#">Workplace SSO Handshake</a></li><li><a class="hover:text-primary transition-colors" href="#">Police Verification Verification</a></li><li><a class="hover:text-primary transition-colors" href="#">Safety Guidelines &amp; SOS</a></li></ul></div><div class="space-y-space-xs"><div class="font-title-sm text-title-sm font-bold text-primary">Accommodation</div><ul class="space-y-1 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Gated Societies Bengaluru</a></li><li><a class="hover:text-primary transition-colors" href="#">Direct Owner Listings</a></li><li><a class="hover:text-primary transition-colors" href="#">Rental Agreement Builder</a></li><li><a class="hover:text-primary transition-colors" href="#">Brokerage-Free Guarantee</a></li></ul></div><div class="space-y-space-xs"><div class="font-title-sm text-title-sm font-bold text-primary">Support &amp; Rights</div><ul class="space-y-1 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">DPDP Grievance Officer</a></li><li><a class="hover:text-primary transition-colors" href="#">Roommate Conflict Mediation</a></li><li><a class="hover:text-primary transition-colors" href="#">Security Deposit Escrow</a></li><li><a class="hover:text-primary transition-colors" href="#">24x7 Help Desk</a></li></ul></div></div><div class="pt-space-md border-t border-surface-container-high/80 flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-outline"><p>© 2025 RoomSync Technologies India Pvt. Ltd. All rights reserved.</p><p class="text-[11px]">Compliant with the Digital Personal Data Protection Act, 2023. User data is encrypted at rest using AES-256 within Indian sovereign cloud infrastructure.</p></div></div></footer></body></html>

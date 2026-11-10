@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#f2f3ff", "secondary-fixed-dim": "#6bd8cb", "primary-fixed": "#e3dfff", "on-primary-fixed": "#181445", "tertiary-fixed-dim": "#ffb95f", "error": "#ba1a1a", "surface-variant": "#dae2fd", "surface-container-highest": "#dae2fd", "on-error": "#ffffff", "tertiary": "#140900", "on-secondary-fixed": "#00201d", "primary-fixed-dim": "#c4c1fb", "on-surface": "#131b2e", "outline": "#787680", "on-primary-fixed-variant": "#444173", "on-tertiary-fixed": "#2a1700", "surface-dim": "#d2d9f4", "on-primary": "#ffffff", "surface-tint": "#5b598c", "on-tertiary": "#ffffff", "surface-container": "#eaedff", "on-tertiary-container": "#c07a00", "surface-container-high": "#e2e7ff", "background": "#faf8ff", "primary-container": "#1e1b4b", "inverse-surface": "#283044", "secondary-container": "#86f2e4", "on-tertiary-fixed-variant": "#653e00", "secondary": "#006a61", "tertiary-fixed": "#ffddb8", "surface-bright": "#faf8ff", "tertiary-container": "#331d00", "on-surface-variant": "#47464f", "surface-container-lowest": "#ffffff", "on-primary-container": "#8683ba", "on-background": "#131b2e", "on-error-container": "#93000a", "secondary-fixed": "#89f5e7", "outline-variant": "#c8c5d0", "primary": "#070235", "on-secondary-fixed-variant": "#005049", "inverse-primary": "#c4c1fb", "inverse-on-surface": "#eef0ff", "on-secondary-container": "#006f66", "error-container": "#ffdad6", "on-secondary": "#ffffff", "surface": "#faf8ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "margin-desktop": "3rem" }, fontFamily: { "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "display-md": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go Back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-on-surface tracking-tight font-semibold truncate max-w-[200px]">Lifestyle Preferences</h1></div><div class="flex items-center gap-space-xs"><button class="min-h-[44px] px-space-md py-space-xs rounded-full bg-primary text-on-primary font-title-sm text-title-sm font-semibold hover:bg-primary-container transition-all flex items-center justify-center shadow-sm" id="header-action-button">Save</button><button aria-label="More options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-32">
+<!-- Top Blueprint Value Banner -->
+<section class="px-gutter-mobile pt-space-sm mb-space-md">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary to-primary-container p-space-md text-on-primary shadow-md">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-secondary-container/20 blur-xl pointer-events-none"></div>
+<div class="flex items-start gap-space-sm relative z-10">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center shrink-0 text-secondary-fixed">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">tune</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-space-xs mb-0.5">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Algorithmic Matcher</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-primary font-bold">Lifestyle Blueprint</h2>
+<p class="font-body-sm text-body-sm text-surface-variant mt-1 leading-relaxed">
+            Your calibration directly dictates the 90%+ Synergy Score across prospective roommates in your pod.
+          </p>
+</div>
+</div>
+<!-- Mini Progress Sync Metric -->
+<div class="mt-space-md pt-space-xs border-t border-surface-variant/15 flex items-center justify-between text-on-primary">
+<span class="font-label-md text-label-md text-surface-variant">Overall Matrix Density</span>
+<div class="flex items-center gap-space-xs">
+<div class="w-24 h-2 rounded-full bg-surface-variant/20 overflow-hidden">
+<div class="h-full bg-secondary-fixed rounded-full w-[94%]"></div>
+</div>
+<span class="font-label-md text-label-md font-bold text-secondary-fixed">94%</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category 1: Sleep Schedule -->
+<section class="px-gutter-mobile mb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Sleep &amp; Circadian Rhythm</h3>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>96% Weight</span>
+</div>
+</div>
+<!-- Bedtime & Wake Time Chips -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-sm">
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">nightlight</span> Bedtime
+          </span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-title-md text-title-md font-bold text-primary">11:30 PM</span>
+<button aria-label="Edit bedtime" class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[14px]">edit</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">wb_sunny</span> Wake-up
+          </span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-title-md text-title-md font-bold text-primary">07:30 AM</span>
+<button aria-label="Edit wake time" class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-secondary hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[14px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Rhythm Archetype Selector -->
+<div class="mb-space-sm">
+<label class="font-label-md text-label-md text-on-surface-variant block mb-1.5">Rhythm Archetype</label>
+<div class="grid grid-cols-3 gap-space-xs text-center">
+<div class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md opacity-70">
+            Early Bird<br><span class="font-label-sm text-label-sm opacity-80">(5-7 AM)</span>
+</div>
+<div class="p-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md shadow-sm">
+            Standard<br><span class="font-label-sm text-label-sm opacity-90">(7-9 AM)</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md opacity-70">
+            Night Owl<br><span class="font-label-sm text-label-sm opacity-80">(9+ AM)</span>
+</div>
+</div>
+</div>
+<!-- Quiet Hours Policy (Selected Card with Accent) -->
+<div class="relative overflow-hidden rounded-lg bg-secondary-container/30 p-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center mt-0.5 shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm font-semibold text-on-surface">Strict Quiet Post 11:00 PM</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Policy Set</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Headphones required for streaming &amp; gaming. No phone calls in shared common zones.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category 2: Cleanliness & Household Chores -->
+<section class="px-gutter-mobile mb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">sanitizer</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Cleanliness &amp; Chores</h3>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>92% Weight</span>
+</div>
+</div>
+<!-- Selected Baseline -->
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">cleaning_services</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Cleanliness Tier</span>
+<span class="font-title-sm text-title-sm font-semibold text-primary">Tidy &amp; Organized</span>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-secondary-fixed text-on-secondary-fixed rounded font-label-sm text-label-sm font-bold">Weekly Deep Clean</span>
+</div>
+<!-- Interactive Rules List -->
+<div class="space-y-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">group</span>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold block">Maid &amp; Cook Policy</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daily shared maid for dishes &amp; floor sweeping</p>
+</div>
+</div>
+<span class="shrink-0 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Mandatory</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">soup_kitchen</span>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold block">Dish Etiquette</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero dishes left in the sink overnight</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category 3: Kitchen & Food Habits -->
+<section class="px-gutter-mobile mb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Kitchen &amp; Diet Protocol</h3>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>95% Weight</span>
+</div>
+</div>
+<!-- Diet Pill Matrix -->
+<div class="mb-space-sm">
+<label class="font-label-md text-label-md text-on-surface-variant block mb-1.5">Dietary Profile</label>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-3 py-1.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">egg_alt</span> Non-Veg (Home-Cooked)
+          </span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+            Weekend Eggetarian
+          </span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+            Pure Veg Only
+          </span>
+</div>
+</div>
+<!-- Cooking Habit & Utensil Clause -->
+<div class="bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-title-sm text-title-sm font-semibold text-primary">Utensil Sharing &amp; Zoning</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Consensual</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Shared cookware accepted. Vegetarian-friendly separate pan &amp; ladle policy actively respected for non-veg preparation.
+        </p>
+</div>
+</div>
+</section>
+<!-- Category 4: Work From Home & Noise -->
+<section class="px-gutter-mobile mb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">laptop_mac</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Work From Home &amp; Noise</h3>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>90% Weight</span>
+</div>
+</div>
+<!-- Routine Bar -->
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-sm">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Weekly Presence</span>
+<span class="font-label-md text-label-md font-bold text-primary">Hybrid Setup</span>
+</div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<div class="h-2 flex-1 rounded-full bg-secondary"></div>
+<div class="h-2 flex-1 rounded-full bg-secondary"></div>
+<div class="h-2 flex-1 rounded-full bg-secondary"></div>
+<div class="h-2 flex-1 rounded-full bg-surface-container-highest"></div>
+<div class="h-2 flex-1 rounded-full bg-surface-container-highest"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          2–3 days WFH, 2 days office in Bellandur / Indiranagar corridor.
+        </p>
+</div>
+<!-- Acoustic Requirements -->
+<div class="flex items-start gap-space-xs p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">headset_mic</span>
+<div>
+<span class="font-title-sm text-title-sm text-primary font-semibold block">Acoustic Call Demands</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Frequent client syncs. Requires closed-door bedroom during 2:00 PM – 6:00 PM sprint blocks.
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category 5: Social Hosting & Guests -->
+<section class="px-gutter-mobile mb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">celebration</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Social Hosting &amp; Guests</h3>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>85% Weight</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<div class="p-space-sm rounded-lg bg-secondary-container/20 flex items-start gap-space-xs">
+<div class="w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm font-semibold text-primary">Overnight Guests</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Configured</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              24-hour advance heads-up in shared flat pod WhatsApp group.
+            </p>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] shrink-0 mt-0.5">wine_bar</span>
+<div>
+<span class="font-title-sm text-title-sm font-semibold text-primary">Weekend Gatherings</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Occasional quiet dinners with close friends (Max 1–2x/month). No open house parties.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dealbreakers & Non-Negotiables Matrix -->
+<section class="px-gutter-mobile mb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Hard Dealbreakers</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Candidates violating these are filtered out</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-space-xs">
+<!-- Dealbreaker 1: Non Smoker -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px]">smoke_free</span>
+<div>
+<span class="font-title-sm text-title-sm font-bold text-primary">Strict Non-Smoker</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Zero indoor vaping or cigarettes</span>
+</div>
+</div>
+<span class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-error font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">lock</span> Locked
+          </span>
+</div>
+<!-- Dealbreaker 2: Pet Friendly -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">pets</span>
+<div>
+<span class="font-title-sm text-title-sm font-bold text-primary">Pet Friendly</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Welcoming to trained indie dogs &amp; cats</span>
+</div>
+</div>
+<span class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">favorite</span> Positive
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom Calibration Bar -->
+<aside class="fixed bottom-0 left-0 w-full z-40 bg-surface/90 backdrop-blur-xl p-space-md shadow-[0_-4px_24px_rgba(7,2,53,0.06)] pb-safe">
+<div class="max-w-[390px] mx-auto flex flex-col items-center">
+<button class="w-full h-12 rounded-xl bg-secondary hover:bg-on-secondary-container text-on-secondary font-title-sm text-title-sm font-bold shadow-md transition-all flex items-center justify-center gap-space-xs active:scale-[0.98]" id="save-matrix-btn">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>Recalculate Synergy &amp; Save</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2 flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        Instantly updates affinity rankings for 14 active matches
+      </span>
+</div>
+</aside>
+</div>
+<script>
+  // Simple micro-interaction for matrix action
+  const saveBtn = document.getElementById('save-matrix-btn');
+  if (saveBtn) {
+    saveBtn.addEventListener('click', () => {
+      const originalHtml = saveBtn.innerHTML;
+      saveBtn.disabled = true;
+      saveBtn.innerHTML = `
+        <span class="material-symbols-outlined text-[20px] animate-spin">sync</span>
+        <span>Calibrating Compatibility...</span>
+      `;
+      setTimeout(() => {
+        saveBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px]">check</span>
+          <span>Matrix Updated!</span>
+        `;
+        setTimeout(() => {
+          saveBtn.innerHTML = originalHtml;
+          saveBtn.disabled = false;
+        }, 1500);
+      }, 700);
+    });
+  }
+</script></main>
+
+</body></html>

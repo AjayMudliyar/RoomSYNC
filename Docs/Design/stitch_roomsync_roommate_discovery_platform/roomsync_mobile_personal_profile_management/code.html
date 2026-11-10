@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#f2f3ff", "secondary-fixed-dim": "#6bd8cb", "primary-fixed": "#e3dfff", "on-primary-fixed": "#181445", "tertiary-fixed-dim": "#ffb95f", "error": "#ba1a1a", "surface-variant": "#dae2fd", "surface-container-highest": "#dae2fd", "on-error": "#ffffff", "tertiary": "#140900", "on-secondary-fixed": "#00201d", "primary-fixed-dim": "#c4c1fb", "on-surface": "#131b2e", "outline": "#787680", "on-primary-fixed-variant": "#444173", "on-tertiary-fixed": "#2a1700", "surface-dim": "#d2d9f4", "on-primary": "#ffffff", "surface-tint": "#5b598c", "on-tertiary": "#ffffff", "surface-container": "#eaedff", "on-tertiary-container": "#c07a00", "surface-container-high": "#e2e7ff", "background": "#faf8ff", "primary-container": "#1e1b4b", "inverse-surface": "#283044", "secondary-container": "#86f2e4", "on-tertiary-fixed-variant": "#653e00", "secondary": "#006a61", "tertiary-fixed": "#ffddb8", "surface-bright": "#faf8ff", "tertiary-container": "#331d00", "on-surface-variant": "#47464f", "surface-container-lowest": "#ffffff", "on-primary-container": "#8683ba", "on-background": "#131b2e", "on-error-container": "#93000a", "secondary-fixed": "#89f5e7", "outline-variant": "#c8c5d0", "primary": "#070235", "on-secondary-fixed-variant": "#005049", "inverse-primary": "#c4c1fb", "inverse-on-surface": "#eef0ff", "on-secondary-container": "#006f66", "error-container": "#ffdad6", "on-secondary": "#ffffff", "surface": "#faf8ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "margin-desktop": "3rem" }, fontFamily: { "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "display-md": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go Back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-on-surface tracking-tight font-semibold truncate max-w-[200px]">Edit Profile</h1></div><div class="flex items-center gap-space-xs"><button class="min-h-[44px] px-space-md py-space-xs rounded-full bg-primary text-on-primary font-title-sm text-title-sm font-semibold hover:bg-primary-container transition-all flex items-center justify-center shadow-sm" id="header-action-button">Save</button><button aria-label="More options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-gutter-mobile pb-space-xl">
+<!-- Status Feedback Banner (Delight Micro-Interaction) -->
+<div class="mt-space-sm mb-space-md bg-secondary-container text-on-secondary-container rounded-xl p-space-sm flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<p class="font-label-md text-label-md truncate">Verified Tenant Profile • Level 3 Match Ready</p>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest text-secondary px-2 py-0.5 rounded-full font-semibold shrink-0">98% Trust</span>
+</div>
+<!-- Avatar Management Hub -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col items-center text-center relative mb-space-lg">
+<div class="relative mb-space-md">
+<div class="w-28 h-28 rounded-full overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Aarav Sharma, a 26-year-old South Asian tech professional with neat black hair, warm engaging smile, wearing an olive knit crewneck sweater against a soft natural indoor plant and warm light background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYTm1_hmKCq1sEkQJ5ca4ymwbJwBwUraW0-ybk8Ef2j9Wnuv11e7r2D8U9Mej7wGuITgnf9t0QF0BE-TyxAyvc5PnvGtOwO7afk75Q2DyOjkkYNFk3_ASyXZrXPd3-eW-2W3xEZGxruJei9jUTA5KV_LvCcdDxl29HOCDUoScNf4OpA0ArEicqKAiAMUX3eeGpSW1EHkeHeMprLRWXmvx2T7ZhqZFyooNPK0D3RQ_H"/>
+</div>
+<button aria-label="Change photo" class="absolute bottom-0 right-0 w-9 h-9 bg-secondary text-on-secondary rounded-full flex items-center justify-center shadow-md active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</div>
+<!-- Privacy Guard Pill -->
+<div class="inline-flex items-center gap-1.5 bg-surface-container text-on-surface-variant px-3 py-1.5 rounded-full mb-space-md max-w-full">
+<span class="material-symbols-outlined text-[14px] text-secondary">lock</span>
+<span class="font-label-sm text-label-sm truncate">Visible to verified seekers only. Shielded from search engines.</span>
+</div>
+<!-- Quick Action Buttons -->
+<div class="grid grid-cols-2 gap-space-sm w-full">
+<button class="h-10 px-3 bg-surface-container-low hover:bg-surface-container text-primary font-title-sm text-title-sm rounded-lg flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">sync</span>
+<span class="truncate">Sync LinkedIn</span>
+</button>
+<button class="h-10 px-3 bg-surface-container-low hover:bg-surface-container text-primary font-title-sm text-title-sm rounded-lg flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+<span class="truncate">Upload Image</span>
+</button>
+</div>
+</div>
+<!-- Section 1: Basic Information -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">badge</span>
+<h2 class="font-title-md text-title-md text-primary font-semibold">Basic Information</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">Primary</span>
+</div>
+<!-- Govt Verified Legal Name (Locked) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant">Legal Full Name</label>
+<div class="flex items-center justify-between bg-surface-container-low px-3 py-2.5 rounded-lg">
+<div class="flex items-center gap-2 min-w-0">
+<span class="font-title-sm text-title-sm text-primary font-semibold truncate">Aarav Sharma</span>
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> DigiLocker
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Name matched with Govt Aadhaar card record.</p>
+</div>
+<!-- Preferred Display Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant" for="display-name">Preferred Name</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-3 py-2.5 rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" id="display-name" placeholder="How flatmates address you" type="text" value="Aarav"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-[18px] text-outline">edit</span>
+</div>
+</div>
+<!-- Verified Age -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant">Age</label>
+<div class="flex items-center justify-between bg-surface-container-low px-3 py-2.5 rounded-lg">
+<span class="font-title-sm text-title-sm text-primary font-semibold">26 years</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-2 py-0.5 rounded-full font-semibold">Age Verified</span>
+</div>
+</div>
+<!-- Pronoun Selector -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Pronouns</label>
+<div class="flex flex-wrap gap-2" id="pronoun-group">
+<button class="pronoun-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm transition-all" data-value="he" type="button">He/Him</button>
+<button class="pronoun-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" data-value="she" type="button">She/Her</button>
+<button class="pronoun-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" data-value="they" type="button">They/Them</button>
+<button class="pronoun-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" data-value="other" type="button">Prefer not to say</button>
+</div>
+</div>
+<!-- Bio & Quirks -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant" for="bio-text">Lifestyle Bio &amp; Habits</label>
+<span class="font-label-sm text-label-sm text-outline" id="char-counter">184/300</span>
+</div>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md p-3 rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors resize-none leading-relaxed" id="bio-text" maxlength="300" rows="4">Senior frontend developer at Swiggy. Love brewing specialty pour-overs, weekend cycling in Cubbon Park, and maintaining a quiet, clean home after 9 PM.</textarea>
+<p class="font-body-sm text-body-sm text-outline">Introduce your rhythm, downtime habits, and cleanliness quirks.</p>
+</div>
+</div>
+<!-- Section 2: Credibility & Affiliations -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">workspace_premium</span>
+<h2 class="font-title-md text-title-md text-primary font-semibold">Work &amp; Education</h2>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-semibold">SSO Linked</span>
+</div>
+<!-- Company Badge -->
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">domain</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<p class="font-title-sm text-title-sm text-primary font-bold truncate">Swiggy</p>
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Work SSO Verified</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">lock</span>
+</div>
+<!-- Designation -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant" for="designation">Current Designation</label>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-3 py-2.5 rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" id="designation" type="text" value="Senior Frontend Engineer"/>
+</div>
+<!-- College Alumni -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant">Alma Mater</label>
+<div class="flex items-center justify-between bg-surface-container-low px-3 py-2.5 rounded-lg">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">school</span>
+<span class="font-title-sm text-title-sm text-primary font-medium truncate">BITS Pilani</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary bg-surface-container-lowest px-2.5 py-1 rounded-full font-semibold shadow-sm hover:bg-secondary-container transition-colors" type="button">Verify .edu</button>
+</div>
+</div>
+</div>
+<!-- Section 3: Housing Intent & Neighborhoods -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">location_on</span>
+<h2 class="font-title-md text-title-md text-primary font-semibold">Location &amp; Corridors</h2>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full">Bengaluru</span>
+</div>
+<!-- Target City Display -->
+<div class="flex items-center justify-between bg-surface-container-low px-3 py-2.5 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">near_me</span>
+<span class="font-title-sm text-title-sm text-primary font-semibold">Bengaluru, Karnataka</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Primary Hub</span>
+</div>
+<!-- Locality Multi-Select Matrix -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Preferred Micro-Markets</label>
+<div class="flex flex-wrap gap-2" id="corridors-container">
+<button class="locality-tag px-3 py-1.5 rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span>Indiranagar</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<button class="locality-tag px-3 py-1.5 rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span>HAL 2nd Stage</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<button class="locality-tag px-3 py-1.5 rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span>Domlur</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<button class="px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-primary hover:bg-surface-variant flex items-center gap-1 transition-all" id="add-locality-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add Locality</span>
+</button>
+</div>
+</div>
+<!-- Commute Metric -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant">Commute Anchor</label>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-2.5 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[20px]">train</span>
+<span class="font-body-md text-body-md text-primary font-medium">Purple Line Metro (&lt; 1 km radius)</span>
+</div>
+</div>
+</div>
+<!-- Section 4: Discovery & Privacy Toggles -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-2 pb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">tune</span>
+<h2 class="font-title-md text-title-md text-primary font-semibold">Synergy &amp; Privacy</h2>
+</div>
+<!-- Discoverable Toggle -->
+<div class="flex items-center justify-between gap-space-sm p-3 bg-surface-container-low rounded-lg">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-title-sm text-title-sm text-primary font-semibold">Make Profile Discoverable</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Shown in Discovery feed to seekers with 80%+ synergy score.</span>
+</div>
+<button aria-checked="true" class="w-12 h-7 bg-secondary rounded-full relative p-0.5 transition-colors shrink-0" id="toggle-discoverable" role="switch" type="button">
+<span class="w-6 h-6 bg-on-secondary rounded-full shadow-md block transform translate-x-5 transition-transform" id="switch-thumb-1"></span>
+</button>
+</div>
+<!-- Incognito Toggle -->
+<div class="flex items-center justify-between gap-space-sm p-3 bg-surface-container-low rounded-lg">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-title-sm text-title-sm text-primary font-semibold">Incognito Browsing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Browse roommate and flat profiles without logging view history.</span>
+</div>
+<button aria-checked="false" class="w-12 h-7 bg-surface-container-highest rounded-full relative p-0.5 transition-colors shrink-0" id="toggle-incognito" role="switch" type="button">
+<span class="w-6 h-6 bg-surface-container-lowest rounded-full shadow-md block transform translate-x-0 transition-transform" id="switch-thumb-2"></span>
+</button>
+</div>
+</div>
+<!-- Sticky Mobile Action Footer -->
+<div class="sticky bottom-2 w-full pt-space-xs z-30">
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl p-2 rounded-xl shadow-xl flex items-center justify-between gap-2">
+<button class="w-full h-12 bg-secondary hover:bg-secondary/90 active:scale-[0.99] text-on-secondary font-title-sm text-title-sm font-semibold rounded-lg flex items-center justify-center gap-2 shadow-md transition-all" id="sticky-save-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Save Profile Changes</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Character counter for bio
+  const bioInput = document.getElementById('bio-text');
+  const charCounter = document.getElementById('char-counter');
+  if (bioInput && charCounter) {
+    bioInput.addEventListener('input', () => {
+      charCounter.textContent = `${bioInput.value.length}/300`;
+    });
+  }
+
+  // Pronoun radio-style pill switcher
+  const pronounButtons = document.querySelectorAll('.pronoun-btn');
+  pronounButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      pronounButtons.forEach((b) => {
+        b.className = 'pronoun-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-all';
+      });
+      btn.className = 'pronoun-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm transition-all';
+    });
+  });
+
+  // Switch Toggles
+  const setupToggle = (btnId, thumbId, initialActive) => {
+    const btn = document.getElementById(btnId);
+    const thumb = document.getElementById(thumbId);
+    if (!btn || !thumb) return;
+    let isActive = initialActive;
+
+    btn.addEventListener('click', () => {
+      isActive = !isActive;
+      btn.setAttribute('aria-checked', isActive ? 'true' : 'false');
+      if (isActive) {
+        btn.classList.remove('bg-surface-container-highest');
+        btn.classList.add('bg-secondary');
+        thumb.classList.remove('translate-x-0', 'bg-surface-container-lowest');
+        thumb.classList.add('translate-x-5', 'bg-on-secondary');
+      } else {
+        btn.classList.remove('bg-secondary');
+        btn.classList.add('bg-surface-container-highest');
+        thumb.classList.remove('translate-x-5', 'bg-on-secondary');
+        thumb.classList.add('translate-x-0', 'bg-surface-container-lowest');
+      }
+    });
+  };
+
+  setupToggle('toggle-discoverable', 'switch-thumb-1', true);
+  setupToggle('toggle-incognito', 'switch-thumb-2', false);
+
+  // Micro-interaction for Save Action Buttons
+  const triggerSaveNotification = (btn) => {
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Saving Profile...</span>`;
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">done</span><span>Changes Saved!</span>`;
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 1800);
+    }, 700);
+  };
+
+  const stickySave = document.getElementById('sticky-save-btn');
+  if (stickySave) {
+    stickySave.addEventListener('click', () => triggerSaveNotification(stickySave));
+  }
+
+  // Bind to App Shell top-right action button if present
+  const headerAction = document.getElementById('header-action-button');
+  if (headerAction) {
+    headerAction.textContent = 'Save';
+    headerAction.addEventListener('click', () => {
+      if (stickySave) triggerSaveNotification(stickySave);
+    });
+  }
+
+  // Interactive chip selection
+  const localityTags = document.querySelectorAll('.locality-tag');
+  localityTags.forEach(tag => {
+    tag.addEventListener('click', () => {
+      const isSelected = tag.classList.contains('bg-secondary');
+      if (isSelected) {
+        tag.className = 'locality-tag px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container flex items-center gap-1 active:scale-95 transition-all';
+        const icon = tag.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = 'add';
+      } else {
+        tag.className = 'locality-tag px-3 py-1.5 rounded-full font-label-md text-label-md bg-secondary text-on-secondary shadow-sm flex items-center gap-1 active:scale-95 transition-all';
+        const icon = tag.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = 'check';
+      }
+    });
+  });
+</script></main></body></html>

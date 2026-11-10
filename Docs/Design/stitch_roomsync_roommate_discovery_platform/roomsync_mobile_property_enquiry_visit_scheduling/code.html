@@ -1,0 +1,432 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-container":"#1e1b4b","tertiary-container":"#331d00","tertiary":"#140900","primary-fixed-dim":"#c4c1fb","background":"#faf8ff","surface-dim":"#d2d9f4","surface-container-low":"#f2f3ff","secondary-container":"#86f2e4","on-secondary":"#ffffff","surface-variant":"#dae2fd","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#653e00","tertiary-fixed-dim":"#ffb95f","secondary-fixed":"#89f5e7","on-surface":"#131b2e","on-primary-fixed-variant":"#444173","surface-tint":"#5b598c","on-tertiary-container":"#c07a00","on-secondary-fixed-variant":"#005049","on-tertiary-fixed":"#2a1700","inverse-on-surface":"#eef0ff","on-error":"#ffffff","on-background":"#131b2e","surface-container-highest":"#dae2fd","outline-variant":"#c8c5d0","error-container":"#ffdad6","surface-container-high":"#e2e7ff","inverse-surface":"#283044","on-primary":"#ffffff","on-secondary-container":"#006f66","on-primary-container":"#8683ba","surface-container":"#eaedff","on-primary-fixed":"#181445","tertiary-fixed":"#ffddb8","primary-fixed":"#e3dfff","on-error-container":"#93000a","surface-container-lowest":"#ffffff","surface":"#faf8ff","outline":"#787680","inverse-primary":"#c4c1fb","error":"#ba1a1a","secondary":"#006a61","on-surface-variant":"#47464f","primary":"#070235","surface-bright":"#faf8ff","secondary-fixed-dim":"#6bd8cb","on-secondary-fixed":"#00201d"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-desktop":"2rem","space-xl":"2.5rem","space-xs":"0.25rem","space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","margin-mobile":"1rem","margin-desktop":"3rem","margin":"1.5rem","gutter-mobile":"1rem","gutter":"1.5rem"},fontFamily:{"label-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"title-sm":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"display-md":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"400"}],"metric-display":["32px",{lineHeight:"36px",letterSpacing:"-0.03em",fontWeight:"800"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.015em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><button aria-label="Go back" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-primary truncate">Property Enquiry</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Share property" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[20px]">share</span></button><button aria-label="More actions" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[20px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-safe pb-32">
+<div class="px-margin-mobile pt-space-md flex flex-col gap-space-md">
+<!-- Property Context Summary Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex gap-space-sm items-start">
+<div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Sunlit contemporary 3BHK high-rise apartment in Indiranagar Bengaluru with Scandinavian interior, wooden accents, lush potted plants, floor-to-ceiling glass balcony doors letting in soft morning amber sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUjEHxGeP34xDd1ULFEx6stCtk1jjghin0fjxFDjrEMM4S6BLNMfthEoA0hLNx4k3PeJhNWeR8S7tmOz1boSbRWcoBfQ89veXTpPU4BB-xonqHn5YeI3NbF-cINaRrTlHOPOrRl4v28ExoBMzfUoBb13tIQyPruE9m8vxlVvjj2iookEjrfsn29HMiC4LWknvZb8NvindWHWz22iLxOQpzmC2crRLe_bHj23vEEsLK">
+<div class="absolute bottom-1 left-1 bg-primary/80 backdrop-blur-md px-1.5 py-0.5 rounded text-[10px] font-label-sm text-on-primary">
+            3BHK
+          </div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span class="truncate">Kaveri 2.0 Deed Verified</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface truncate mt-0.5">
+            Prestige Palms Suites
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Indiranagar 100ft Rd, Bengaluru
+          </p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary">₹72,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/mo</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/30 px-1.5 py-0.5 rounded-full ml-1">
+              ₹24,000 / member
+            </span>
+</div>
+</div>
+</div>
+<!-- Landlord Micro Profile Strip -->
+<div class="bg-surface-container-low rounded-xl px-space-sm py-2 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md">
+            SN
+          </div>
+<div class="min-w-0 flex flex-col">
+<span class="font-label-md text-label-md text-on-surface truncate">Col. Suresh Nair (Retd.)</span>
+<span class="font-body-sm text-[11px] leading-tight text-on-surface-variant">Verified Property Owner</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm bg-surface-container-lowest px-2 py-1 rounded-full shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[13px] text-secondary">bolt</span>
+<span>100% response</span>
+</div>
+</div>
+</div>
+<!-- Reassurance Banner -->
+<div class="bg-surface-container-high rounded-xl p-3 flex gap-2.5 items-start">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0 mt-0.5">shield_lock</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+<strong class="font-label-md text-on-surface">No automatic lock-in:</strong> Submitting sends an enquiry to the verified owner. It does not guarantee booking or lock the lease until both parties execute the verified digital agreement.
+      </p>
+</div>
+<!-- Main Enquiry Form -->
+<form class="flex flex-col gap-space-lg" onsubmit="event.preventDefault();">
+<!-- 1. Enquiry Mode Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span>1. Who is touring?</span>
+</label>
+<div class="grid grid-cols-1 gap-2.5">
+<label class="relative flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer border-2 transition-all" id="mode-pod-card">
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 text-on-secondary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface">With Roommate Pod</span>
+<span class="bg-secondary-container text-on-secondary-container text-[10px] font-label-sm px-1.5 py-0.5 rounded-full">Recommended</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Indiranagar Tech Cohort • 3 Verified Members</span>
+</div>
+</div>
+<input checked="" class="accent-secondary w-5 h-5 flex-shrink-0 ml-2" name="enquiry_mode" onchange="toggleEnquiryMode(this)" type="radio" value="pod">
+</label>
+<label class="relative flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all" id="mode-solo-card">
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface">Individual Seeker</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Looking for single room or finding co-tenants later</span>
+</div>
+</div>
+<input class="accent-secondary w-5 h-5 flex-shrink-0 ml-2" name="enquiry_mode" onchange="toggleEnquiryMode(this)" type="radio" value="individual">
+</label>
+</div>
+</div>
+<!-- 2. Preferred Visit Slot -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface">2. Preferred In-Person Visit Slot</label>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/20 px-2 py-0.5 rounded">Owner Prefers Weekends</span>
+</div>
+<!-- Date Chips Horizontal Scroll -->
+<div class="flex gap-2 overflow-x-auto pb-1 pt-1 no-scrollbar -mx-margin-mobile px-margin-mobile">
+<button class="date-chip flex-shrink-0 min-h-[44px] px-3.5 py-2 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md flex flex-col items-center justify-center shadow-sm" onclick="selectDateChip(this, 'Saturday, Oct 14')" type="button">
+<span>Sat, Oct 14</span>
+<span class="text-[10px] font-body-sm opacity-80">Slots available</span>
+</button>
+<button class="date-chip flex-shrink-0 min-h-[44px] px-3.5 py-2 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md flex flex-col items-center justify-center shadow-sm" onclick="selectDateChip(this, 'Sunday, Oct 15')" type="button">
+<span>Sun, Oct 15</span>
+<span class="text-[10px] font-body-sm text-on-surface-variant">Popular</span>
+</button>
+<button class="date-chip flex-shrink-0 min-h-[44px] px-3.5 py-2 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md flex flex-col items-center justify-center shadow-sm" onclick="selectDateChip(this, 'Monday, Oct 16')" type="button">
+<span>Mon, Oct 16</span>
+<span class="text-[10px] font-body-sm text-on-surface-variant">Evening only</span>
+</button>
+<button class="date-chip flex-shrink-0 min-h-[44px] px-3.5 py-2 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center gap-1 shadow-sm" onclick="selectDateChip(this, 'Custom Date')" type="button">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>Custom</span>
+</button>
+</div>
+<!-- Time Windows -->
+<div class="grid grid-cols-1 gap-2 mt-1">
+<button class="time-chip min-h-[44px] p-3 rounded-xl bg-secondary-container/30 text-on-secondary-container text-left flex items-center justify-between transition-colors shadow-sm" onclick="selectTimeChip(this, '11:00 AM', 'Morning (10:00 AM - 12:00 PM)')" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px]">light_mode</span>
+<span class="font-title-sm text-title-sm">Morning (10:00 AM - 12:00 PM)</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px] check-icon">check_circle</span>
+</button>
+<button class="time-chip min-h-[44px] p-3 rounded-xl bg-surface-container-lowest text-on-surface text-left flex items-center justify-between transition-colors shadow-sm" onclick="selectTimeChip(this, '3:30 PM', 'Afternoon (2:00 PM - 5:00 PM)')" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">wb_sunny</span>
+<span class="font-title-sm text-title-sm">Afternoon (2:00 PM - 5:00 PM)</span>
+</div>
+<span class="material-symbols-outlined text-transparent text-[20px] check-icon">check_circle</span>
+</button>
+<button class="time-chip min-h-[44px] p-3 rounded-xl bg-surface-container-lowest text-on-surface text-left flex items-center justify-between transition-colors shadow-sm" onclick="selectTimeChip(this, '6:00 PM', 'Evening (5:00 PM - 7:30 PM)')" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">nightlight</span>
+<span class="font-title-sm text-title-sm">Evening (5:00 PM - 7:30 PM)</span>
+</div>
+<span class="material-symbols-outlined text-transparent text-[20px] check-icon">check_circle</span>
+</button>
+</div>
+<!-- Slot Confirmation Indicator -->
+<div class="bg-surface-container rounded-xl px-3 py-2 flex items-center justify-between mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">schedule</span>
+<span class="font-body-sm text-body-sm text-on-surface">Requested Appointment:</span>
+</div>
+<span class="font-label-md text-label-md text-primary" id="selected-slot-preview">Saturday, 11:00 AM</span>
+</div>
+</div>
+<!-- 3. Target Move-in Date -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="movein-date">3. Target Move-in Date</label>
+<div class="relative flex items-center">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">flight_land</span>
+</div>
+<input class="w-full min-h-[48px] pl-11 pr-28 py-3 rounded-xl bg-surface-container-lowest text-on-surface font-title-sm text-title-sm shadow-sm outline-none focus:ring-2 focus:ring-secondary transition-all" id="movein-date" type="text" value="November 1, 2024">
+<div class="absolute right-2">
+<span class="bg-surface-container text-on-surface-variant text-[11px] font-label-md px-2.5 py-1.5 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timelapse</span>
+              Within 30d
+            </span>
+</div>
+</div>
+</div>
+<!-- 4. Group Occupancy Profile -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface">4. Occupancy &amp; Lease Term</label>
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface">3 Working Professionals</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Swiggy (2) &amp; Razorpay (1) Engineers</span>
+</div>
+</div>
+<div class="flex -space-x-1.5 overflow-hidden flex-shrink-0">
+<div class="inline-block h-6 w-6 rounded-full bg-primary-container text-on-primary text-[10px] font-label-sm text-center leading-6">AS</div>
+<div class="inline-block h-6 w-6 rounded-full bg-secondary text-on-secondary text-[10px] font-label-sm text-center leading-6">RK</div>
+<div class="inline-block h-6 w-6 rounded-full bg-surface-dim text-on-surface text-[10px] font-label-sm text-center leading-6">PM</div>
+</div>
+</div>
+<div class="pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1.5 block">Intended Lease Tenure</span>
+<div class="grid grid-cols-2 gap-2">
+<button class="lease-chip min-h-[44px] py-2 px-3 rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm" onclick="selectLeaseChip(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>11 Months (Standard)</span>
+</button>
+<button class="lease-chip min-h-[44px] py-2 px-3 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm" onclick="selectLeaseChip(this)" type="button">
+<span>22 Months (Long term)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Message to Landlord -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface" for="intro-message">5. Message to Landlord</label>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Personalized note builds trust</span>
+</div>
+<!-- Quick Append Chips -->
+<div class="flex gap-1.5 overflow-x-auto pb-1 no-scrollbar -mx-margin-mobile px-margin-mobile">
+<button class="min-h-[36px] flex-shrink-0 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors" onclick="appendPrompt('+ Mention WFH setup')" type="button">
+            + Mention WFH setup
+          </button>
+<button class="min-h-[36px] flex-shrink-0 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors" onclick="appendPrompt('+ Non-smoker note')" type="button">
+            + Non-smoker note
+          </button>
+<button class="min-h-[36px] flex-shrink-0 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors" onclick="appendPrompt('+ Ask about parking spots')" type="button">
+            + Ask about parking spots
+          </button>
+</div>
+<div class="relative bg-surface-container-lowest rounded-xl p-3 shadow-sm">
+<textarea class="w-full bg-transparent font-body-md text-body-md text-on-surface resize-none outline-none leading-relaxed" id="intro-message" rows="4">Hello Col. Suresh, we are a group of 3 verified tech professionals looking to lease Prestige Palms 3BHK starting Nov 1. We would love to tour the flat this Saturday at 11:00 AM. Looking forward to meeting you.</textarea>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+              AI Warmth Optimized
+            </span>
+<span class="font-body-sm text-[11px] text-on-surface-variant" id="char-count">194 chars</span>
+</div>
+</div>
+</div>
+<!-- 6. Privacy & Dossier Sharing Toggle -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex items-start justify-between gap-3">
+<div class="flex items-start gap-3 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container/30 text-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">contact_emergency</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface">Share Verified Dossier</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+              Enables Col. Suresh to view employment SSO &amp; verification scorecards. Your phone number stays masked until mutual approval.
+            </p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0 mt-1 min-h-[44px] min-w-[44px] justify-center">
+<input checked="" class="sr-only peer" id="dossier-toggle" onchange="handleToggleState(this)" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[14px] after:left-[4px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Trust Badges Summary Carousel -->
+<div class="bg-surface-container-low rounded-xl p-3 flex items-center justify-around text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">id_card</span>
+<span class="font-label-sm text-label-sm text-on-surface">Aadhaar KYC</span>
+<span class="text-[10px] text-secondary font-label-sm">Verified</span>
+</div>
+<div class="h-6 w-px bg-surface-variant"></div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">corporate_fare</span>
+<span class="font-label-sm text-label-sm text-on-surface">Work SSO</span>
+<span class="text-[10px] text-secondary font-label-sm">3/3 Matches</span>
+</div>
+<div class="h-6 w-px bg-surface-variant"></div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">assured_workload</span>
+<span class="font-label-sm text-label-sm text-on-surface">Credit Band</span>
+<span class="text-[10px] text-secondary font-label-sm">Tier-1 Elite</span>
+</div>
+</div>
+<!-- Spacer for sticky bottom bar -->
+<div class="h-28"></div>
+</form>
+</div>
+<!-- Sticky Bottom Action Bar -->
+<div class="fixed bottom-0 inset-x-0 z-40 bg-surface/90 backdrop-blur-xl px-margin-mobile pt-3 pb-safe shadow-[0_-4px_24px_rgba(0,0,0,0.06)]">
+<div class="flex flex-col gap-2 max-w-lg mx-auto">
+<button class="w-full min-h-[52px] bg-secondary hover:bg-secondary-container hover:text-on-secondary-container active:scale-[0.99] transition-all rounded-xl text-on-secondary font-title-sm text-title-sm flex items-center justify-center gap-2 shadow-lg shadow-secondary/20" id="submit-enquiry-btn" onclick="handleSubmitEnquiry()" type="button">
+<span class="material-symbols-outlined text-[20px]">send_time_extension</span>
+<span>Submit Visit Enquiry</span>
+</button>
+<div class="flex items-center justify-center gap-2 text-center pb-1">
+<span class="material-symbols-outlined text-secondary text-[15px]">verified_user</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+          Zero brokerage guarantee <span class="mx-1">•</span> SLA response in &lt; 12h
+        </p>
+</div>
+</div>
+</div>
+<!-- Micro Interaction Confirmation Sheet (Hidden initially) -->
+<div class="fixed top-20 inset-x-4 z-50 transform -translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="success-toast">
+<div class="bg-primary text-on-primary rounded-xl p-3.5 shadow-2xl flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">task_alt</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-white">Enquiry Dispatched to Col. Suresh!</span>
+<span class="font-body-sm text-[11px] text-primary-fixed-dim">He typically confirms appointment slots within 3 hours.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let selectedDate = 'Saturday, Oct 14';
+  let selectedTime = '11:00 AM';
+
+  function updateSlotPreview() {
+    const previewEl = document.getElementById('selected-slot-preview');
+    if (previewEl) {
+      previewEl.textContent = `${selectedDate.split(',')[0]}, ${selectedTime}`;
+    }
+  }
+
+  function selectDateChip(el, dateText) {
+    document.querySelectorAll('.date-chip').forEach(chip => {
+      chip.className = 'date-chip flex-shrink-0 min-h-[44px] px-3.5 py-2 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md flex flex-col items-center justify-center shadow-sm';
+      const sub = chip.querySelector('span:last-child');
+      if (sub && !sub.classList.contains('material-symbols-outlined')) {
+        sub.className = 'text-[10px] font-body-sm text-on-surface-variant';
+      }
+    });
+
+    el.className = 'date-chip flex-shrink-0 min-h-[44px] px-3.5 py-2 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md flex flex-col items-center justify-center shadow-sm';
+    const activeSub = el.querySelector('span:last-child');
+    if (activeSub && !activeSub.classList.contains('material-symbols-outlined')) {
+      activeSub.className = 'text-[10px] font-body-sm opacity-80';
+    }
+
+    selectedDate = dateText;
+    updateSlotPreview();
+  }
+
+  function selectTimeChip(el, timeVal, windowLabel) {
+    document.querySelectorAll('.time-chip').forEach(chip => {
+      chip.className = 'time-chip min-h-[44px] p-3 rounded-xl bg-surface-container-lowest text-on-surface text-left flex items-center justify-between transition-colors shadow-sm';
+      const icon = chip.querySelector('.check-icon');
+      if (icon) {
+        icon.className = 'material-symbols-outlined text-transparent text-[20px] check-icon';
+      }
+    });
+
+    el.className = 'time-chip min-h-[44px] p-3 rounded-xl bg-secondary-container/30 text-on-secondary-container text-left flex items-center justify-between transition-colors shadow-sm';
+    const activeIcon = el.querySelector('.check-icon');
+    if (activeIcon) {
+      activeIcon.className = 'material-symbols-outlined text-secondary text-[20px] check-icon';
+    }
+
+    selectedTime = timeVal;
+    updateSlotPreview();
+  }
+
+  function selectLeaseChip(el) {
+    document.querySelectorAll('.lease-chip').forEach(chip => {
+      chip.className = 'lease-chip min-h-[44px] py-2 px-3 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm';
+      const icon = chip.querySelector('.material-symbols-outlined');
+      if (icon) icon.remove();
+    });
+
+    el.className = 'lease-chip min-h-[44px] py-2 px-3 rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm';
+    const check = document.createElement('span');
+    check.className = 'material-symbols-outlined text-[16px]';
+    check.textContent = 'check';
+    el.prepend(check);
+  }
+
+  function appendPrompt(promptText) {
+    const cleanText = promptText.replace('+ ', '');
+    const textarea = document.getElementById('intro-message');
+    if (textarea) {
+      if (!textarea.value.includes(cleanText)) {
+        textarea.value += ' ' + cleanText + '.';
+      }
+      const charCounter = document.getElementById('char-count');
+      if (charCounter) {
+        charCounter.textContent = textarea.value.length + ' chars';
+      }
+      textarea.focus();
+    }
+  }
+
+  function toggleEnquiryMode(radioInput) {
+    const podCard = document.getElementById('mode-pod-card');
+    const soloCard = document.getElementById('mode-solo-card');
+    if (radioInput.value === 'pod') {
+      podCard.classList.add('border-2');
+      soloCard.classList.remove('border-2');
+    } else {
+      soloCard.classList.add('border-2');
+      podCard.classList.remove('border-2');
+    }
+  }
+
+  function handleToggleState(checkbox) {
+    // Micro tactile visual feedback
+    const parent = checkbox.closest('div.bg-surface-container-lowest');
+    if (parent) {
+      parent.classList.add('scale-[0.99]');
+      setTimeout(() => parent.classList.remove('scale-[0.99]'), 150);
+    }
+  }
+
+  function handleSubmitEnquiry() {
+    const btn = document.getElementById('submit-enquiry-btn');
+    const toast = document.getElementById('success-toast');
+    
+    if (btn) {
+      btn.disabled = true;
+      btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span> Sending Visit Request...`;
+      
+      setTimeout(() => {
+        btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">done_all</span> Enquiry Submitted`;
+        btn.className = 'w-full min-h-[52px] bg-secondary-container text-on-secondary-container font-title-sm text-title-sm flex items-center justify-center gap-2 rounded-xl shadow';
+        
+        if (toast) {
+          toast.classList.remove('-translate-y-24', 'opacity-0');
+          toast.classList.add('translate-y-0', 'opacity-100');
+          setTimeout(() => {
+            toast.classList.add('-translate-y-24', 'opacity-0');
+            toast.classList.remove('translate-y-0', 'opacity-100');
+          }, 4000);
+        }
+      }, 900);
+    }
+  }
+
+  // Character counter listener
+  const msgInput = document.getElementById('intro-message');
+  if (msgInput) {
+    msgInput.addEventListener('input', function() {
+      const counter = document.getElementById('char-count');
+      if (counter) {
+        counter.textContent = this.value.length + ' chars';
+      }
+    });
+  }
+</script></main>
+
+</body></html>

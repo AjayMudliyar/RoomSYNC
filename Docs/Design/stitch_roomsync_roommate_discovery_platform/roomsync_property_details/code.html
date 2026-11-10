@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#89f5e7",
+          "surface": "#faf8ff",
+          "on-secondary": "#ffffff",
+          "on-tertiary-fixed-variant": "#653e00",
+          "secondary": "#006a61",
+          "outline": "#787680",
+          "surface-container-high": "#e2e7ff",
+          "on-secondary-container": "#006f66",
+          "outline-variant": "#c8c5d0",
+          "surface-variant": "#dae2fd",
+          "surface-tint": "#5b598c",
+          "on-surface": "#131b2e",
+          "surface-container-lowest": "#ffffff",
+          "secondary-fixed-dim": "#6bd8cb",
+          "tertiary-fixed": "#ffddb8",
+          "on-primary": "#ffffff",
+          "on-background": "#131b2e",
+          "tertiary-fixed-dim": "#ffb95f",
+          "error-container": "#ffdad6",
+          "surface-bright": "#faf8ff",
+          "primary-fixed-dim": "#c4c1fb",
+          "surface-container": "#eaedff",
+          "surface-container-highest": "#dae2fd",
+          "primary-container": "#1e1b4b",
+          "on-primary-fixed-variant": "#444173",
+          "inverse-on-surface": "#eef0ff",
+          "tertiary": "#140900",
+          "on-secondary-fixed-variant": "#005049",
+          "on-tertiary-container": "#c07a00",
+          "tertiary-container": "#331d00",
+          "secondary-container": "#86f2e4",
+          "surface-dim": "#d2d9f4",
+          "inverse-primary": "#c4c1fb",
+          "on-primary-fixed": "#181445",
+          "primary": "#070235",
+          "primary-fixed": "#e3dfff",
+          "on-tertiary": "#ffffff",
+          "surface-container-low": "#f2f3ff",
+          "on-primary-container": "#8683ba",
+          "on-tertiary-fixed": "#2a1700",
+          "background": "#faf8ff",
+          "inverse-surface": "#283044",
+          "on-surface-variant": "#47464f",
+          "error": "#ba1a1a",
+          "on-secondary-fixed": "#00201d",
+          "on-error-container": "#93000a",
+          "on-error": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "margin": "1.5rem",
+          "space-md": "1rem",
+          "gutter-desktop": "2rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem",
+          "margin-desktop": "3rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "metric-display": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "title-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "metric-display": [
+            "32px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-md": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="accommodation-discovery" href="#"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-secondary-fixed shadow-[0_4px_12px_rgba(7,2,53,0.18)]"><span class="material-symbols-outlined text-[24px]">sync_alt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">RoomSync</span><span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">Verified Living</span></div></a><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-secondary text-[18px]">location_on</span><span class="font-label-md text-label-md text-on-surface">Bengaluru, KA</span><span class="material-symbols-outlined text-outline text-[18px]">keyboard_arrow_down</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-full bg-surface-container-low" data-active-classes="bg-secondary-container text-on-secondary-container font-title-sm font-bold shadow-sm"><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="discovery" href="#">Discover</a><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="accommodation-discovery" href="#">Accommodation</a><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="roommate-groups" href="#">Roommate Groups</a><a class="relative px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" data-path="requests" href="#">Requests<span class="px-1.5 py-0.5 rounded-full bg-surface-variant text-on-surface font-label-sm text-label-sm">3</span></a><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="messages" href="#">Messages<span class="px-1.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">2</span></a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><span class="material-symbols-outlined text-outline text-[18px]">search</span><span class="font-body-sm text-body-sm text-outline-variant pr-space-lg">Quick find flats, roommates...</span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">⌘K</kbd></div><button class="relative w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-on-surface-variant text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center ring-2 ring-surface"><span class="material-symbols-outlined text-on-secondary text-[11px]">check</span></div></div><div class="hidden sm:flex flex-col"><span class="font-title-sm text-title-sm text-on-surface leading-tight">Aarav Sharma</span><span class="font-label-sm text-label-sm text-secondary">Aadhaar Verified</span></div></div></div></div><div class="bg-surface-container-low/70 backdrop-blur-md border-t border-surface-container"><div class="max-w-[1280px] mx-auto px-gutter-desktop py-2.5 flex items-center justify-between gap-space-md overflow-x-auto"><div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md shrink-0"><span class="font-label-sm text-label-sm uppercase font-bold text-secondary tracking-wider">Accommodation</span><span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container-highest text-secondary font-bold"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="accommodation-discovery" href="#">Explore Properties</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="group-accommodation-search" href="#">Pod Group Search</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="saved-properties-comparison" href="#">Saved &amp; Compare</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="property-enquiry-visit-scheduling" href="#">Enquiries &amp; Visits</a><a aria-current="page" class="px-space-sm py-1 rounded-lg transition-all bg-surface-container-highest text-secondary font-bold" data-path="property-details" href="#">Property Profile</a></nav></div><div class="hidden md:flex items-center gap-space-md shrink-0"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm"><span class="material-symbols-outlined text-[15px]">verified</span><span>Verified Lease Agreements</span></div><a class="flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-on-secondary-container transition-colors" data-path="group-accommodation-search" href="#"><span class="material-symbols-outlined text-[16px]">groups_2</span><span>Split by Pod</span></a></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Sticky Contextual Header Strip -->
+<div class="sticky top-20 z-40 bg-surface/90 backdrop-blur-xl shadow-sm py-space-sm transition-all duration-200">
+<div class="max-w-[1280px] mx-auto px-gutter-desktop flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md truncate">
+<a class="hover:text-secondary transition-colors" href="#">Accommodation</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<a class="hover:text-secondary transition-colors" href="#">Bengaluru</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<a class="hover:text-secondary transition-colors" href="#">Indiranagar</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<span class="text-on-surface font-semibold truncate">Prestige Palms Duplex 3BHK</span>
+</nav>
+<div class="flex items-center gap-space-sm mt-0.5">
+<h1 class="font-headline-sm text-headline-sm text-primary font-bold truncate">3BHK Duplex at Prestige Palms</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            Verified Owner • ID &amp; Title Deed Checked
+          </span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="flex items-center gap-1.5 px-space-sm py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-title-sm text-title-sm font-semibold transition-all" id="podShareBtn">
+<span class="material-symbols-outlined text-[18px] text-secondary">groups</span>
+<span class="hidden sm:inline">Share with Indiranagar Pod</span>
+<span class="sm:hidden">Pod Share</span>
+</button>
+<button class="w-10 h-10 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low flex items-center justify-center text-on-surface shadow-sm transition-all group" id="shortlistBtn">
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-error transition-colors" id="shortlistIcon">favorite</span>
+</button>
+<a class="flex items-center gap-1.5 px-space-md py-2 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-title-sm text-title-sm font-semibold shadow-md transition-all" href="#visitBookingSection">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Schedule Visit</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Main Container -->
+<div class="max-w-[1280px] mx-auto px-gutter-desktop py-space-md w-full">
+<!-- Address & Transit Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md pb-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary text-[20px]">location_on</span>
+<span class="text-on-surface font-medium">12th Main Road, HAL 2nd Stage, Indiranagar, Bengaluru, KA 560038</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px] text-secondary">train</span> &lt;800m from Indiranagar Metro
+        </span>
+</div>
+<div class="flex items-center gap-space-md font-label-md text-label-md text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> Available from 1st April 2025</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">handshake</span> Direct Landlord</span>
+</div>
+</div>
+<!-- Gallery Grid -->
+<section class="relative rounded-2xl overflow-hidden shadow-md bg-surface-container-lowest p-2 mb-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-2 h-[420px] md:h-[500px]">
+<!-- Big Hero: Living & Dining -->
+<div class="md:col-span-2 md:row-span-2 relative rounded-xl overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Expansive open-concept Indian duplex living room in Indiranagar Bengaluru with high ceilings, warm teak hardwood paneling, warm ambient pendant lights, L-shaped plush modern sofa, indoor fiddle-leaf fig plant, sleek dining corner, pristine architectural photography with morning sunlight streaming through French windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHKt9aD4gumwpfFiK9-IekOHFN4uZydV2NAm57mkRRCNgwVBbnG3UABeCqttbZu6quwIau5Iw-XftucoLtZj3WEX9T7eJs2yB0ib6oof9MV7ncRPlUNCcCV1ei9HQdNtPnq6r6gDV29g5sJqrAf-_COqFyHWOwycq4BRP2UCOhobYOOty1OiKFeQD8zBQNxa_Qs2bsu7eKLoKLrndEmj9IC_dmn7Yp2QsdHc0sXytr"/>
+<div class="absolute bottom-3 left-3 bg-primary/80 backdrop-blur-md px-3 py-1.5 rounded-lg text-on-primary font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">weekend</span>
+            Main Duplex Living &amp; Dining Lounge
+          </div>
+</div>
+<!-- Master Bedroom -->
+<div class="relative rounded-xl overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Bright master bedroom in Bengaluru luxury flat with wooden flooring, queen size bed with tufted headboard, crisp white linens, sliding glass door leading to private green balcony filled with potted monstera plants, soft morning light, architectural interior photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYe59ti44_cYQUx9GxwGZQBO06fLA4U7ZEIHGWEG9l5S1KMke_vNs2dJzRqkhEDOYXuC855SOF_ZIqq8whx-aQw4KLJVtDBN2btRfmTw9xYRk1C6WEYf5MVCkbFrL1fx-aOkDSP6_WtRQDFu07B0pZSVjWnn21L7gginEC5RxEJove92rpMrkgceowFGn_H5pUJYINYec7N3BKdwxjCjxVMeM1d9LY_z5HD9oBGCSS"/>
+<div class="absolute bottom-2 left-2 bg-primary/75 backdrop-blur-sm px-2 py-1 rounded text-on-primary font-label-sm text-label-sm">
+            Master Suite + Balcony
+          </div>
+</div>
+<!-- Modular Kitchen -->
+<div class="relative rounded-xl overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Ultra-sleek contemporary modular kitchen with quartz counter, breakfast island bar with two minimalist wooden barstools, stainless steel chimney, built-in microwave and induction hob, matte sage-teal cabinetry, clean and hygienic urban apartment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdIokpWoVlmacT9dl35KMTqTw-aCLextxqgKJ8R1kyXMGaZh7c8pXbHRo0K4uWAanMmwu7IDfGCwveMeLxLC7EuesLkX1_i-FAcOp-jQ60GeQSHSp481mDCD4mzPYWi76bbFAnRjV3VNUpdcvpbkIXwsiX71h3MZqdTkzRr_F3FLJHOal7X0UOW04Nmbr1HYg20MFx6BbLCqorm3CZVGOkx-D4FO6T-FZ9BVEC8aMh"/>
+<div class="absolute bottom-2 left-2 bg-primary/75 backdrop-blur-sm px-2 py-1 rounded text-on-primary font-label-sm text-label-sm">
+            Modular Kitchen &amp; Counter
+          </div>
+</div>
+<!-- Bedroom 2 with Work Desk -->
+<div class="relative rounded-xl overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Cozy sunlit corner bedroom with ergonomic dual monitor work-from-home desk setup, mechanical keyboard, designer desk lamp, wall bookshelf, Queen bed, warm wooden accents, modern tech worker sanctuary in Bengaluru" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoEPX0jkHPSfmZ7gQ24XpQ-aW9Oe4CYk7GhUWUUMZSLB4eqwZWN0Gp8NhGBDhluXrpIrBNbjtT_wISfQ1IFKX0N1NgBBQ7-1_nHcwo27cFXicuAycyF3Wd4cZLjj02eSE0QetrMCqVCDU0risJQvcVdxOJGFtG8yVEusgIpexxlVmdzmK6CP8GdVjk6vwP07bTMI8NV7NZksJlIZCStzxKIfAWEg_eQ_eYrp6husku"/>
+<div class="absolute bottom-2 left-2 bg-primary/75 backdrop-blur-sm px-2 py-1 rounded text-on-primary font-label-sm text-label-sm">
+            Bed 2 &amp; Quiet WFH Nook
+          </div>
+</div>
+<!-- Bathroom -->
+<div class="relative rounded-xl overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sophisticated modern ensuite bathroom with frameless glass walk-in shower cubicle, rain showerhead, Italian marble tiles, floating vanity with backlit round mirror, Grohe fixtures, spa-like tranquil atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwcBC-LINMdW1Xkk2trdQEbteC4NPtz__a71rMD_7oi5SJpVsPHXhiAg-UY7LwotH7v3ftblqF3iwrlR_gfa0LTzay1YqUOJuZbKq4gAgv6kBEtsL2VcsTWFUECkp3NELIPvfEvySMAz2gUjYlLkmA8ZgAEMvcHj5tAEgxX9_tMMfuF3sHgGvsOSW-XAJYtBu4j0j8naMrRRZrnILCc1KzGEDl8X3y27-45Bnpqstq"/>
+<div class="absolute bottom-2 left-2 bg-primary/75 backdrop-blur-sm px-2 py-1 rounded text-on-primary font-label-sm text-label-sm">
+            Attached Bath with Glass Partition
+          </div>
+</div>
+</div>
+<!-- Gallery Floating Pill -->
+<button class="absolute bottom-5 right-5 bg-primary/90 hover:bg-primary text-on-primary backdrop-blur-md px-4 py-2 rounded-full font-title-sm text-title-sm flex items-center gap-2 shadow-lg transition-transform hover:-translate-y-0.5">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">photo_library</span>
+<span>View all 18 photos &amp; 3D Interactive Walkthrough</span>
+</button>
+</section>
+<!-- Main Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Content Column (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- Pod Sync Banner -->
+<div class="rounded-2xl bg-secondary-container/40 p-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[26px]">podcasts</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">Indiranagar Tech Pod Match</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">96% Fit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Aligned with Aarav Sharma &amp; Rohan Varma's active 3-member search criteria.
+              </p>
+</div>
+</div>
+<div class="flex items-center -space-x-2 shrink-0">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary font-label-sm text-label-sm font-bold shadow-sm" title="Aarav Sharma (Approved)">AS</div>
+<div class="w-8 h-8 rounded-full bg-surface-tint flex items-center justify-center text-on-primary font-label-sm text-label-sm font-bold shadow-sm" title="Rohan Varma (Approved)">RV</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface font-label-sm text-label-sm font-bold shadow-sm" title="3rd Member Slot: Pending You">+1</div>
+</div>
+</div>
+<!-- 3. Pricing & Transparent Expense Breakdown -->
+<section class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-secondary">Verified Economics</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1">Transparent Expense Breakdown</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero hidden brokerage. Verifiable e-lease numbers with deposit lock-in safeguards.</p>
+</div>
+<div class="text-left sm:text-right shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Total Monthly Rent</span>
+<span class="font-metric-display text-metric-display text-primary font-extrabold tracking-tight">₹72,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/month</span>
+</div>
+</div>
+<!-- Highlight Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mb-space-md">
+<!-- Estimated per person -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary">Pod Estimated Split</span>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">₹24,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/person /month</span>
+</div>
+</div>
+<span class="p-2 rounded-lg bg-secondary-container text-on-secondary-container material-symbols-outlined text-[20px]">equalizer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm">
+                Calculated on equal 3-way split baseline. Individual room prices calibrated by carpet area below.
+              </p>
+</div>
+<!-- Security Deposit -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Security Deposit</span>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">₹2,16,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(3 Months)</span>
+</div>
+</div>
+<span class="p-2 rounded-lg bg-surface-container-highest text-primary material-symbols-outlined text-[20px]">shield_with_heart</span>
+</div>
+<div class="mt-space-sm flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span>Standard Bengaluru rental norm, no broker commission</span>
+</div>
+</div>
+</div>
+<!-- Line Item Inclusions -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[22px]">handyman</span>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold block">Society Maintenance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₹4,500/month (Included in base rent)</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[22px]">wifi</span>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold block">Shared Utilities Estimate</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">~₹2,500/person/mo (Airtel Fiber 300Mbps, BESCOM, BWSSB)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Property Overview & Key Specifications -->
+<section class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-secondary">Layout &amp; Dimensions</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1 mb-space-md">Property Overview &amp; Specifications</h2>
+<!-- Metric badges grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm mb-space-lg">
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[22px]">bed</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bedrooms</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">3 Bedrooms</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[22px]">bathtub</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Washrooms</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">3 Attached</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[22px]">balcony</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Balconies</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">2 Balconies</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[22px]">square_foot</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Super Built-up</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">1,850 sq.ft</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[22px]">stairs</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Floor Level</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">3rd of 4 (Elevator)</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[22px]">explore</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Facing</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">East Facing (Vastu)</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[22px]">directions_car</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Covered Car Park</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">1 Stilt Spot</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[22px]">two_wheeler</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bike Parking</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">2 Designated</span>
+</div>
+</div>
+<!-- Furnishing Inventory List -->
+<div>
+<h3 class="font-title-md text-title-md font-bold text-primary mb-space-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_box</span>
+              Furnishing Details &amp; Appliances In-Situ
+            </h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">king_bed</span> 3 Queen Beds &amp; Orthopedic Mattresses
+              </span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">downloading</span> 3 Wardrobes (Floor-to-Ceiling)
+              </span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">table_restaurant</span> 6-Seater Solid Sheesham Dining Table
+              </span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">chair</span> L-shaped Fabric Sofa + Center Table
+              </span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">tv</span> 55" 4K LG Smart TV &amp; Soundbar
+              </span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">ac_unit</span> 3 Daikin Inverter ACs (All Bedrooms)
+              </span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">cooking</span> Modular Chimney + Faber Cooktop
+              </span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">kitchen</span> 340L Double Door Samsung Fridge
+              </span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">microwave</span> Convection Microwave
+              </span>
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">local_laundry_service</span> IFB 8kg Front Load Washing Machine
+              </span>
+</div>
+</div>
+</section>
+<!-- 5. Room-by-Room Allocation Breakdown -->
+<section class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-secondary">Roommate Fairness Engine</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1">Room-by-Room Pod Allocation</h2>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calculate</span>
+              Area Weighted Split
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            RoomSync calculates recommended rent distribution based on carpet area, private balcony access, and corner acoustic seclusion.
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Room 1 -->
+<div class="rounded-xl p-space-md bg-surface-container-low flex flex-col justify-between relative group hover:bg-surface-container transition-all">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                Aarav's Pick
+              </div>
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Room 01 • Upper Duplex</span>
+<h3 class="font-title-md text-title-md font-bold text-primary mt-1">Master with Balcony</h3>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm space-y-1">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">straighten</span> 240 sq.ft carpet</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">shower</span> Attached full bath</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">deck</span> Private East balcony</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/60 p-2.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fair Share Suggested</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">₹26,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/mo</span>
+</div>
+</div>
+<!-- Room 2 -->
+<div class="rounded-xl p-space-md bg-surface-container-low flex flex-col justify-between relative group hover:bg-surface-container transition-all">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-surface-variant text-on-surface font-label-sm text-label-sm font-bold">
+                Rohan's Pick
+              </div>
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Room 02 • Lower Level</span>
+<h3 class="font-title-md text-title-md font-bold text-primary mt-1">Corner Quiet Room</h3>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm space-y-1">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">straighten</span> 190 sq.ft carpet</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">shower</span> Attached full bath</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">grid_view</span> Wide corner window &amp; tree view</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/60 p-2.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Fair Share Suggested</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">₹23,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/mo</span>
+</div>
+</div>
+<!-- Room 3 (Available for You) -->
+<div class="rounded-xl p-space-md bg-secondary-container/30 flex flex-col justify-between relative group hover:bg-secondary-container/50 transition-all shadow-sm">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold animate-pulse">
+                Available for You
+              </div>
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary">Room 03 • Upper Duplex</span>
+<h3 class="font-title-md text-title-md font-bold text-primary mt-1">Standard Cozy Room</h3>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm space-y-1">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">straighten</span> 170 sq.ft carpet</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">shower</span> Attached full bath</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">desk</span> Dedicated ergonomic study nook</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest p-2.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-secondary font-bold block">Your Estimated Rent</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-secondary">₹22,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/mo</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Coliving Suitability & House Rules -->
+<section class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-secondary">Living Harmony</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1">Coliving Suitability &amp; House Rules</h2>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              100% Pod Covenant Sync
+            </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Col. Suresh Nair has pre-approved these transparent terms to eliminate ambiguity between flatmates and society management.
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Rule 1: Tenant Profile -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="p-2 rounded-lg bg-surface-container-highest text-secondary material-symbols-outlined text-[20px] shrink-0">badge</span>
+<div>
+<h4 class="font-title-sm text-title-sm font-bold text-on-surface">Tenant Demographic</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Working tech/corporate professionals &amp; founders welcomed. Workplace verification or official offer letter accepted.
+                </p>
+</div>
+</div>
+<!-- Rule 2: Overnight Guests -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="p-2 rounded-lg bg-surface-container-highest text-secondary material-symbols-outlined text-[20px] shrink-0">person_add</span>
+<div>
+<h4 class="font-title-sm text-title-sm font-bold text-on-surface">Visitors &amp; Overnight Guests</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Permitted without curfew, subject to internal roommate WhatsApp/RoomSync consensus. No society interference.
+                </p>
+</div>
+</div>
+<!-- Rule 3: Smoking -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="p-2 rounded-lg bg-surface-container-highest text-secondary material-symbols-outlined text-[20px] shrink-0">balcony</span>
+<div>
+<h4 class="font-title-sm text-title-sm font-bold text-on-surface">Smoking Policy</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Strictly designated balcony areas only. Zero indoor smoking to preserve wooden furnishings and HVAC filters.
+                </p>
+</div>
+</div>
+<!-- Rule 4: Pets -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="p-2 rounded-lg bg-surface-container-highest text-secondary material-symbols-outlined text-[20px] shrink-0">pets</span>
+<div>
+<h4 class="font-title-sm text-title-sm font-bold text-on-surface">Pet Friendly</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Cats actively allowed. Small/medium vaccinated dogs permitted subject to standard Prestige Palms Society registration.
+                </p>
+</div>
+</div>
+<!-- Rule 5: Dietary / Cooking -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="p-2 rounded-lg bg-surface-container-highest text-secondary material-symbols-outlined text-[20px] shrink-0">restaurant</span>
+<div>
+<h4 class="font-title-sm text-title-sm font-bold text-on-surface">Food &amp; Cooking Choices</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Complete dietary freedom: Eggetarian &amp; Non-veg cooking totally permitted with no owner dietary restrictions.
+                </p>
+</div>
+</div>
+<!-- Rule 6: Quiet Hours -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="p-2 rounded-lg bg-surface-container-highest text-secondary material-symbols-outlined text-[20px] shrink-0">nightlight</span>
+<div>
+<h4 class="font-title-sm text-title-sm font-bold text-on-surface">Quiet Hours (11:00 PM – 7:00 AM)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Society quiet hours strictly respected. Aligns 100% with Aarav &amp; Rohan's early-morning hybrid work schedule.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Landlord / Property Manager Dossier -->
+<section class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-secondary">Owner Credential Check</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1 mb-space-md">Landlord Dossier &amp; Reputation</h2>
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary font-headline-md text-headline-md font-bold shadow-md">
+                  SN
+                </div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-secondary flex items-center justify-center ring-2 ring-surface text-on-secondary" title="DigiLocker Verified Landlord">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-title-md text-title-md font-bold text-primary">Col. Suresh Nair (Retd.)</h3>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Verified Owner</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Aadhaar &amp; Indiranagar Title Deed Verified via DigiLocker • 4.9★ Owner Rating (4 Past Tenant Pods)
+                </p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto gap-2 border-t sm:border-t-0 pt-2 sm:pt-0">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md font-bold text-secondary">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+                Responds within 2 hrs
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">100% Direct • No Brokerage</span>
+</div>
+</div>
+<!-- Owner note blockquote -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0">format_quote</span>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Note from Col. Nair</span>
+<p class="font-body-md text-body-md text-on-surface italic">
+                "Looking for respectful working professionals who take good care of the apartment and maintain harmonious community living. Both Aarav and Rohan's profiles are verified on RoomSync and I have pre-cleared this pod for final walkthrough."
+              </p>
+</div>
+</div>
+</section>
+<!-- Neighborhood Transit & Commute Radar -->
+<section class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-secondary">Indiranagar Micro-Market</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1">Commute &amp; Lifestyle Hubs</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">HAL 2nd Stage</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm mb-space-md">
+<div class="p-3 rounded-lg bg-surface-container flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">directions_subway</span>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block font-semibold">Indiranagar Metro</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">750m (9 min walk)</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">apartment</span>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block font-semibold">Bagmane Tech Park</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2.8 km (12 min cab)</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">local_cafe</span>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block font-semibold">100ft Road Cafes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">300m (Third Wave, Toit)</span>
+</div>
+</div>
+</div>
+<!-- Indiranagar Map static container -->
+<div class="w-full h-48 rounded-xl bg-cover bg-center shadow-inner relative flex items-end p-space-sm" data-location="12th Main Road, HAL 2nd Stage, Indiranagar, Bengaluru, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCW_m8w9SGDgUVubABnHb1OC0BU7OHe3CwW6eQQUafVPDT2nCuh9HCAPVmXAS9TfdTpr774DMGMbcYuNOYIaFGxGZSl_t5rFixlyAbdvUb9HBYEJZ1L2tctuKX-A-WQdPD6y5KR4BfUAIccmEE-Tl_YHpNBVEjL-nEQJwUyCZo-PZ9cnm6tkA1Xe5HT6QZ2yT_BXm90KQ5Y82cRAbwjbwrsU9ML43Ad-Lufhq5Flbg')">
+<div class="bg-primary/90 backdrop-blur-md px-3 py-1.5 rounded-lg text-on-primary font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">pin_drop</span>
+<span>12th Main Road HAL 2nd Stage • Prestige Palms Duplex</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sticky Booking & Interest Console (4 cols) -->
+<aside class="lg:col-span-4 sticky top-40 flex flex-col gap-space-md" id="visitBookingSection">
+<!-- Primary Action Console Card -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-xl relative overflow-hidden">
+<!-- Subtle top gradient accent -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-secondary to-primary"></div>
+<!-- Rent Header Inside Card -->
+<div class="flex items-baseline justify-between mb-space-md">
+<div>
+<span class="font-headline-lg text-headline-lg font-extrabold text-primary">₹72,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/month</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+              ₹24,000 /bed avg
+            </span>
+</div>
+<!-- Pod Readiness Badge -->
+<div class="rounded-xl p-3 bg-secondary-container/30 mb-space-md flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">check_circle</span>
+<div class="text-on-surface">
+<span class="font-title-sm text-title-sm font-bold block">Indiranagar 3BHK Pod Ready</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Both Aarav &amp; Rohan have marked their approval. Your scheduled visit will sync directly onto the pod calendar.
+              </p>
+</div>
+</div>
+<!-- Schedule Walkthrough Form -->
+<div class="space-y-space-sm mb-space-md">
+<div>
+<label class="font-label-md text-label-md font-bold text-on-surface block mb-1">Select Visit Date</label>
+<div class="grid grid-cols-3 gap-2" id="datePickerSlots">
+<button class="date-slot p-2 rounded-xl bg-surface-container-high hover:bg-secondary-container text-center transition-all focus:bg-secondary focus:text-on-secondary active" data-date="Sat, 29 Mar" type="button">
+<span class="font-label-sm text-label-sm block opacity-75">Saturday</span>
+<span class="font-title-sm text-title-sm font-bold">29 Mar</span>
+</button>
+<button class="date-slot p-2 rounded-xl bg-surface-container hover:bg-secondary-container text-center transition-all focus:bg-secondary focus:text-on-secondary" data-date="Sun, 30 Mar" type="button">
+<span class="font-label-sm text-label-sm block opacity-75">Sunday</span>
+<span class="font-title-sm text-title-sm font-bold">30 Mar</span>
+</button>
+<button class="date-slot p-2 rounded-xl bg-surface-container hover:bg-secondary-container text-center transition-all focus:bg-secondary focus:text-on-secondary" data-date="Mon, 31 Mar" type="button">
+<span class="font-label-sm text-label-sm block opacity-75">Monday</span>
+<span class="font-title-sm text-title-sm font-bold">31 Mar</span>
+</button>
+</div>
+</div>
+<div>
+<label class="font-label-md text-label-md font-bold text-on-surface block mb-1">Preferred Time Window</label>
+<select class="w-full px-3 py-2.5 rounded-xl bg-surface-container font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary" id="timeSlotSelect">
+<option value="11:00 AM">Morning: 11:00 AM – 12:30 PM (Sunlit tour)</option>
+<option value="03:30 PM">Afternoon: 03:30 PM – 05:00 PM</option>
+<option selected="" value="06:30 PM">Evening: 06:30 PM – 07:30 PM (Pod preferred)</option>
+</select>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">co_present</span>
+<span>Pod walkthrough: Aarav &amp; Rohan will be notified to join</span>
+</div>
+</div>
+<!-- CTAs -->
+<div class="space-y-2">
+<button class="w-full py-3.5 px-4 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-title-sm text-title-sm font-bold shadow-md transition-all flex items-center justify-center gap-2" id="scheduleVisitBtn">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span>Schedule Property Visit</span>
+</button>
+<button class="w-full py-3 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-primary font-title-sm text-title-sm font-semibold transition-all flex items-center justify-center gap-2" id="relayContactBtn">
+<span class="material-symbols-outlined text-[18px] text-secondary">forum</span>
+<span>Contact Owner via RoomSync Relay</span>
+</button>
+</div>
+<!-- Micro Security Signals -->
+<div class="mt-space-md pt-space-sm space-y-2 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+<span>Direct landlord escrow • Zero lock-in before e-stamp</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>RoomSync SafeLease Guarantee: Full deposit refund protection</span>
+</div>
+</div>
+</div>
+<!-- Pod Mini Discussion Widget -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-title-sm text-title-sm font-bold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">forum</span>
+              Pod Sync Note
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">2 Messages</span>
+</div>
+<div class="space-y-space-xs text-body-sm text-body-sm">
+<div class="p-2.5 rounded-lg bg-surface-container">
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="font-bold text-on-surface">Aarav Sharma</span>
+<span class="text-on-surface-variant">2h ago</span>
+</div>
+<p class="text-on-surface-variant">"The duplex layout means upper floor is super quiet for client calls. I'm 100% in for Room 1."</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="font-bold text-on-surface">Rohan Varma</span>
+<span class="text-on-surface-variant">1h ago</span>
+</div>
+<p class="text-on-surface-variant">"Metro is walkable. Let's schedule for Saturday evening visit so all 3 of us can meet Col. Nair."</p>
+</div>
+</div>
+<!-- Quick reply field -->
+<div class="mt-space-sm flex items-center gap-2">
+<input class="w-full px-3 py-1.5 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="Add note to Indiranagar Pod..." type="text"/>
+<button class="p-2 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+<!-- Coliving Affinity Ring Meter -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex items-center gap-space-md">
+<div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
+<!-- Inline SVG Progress Ring -->
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="96, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-title-sm text-title-sm font-extrabold text-primary">96%</span>
+</div>
+</div>
+<div>
+<h4 class="font-title-sm text-title-sm font-bold text-primary">Pod Routine Match</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diet, quiet hours, and work schedules match your pod covenant seamlessly.</p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- Booking Confirmation Toast Notification Modal -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-md hidden items-center justify-center p-4" id="bookingModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-md w-full p-space-lg shadow-2xl relative">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface" id="closeModalBtn">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[28px]">event_available</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Visit Invite Sent!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+        Your walkthrough request for <strong class="text-on-surface">Prestige Palms Duplex 3BHK</strong> has been sent to Col. Suresh Nair and shared with Aarav &amp; Rohan.
+      </p>
+<div class="my-space-md p-space-sm rounded-xl bg-surface-container-low space-y-1 font-body-sm text-body-sm">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Selected Date:</span>
+<span class="font-bold text-on-surface" id="modalDate">Sat, 29 Mar 2025</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Time Slot:</span>
+<span class="font-bold text-on-surface" id="modalTime">06:30 PM</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Escrow Security:</span>
+<span class="text-secondary font-bold">Zero Advance Required</span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="w-full py-2.5 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm font-bold" id="confirmAcknowledgeBtn">
+          Done &amp; View Calendar
+        </button>
+</div>
+</div>
+</div>
+<script>
+    (function initPropertyDetails() {
+      // Shortlist toggle
+      const shortlistBtn = document.getElementById('shortlistBtn');
+      const shortlistIcon = document.getElementById('shortlistIcon');
+      let isShortlisted = false;
+
+      if (shortlistBtn) {
+        shortlistBtn.addEventListener('click', () => {
+          isShortlisted = !isShortlisted;
+          if (isShortlisted) {
+            shortlistIcon.style.fontVariationSettings = "'FILL' 1";
+            shortlistIcon.classList.remove('text-outline');
+            shortlistIcon.classList.add('text-error');
+          } else {
+            shortlistIcon.style.fontVariationSettings = "'FILL' 0";
+            shortlistIcon.classList.remove('text-error');
+            shortlistIcon.classList.add('text-outline');
+          }
+        });
+      }
+
+      // Date selector pills
+      let selectedDate = 'Sat, 29 Mar';
+      const dateSlots = document.querySelectorAll('.date-slot');
+      dateSlots.forEach(slot => {
+        slot.addEventListener('click', () => {
+          dateSlots.forEach(s => {
+            s.classList.remove('bg-secondary', 'text-on-secondary');
+            s.classList.add('bg-surface-container');
+          });
+          slot.classList.remove('bg-surface-container');
+          slot.classList.add('bg-secondary', 'text-on-secondary');
+          selectedDate = slot.getAttribute('data-date');
+        });
+      });
+
+      // Modal handling
+      const scheduleVisitBtn = document.getElementById('scheduleVisitBtn');
+      const bookingModal = document.getElementById('bookingModal');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const confirmAcknowledgeBtn = document.getElementById('confirmAcknowledgeBtn');
+      const modalDate = document.getElementById('modalDate');
+      const modalTime = document.getElementById('modalTime');
+      const timeSlotSelect = document.getElementById('timeSlotSelect');
+
+      if (scheduleVisitBtn && bookingModal) {
+        scheduleVisitBtn.addEventListener('click', () => {
+          if (modalDate) modalDate.textContent = selectedDate + ' 2025';
+          if (modalTime && timeSlotSelect) modalTime.textContent = timeSlotSelect.value;
+          bookingModal.classList.remove('hidden');
+          bookingModal.classList.add('flex');
+        });
+      }
+
+      function hideModal() {
+        if (bookingModal) {
+          bookingModal.classList.add('hidden');
+          bookingModal.classList.remove('flex');
+        }
+      }
+
+      if (closeModalBtn) closeModalBtn.addEventListener('click', hideModal);
+      if (confirmAcknowledgeBtn) confirmAcknowledgeBtn.addEventListener('click', hideModal);
+
+      // Relay Contact Feedback
+      const relayContactBtn = document.getElementById('relayContactBtn');
+      if (relayContactBtn) {
+        relayContactBtn.addEventListener('click', () => {
+          relayContactBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">mark_chat_read</span><span>Encrypted Chat Opened with Col. Nair</span>';
+          setTimeout(() => {
+            relayContactBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">forum</span><span>Contact Owner via RoomSync Relay</span>';
+          }, 3500);
+        });
+      }
+
+      // Pod Share Feedback
+      const podShareBtn = document.getElementById('podShareBtn');
+      if (podShareBtn) {
+        podShareBtn.addEventListener('click', () => {
+          const originalContent = podShareBtn.innerHTML;
+          podShareBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span><span>Pushed to Indiranagar Pod!</span>';
+          setTimeout(() => {
+            podShareBtn.innerHTML = originalContent;
+          }, 2500);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1280px] mx-auto px-gutter-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-secondary-fixed"><span class="material-symbols-outlined text-[20px]">sync_alt</span></div><span class="font-headline-sm text-headline-sm text-primary">RoomSync</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Pioneering trusted shared living in India's technology epicenters. End-to-end Aadhaar &amp; SSO Identity Trust Architecture ensuring high-affinity, safe roommate compatibility and verified property leasing.</p><div class="flex items-center gap-space-sm pt-space-xs"><div class="px-3 py-1.5 rounded-lg bg-surface-container-high flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span><span class="font-label-sm text-label-sm text-on-surface">UIDAI Aadhaar Verified</span></div><div class="px-3 py-1.5 rounded-lg bg-surface-container-high flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">corporate_fare</span><span class="font-label-sm text-label-sm text-on-surface">Workplace SSO</span></div></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface font-bold uppercase tracking-wider">Accommodation</span><div class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><a class="hover:text-secondary transition-colors" data-path="accommodation-discovery" href="#">Discover Flats &amp; Coliving</a><a class="hover:text-secondary transition-colors" data-path="group-accommodation-search" href="#">Pod Group Housing Search</a><a class="hover:text-secondary transition-colors" data-path="saved-properties-comparison" href="#">Saved &amp; Side-by-Side Compare</a><a class="hover:text-secondary transition-colors" data-path="property-enquiry-visit-scheduling" href="#">Schedule Property Visits</a><a class="hover:text-secondary transition-colors" data-path="property-details" href="#">Verified Lease Breakdown</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface font-bold uppercase tracking-wider">Roommate Groups</span><div class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><a class="hover:text-secondary transition-colors" data-path="roommate-groups" href="#">Explore Roommate Circles</a><a class="hover:text-secondary transition-colors" data-path="compatibility-matrix" href="#">Compatibility Matrix</a><a class="hover:text-secondary transition-colors" data-path="requests" href="#">Pending Group Requests</a><a class="hover:text-secondary transition-colors" data-path="messages" href="#">Group Chat &amp; Sync</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface font-bold uppercase tracking-wider">Trust &amp; Legal</span><div class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><a class="hover:text-secondary transition-colors" data-path="digital-agreements" href="#">E-Stamp Rental Agreements</a><a class="hover:text-secondary transition-colors" data-path="deposit-protection" href="#">Security Deposit Escrow</a><a class="hover:text-secondary transition-colors" data-path="identity-verification" href="#">UIDAI Aadhaar Verification</a><a class="hover:text-secondary transition-colors" data-path="concierge-desk" href="#">Bengaluru City Concierge</a></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 RoomSync Technologies India Pvt. Ltd. • Verified Accommodation &amp; Co-Living Buffer</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="safety-standards" href="#">Tenant Safety Standards</a></div></div></div></footer></body></html>

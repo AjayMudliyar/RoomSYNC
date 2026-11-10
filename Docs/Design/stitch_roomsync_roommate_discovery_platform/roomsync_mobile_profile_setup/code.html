@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline-variant": "#c8c5d0", "on-secondary-container": "#006f66", "error-container": "#ffdad6", "inverse-surface": "#283044", "primary": "#070235", "surface-container-high": "#e2e7ff", "surface-container-highest": "#dae2fd", "surface-bright": "#faf8ff", "on-primary": "#ffffff", "secondary-fixed": "#89f5e7", "tertiary-fixed": "#ffddb8", "on-error": "#ffffff", "on-secondary-fixed": "#00201d", "on-tertiary-fixed-variant": "#653e00", "tertiary": "#140900", "primary-fixed-dim": "#c4c1fb", "on-primary-fixed-variant": "#444173", "primary-fixed": "#e3dfff", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#005049", "on-surface-variant": "#47464f", "surface-container-low": "#f2f3ff", "inverse-on-surface": "#eef0ff", "inverse-primary": "#c4c1fb", "tertiary-fixed-dim": "#ffb95f", "on-surface": "#131b2e", "on-secondary": "#ffffff", "primary-container": "#1e1b4b", "on-tertiary-fixed": "#2a1700", "secondary-container": "#86f2e4", "surface": "#faf8ff", "outline": "#787680", "on-error-container": "#93000a", "on-primary-container": "#8683ba", "error": "#ba1a1a", "surface-dim": "#d2d9f4", "tertiary-container": "#331d00", "surface-variant": "#dae2fd", "on-background": "#131b2e", "on-tertiary-container": "#c07a00", "secondary": "#006a61", "on-primary-fixed": "#181445", "surface-tint": "#5b598c", "secondary-fixed-dim": "#6bd8cb", "surface-container": "#eaedff", "background": "#faf8ff", "on-tertiary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "gutter-desktop": "2rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xl": "2.5rem", "margin-desktop": "3rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "display-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "display-md": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Step 1 of 5</span><h1 class="font-title-md text-title-md text-on-surface truncate">Basic Profile</h1></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div><div class="w-full h-1 bg-surface-container-high overflow-hidden"><div class="h-full bg-secondary rounded-full transition-all duration-300 ease-out" style="width: 20%;"></div></div></header><main class="flex-1 flex flex-col relative w-full px-gutter-mobile pt-16 pb-28 bg-surface"><div class="flex flex-col w-full pb-6">
+<!-- Top Utility Context (Save & Exit / Step Context) -->
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Step 1 of 5 • Basic Profile</span>
+</div>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1 px-2 rounded-lg hover:bg-surface-container active:scale-95" type="button">
+      Save &amp; Exit
+    </button>
+</div>
+<!-- Intro Narrative Block -->
+<div class="mb-space-lg">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight font-extrabold mb-1">Tell us about yourself</h2>
+<div class="flex items-start gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<p class="font-body-sm text-body-sm leading-relaxed">
+        Your identity is protected under DPDP Act. We only show what you choose to share with verified flatmates.
+      </p>
+</div>
+</div>
+<!-- Profile Photo Section -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm mb-space-md flex flex-col items-center">
+<div class="relative mb-space-sm group">
+<!-- Outer Decorative Aura -->
+<div class="w-24 h-24 rounded-full bg-surface-container-high flex items-center justify-center p-1 shadow-inner">
+<div class="relative w-full h-full rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Modern candid headshot of Aarav Sharma, a confident 26-year-old South Asian professional man with a warm smile, wearing a subtle teal crewneck t-shirt against a clean warm indoor backdrop with soft ambient lighting and cinematic shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgr9_V3pghn6gqs8qIIDWhnCpOC_XDUb3JNR8ZMoDCphXle3BMeannXgMAUbNiqa6-1PexOexZBa7bPxstkd-0oMHDrx2XtFPCxhxryxqs-SsNce4yr9LSa2CZ2U3lVju5gz5YJCKN4dlhmKLCSiKAuk7oeJhmX8Xq4scVi3i2M9Pq3JQGIlBY0xb-NRJfXHvgerf2W0TbfqynFcjSTKOIBXHTqYSnjVrHi47PKQRr">
+</div>
+</div>
+<!-- Camera FAB badge -->
+<button aria-label="Change photo" class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-secondary text-on-secondary shadow-md flex items-center justify-center hover:scale-105 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+</button>
+</div>
+<!-- Quick Action / Trust Signal -->
+<div class="flex flex-col items-center gap-1.5 text-center">
+<div class="flex items-center gap-2">
+<button class="font-label-md text-label-md text-secondary font-bold hover:underline flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">sync</span>
+          Sync from LinkedIn
+        </button>
+<span class="text-outline-variant text-[12px]">•</span>
+<button class="font-label-md text-label-md text-on-surface hover:underline" type="button">
+          Upload
+        </button>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">lock</span>
+<span>Visible only to verified seekers</span>
+</div>
+</div>
+</div>
+<!-- Form Fields Module -->
+<div class="space-y-space-md">
+<!-- Full Name -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5 font-bold uppercase tracking-wide" for="fullName">
+        Full Name
+      </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">badge</span>
+<input class="w-full bg-surface-container-low text-on-surface font-title-sm text-title-sm rounded-xl pl-11 pr-10 py-3 focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#006a61] transition-all" id="fullName" type="text" value="Aarav Sharma">
+<span class="material-symbols-outlined absolute right-3 text-secondary text-[20px]">check_circle</span>
+</div>
+</div>
+<!-- Age & Pronouns Dual Section -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex gap-space-sm">
+<!-- Age Field -->
+<div class="w-1/3">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5 font-bold uppercase tracking-wide" for="userAge">
+            Age
+          </label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low text-on-surface font-title-sm text-title-sm rounded-xl px-3.5 py-3 text-center focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#006a61] transition-all" id="userAge" type="number" value="26">
+</div>
+</div>
+<!-- Pronouns Field -->
+<div class="w-2/3">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5 font-bold uppercase tracking-wide">
+            Pronouns
+          </label>
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1" id="pronounGroup">
+<button class="pronoun-btn active px-3 py-2.5 rounded-xl font-label-md text-label-md shrink-0 bg-secondary-container text-on-secondary-container font-bold transition-all shadow-sm" type="button">
+              He/Him
+            </button>
+<button class="pronoun-btn px-3 py-2.5 rounded-xl font-label-md text-label-md shrink-0 bg-surface-container text-on-surface-variant font-medium hover:bg-surface-container-high transition-all" type="button">
+              She/Her
+            </button>
+<button class="pronoun-btn px-3 py-2.5 rounded-xl font-label-md text-label-md shrink-0 bg-surface-container text-on-surface-variant font-medium hover:bg-surface-container-high transition-all" type="button">
+              They/Them
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- City & Micro-Market Selection -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5 font-bold uppercase tracking-wide" for="citySelect">
+          Target City
+        </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">location_city</span>
+<select class="w-full bg-surface-container-low text-on-surface font-title-sm text-title-sm rounded-xl pl-11 pr-10 py-3 appearance-none focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#006a61] transition-all" id="citySelect">
+<option selected="" value="bengaluru">Bengaluru, Karnataka</option>
+<option value="mumbai">Mumbai, Maharashtra</option>
+<option value="gurugram">Gurugram, NCR</option>
+<option value="pune">Pune, Maharashtra</option>
+<option value="hyderabad">Hyderabad, Telangana</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Quick Micro-Market Tech Hub Chips -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Preferred Micro-Markets</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">1 selected</span>
+</div>
+<div class="flex flex-wrap gap-1.5" id="marketChips">
+<button class="market-chip px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 bg-secondary-container text-on-secondary-container font-bold shadow-xs" type="button">
+<span>Indiranagar</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<button class="market-chip px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 bg-surface-container text-on-surface-variant font-medium hover:bg-surface-container-high transition-colors" type="button">
+<span>HSR Layout</span>
+<span class="material-symbols-outlined text-[16px] opacity-40">add</span>
+</button>
+<button class="market-chip px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 bg-surface-container text-on-surface-variant font-medium hover:bg-surface-container-high transition-colors" type="button">
+<span>Koramangala</span>
+<span class="material-symbols-outlined text-[16px] opacity-40">add</span>
+</button>
+<button class="market-chip px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 bg-surface-container text-on-surface-variant font-medium hover:bg-surface-container-high transition-colors" type="button">
+<span>Whitefield</span>
+<span class="material-symbols-outlined text-[16px] opacity-40">add</span>
+</button>
+<button class="market-chip px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 bg-surface-container text-on-surface-variant font-medium hover:bg-surface-container-high transition-colors" type="button">
+<span>Bellandur</span>
+<span class="material-symbols-outlined text-[16px] opacity-40">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Professional Credentialing Section -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-space-md">
+<div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">work</span>
+<label class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wide" for="professionRole">
+            Profession &amp; Organization
+          </label>
+</div>
+<div class="space-y-space-xs">
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low text-on-surface font-title-sm text-title-sm rounded-xl px-3.5 py-3 focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#006a61] transition-all" id="professionRole" placeholder="Your Job Title" type="text" value="Senior Frontend Engineer">
+</div>
+<div class="relative flex items-center mt-2">
+<input class="w-full bg-surface-container-low text-on-surface font-title-sm text-title-sm rounded-xl px-3.5 py-3 focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#006a61] transition-all" id="workplaceOrg" placeholder="Company or College" type="text" value="Swiggy">
+</div>
+</div>
+</div>
+<!-- Trust Score Booster Verification Banner -->
+<div class="bg-surface-container rounded-xl p-3 flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center shrink-0 text-on-secondary mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-primary font-bold">Verify with Work Email</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-extrabold">+20% Trust</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">aarav@swiggy.com</span>
+</div>
+</div>
+<!-- Toggle Micro-Interaction -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="workVerifyToggle" type="checkbox">
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Work Routine / Mode Selector -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2 font-bold uppercase tracking-wide">
+          Work Mode Routine
+        </label>
+<div class="grid grid-cols-3 gap-2" id="workModeGroup">
+<button class="work-mode-btn p-2.5 rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md flex flex-col items-center gap-1 text-center hover:bg-surface-container-high transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">apartment</span>
+<span>In-Office</span>
+</button>
+<button class="work-mode-btn active p-2.5 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold flex flex-col items-center gap-1 text-center shadow-xs transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">pie_chart</span>
+<span>Hybrid (3d)</span>
+</button>
+<button class="work-mode-btn p-2.5 rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md flex flex-col items-center gap-1 text-center hover:bg-surface-container-high transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">laptop_chromebook</span>
+<span>Remote</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Ambient Trust Footnote -->
+<div class="mt-space-md mb-2 flex items-center justify-center gap-1.5 text-center">
+<span class="material-symbols-outlined text-[16px] text-secondary">encrypted</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bank-grade 256-bit encryption for confidential verification</span>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for Pronouns
+  document.querySelectorAll('.pronoun-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.pronoun-btn').forEach(b => {
+        b.className = 'pronoun-btn px-3 py-2.5 rounded-xl font-label-md text-label-md shrink-0 bg-surface-container text-on-surface-variant font-medium hover:bg-surface-container-high transition-all';
+      });
+      btn.className = 'pronoun-btn active px-3 py-2.5 rounded-xl font-label-md text-label-md shrink-0 bg-secondary-container text-on-secondary-container font-bold transition-all shadow-sm';
+    });
+  });
+
+  // Simple micro-interactions for Tech Hub Chips
+  document.querySelectorAll('.market-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const isSelected = chip.classList.contains('bg-secondary-container');
+      const icon = chip.querySelector('.material-symbols-outlined');
+      if (isSelected) {
+        chip.className = 'market-chip px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 bg-surface-container text-on-surface-variant font-medium hover:bg-surface-container-high transition-colors';
+        icon.textContent = 'add';
+        icon.classList.add('opacity-40');
+      } else {
+        chip.className = 'market-chip px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 bg-secondary-container text-on-secondary-container font-bold shadow-xs';
+        icon.textContent = 'check';
+        icon.classList.remove('opacity-40');
+      }
+    });
+  });
+
+  // Simple micro-interactions for Work Mode
+  document.querySelectorAll('.work-mode-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.work-mode-btn').forEach(b => {
+        b.className = 'work-mode-btn p-2.5 rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md flex flex-col items-center gap-1 text-center hover:bg-surface-container-high transition-all';
+        const ic = b.querySelector('.material-symbols-outlined');
+        ic.style.fontVariationSettings = "'FILL' 0";
+      });
+      btn.className = 'work-mode-btn active p-2.5 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold flex flex-col items-center gap-1 text-center shadow-xs transition-all';
+      const activeIcon = btn.querySelector('.material-symbols-outlined');
+      activeIcon.style.fontVariationSettings = "'FILL' 1";
+    });
+  });
+</script></main><footer class="fixed bottom-0 inset-x-0 z-40 bg-surface/90 backdrop-blur-xl pb-safe shadow-[0_-4px_16px_rgba(30,27,75,0.04)]"><div class="h-20 px-gutter-mobile flex items-center justify-between gap-space-md"><button class="h-12 px-space-md rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container active:scale-95 transition-all flex items-center justify-center min-w-[5.5rem]" onclick="history.back()" type="button">Back</button><button class="flex-1 h-12 px-space-lg rounded-xl bg-primary text-on-primary font-title-sm text-title-sm shadow-md hover:bg-primary-container active:scale-98 transition-all flex items-center justify-center gap-space-xs" type="button"><span class="truncate">Continue</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></footer>
+
+</body></html>

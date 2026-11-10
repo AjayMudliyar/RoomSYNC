@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>Pod Invitations - RoomSync</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#070235", "inverse-surface": "#283044", "secondary-fixed-dim": "#6bd8cb", "on-surface-variant": "#47464f", "secondary-container": "#86f2e4", "on-error": "#ffffff", "tertiary-fixed-dim": "#ffb95f", "error-container": "#ffdad6", "surface-bright": "#faf8ff", "surface-variant": "#dae2fd", "on-tertiary-fixed-variant": "#653e00", "surface-container-highest": "#dae2fd", "surface-container": "#eaedff", "surface-tint": "#5b598c", "on-surface": "#131b2e", "on-primary-fixed-variant": "#444173", "secondary": "#006a61", "on-background": "#131b2e", "inverse-primary": "#c4c1fb", "tertiary": "#140900", "error": "#ba1a1a", "outline-variant": "#c8c5d0", "on-primary": "#ffffff", "surface": "#faf8ff", "on-tertiary-fixed": "#2a1700", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#181445", "primary-fixed": "#e3dfff", "on-tertiary-container": "#c07a00", "on-secondary-fixed-variant": "#005049", "inverse-on-surface": "#eef0ff", "tertiary-fixed": "#ffddb8", "tertiary-container": "#331d00", "on-secondary-container": "#006f66", "surface-container-low": "#f2f3ff", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "background": "#faf8ff", "secondary-fixed": "#89f5e7", "on-secondary": "#ffffff", "surface-container-high": "#e2e7ff", "primary-fixed-dim": "#c4c1fb", "on-secondary-fixed": "#00201d", "primary-container": "#1e1b4b", "on-primary-container": "#8683ba", "surface-dim": "#d2d9f4", "outline": "#787680" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-md": "1rem", "gutter-mobile": "1rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "margin-mobile": "1rem" }, fontFamily: { "title-sm": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, fontSize: { "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-md": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }] } } } };</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-space-xs flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Navigate back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-primary-container truncate font-semibold">Pod Invitations</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="More options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:scale-95 transition-all"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface pb-safe"><div class="flex flex-col w-full pb-24">
+<!-- Top Synergy Summary Banner -->
+<div class="px-margin-mobile pt-space-xs pb-space-sm">
+<div class="bg-surface-container rounded-xl p-space-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-variant flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Modern high-rise apartment living room in Indiranagar Bengaluru with sunlight, lush green balcony plants, minimalist teak coffee table and warm ambient morning lighting, photorealistic interior architectural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOyBllG2SsZTcjdoa9gQFVIMpm5OiebGH8O9LUJCA6NJDsza62awlP24qm28qAY7XHhE_j0L_HCIFQviIGDw-PvgEYqfcmpxFGitWO5kQVtfO1TcxSDQBHp1qvmrJAEED4hJsDtaysvUlJxmZrvrwrpRbXaulVennp9tTL5vO0BVhfncfPam6lROreFj8LYFBevsen7wFCQNR96tL3DiFTEo9UPtlDYC1c7iyfTFvn"/>
+<div class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-secondary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-on-secondary" style="font-variation-settings: 'FILL' 1;">done</span>
+</div>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-title-md text-title-md text-on-surface truncate">Indiranagar 3BHK Pod</h2>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm px-space-xs py-0.5 rounded-full uppercase tracking-wider">Slot 2/3</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Target move-in: Oct 15 • ₹24k/head</p>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Health</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-extrabold flex items-center gap-0.5">
+          96%
+          <span class="material-symbols-outlined text-[14px]">bolt</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Segmented Tabs -->
+<div class="px-margin-mobile pb-space-md">
+<div class="flex bg-surface-container-high p-1 rounded-xl gap-1">
+<button class="flex-1 py-2 px-2 rounded-lg font-title-sm text-title-sm text-on-primary bg-primary transition-all duration-200 text-center shadow-sm" id="tab-invite" onclick="switchTab('invite')">
+        Invite Matched
+      </button>
+<button class="flex-1 py-2 px-2 rounded-lg font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all duration-200 text-center flex items-center justify-center gap-1" id="tab-pending" onclick="switchTab('pending')">
+<span>Sent</span>
+<span class="px-1.5 py-0.2 bg-primary-fixed text-on-primary-fixed rounded-full text-label-sm font-label-sm">2</span>
+</button>
+<button class="flex-1 py-2 px-2 rounded-lg font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all duration-200 text-center flex items-center justify-center gap-1" id="tab-received" onclick="switchTab('received')">
+<span>Requests</span>
+<span class="px-1.5 py-0.2 bg-secondary-fixed text-on-secondary-fixed rounded-full text-label-sm font-label-sm">1</span>
+</button>
+</div>
+</div>
+<!-- Main View Container -->
+<div class="flex flex-col w-full gap-space-lg px-margin-mobile" id="view-invite">
+<!-- Section 1: Share Pod Invite Link -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</div>
+<div>
+<h3 class="font-title-sm text-title-sm text-on-surface">Share Exclusive Pod Link</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fast-track matching with verified seekers</p>
+</div>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+          Curated
+        </span>
+</div>
+<!-- Link Box -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-outline text-[18px] shrink-0">link</span>
+<span class="font-body-sm text-body-sm text-on-surface font-mono truncate select-all" id="pod-url">roomsync.in/pod/blr-indir-3bhk-892</span>
+</div>
+<button class="shrink-0 bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim px-space-sm py-1.5 rounded-lg font-title-sm text-title-sm flex items-center gap-1 active:scale-95 transition-all" id="btn-copy-url" onclick="copyPodLink()">
+<span class="material-symbols-outlined text-[16px]" id="copy-icon">content_copy</span>
+<span id="copy-text">Copy</span>
+</button>
+</div>
+<!-- Quick Action Buttons -->
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="flex items-center justify-center gap-space-xs py-2.5 px-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl font-title-sm text-title-sm transition-all active:scale-98" onclick="copyPodLink()">
+<span class="material-symbols-outlined text-[18px]">file_copy</span>
+          Copy Share Link
+        </button>
+<button class="flex items-center justify-center gap-space-xs py-2.5 px-space-sm bg-secondary text-on-secondary hover:bg-on-secondary-container rounded-xl font-title-sm text-title-sm shadow-sm transition-all active:scale-98" onclick="shareWhatsApp()">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+          WhatsApp Pod
+        </button>
+</div>
+<!-- Trust Reassurance -->
+<div class="flex items-start gap-space-xs bg-surface-container-low/70 rounded-lg p-2.5 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+          Only verified RoomSync users with compatible lifestyle profiles and mutual budget fit can submit an application.
+        </p>
+</div>
+</section>
+<!-- Section 2: Recommended Compatible Connections -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Top Synergy Matches</h3>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-1.5 py-0.5 rounded-full">Indiranagar Pool</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Live sync</span>
+</div>
+<!-- Connection Card 1: Priya Nair -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indian woman in her mid-20s, smiling warmly with stylish minimalist glasses, natural ambient Bangalore daylight, wearing smart casual linen top, high quality editorial corporate social profile photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK_IFKpKdRmRpITJvNXhMlDMsrSocuASEmLqTtnBuUPeCOSZsgOLylYlP-QGsYBj2VoXW4pTNvQIjGkJIvuMaWm6xcIek185hT6u-MJ6r0bDc_SaoTfJDd7CMOO5ReNGxsV__uZuF2X3IsrPM2lbFXxXn-ddlkdsfb6zTAKO1lI1PoPUZ9xVLdDUjSpfedB5Wsc0Uj8N_WQUC-1xfLGrHBcqbM6Q-kEfZ2AJxZl_l8"/>
+<span class="absolute top-1 left-1 bg-surface-bright/90 backdrop-blur-sm rounded-full px-1 py-0.2 text-label-sm font-label-sm text-on-surface flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px] text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Govt ID
+              </span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h4 class="font-title-md text-title-md text-on-surface truncate">Priya Nair, 26</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">work</span>
+                Sr. Frontend Eng @ Swiggy
+              </p>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="bg-surface-container text-on-surface-variant text-label-sm font-label-sm px-2 py-0.5 rounded-full">Non-Smoker</span>
+<span class="bg-surface-container text-on-surface-variant text-label-sm font-label-sm px-2 py-0.5 rounded-full">Quiet Hours</span>
+</div>
+</div>
+</div>
+<!-- Synergy Gauge -->
+<div class="flex flex-col items-center shrink-0 bg-secondary-container/40 px-2 py-1.5 rounded-xl">
+<span class="font-headline-sm text-headline-sm text-on-secondary-container font-extrabold leading-none">94%</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container uppercase tracking-tight">Synergy</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5">
+<p class="font-body-sm text-body-sm text-on-surface">
+<span class="text-secondary font-semibold">Match Insight:</span> Looking for 3BHK in Indiranagar. Aligned on cleaning roster, vegetarian-friendly, zero weekday parties.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1">
+<span class="font-title-sm text-title-sm text-on-surface">₹23k–₹26k</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/month</span>
+</div>
+<button class="bg-secondary text-on-secondary hover:bg-on-secondary-container px-space-md py-2 rounded-xl font-title-sm text-title-sm flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" id="invite-priya-btn" onclick="toggleInvite('priya-btn')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Invite to Pod</span>
+</button>
+</div>
+</article>
+<!-- Connection Card 2: Tanmay Joshi -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a young Indian male tech professional in casual navy polo shirt, warm studio lighting with shallow depth of field, friendly confident expression, modern Bangalore startup aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQHQGNTBt49ojxU9lrSfAW8jldw1ykgjdEe6K3LYdIIgsirEzM9qygYMpNZnPzDvGauYk1M-6c2oVATUu7Jh10H-W8XuBkiZZL1FqkumrieTvmbZvOp9WbYxHl42QOAWOGdb57801ynmkrvhaAHfN0YTla8uA6vZFNwoSPhdPl1D35dviSCNkngkHsGapVOE3a8zcpWfgJhD9vEbY-CfqbFF3gX-qzPnP8wBb7h7i8"/>
+<span class="absolute top-1 left-1 bg-surface-bright/90 backdrop-blur-sm rounded-full px-1 py-0.2 text-label-sm font-label-sm text-on-surface flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px] text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                SSO
+              </span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h4 class="font-title-md text-title-md text-on-surface truncate">Tanmay Joshi, 25</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">query_stats</span>
+                Data Analyst @ Zepto
+              </p>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="bg-surface-container text-on-surface-variant text-label-sm font-label-sm px-2 py-0.5 rounded-full">Hybrid (2d WFH)</span>
+<span class="bg-surface-container text-on-surface-variant text-label-sm font-label-sm px-2 py-0.5 rounded-full">Early Bird</span>
+</div>
+</div>
+</div>
+<!-- Synergy Gauge -->
+<div class="flex flex-col items-center shrink-0 bg-secondary-container/40 px-2 py-1.5 rounded-xl">
+<span class="font-headline-sm text-headline-sm text-on-secondary-container font-extrabold leading-none">88%</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container uppercase tracking-tight">Synergy</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5">
+<p class="font-body-sm text-body-sm text-on-surface">
+<span class="text-secondary font-semibold">Match Insight:</span> Budget ₹22k–₹25k, move-in next 2 weeks. Has full ergonomic workstation setup and shared acoustic foam panels.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1">
+<span class="font-title-sm text-title-sm text-on-surface">₹22k–₹25k</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/month</span>
+</div>
+<button class="bg-secondary text-on-secondary hover:bg-on-secondary-container px-space-md py-2 rounded-xl font-title-sm text-title-sm flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" id="invite-tanmay-btn" onclick="toggleInvite('tanmay-btn')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Invite to Pod</span>
+</button>
+</div>
+</article>
+<!-- Connection Card 3: Ananya Deshmukh -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of a modern creative Indian woman product designer, natural confident smile, wearing mustard yellow pullover, bright warm contemporary art-filled apartment background, professional profile photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1UeS16iYVxV2O2Lg_UHYYnsb05b6euLqG_s9vqVxWikWIHSC6g24Ku1cOS5moicRitD2JL2ztR_B6QwmoPYYq10jLgDO8PoiuH1Bf4m5VFA6L37ZCyayuthSF3XjF7tN7ve3pJg-vBpNsu-7N8blw7OWjMN-Ua_Vo-oJGhJ1obAivd6TghdTC6GmxquMHraFhBz6A6GRjp9JMHe5s8IKJh1eHSL8C-7ex11gAmINh"/>
+<span class="absolute top-1 left-1 bg-surface-bright/90 backdrop-blur-sm rounded-full px-1 py-0.2 text-label-sm font-label-sm text-on-surface flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px] text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Aadhaar
+              </span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h4 class="font-title-md text-title-md text-on-surface truncate">Ananya Deshmukh, 27</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">palette</span>
+                Product Designer @ Razorpay
+              </p>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="bg-surface-container text-on-surface-variant text-label-sm font-label-sm px-2 py-0.5 rounded-full">Cooks Weekends</span>
+<span class="bg-surface-container text-on-surface-variant text-label-sm font-label-sm px-2 py-0.5 rounded-full">Fitness</span>
+</div>
+</div>
+</div>
+<!-- Synergy Gauge -->
+<div class="flex flex-col items-center shrink-0 bg-secondary-container/40 px-2 py-1.5 rounded-xl">
+<span class="font-headline-sm text-headline-sm text-on-secondary-container font-extrabold leading-none">90%</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container uppercase tracking-tight">Synergy</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5">
+<p class="font-body-sm text-body-sm text-on-surface">
+<span class="text-secondary font-semibold">Match Insight:</span> Seeking master bedroom with attached bath. 98% schedule overlap and non-drinker indoors policy matched.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1">
+<span class="font-title-sm text-title-sm text-on-surface">₹24k–₹27k</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/month</span>
+</div>
+<button class="bg-secondary text-on-secondary hover:bg-on-secondary-container px-space-md py-2 rounded-xl font-title-sm text-title-sm flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" id="invite-ananya-btn" onclick="toggleInvite('ananya-btn')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Invite to Pod</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Section 3: Pending Invitations & Applications -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Action Required</h3>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-1.5 py-0.5 rounded-full font-bold">1 Direct Application</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Expires in 44h</span>
+</div>
+<!-- Application Card: Pending Application -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of Indian young man smiling casually with smart glasses and minimal denim jacket, daylight urban studio portrait, realistic lifestyle photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXQC0c1XNlZvb24q2_4hkg44u4yhKWSrXg4oBLrUmUe_5Gd9bX0NkH_8vLOVQYLFrU_KdMJDzIMKMF7u9Rjwwc7DdZ1FPSf7sp4iieKKIyEsElL3wpd7yNxcJaA4QbIHmmK2xV6GgU01osIouzRtaQC4GTdlavYW5vbjo5KV0xs48bFuMWZikFK7fJCy61mte0FbDucsItHnhItftUlm7ANbEQTl9qz7tpfP7mkAW7"/>
+<div class="absolute bottom-0 right-0 w-3 h-3 bg-secondary rounded-full"></div>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h4 class="font-title-md text-title-md text-on-surface truncate">Tanmay Joshi</h4>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-1.5 py-0.2 rounded">88%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Applied for Room 3 (En-suite) • 4h ago</p>
+</div>
+</div>
+<span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2 py-0.5 rounded-full font-medium">Under Review</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">description</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Full Compatibility Dossier</span>
+</div>
+<button class="text-secondary hover:text-on-secondary-container font-title-sm text-title-sm flex items-center gap-0.5" onclick="viewDossierModal()">
+<span>Review Dossier</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Application Decision Buttons -->
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="bg-surface-container hover:bg-surface-container-high text-error py-2.5 px-space-sm rounded-xl font-title-sm text-title-sm flex items-center justify-center gap-1 transition-all active:scale-98" onclick="declineApplicant(this)">
+<span class="material-symbols-outlined text-[18px]">close</span>
+            Decline
+          </button>
+<button class="bg-primary hover:bg-primary-container text-on-primary py-2.5 px-space-sm rounded-xl font-title-sm text-title-sm flex items-center justify-center gap-1 shadow-sm transition-all active:scale-98" onclick="acceptApplicant(this)">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+            Accept into Slot 3
+          </button>
+</div>
+</article>
+</section>
+<!-- Section 4: Governance & Leave Pod (Danger Zone) -->
+<section class="flex flex-col gap-space-xs pt-space-xs">
+<h3 class="font-title-sm text-title-sm text-on-surface-variant uppercase tracking-wider px-1">Pod Governance &amp; Role</h3>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<!-- Accordion Item 1: Transfer Admin Role -->
+<div class="flex flex-col">
+<button class="w-full flex items-center justify-between p-space-md text-left hover:bg-surface-container-low transition-colors" onclick="toggleAccordion('acc-admin')">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+</div>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface">Transfer Pod Leadership</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Designate another confirmed flatmate as admin</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform duration-200" id="acc-admin-icon">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-space-md pt-0 flex flex-col gap-space-sm" id="acc-admin-content">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Admins hold lease coordination authority and interview approval rights. Selecting a new leader revokes your admin controls once they accept.
+            </p>
+<div class="flex items-center justify-between bg-surface-container-low p-space-sm rounded-xl">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Active Flatmate: Rahul Sharma</span>
+<button class="bg-primary text-on-primary px-space-sm py-1.5 rounded-lg font-title-sm text-title-sm active:scale-95 transition-all" onclick="alert('Leadership transfer request dispatched to Rahul Sharma.')">
+                Transfer
+              </button>
+</div>
+</div>
+</div>
+<!-- Accordion Item 2: Leave Pod (Danger Trigger) -->
+<div class="flex flex-col bg-surface-container-low/30">
+<button class="w-full flex items-center justify-between p-space-md text-left hover:bg-error-container/20 transition-colors" onclick="toggleAccordion('acc-leave')">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-error-container/60 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">exit_to_app</span>
+</div>
+<div>
+<p class="font-title-sm text-title-sm text-error">Leave This Pod</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Relinquish your slot in Indiranagar 3BHK</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-error transition-transform duration-200" id="acc-leave-icon">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-space-md pt-0 flex flex-col gap-space-sm" id="acc-leave-content">
+<div class="bg-error-container/30 p-space-sm rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-error font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+                Two-Step Confirmation
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+                Leaving will clear your match synergy history with this group and notify remaining members immediately.
+              </p>
+</div>
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-secondary focus:ring-0" id="confirm-leave-check" onchange="toggleLeaveButton()" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface select-none" for="confirm-leave-check">
+                I understand my spot will be immediately opened to the waiting list.
+              </label>
+</div>
+<button class="w-full py-2.5 rounded-xl font-title-sm text-title-sm bg-error/40 text-on-error cursor-not-allowed transition-all" disabled="" id="btn-final-leave" onclick="executeLeavePod()">
+              Confirm &amp; Exit Pod
+            </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Secondary Tab Content: Pending Sent (Hidden by default) -->
+<div class="hidden flex-col w-full gap-space-md px-margin-mobile" id="view-pending">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indian software engineer sitting in modern co-working space, calm thoughtful expression, high aesthetic quality photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCryGFlnbrSeOjqCp5DXZGbogqJBipuQF4C9g4XKDph5flzGWZdCndUWt5K41gWOWxsRTvWzKzNUKreCjlOu1Bra8zDaadfRtE-7mm3aBYIr6lEUCx7dlc8b4oRCl5jsv9nJ2YwVI9yDNVFfbvQxTetSYpz9nLaXbbtIdcb1tEO35rhyUgT0otHChWHTIZVOlbwmBb1aSgSFatU6_7mAdXF_ITcV1g1LvqF-hxX9Dnp"/>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Rohan Verma</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Invite sent 18 hours ago</p>
+</div>
+</div>
+<button class="bg-surface-container hover:bg-surface-container-high px-space-sm py-1.5 rounded-xl font-title-sm text-title-sm text-on-surface active:scale-95 transition-all" onclick="alert('Invitation pinged!')">
+        Remind
+      </button>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indian professional woman with headphones around neck in modern startup hub, soft daylight, editorial photo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo_Gb02_zgKUbQ8vXhbttV8GtMQIOXHHrriee7SSmsqEDOvEy4m5mC268njaHtxyTsAw06KnweBlzl14u7gAMAk8emlCZ0MGgUjyziIDRInjYJpOb9Q-bTTcJ-yXDSq71jx_kyAoc712OE-bWQ1pKHwzLDIkU9fDuXWrxxDIu_jDctQLjIb14tZLnbLSW3nI9d4PIGks4a7920jIMd1rp_DbSjbQKIpmQUe78Xm6IH"/>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Meera Sen</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Invite sent yesterday</p>
+</div>
+</div>
+<button class="bg-surface-container hover:bg-surface-container-high px-space-sm py-1.5 rounded-xl font-title-sm text-title-sm text-on-surface active:scale-95 transition-all" onclick="alert('Invitation pinged!')">
+        Remind
+      </button>
+</div>
+</div>
+<!-- Secondary Tab Content: Received Requests (Hidden by default) -->
+<div class="hidden flex-col w-full gap-space-md px-margin-mobile" id="view-received">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of Indian young male tech analyst smiling warmly in bright Bengaluru cafe setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxwrl9-LOjLdPaVS1UsVHaGU2DWJ_zHC6xCKYQjUomwpR5eFOZLfQt1A4Ulu1o-x-xxG3aIAZT0rq0MBcLQ6wwPkDLStxCBgqHewbuz46BXiMEbVF99eROhLgC-BOLPtc_tKtIbQ4abE6FUXmqckjCaMggfasbIvNXiTLBWN_4NSgIaTC6N-3JtiIjHDZ5vabYURQxKOVuf6eEVHr5HINC0jyaiVzucuHI3h6OBhJv"/>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Tanmay Joshi, 25</h4>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">88% Synergy Match</p>
+</div>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full">New</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">"Hey folks! Love the Indiranagar setup. WFH on Thursdays &amp; Fridays, vegetarian, non-smoker."</p>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="bg-surface-container text-on-surface py-2 rounded-xl font-title-sm text-title-sm" onclick="alert('Application archived.')">Pass</button>
+<button class="bg-primary text-on-primary py-2 rounded-xl font-title-sm text-title-sm" onclick="alert('Tanmay welcomed to the pod!')">Accept</button>
+</div>
+</div>
+</div>
+<!-- Floating Sticky Action Trigger (Bottom Dock) -->
+<aside aria-label="Search and Discovery Actions" class="fixed bottom-0 left-0 right-0 p-space-sm bg-surface-bright/95 backdrop-blur-md z-40 max-w-md mx-auto">
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-3 px-space-md rounded-2xl font-title-sm text-title-sm flex items-center justify-between shadow-lg active:scale-98 transition-all" onclick="openSeekerSearch()">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">search</span>
+<span>Search RoomSync Seekers</span>
+</div>
+<div class="flex items-center gap-1 bg-white/10 px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider">Filters</span>
+</div>
+</button>
+</aside>
+<!-- Dossier Modal Sheet (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden flex-col justify-end p-0 transition-opacity" id="dossier-modal">
+<div class="bg-surface-container-lowest w-full rounded-t-3xl p-space-lg flex flex-col gap-space-md max-h-[751px] overflow-y-auto">
+<div class="w-12 h-1.5 bg-outline-variant rounded-full mx-auto -mt-2"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Studio portrait of Indian tech worker smiling, clean lighting, professional high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdZQaFUjrXxqBxAt83g5MWBhqClZhWa4w8Qo-Ks3P2YbmrPkJR5Gp1tWcUyzmDiuO2J9t-n2AwO8E3mJyCvsyGNr1Kj2C00zusuENuMzhv7qRNsgrmA7two-xuZJKHGb6iKUGt6q7fjCknH33zBOI4Ksawq4hevryIcdl8VnK86Mz3Qm7V8SIvaA5GQx9EfF00e2siBLnSmkmokmGUlKakveq97yoeyE_lhTv-8aaZ"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tanmay Joshi</h3>
+<p class="font-body-sm text-body-sm text-secondary font-medium">Verified Zepto Data Analyst</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="closeDossierModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Dossier Breakdown Matrix -->
+<div class="flex flex-col gap-space-xs">
+<h4 class="font-title-sm text-title-sm text-on-surface-variant uppercase tracking-wider">Synergy Score Breakdown</h4>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sleep Schedule</span>
+<p class="font-title-md text-title-md text-secondary font-bold">98% Match</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">11 PM - 7 AM sync</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Food &amp; Diet</span>
+<p class="font-title-md text-title-md text-secondary font-bold">92% Match</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vegetarian friendly</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Social / Visitors</span>
+<p class="font-title-md text-title-md text-secondary font-bold">85% Match</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Low weekday traffic</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cleanliness Habits</span>
+<p class="font-title-md text-title-md text-secondary font-bold">95% Match</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rotating chores opt-in</span>
+</div>
+</div>
+</div>
+<!-- Govt ID & Verification Proofs -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface">3-Tier Verification Cleared</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Govt Aadhaar ID • Work Email SSO • Credit Check</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">check</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-2">
+<button class="py-3 bg-surface-container text-on-surface font-title-sm text-title-sm rounded-xl active:scale-98" onclick="closeDossierModal()">
+          Dismiss
+        </button>
+<button class="py-3 bg-primary text-on-primary font-title-sm text-title-sm rounded-xl shadow-md active:scale-98" onclick="acceptApplicant(null); closeDossierModal();">
+          Admit to Slot 3
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchTab(active) {
+    const tabs = ['invite', 'pending', 'received'];
+    tabs.forEach(tab => {
+      const btn = document.getElementById('tab-' + tab);
+      const view = document.getElementById('view-' + tab);
+      if (tab === active) {
+        btn.className = 'flex-1 py-2 px-2 rounded-lg font-title-sm text-title-sm text-on-primary bg-primary transition-all duration-200 text-center shadow-sm flex items-center justify-center gap-1';
+        view.classList.remove('hidden');
+        view.classList.add('flex');
+      } else {
+        btn.className = 'flex-1 py-2 px-2 rounded-lg font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all duration-200 text-center flex items-center justify-center gap-1';
+        view.classList.add('hidden');
+        view.classList.remove('flex');
+      }
+    });
+  }
+
+  function copyPodLink() {
+    const url = document.getElementById('pod-url').innerText;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText('https://' + url);
+    }
+    const copyText = document.getElementById('copy-text');
+    const copyIcon = document.getElementById('copy-icon');
+    copyText.innerText = 'Copied!';
+    copyIcon.innerText = 'check';
+    setTimeout(() => {
+      copyText.innerText = 'Copy';
+      copyIcon.innerText = 'content_copy';
+    }, 2000);
+  }
+
+  function shareWhatsApp() {
+    const text = encodeURIComponent('Hey! Check out our Indiranagar 3BHK roommate pod on RoomSync: https://roomsync.in/pod/blr-indir-3bhk-892');
+    window.open('https://api.whatsapp.com/send?text=' + text, '_blank');
+  }
+
+  function toggleInvite(btnId) {
+    const btn = document.getElementById('invite-' + btnId);
+    if (!btn) return;
+    const isInvited = btn.dataset.invited === 'true';
+    if (!isInvited) {
+      btn.dataset.invited = 'true';
+      btn.className = 'bg-surface-container text-secondary px-space-md py-2 rounded-xl font-title-sm text-title-sm flex items-center gap-1.5 transition-all';
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Invite Sent</span>';
+    } else {
+      btn.dataset.invited = 'false';
+      btn.className = 'bg-secondary text-on-secondary hover:bg-on-secondary-container px-space-md py-2 rounded-xl font-title-sm text-title-sm flex items-center gap-1.5 shadow-sm active:scale-95 transition-all';
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">person_add</span><span>Invite to Pod</span>';
+    }
+  }
+
+  function toggleAccordion(id) {
+    const content = document.getElementById(id + '-content');
+    const icon = document.getElementById(id + '-icon');
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      content.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  function toggleLeaveButton() {
+    const check = document.getElementById('confirm-leave-check');
+    const btn = document.getElementById('btn-final-leave');
+    if (check.checked) {
+      btn.disabled = false;
+      btn.className = 'w-full py-2.5 rounded-xl font-title-sm text-title-sm bg-error text-on-error cursor-pointer shadow-md active:scale-98 transition-all';
+    } else {
+      btn.disabled = true;
+      btn.className = 'w-full py-2.5 rounded-xl font-title-sm text-title-sm bg-error/40 text-on-error cursor-not-allowed transition-all';
+    }
+  }
+
+  function executeLeavePod() {
+    alert('Pod membership successfully revoked. Redirecting to exploration pool.');
+  }
+
+  function viewDossierModal() {
+    const modal = document.getElementById('dossier-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeDossierModal() {
+    const modal = document.getElementById('dossier-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function acceptApplicant(btn) {
+    alert('Tanmay Joshi has been successfully accepted into Slot 3! Welcome agreement generated.');
+    if (btn) {
+      btn.closest('article').style.opacity = '0.5';
+      btn.disabled = true;
+      btn.innerText = 'Slot Confirmed';
+    }
+  }
+
+  function declineApplicant(btn) {
+    if (confirm('Decline this application? Tanmay will be gently notified.')) {
+      if (btn) {
+        btn.closest('article').remove();
+      }
+    }
+  }
+
+  function openSeekerSearch() {
+    alert('Opening RoomSync Live Seeker Radar for Indiranagar (Radius 3km)...');
+  }
+</script></main></body></html>

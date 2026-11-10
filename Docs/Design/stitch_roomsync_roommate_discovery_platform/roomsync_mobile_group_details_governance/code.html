@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>Pod Detail - RoomSync</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#070235", "inverse-surface": "#283044", "secondary-fixed-dim": "#6bd8cb", "on-surface-variant": "#47464f", "secondary-container": "#86f2e4", "on-error": "#ffffff", "tertiary-fixed-dim": "#ffb95f", "error-container": "#ffdad6", "surface-bright": "#faf8ff", "surface-variant": "#dae2fd", "on-tertiary-fixed-variant": "#653e00", "surface-container-highest": "#dae2fd", "surface-container": "#eaedff", "surface-tint": "#5b598c", "on-surface": "#131b2e", "on-primary-fixed-variant": "#444173", "secondary": "#006a61", "on-background": "#131b2e", "inverse-primary": "#c4c1fb", "tertiary": "#140900", "error": "#ba1a1a", "outline-variant": "#c8c5d0", "on-primary": "#ffffff", "surface": "#faf8ff", "on-tertiary-fixed": "#2a1700", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#181445", "primary-fixed": "#e3dfff", "on-tertiary-container": "#c07a00", "on-secondary-fixed-variant": "#005049", "inverse-on-surface": "#eef0ff", "tertiary-fixed": "#ffddb8", "tertiary-container": "#331d00", "on-secondary-container": "#006f66", "surface-container-low": "#f2f3ff", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "background": "#faf8ff", "secondary-fixed": "#89f5e7", "on-secondary": "#ffffff", "surface-container-high": "#e2e7ff", "primary-fixed-dim": "#c4c1fb", "on-secondary-fixed": "#00201d", "primary-container": "#1e1b4b", "on-primary-container": "#8683ba", "surface-dim": "#d2d9f4", "outline": "#787680" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-md": "1rem", "gutter-mobile": "1rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "margin-mobile": "1rem" }, fontFamily: { "title-sm": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, fontSize: { "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-md": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }] } } } };</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-space-xs flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Navigate back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-primary-container truncate font-semibold">Pod Detail</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="More options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:scale-95 transition-all"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface pb-safe"><div class="flex flex-col w-full pb-24">
+<!-- Top Pod Identity Overview -->
+<div class="bg-gradient-to-b from-surface-container-high/60 to-surface px-space-md pt-space-md pb-space-sm">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+        Active Cohort • 2 of 3 Members Filled
+      </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">
+        1 Slot Open
+      </span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Indiranagar 3BHK Tech Cohort</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">location_on</span>
+      Indiranagar / HAL 2nd Stage, Bengaluru
+    </p>
+<!-- Key Metrics Bento Row -->
+<div class="mt-space-md grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Group Target</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">apartment</span>
+</div>
+<div class="mt-2">
+<div class="font-title-md text-title-md text-on-surface">3BHK Gated Society</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">₹72,000/mo <span class="text-secondary font-semibold">(₹24k/each)</span></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cohort Harmony</span>
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">insights</span>
+</div>
+<div class="mt-2 flex items-baseline justify-between">
+<div>
+<div class="font-title-md text-title-md text-secondary font-bold flex items-center gap-1">
+              91%
+              <span class="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container/60 px-1.5 py-0.5 rounded">High</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary underline decoration-secondary/40 hover:opacity-80 transition-opacity">
+              Inspect Matrix →
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Segmented Navigation Bar -->
+<div class="sticky top-16 z-30 bg-surface/95 backdrop-blur-md px-space-md py-space-xs border-b border-surface-container-high/40">
+<div class="flex items-center gap-1 overflow-x-auto no-scrollbar py-1">
+<button class="px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 shadow-sm transition-all">
+        Overview
+      </button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 hover:bg-surface-container-high transition-colors">
+        Compatibility
+      </button>
+<button class="px-3.5 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 hover:bg-surface-container-high flex items-center gap-1.5 transition-colors">
+<span>Saved Flats</span>
+<span class="bg-surface-container-highest text-primary font-bold text-[10px] w-4 h-4 rounded-full flex items-center justify-center">3</span>
+</button>
+<button class="px-3.5 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 hover:bg-surface-container-high flex items-center gap-1.5 transition-colors">
+<span>Pod Chat</span>
+<span class="bg-error text-on-error font-bold text-[10px] w-4 h-4 rounded-full flex items-center justify-center">2</span>
+</button>
+</div>
+</div>
+<!-- Main Stack Content -->
+<div class="px-space-md flex flex-col gap-space-lg mt-space-md">
+<!-- Section 1: Pod Members -->
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Pod Members</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Confirmed residents &amp; lifestyle alignment</p>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-secondary bg-secondary-fixed/30 px-2 py-1 rounded-full">2 of 3 Matched</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Member 1: Pod Admin (Aarav Sharma) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden transition-all">
+<div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-secondary/10 to-transparent rounded-bl-full pointer-events-none"></div>
+<div class="flex items-start gap-space-md">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-inner" data-alt="Close-up portrait of Aarav Sharma, a confident 26-year-old South Asian tech engineer wearing casual navy blue henley shirt, warm cinematic natural lighting, modern apartment interior background with soft bokeh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_46bifse6kYXva8LORdj9x6v9QoCk4CVzKeiOM21Aoj0JDIk7p8K4JPzW1yvI0jfMPC7gqlrwycWKU4RYcu1Mi7u_USVGEA0E7FVgWt0Mxrek8l9bwbtlPRYz_2HIpzNGsGXksKvQ3DhyUcIuCL1NZUKbLjGyk0iz5VuFyCfL2G8zVp_iLjI_mvpsD3X85zThlbNg4H0trXQHVeD4VQrtld2rreGpM_wx0Chok0eb"/>
+<div class="absolute -bottom-1 -right-1 bg-secondary text-on-secondary rounded-full p-0.5 shadow-sm" title="Verified Profiles">
+<span class="material-symbols-outlined text-[14px] block">verified</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Aarav Sharma</span>
+<span class="font-label-sm text-label-sm bg-primary text-on-primary px-2 py-0.5 rounded-full">Admin</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">26 • Sr. Frontend Eng @ Swiggy</p>
+<!-- Trust Micro-Badges -->
+<div class="flex flex-wrap gap-1 mt-2">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-secondary-container/40 text-on-secondary-container px-2 py-0.5 rounded-md">
+<span class="material-symbols-outlined text-[12px]">security</span>
+                  DigiLocker ID
+                </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-md">
+<span class="material-symbols-outlined text-[12px]">badge</span>
+                  Work SSO
+                </span>
+</div>
+</div>
+</div>
+<!-- Habit Micro-Matrix -->
+<div class="mt-space-sm pt-space-xs grid grid-cols-2 gap-2 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">bedtime</span>
+<span class="font-body-sm text-body-sm text-on-surface">Sleep: <strong class="font-semibold">11:30 PM</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">restaurant</span>
+<span class="font-body-sm text-body-sm text-on-surface">Diet: <strong class="font-semibold">Non-Veg</strong></span>
+</div>
+</div>
+</div>
+<!-- Member 2: Rohan Varma -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden transition-all">
+<div class="flex items-start gap-space-md">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-inner" data-alt="Portrait of Rohan Varma, a 27-year-old product manager smiling warmly wearing smart casual spectacles and grey linen shirt, soft morning office window lighting, friendly relaxed professional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGd3nKmL944RkKqG-iRliQgxEYvk4K8OYjJZw0hI8fxdrvauVoflCAarn6Sim7W2xoXpKxxZIk9IENIEW7ZcR3ZQWeUCQVFt58qGt8DIunq-cfUFOCeuD3nkCWtASi6aFf_3SsYkf5nUOVcEYcVPHBqS3xqKAOygbWwysMXr9toCot3brIxxXSQ-sBetGjZIyJ7cYo8MOGQCCr9bOgastXKXCtsTetfzF7OnLrdGw6"/>
+<div class="absolute -bottom-1 -right-1 bg-secondary text-on-secondary rounded-full p-0.5 shadow-sm" title="Verified Govt ID">
+<span class="material-symbols-outlined text-[14px] block">verified_user</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Rohan Varma</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold bg-secondary-container/40 px-2 py-0.5 rounded-full">
+                  94% Match w/ Aarav
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">27 • PM @ Razorpay</p>
+<!-- Trust Micro-Badges -->
+<div class="flex flex-wrap gap-1 mt-2">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-secondary-container/40 text-on-secondary-container px-2 py-0.5 rounded-md">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+                  Aadhaar Verified
+                </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-md">
+<span class="material-symbols-outlined text-[12px]">work</span>
+                  Razorpay SSO
+                </span>
+</div>
+</div>
+</div>
+<!-- Habit Micro-Matrix -->
+<div class="mt-space-sm pt-space-xs grid grid-cols-2 gap-2 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">bedtime</span>
+<span class="font-body-sm text-body-sm text-on-surface">Sleep: <strong class="font-semibold">12:00 AM</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">ramen_dining</span>
+<span class="font-body-sm text-body-sm text-on-surface">Diet: <strong class="font-semibold">Flexitarian</strong></span>
+</div>
+</div>
+</div>
+<!-- Slot 3: Vacant Roommate Slot Card -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md flex flex-col items-center justify-center text-center transition-all hover:bg-surface-container-low cursor-pointer shadow-sm">
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-[26px]">person_add</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">1 Vacant Roommate Slot</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1">
+            Looking for a working professional who respects early sleep schedules &amp; clean common areas.
+          </p>
+<div class="mt-3 flex items-center gap-2">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-secondary text-on-secondary font-semibold px-3 py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+              Auto-Match Active
+            </span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold px-2 py-1 rounded-md">
+              2 Pending Applications
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Shared Living Covenants -->
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Living Covenants</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mutual house etiquette agreed by cohort</p>
+</div>
+<button class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-0.5">
+<span>Edit</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-start gap-2.5">
+<div class="p-2 rounded-lg bg-surface-container text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">volume_off</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">11 PM Quiet Hours</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Headphones required in common spaces after 11.</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-start gap-2.5">
+<div class="p-2 rounded-lg bg-surface-container text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">cleaning_services</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">Shared Cook &amp; Maid</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Daily cleaning + dual meals split equally.</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-start gap-2.5">
+<div class="p-2 rounded-lg bg-surface-container text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">Splitwise Bills</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">WiFi &amp; electricity settled within 48h of cycle.</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-start gap-2.5">
+<div class="p-2 rounded-lg bg-surface-container text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">24h Guest Notice</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight mt-0.5">Prior heads-up on chat for overnight visitors.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Pending Membership Requests -->
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Pending Applications</h3>
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm font-bold px-2 py-0.2 rounded-full">2</span>
+</div>
+<button class="font-label-sm text-label-sm text-on-surface-variant font-medium hover:text-primary">
+          View All
+        </button>
+</div>
+<!-- Applicant Card: Tanmay Joshi -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Portrait of Tanmay Joshi, 25, young Indian professional data scientist with neatly trimmed beard, wearing relaxed crew neck olive sweatshirt, ambient studio lighting with modern urban flair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCsxlHdipisI2JMFJ3oagkwrC-0EW6gzOsRnmdgCsOGUdQsm7B4HNi_YPO95MQMg1e93YKPFHZkt-cBKSBma5lQOM4s1C50AB_l4p9uycIsq6vU8im7GD9-QxQYGCP02ly2kfeawhontoyahMHf2ijBpdRtWpeC8Z9ycdxyRlfzswGz3WoehoWfmx_gEr2J9p258RDCYYaBasmqgf_6IlthRbg5iXUwPJQMeV6kxbb"/>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-bold text-on-surface">Tanmay Joshi</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">25 • Data Analyst @ Zepto</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-title-sm text-title-sm font-extrabold text-secondary bg-secondary-container/50 px-2 py-0.5 rounded-full">
+              88% Synergy
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Move-in Oct 10</span>
+</div>
+</div>
+<!-- Note from applicant -->
+<div class="mt-space-sm bg-surface-container-low p-3 rounded-lg text-on-surface font-body-sm text-body-sm relative">
+<span class="material-symbols-outlined text-secondary text-[16px] absolute -top-1.5 -left-1.5 bg-surface-container-lowest rounded-full shadow-xs">format_quote</span>
+<p class="pl-2 italic text-on-surface-variant">
+            “Would love to take the master bedroom with balcony! Looking for chill flatmates who love occasional weekend cooking &amp; badminton.”
+          </p>
+</div>
+<!-- Action CTAs -->
+<div class="mt-space-sm grid grid-cols-2 gap-space-xs pt-1">
+<button class="w-full py-2.5 px-3 rounded-xl bg-surface-container-high text-primary font-title-sm text-title-sm font-semibold hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+            Review Matrix
+          </button>
+<button class="w-full py-2.5 px-3 rounded-xl bg-primary-container text-on-primary font-title-sm text-title-sm font-semibold hover:bg-primary transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+            Accept into Pod
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-xl px-space-md py-3 shadow-[0_-4px_20px_rgba(7,2,53,0.08)] pb-safe">
+<div class="max-w-md mx-auto grid grid-cols-2 gap-space-sm">
+<button class="py-3 px-4 rounded-xl bg-surface-container-lowest text-primary font-title-sm text-title-sm font-semibold shadow-sm hover:bg-surface-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">person_search</span>
+<span>Invite Seeker</span>
+</button>
+<button class="py-3 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm font-semibold shadow-md hover:bg-secondary/95 active:scale-[0.98] transition-all flex items-center justify-center gap-2 relative">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Open Pod Chat</span>
+<span class="absolute -top-1.5 -right-1.5 bg-error text-on-error font-bold font-label-sm text-label-sm w-5 h-5 rounded-full flex items-center justify-center shadow-sm">
+          2
+        </span>
+</button>
+</div>
+</div>
+</div></main></body></html>

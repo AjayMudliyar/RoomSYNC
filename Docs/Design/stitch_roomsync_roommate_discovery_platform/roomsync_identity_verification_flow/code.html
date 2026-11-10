@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#89f5e7",
+          "surface": "#faf8ff",
+          "on-secondary": "#ffffff",
+          "on-tertiary-fixed-variant": "#653e00",
+          "secondary": "#006a61",
+          "outline": "#787680",
+          "surface-container-high": "#e2e7ff",
+          "on-secondary-container": "#006f66",
+          "outline-variant": "#c8c5d0",
+          "surface-variant": "#dae2fd",
+          "surface-tint": "#5b598c",
+          "on-surface": "#131b2e",
+          "surface-container-lowest": "#ffffff",
+          "secondary-fixed-dim": "#6bd8cb",
+          "tertiary-fixed": "#ffddb8",
+          "on-primary": "#ffffff",
+          "on-background": "#131b2e",
+          "tertiary-fixed-dim": "#ffb95f",
+          "error-container": "#ffdad6",
+          "surface-bright": "#faf8ff",
+          "primary-fixed-dim": "#c4c1fb",
+          "surface-container": "#eaedff",
+          "surface-container-highest": "#dae2fd",
+          "primary-container": "#1e1b4b",
+          "on-primary-fixed-variant": "#444173",
+          "inverse-on-surface": "#eef0ff",
+          "tertiary": "#140900",
+          "on-secondary-fixed-variant": "#005049",
+          "on-tertiary-container": "#c07a00",
+          "tertiary-container": "#331d00",
+          "secondary-container": "#86f2e4",
+          "surface-dim": "#d2d9f4",
+          "inverse-primary": "#c4c1fb",
+          "on-primary-fixed": "#181445",
+          "primary": "#070235",
+          "primary-fixed": "#e3dfff",
+          "on-tertiary": "#ffffff",
+          "surface-container-low": "#f2f3ff",
+          "on-primary-container": "#8683ba",
+          "on-tertiary-fixed": "#2a1700",
+          "background": "#faf8ff",
+          "inverse-surface": "#283044",
+          "on-surface-variant": "#47464f",
+          "error": "#ba1a1a",
+          "on-secondary-fixed": "#00201d",
+          "on-error-container": "#93000a",
+          "on-error": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "margin": "1.5rem",
+          "space-md": "1rem",
+          "gutter-desktop": "2rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem",
+          "margin-desktop": "3rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "metric-display": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "title-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "metric-display": [
+            "32px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-md": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="trust-centre" href="#"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-secondary-fixed shadow-[0_4px_12px_rgba(7,2,53,0.18)]"><span class="material-symbols-outlined text-[24px]">sync_alt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">RoomSync</span><span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">Verified Living</span></div></a><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-secondary text-[18px]">location_on</span><span class="font-label-md text-label-md text-on-surface">Bengaluru, KA</span><span class="material-symbols-outlined text-outline text-[18px]">keyboard_arrow_down</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-full bg-surface-container-low" data-active-classes="bg-secondary-container text-on-secondary-container font-title-sm font-bold shadow-sm"><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="discovery" href="#">Discover</a><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="accommodation-discovery" href="#">Accommodation</a><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="roommate-groups" href="#">Roommate Groups</a><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="trust-centre" href="#">Trust &amp; Safety</a><a class="relative px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" data-path="requests" href="#">Requests<span class="px-1.5 py-0.5 rounded-full bg-surface-variant text-on-surface font-label-sm text-label-sm font-bold">3</span></a><a class="relative px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" data-path="messages" href="#">Messages<span class="px-1.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">2</span></a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)] border border-surface-container"><span class="material-symbols-outlined text-outline text-[18px]">search</span><span class="font-body-sm text-body-sm text-outline-variant pr-space-md">Search verified profiles, trusts...</span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">⌘K</kbd></div><button class="relative w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-on-surface-variant text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center ring-2 ring-surface"><span class="material-symbols-outlined text-on-secondary text-[11px]">check</span></div></div><div class="hidden sm:flex flex-col"><div class="flex items-center gap-1.5"><span class="font-title-sm text-title-sm text-on-surface leading-tight font-bold">Aarav Sharma</span><span class="px-1.5 py-0.2 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">Swiggy SSO</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">Aadhaar Verified</span></div></div></div></div><div class="bg-surface-container-low/75 backdrop-blur-md border-t border-surface-container"><div class="max-w-[1280px] mx-auto px-gutter-desktop py-2.5 flex items-center justify-between gap-space-md overflow-x-auto"><div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md shrink-0"><span class="font-label-sm text-label-sm uppercase font-bold text-secondary tracking-wider">Trust &amp; Safety</span><span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container-highest text-secondary font-bold"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="trust-centre" href="#">Trust Centre</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="identity-verification" href="#">Identity Verification</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="verification-status" href="#">Verification Status</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="safety-standards" href="#">Safety Guidelines</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="privacy-controls" href="#">Privacy Controls</a></nav></div><div class="hidden md:flex items-center gap-space-md shrink-0"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="material-symbols-outlined text-[15px]">shield</span><span>Aadhaar Multi-Factor Active</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium"><span class="material-symbols-outlined text-[15px] text-secondary">lock</span><span>256-Bit Encrypted Data Vault</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive & Aesthetic Top Ambience Gradient (No borders, pure tonal layering) -->
+<div class="w-full bg-gradient-to-b from-surface-container via-surface to-background pb-space-xl">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop pt-space-lg">
+<!-- Stepper / Multi-Tier Progress Module -->
+<section class="mb-space-xl">
+<div class="bg-surface-container-lowest shadow-sm rounded-xl p-space-md md:p-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Identity Trust Architecture</span>
+<h1 class="font-headline-md text-headline-md text-primary mt-1">Multi-Tier Identity Verification</h1>
+</div>
+<div class="inline-flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container self-start lg:self-center">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-label-md text-label-md font-semibold">Tier 3: UIDAI / DigiLocker Protocol Active</span>
+</div>
+</div>
+<!-- 4-Stage Stepper Track -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md relative">
+<!-- Step 1 -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-secondary font-bold uppercase">Step 01 • Completed</p>
+<p class="font-title-sm text-title-sm text-on-surface truncate">Basic Information</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-secondary font-bold uppercase">Step 02 • Completed</p>
+<p class="font-title-sm text-title-sm text-on-surface truncate">Workplace SSO (Swiggy)</p>
+</div>
+</div>
+<!-- Step 3 (Active) -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-primary-container text-on-primary shadow-md relative overflow-hidden">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 font-title-sm font-bold shadow-sm">
+                03
+              </div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-secondary-fixed font-bold uppercase">Step 03 • Current Stage</p>
+<p class="font-title-sm text-title-sm text-on-primary truncate font-bold">Government ID &amp; KYC</p>
+</div>
+<div class="absolute -right-3 -bottom-3 w-12 h-12 rounded-full bg-secondary-fixed/10 pointer-events-none"></div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container opacity-75">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0 font-title-sm font-bold">
+                04
+              </div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Step 04 • Upcoming</p>
+<p class="font-title-sm text-title-sm text-on-surface-variant truncate">Biometric Match Finalize</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Narrative & Value Assurance Banner -->
+<section class="mb-space-xl">
+<div class="bg-gradient-to-r from-primary via-primary-container to-primary rounded-xl p-space-lg text-on-primary shadow-lg relative overflow-hidden">
+<div class="absolute right-0 top-0 w-80 h-full opacity-10 pointer-events-none flex items-center justify-center">
+<span class="material-symbols-outlined text-[240px]">shield_person</span>
+</div>
+<div class="max-w-3xl relative z-10 flex flex-col sm:flex-row items-start sm:items-center gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[32px]">fingerprint</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-title-md text-title-md font-bold text-on-primary">Why Verification Matters on RoomSync</span>
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">lock_clock</span>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+                To prevent catfishing, rental scams, and fraudulent room sub-leases, RoomSync confirms every resident in India via DigiLocker and authorized government databases. Your identity numbers are strictly encrypted with SHA-256 protocols and <span class="text-on-primary font-bold">never displayed publicly or shared with brokers or landlords</span>.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Dual-Column Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Master Column: Document Selection & Ingestion (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- Document Selector Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Select Government Credential</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Choose your preferred Indian national identity document for tamper-proof validation.</p>
+</div>
+<div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[15px]">electric_bolt</span>
+<span>DigiLocker Recommended</span>
+</div>
+</div>
+<!-- Tabbed Document Options -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm mb-space-lg" id="docTypeSelector">
+<!-- Aadhaar Option -->
+<button class="doc-tab-btn flex flex-col items-center justify-center p-space-md rounded-xl bg-secondary-container/30 text-secondary transition-all text-center shadow-xs" data-target="aadhaar" type="button">
+<span class="material-symbols-outlined text-[28px] mb-1">badge</span>
+<span class="font-title-sm text-title-sm font-bold">Aadhaar Card</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Instant • 60s Sync</span>
+</button>
+<!-- PAN Card Option -->
+<button class="doc-tab-btn flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all text-center" data-target="pan" type="button">
+<span class="material-symbols-outlined text-[28px] mb-1 text-on-surface-variant">credit_card</span>
+<span class="font-title-sm text-title-sm font-bold">PAN Card</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NSDL / ITD</span>
+</button>
+<!-- Passport Option -->
+<button class="doc-tab-btn flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all text-center" data-target="passport" type="button">
+<span class="material-symbols-outlined text-[28px] mb-1 text-on-surface-variant">flight</span>
+<span class="font-title-sm text-title-sm font-bold">Indian Passport</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Passport Seva</span>
+</button>
+<!-- Voter ID Option -->
+<button class="doc-tab-btn flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all text-center" data-target="voter" type="button">
+<span class="material-symbols-outlined text-[28px] mb-1 text-on-surface-variant">how_to_vote</span>
+<span class="font-title-sm text-title-sm font-bold">Voter ID / EPIC</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ECI Database</span>
+</button>
+</div>
+<!-- Path A: DigiLocker Instant Auth (Primary Recommendation) -->
+<div class="rounded-xl p-space-lg bg-surface-container-low mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary text-secondary-fixed flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]">lock_open</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-primary font-bold">One-Tap DigiLocker Consent</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase">Automated</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+                      Retrieve government-issued Aadhaar XML safely via UIDAI DigiLocker Gateway. No physical scans required.
+                    </p>
+<div class="flex items-center gap-space-md mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Instant OTP verification</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> 100% Tamper-proof</span>
+</div>
+</div>
+</div>
+<button class="shrink-0 px-space-lg py-3 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm font-bold hover:opacity-95 active:scale-[0.99] transition-all flex items-center justify-center gap-space-xs shadow-md" id="digilockerAuthBtn">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+<span>Connect DigiLocker</span>
+</button>
+</div>
+<!-- DigiLocker Processing Dynamic Feedback State (Hidden by default) -->
+<div class="hidden mt-space-md p-space-md rounded-xl bg-secondary-container/30 text-on-secondary-container" id="digilockerStatusBox">
+<div class="flex items-center gap-space-sm">
+<div class="animate-spin w-5 h-5 rounded-full border-2 border-secondary border-t-transparent"></div>
+<span class="font-title-sm text-title-sm font-semibold">Connecting to DigiLocker Secure Sandbox... Enter OTP received on your Aadhaar-linked mobile.</span>
+</div>
+</div>
+</div>
+<!-- Path B: Manual Document Upload Fallback -->
+<div class="flex items-center gap-space-md my-space-lg">
+<div class="flex-1 h-px bg-surface-container-high"></div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant tracking-wider">Or Upload Physical Document Photos</span>
+<div class="flex-1 h-px bg-surface-container-high"></div>
+</div>
+<!-- Dropzones (Front & Back) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Front Side Upload -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center justify-between">
+<span>Front of Document</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PNG, JPG, PDF up to 10MB</span>
+</label>
+<div class="group relative rounded-xl bg-surface-container-low p-space-lg text-center cursor-pointer hover:bg-surface-container transition-all flex flex-col items-center justify-center min-h-[170px]" id="dropzoneFront">
+<input accept="image/*,.pdf" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full" id="fileFrontInput" type="file"/>
+<div class="w-12 h-12 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold" id="frontLabel">Click or Drag Front Scan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Ensure text, photo, and hologram are crisp</span>
+</div>
+</div>
+<!-- Back Side Upload -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center justify-between">
+<span>Back of Document</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PNG, JPG, PDF up to 10MB</span>
+</label>
+<div class="group relative rounded-xl bg-surface-container-low p-space-lg text-center cursor-pointer hover:bg-surface-container transition-all flex flex-col items-center justify-center min-h-[170px]" id="dropzoneBack">
+<input accept="image/*,.pdf" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full" id="fileBackInput" type="file"/>
+<div class="w-12 h-12 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold" id="backLabel">Click or Drag Back Scan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Showing QR code, serial barcode &amp; stamp</span>
+</div>
+</div>
+</div>
+<!-- Framing Quality Tips Mini Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm mt-space-md p-space-sm rounded-xl bg-surface-container">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">light_mode</span>
+<span>Good natural lighting</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">crop_free</span>
+<span>All 4 edges visible</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">hide_image</span>
+<span>No glare or heavy flash</span>
+</div>
+</div>
+<!-- Masked Privacy Guarantee Callout -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary text-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">privacy_tip</span>
+</div>
+<div>
+<h4 class="font-title-sm text-title-sm font-bold text-on-surface">Masked Preview Guarantee</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Only your legal name, verified badge status, and date of birth are confirmed for your roommate score. Your 12-digit Aadhaar/PAN number and exact residential address are permanently masked and hidden from other searchers and prospective room partners.
+                </p>
+</div>
+</div>
+</div>
+<!-- Legal & Consent Declarations -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-space-sm">Authorizations &amp; Compliance</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Strict adherence to Indian IT Act 2000 and Digital Personal Data Protection Act (DPDPA 2023).</p>
+<div class="flex flex-col gap-space-md">
+<!-- Consent Checkbox 1 -->
+<label class="flex items-start gap-space-sm cursor-pointer group">
+<input checked="" class="mt-1 h-5 w-5 rounded bg-surface-container-high text-secondary accent-secondary focus:ring-0 cursor-pointer shrink-0" id="consentAadhaar" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface select-none">
+                  I authorize RoomSync Technologies and its certified KYC infrastructure partners to query and verify my submitted credentials against the official <span class="font-bold text-primary">UIDAI / DigiLocker / ITD</span> records strictly for roommate screening and community trust purposes.
+                </span>
+</label>
+<!-- Consent Checkbox 2 -->
+<label class="flex items-start gap-space-sm cursor-pointer group">
+<input checked="" class="mt-1 h-5 w-5 rounded bg-surface-container-high text-secondary accent-secondary focus:ring-0 cursor-pointer shrink-0" id="consentBroker" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface select-none">
+                  I understand that my raw credential files are locked in an isolated 256-bit encrypted vault and <span class="font-bold text-primary">will never be sold, leased, or broadcast</span> to third-party brokers, real estate agencies, or marketing networks.
+                </span>
+</label>
+</div>
+</div>
+</div>
+<!-- Right Auxiliary Column: Biometric Liveness & Vault Metrics (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-xl">
+<!-- Liveness Selfie Verification Module -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-primary">Biometric Liveness</h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">Active Optical</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Corroborate that the person applying matches the government ID photograph in real time.
+            </p>
+<!-- Camera Viewfinder Preview Box -->
+<div class="relative w-full aspect-square rounded-2xl bg-primary-container overflow-hidden flex flex-col items-center justify-center p-space-md shadow-inner">
+<!-- Simulated Webcam Stream / Image Reference -->
+<div class="absolute inset-0 bg-cover bg-center opacity-70 filter saturate-75" data-alt="A clean portrait view of a young professional in a softly lit Bengaluru apartment room, centered in an identity verification camera frame preview with subtle tech overlays and green biometric markers." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7k8xPbXA0oM2Jb80GXkg1razNYJLc_8BpLM4BsOB3lfi6DFDd74AcYH0NcVSDnseSCkyTa8zSxHGf0MtGS8_nVHpPyvE0khEVNILT3qs2jgNcGrunMwqSGH4OwX6fOrDznaBX46kzAaPTEhVzUdnNiR6wFDe9C_qI3ufDqNXbwLGVep6cidKyNuXgbsJWyGhRTAqMKeF4uLSqB-N44h6g0v7lmkgINSQdaKbrp_Za')"></div>
+<!-- Subtle Oval Face Boundary Guide -->
+<div class="relative z-10 w-48 h-64 rounded-[50%] border-2 border-dashed border-secondary-fixed/90 flex flex-col items-center justify-between py-6">
+<div class="w-full flex justify-between px-6 text-secondary-fixed/70">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span class="material-symbols-outlined text-[16px]">add</span>
+</div>
+<div class="px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-secondary-fixed font-label-sm text-label-sm font-bold animate-pulse text-center">
+                  Look Straight &amp; Blink Slowly
+                </div>
+<div class="w-full flex justify-between px-6 text-secondary-fixed/70">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span class="material-symbols-outlined text-[16px]">add</span>
+</div>
+</div>
+<!-- Real-time HUD Status -->
+<div class="absolute bottom-3 left-3 right-3 z-10 flex items-center justify-between px-3 py-1.5 rounded-xl bg-surface/90 backdrop-blur-md text-on-surface">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span>Face Geometry: 99.4% Match</span>
+</div>
+<button class="text-secondary hover:text-primary transition-colors flex items-center" title="Flip Camera" type="button">
+<span class="material-symbols-outlined text-[18px]">flip_camera_ios</span>
+</button>
+</div>
+</div>
+<!-- Explanatory Assurance -->
+<div class="mt-space-md flex items-start gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified</span>
+<p class="font-body-sm text-body-sm">
+                Single-session verification prevents duplicate account creation and eliminates deepfakes.
+              </p>
+</div>
+<!-- Retake / Recalibrate Action -->
+<button class="w-full mt-space-md py-2.5 rounded-xl bg-surface-container text-on-surface font-title-sm text-title-sm font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span>Capture Fresh Selfie Sample</span>
+</button>
+</div>
+<!-- Trust Elevation Card (Aadhaar + SSO Synergy) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<h3 class="font-title-md text-title-md text-primary font-bold mb-space-sm">Your Projected Trust Score</h3>
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-low mb-space-md">
+<!-- Radial SVG Gauge Representation -->
+<div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
+<svg class="w-16 h-16 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="98, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-title-md text-title-md font-bold text-primary">98%</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm font-bold text-primary">Ultra-High Trust Tier</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Top 5% of verified flatmates in Indiranagar &amp; Koramangala.</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[16px]">check</span> Corporate SSO (Swiggy)</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">+35 Pts</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[16px]">check</span> Govt DigiLocker ID</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">+45 Pts</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[16px]">check</span> Biometric Match Engine</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">+18 Pts</span>
+</div>
+</div>
+</div>
+<!-- Dedicated Support & Query Helpline Micro-Card -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">contact_support</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Need manual assistance?</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Speak with our Bangalore Trust Desk</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-bold hover:underline" href="#">Helpdesk</a>
+</div>
+</div>
+</div>
+<!-- Persistent Sticky Bottom Action Console -->
+<section class="mt-space-xl pt-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[24px]">lock_clock</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Auto-Save State: Saved 2m ago</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Draft encrypted locally with ephemeral tokens</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-space-lg py-3 rounded-xl bg-surface-container-low text-on-surface font-title-sm text-title-sm font-bold hover:bg-surface-container transition-all" type="button">
+              Save Draft &amp; Continue Later
+            </button>
+<button class="flex-1 sm:flex-none px-space-xl py-3 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm font-bold hover:opacity-95 active:scale-[0.99] transition-all shadow-md flex items-center justify-center gap-space-xs" id="submitKycBtn" type="button">
+<span>Submit for Instant Verification</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive logic for document switcher and upload cues
+  document.addEventListener('DOMContentLoaded', () => {
+    // Document selector switcher
+    const tabButtons = document.querySelectorAll('.doc-tab-btn');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => {
+          b.classList.remove('bg-secondary-container/30', 'text-secondary');
+          b.classList.add('bg-surface-container-low', 'text-on-surface');
+        });
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+        btn.classList.add('bg-secondary-container/30', 'text-secondary');
+      });
+    });
+
+    // DigiLocker Mock Flow
+    const digiBtn = document.getElementById('digilockerAuthBtn');
+    const statusBox = document.getElementById('digilockerStatusBox');
+    if (digiBtn && statusBox) {
+      digiBtn.addEventListener('click', () => {
+        statusBox.classList.remove('hidden');
+        digiBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Connecting...</span>';
+        setTimeout(() => {
+          statusBox.innerHTML = '<div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span><span class="font-title-sm text-title-sm font-bold text-on-secondary-container">DigiLocker Linked: Aadhaar XML retrieved successfully. Legal name & DOB matching complete.</span></div>';
+          digiBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">verified</span><span>Aadhaar Connected</span>';
+          digiBtn.classList.remove('bg-secondary');
+          digiBtn.classList.add('bg-primary');
+        }, 1800);
+      });
+    }
+
+    // Manual Upload Display Feedback
+    const frontInput = document.getElementById('fileFrontInput');
+    const frontLabel = document.getElementById('frontLabel');
+    if (frontInput && frontLabel) {
+      frontInput.addEventListener('change', (e) => {
+        if (e.target.files.length > 0) {
+          frontLabel.textContent = 'Selected: ' + e.target.files[0].name;
+          frontLabel.classList.add('text-secondary');
+        }
+      });
+    }
+
+    const backInput = document.getElementById('fileBackInput');
+    const backLabel = document.getElementById('backLabel');
+    if (backInput && backLabel) {
+      backInput.addEventListener('change', (e) => {
+        if (e.target.files.length > 0) {
+          backLabel.textContent = 'Selected: ' + e.target.files[0].name;
+          backLabel.classList.add('text-secondary');
+        }
+      });
+    }
+
+    // Submit Action Toast Simulation
+    const submitBtn = document.getElementById('submitKycBtn');
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        const consentAadhaar = document.getElementById('consentAadhaar');
+        const consentBroker = document.getElementById('consentBroker');
+        if (!consentAadhaar.checked || !consentBroker.checked) {
+          alert('Please accept both regulatory KYC authorizations to proceed.');
+          return;
+        }
+        submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>Validating UIDAI Hash...</span>';
+        setTimeout(() => {
+          submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span>Verified & Stored!</span>';
+          submitBtn.classList.add('bg-primary');
+        }, 1500);
+      });
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1280px] mx-auto px-gutter-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-secondary-fixed"><span class="material-symbols-outlined text-[20px]">sync_alt</span></div><span class="font-headline-sm text-headline-sm text-primary">RoomSync</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Pioneering trusted shared living in India's technology epicenters. End-to-end Aadhaar &amp; SSO Identity Trust Architecture ensuring high-affinity, safe roommate compatibility and verified property leasing.</p><div class="flex items-center gap-space-sm pt-space-xs"><div class="px-3 py-1.5 rounded-lg bg-surface-container-high flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span><span class="font-label-sm text-label-sm text-on-surface">UIDAI Aadhaar Verified</span></div><div class="px-3 py-1.5 rounded-lg bg-surface-container-high flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">corporate_fare</span><span class="font-label-sm text-label-sm text-on-surface">Workplace SSO Verified</span></div></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface font-bold uppercase tracking-wider">Trust &amp; Safety</span><div class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><a class="hover:text-secondary transition-colors" data-path="trust-centre" href="#">Trust Centre Overview</a><a class="hover:text-secondary transition-colors" data-path="identity-verification" href="#">UIDAI Aadhaar Verification</a><a class="hover:text-secondary transition-colors" data-path="verification-status" href="#">Multi-Tier Verification Status</a><a class="hover:text-secondary transition-colors" data-path="safety-standards" href="#">Safety &amp; Community Guidelines</a><a class="hover:text-secondary transition-colors" data-path="privacy-controls" href="#">Privacy &amp; Data Protection</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface font-bold uppercase tracking-wider">Accommodation</span><div class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><a class="hover:text-secondary transition-colors" data-path="accommodation-discovery" href="#">Discover Flats &amp; Coliving</a><a class="hover:text-secondary transition-colors" data-path="group-accommodation-search" href="#">Pod Group Housing Search</a><a class="hover:text-secondary transition-colors" data-path="saved-properties-comparison" href="#">Saved &amp; Side-by-Side Compare</a><a class="hover:text-secondary transition-colors" data-path="property-enquiry-visit-scheduling" href="#">Schedule Property Visits</a><a class="hover:text-secondary transition-colors" data-path="property-details" href="#">Verified Lease Breakdown</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface font-bold uppercase tracking-wider">Roommate Groups</span><div class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><a class="hover:text-secondary transition-colors" data-path="roommate-groups" href="#">Explore Roommate Circles</a><a class="hover:text-secondary transition-colors" data-path="compatibility-matrix" href="#">Compatibility Matrix</a><a class="hover:text-secondary transition-colors" data-path="requests" href="#">Pending Group Requests</a><a class="hover:text-secondary transition-colors" data-path="messages" href="#">Group Chat &amp; Sync</a></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 RoomSync Technologies India Pvt. Ltd. • Verified Accommodation &amp; Co-Living Buffer</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="safety-standards" href="#">Tenant Safety Standards</a></div></div></div></footer></body></html>

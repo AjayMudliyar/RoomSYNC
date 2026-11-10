@@ -1,0 +1,758 @@
+<!DOCTYPE html><html class="h-full" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>RoomSync - Find Compatible Roommates &amp; Spaces</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#283044","primary-fixed":"#e3dfff","on-primary":"#ffffff","surface-variant":"#dae2fd","on-surface":"#131b2e","surface-container-highest":"#dae2fd","on-error":"#ffffff","surface-container-lowest":"#ffffff","on-secondary-container":"#006f66","surface-tint":"#5b598c","inverse-primary":"#c4c1fb","on-tertiary-fixed-variant":"#653e00","on-tertiary-container":"#c07a00","outline":"#787680","on-surface-variant":"#47464f","tertiary-fixed":"#ffddb8","on-primary-container":"#8683ba","inverse-on-surface":"#eef0ff","primary":"#070235","on-tertiary":"#ffffff","tertiary-container":"#331d00","surface-container":"#eaedff","primary-container":"#1e1b4b","tertiary":"#140900","surface-container-high":"#e2e7ff","on-secondary-fixed":"#00201d","primary-fixed-dim":"#c4c1fb","surface-container-low":"#f2f3ff","on-tertiary-fixed":"#2a1700","secondary":"#006a61","surface-dim":"#d2d9f4","on-background":"#131b2e","on-error-container":"#93000a","secondary-container":"#86f2e4","surface":"#faf8ff","error":"#ba1a1a","on-secondary":"#ffffff","secondary-fixed-dim":"#6bd8cb","on-primary-fixed":"#181445","on-secondary-fixed-variant":"#005049","error-container":"#ffdad6","background":"#faf8ff","surface-bright":"#faf8ff","outline-variant":"#c8c5d0","secondary-fixed":"#89f5e7","tertiary-fixed-dim":"#ffb95f","on-primary-fixed-variant":"#444173"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"2.5rem","margin-desktop":"3rem",gutter:"1.5rem","gutter-mobile":"1rem","margin-mobile":"1rem",margin:"1.5rem","space-sm":"0.5rem","gutter-desktop":"2rem","space-md":"1rem","space-xs":"0.25rem","space-lg":"1.5rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"]},fontSize:{"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"400"}],"title-sm":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-md":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"metric-display":["32px",{lineHeight:"36px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}]}}}};</script></head><body class="min-h-full bg-surface text-on-surface font-body-md text-body-md"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl flex-shrink-0"><a class="flex items-center gap-2 group focus:outline-none" href="#"><img alt="RoomSync Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ALJJyrBpXrV95-DTFiUO0pDTZkkB_M4ZetqA8A9iW4alzbcOvTURQt9tUAxZpbGpV_15tFAK8G_imvPQJo0x9gsiY_Tykmmd0qOLNqMP8e31M3_1uxaQ1W8-bsuF9pV6JdGYIi5cEeypp1vptwjfy8J_qpXXX2xYCfZs1ApzxvJuPO2U937b6SxdTpfHeGf-nMNcTRTcSTHTtMAxDy9bsQJIHjbhQFL3dz6BFUXnCp0hgFY90A"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary">RoomSync</span></a><nav class="hidden lg:flex items-center gap-1 bg-surface-container-low/80 p-1.5 rounded-full border border-surface-container"><a aria-current="page" class="relative transition-all duration-200 bg-primary-container text-on-primary font-bold rounded-full px-4 py-1.5 shadow-sm text-title-sm" href="#">Discover</a><a class="relative text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-medium text-title-sm px-4 py-1.5 rounded-full transition-all duration-200" href="#">Accommodation</a><a class="relative flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-medium text-title-sm px-4 py-1.5 rounded-full transition-all duration-200" href="#"><span>Roommate Groups</span><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm font-bold leading-none">2</span></a><a class="relative flex items-center gap-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-medium text-title-sm px-4 py-1.5 rounded-full transition-all duration-200" href="#"><span>Messages</span><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span></a></nav></div><div class="flex items-center gap-3 flex-shrink-0"><button class="hidden sm:flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container border border-surface-container text-on-surface transition-all duration-200 focus:outline-none shadow-sm" type="button"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="font-label-lg">Bengaluru, KA</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></button><button class="flex items-center gap-2 pl-3.5 pr-2.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container border border-surface-container text-on-surface-variant hover:text-on-surface transition-all duration-200 focus:outline-none shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="hidden xl:inline-block font-body-sm text-outline pr-1">Quick find</span><kbd class="hidden xl:inline-block px-1.5 py-0.5 bg-surface-container-highest text-on-surface-variant font-label-sm font-semibold rounded border border-outline-variant/30">⌘K</kbd></button><button aria-label="Notifications" class="relative p-2 rounded-full bg-surface-container-low hover:bg-surface-container border border-surface-container text-on-surface-variant hover:text-on-surface transition-all duration-200 focus:outline-none shadow-sm" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 rounded-full bg-secondary text-on-secondary font-label-sm flex items-center justify-center font-bold">3</span></button><div class="flex items-center pl-1"><button class="flex items-center gap-2 p-1 pr-3 rounded-full hover:bg-surface-container border border-surface-container bg-surface-container-lowest transition-all duration-200 focus:outline-none shadow-sm" type="button"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC07VLA1WP6HEJQLX9frcHNZou_TGTSfLUon_zrDp4vTH7BwKPWVJEWhQoQU9zQer7m0vlCQYSvp77x1H-1h1fpMWlvsIj7zQLRTy6no2OhDfDZIXBqWpyWZSN3TOPXkcS5WYMaYiXzA-qqaEwbjp52uOdXC4BncNlW1QjtfqCY4z5lhXqnC7GWTIxw4tv5hFhnpOgiDBqqoQh9mTQqgE7mkqAghPwJV9W85SqIRnx3"><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface"></span></div><span class="hidden md:inline-block font-title-sm text-on-surface font-semibold">Aarav</span><span class="material-symbols-outlined text-[18px] text-on-surface-variant">keyboard_arrow_down</span></button></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Interactive Compatibility Breakdown Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary-container/60 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300" id="compatModal"><div class="w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-2xl p-6 sm:p-7 transform scale-95 transition-all duration-300 max-h-[90vh] overflow-y-auto" id="modalCard"><div class="flex items-start justify-between pb-4 border-b border-surface-container"><div class="flex items-center gap-3"><div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm font-bold"><span class="material-symbols-outlined text-[26px]">balance</span></div><div><div class="flex items-center gap-2"><h3 class="font-headline-sm text-primary font-bold" id="modalName">Rohan Varma</h3><span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm font-bold" id="modalScoreBadge">96% Match</span></div><p class="font-body-sm text-on-surface-variant" id="modalSub">Side-by-side lifestyle &amp; habit comparison with Aarav</p></div></div><button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-colors" onclick="closeCompatModal()"><span class="material-symbols-outlined text-[18px]">close</span></button></div><div class="py-4 space-y-4"><div class="grid grid-cols-2 gap-3 p-3 rounded-xl bg-surface-container-low border border-surface-container"><div class="text-left"><span class="block font-label-sm uppercase tracking-wider text-outline font-bold">Your Profile (Aarav)</span><span class="font-title-sm text-primary font-semibold">Early Riser • Veg • AC 24°C</span></div><div class="text-right"><span class="block font-label-sm uppercase tracking-wider text-outline font-bold" id="modalCandidateHeader">Match Profile</span><span class="font-title-sm text-secondary font-semibold" id="modalCandidateQuickSummary">Early Riser • Veg • AC 21°C</span></div></div><div class="space-y-2.5"><h4 class="font-label-sm uppercase tracking-wider text-outline font-bold">8 Core TDD Lifestyle Dimensions</h4><div class="space-y-2" id="modalDimensionsContainer"><div class="p-2.5 rounded-xl bg-surface-container-lowest border border-surface-container space-y-1.5"><div class="flex items-center justify-between text-body-sm font-semibold text-on-surface"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">payments</span>Financials &amp; Split Timing</span><span class="text-secondary font-bold">98% Harmony</span></div><div class="grid grid-cols-2 gap-2 text-label-sm text-on-surface-variant pt-1 border-t border-surface-container/50"><div>Aarav: <span class="text-on-surface font-medium">UPI on 1st, 50-50 splits</span></div><div class="text-right">Candidate: <span class="text-on-surface font-medium">UPI instant split</span></div></div></div><div class="p-2.5 rounded-xl bg-surface-container-lowest border border-surface-container space-y-1.5"><div class="flex items-center justify-between text-body-sm font-semibold text-on-surface"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">alarm</span>Sleep &amp; Routine Alignment</span><span class="text-secondary font-bold">96% Harmony</span></div><div class="grid grid-cols-2 gap-2 text-label-sm text-on-surface-variant pt-1 border-t border-surface-container/50"><div>Aarav: <span class="text-on-surface font-medium">7:30 AM – 11:30 PM</span></div><div class="text-right">Candidate: <span class="text-on-surface font-medium">7:00 AM – 11:00 PM</span></div></div></div><div class="p-2.5 rounded-xl bg-surface-container-lowest border border-surface-container space-y-1.5"><div class="flex items-center justify-between text-body-sm font-semibold text-on-surface"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">cleaning_services</span>Hygiene &amp; Chore Discipline</span><span class="text-secondary font-bold">94% Harmony</span></div><div class="grid grid-cols-2 gap-2 text-label-sm text-on-surface-variant pt-1 border-t border-surface-container/50"><div>Aarav: <span class="text-on-surface font-medium">Daily sink clear, shared maid</span></div><div class="text-right">Candidate: <span class="text-on-surface font-medium">Shared maid + Sunday deep clean</span></div></div></div><div class="p-2.5 rounded-xl bg-surface-container-lowest border border-surface-container space-y-1.5"><div class="flex items-center justify-between text-body-sm font-semibold text-on-surface"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">ac_unit</span>Climate &amp; AC Preferences</span><span class="text-primary font-bold">82% Discussion Point</span></div><div class="grid grid-cols-2 gap-2 text-label-sm text-on-surface-variant pt-1 border-t border-surface-container/50"><div>Aarav: <span class="text-on-surface font-medium">24°C eco cooling</span></div><div class="text-right">Candidate: <span class="text-on-surface font-medium">21°C chill mode</span></div></div></div></div></div><div class="p-3.5 bg-secondary/10 rounded-xl border border-secondary/20 flex gap-2.5"><span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0">forum</span><div><span class="font-label-sm uppercase tracking-wider font-bold text-secondary block">Discussion Recommendation</span><p class="font-body-sm text-on-surface" id="modalDiscussionPoint">Discuss common room air conditioner settings and weekend guest advance notices before finalizing agreement.</p></div></div></div><div class="flex items-center justify-end gap-3 pt-3 border-t border-surface-container"><button class="px-space-md py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm" onclick="closeCompatModal()">Close</button><button class="px-space-lg py-2 rounded-xl bg-secondary hover:bg-on-secondary-container text-on-secondary font-title-sm flex items-center gap-1.5 shadow-md shadow-secondary/20" id="modalActionBtn" onclick="handleModalConnect()"><span class="material-symbols-outlined text-[18px]">chat</span><span id="modalActionText">Connect</span></button></div></div></div>
+<!-- Toast Notification -->
+<div class="fixed bottom-6 right-6 z-50 bg-primary-container text-on-primary px-space-lg py-3 rounded-xl shadow-xl flex items-center gap-3 translate-y-24 opacity-0 transition-all duration-300" id="toast">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">mark_email_read</span>
+<span class="font-title-sm text-title-sm" id="toastMsg">Connection request sent successfully!</span>
+</div>
+<div class="max-w-[1280px] w-full mx-auto px-margin-mobile sm:px-margin md:px-margin-desktop py-space-lg sm:py-space-xl space-y-space-xl">
+<!-- 1. WELCOME & PERSONALIZED INTRO HERO SECTION -->
+<section class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-surface-container-high/90 via-surface-container-low to-surface-container-lowest p-6 sm:p-8 lg:p-9 shadow-sm border border-surface-container"><div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div><div class="absolute right-32 bottom-0 w-64 h-64 rounded-full bg-primary-fixed/20 blur-2xl pointer-events-none"></div><div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6"><div class="max-w-2xl space-y-3"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-label-md font-bold"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Compatibility Engine: Synced with your lifestyle profile</span></div><h1 class="font-display-md sm:font-display-lg text-primary tracking-tight font-extrabold">Good evening, Aarav 👋</h1><p class="font-body-lg text-on-surface-variant">We found <span class="font-bold text-primary">18 verified matches</span> in Bengaluru who share your daily rhythm, cleanliness standards, and budget expectations.</p></div><div class="lg:w-auto flex-shrink-0 bg-surface-container-lowest/95 backdrop-blur-md p-4 sm:p-5 rounded-2xl shadow-sm border border-surface-container space-y-3"><div class="flex items-center justify-between gap-4"><span class="font-label-sm text-outline uppercase tracking-wider font-bold">Your Active Discovery Baseline</span><button class="text-secondary hover:text-on-secondary-container font-title-sm inline-flex items-center gap-1 group font-semibold"><span>Edit Preferences</span><span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span></button></div><div class="grid grid-cols-2 gap-2.5 text-on-surface"><div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-low border border-surface-container font-body-sm"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="truncate font-medium">Indiranagar &amp; HSR Layout</span></div><div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-low border border-surface-container font-body-sm"><span class="material-symbols-outlined text-[18px] text-secondary">currency_rupee</span><span class="truncate font-medium">₹18,000 – ₹25,000 / mo</span></div><div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-low border border-surface-container font-body-sm"><span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span><span class="truncate font-medium">1st of next month</span></div><div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-low border border-surface-container font-body-sm"><span class="material-symbols-outlined text-[18px] text-secondary">domain</span><span class="truncate font-medium">Private Room in 3BHK</span></div></div></div></div></section>
+<!-- 2. COMPACT MATCH INSIGHTS SUMMARY BANNER -->
+<section class="w-full bg-primary-container text-on-primary rounded-2xl p-6 sm:p-7 shadow-lg shadow-primary-container/10 border border-primary/30"><div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-5 border-b border-primary/40"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shadow-sm"><span class="material-symbols-outlined text-[22px]">auto_awesome</span></div><div><h2 class="font-headline-sm text-on-primary font-bold">Why these roommates were recommended for you</h2><p class="font-body-sm text-surface-container-highest/80">Evaluated across 8 core TDD lifestyle dimensions derived from 42 questionnaire signals</p></div></div><div class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-highest/10 border border-surface-container-highest/20 text-secondary-container font-label-md font-semibold"><span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">verified_user</span><span>Verified profiles, more confident connections</span></div></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-5"><div class="space-y-2 p-3 rounded-xl bg-white/5 border border-white/5"><div class="flex items-center justify-between"><span class="font-headline-md font-extrabold text-secondary-container">94%</span><span class="material-symbols-outlined text-[18px] text-secondary-container">cleaning_services</span></div><span class="block font-title-sm font-semibold text-on-primary">Cleanliness Cohesion</span><p class="font-body-sm text-surface-container-highest/75">All top picks share your moderate-to-high hygiene and disciplined chore rotations.</p></div><div class="space-y-2 p-3 rounded-xl bg-white/5 border border-white/5"><div class="flex items-center justify-between"><span class="font-headline-md font-extrabold text-secondary-container">88%</span><span class="material-symbols-outlined text-[18px] text-secondary-container">schedule</span></div><span class="block font-title-sm font-semibold text-on-primary">Schedule Alignment</span><p class="font-body-sm text-surface-container-highest/75">Matches are early risers with hybrid schedules (office 3 days/week, quiet mornings).</p></div><div class="space-y-2 p-3 rounded-xl bg-white/5 border border-white/5"><div class="flex items-center justify-between"><span class="font-headline-md font-extrabold text-secondary-container">₹2k</span><span class="material-symbols-outlined text-[18px] text-secondary-container">payments</span></div><span class="block font-title-sm font-semibold text-on-primary">Budget Harmony</span><p class="font-body-sm text-surface-container-highest/75">Zero financial friction; rent split expectations perfectly align within a ₹2,000 delta.</p></div><div class="space-y-2 p-3 rounded-xl bg-white/5 border border-white/5"><div class="flex items-center justify-between"><span class="font-headline-md font-extrabold text-secondary-container">100%</span><span class="material-symbols-outlined text-[18px] text-secondary-container">celebration</span></div><span class="block font-title-sm font-semibold text-on-primary">Social &amp; Guest Vibe</span><p class="font-body-sm text-surface-container-highest/75">Mutual priority for calm weekday rest with relaxed, organized weekend gatherings.</p></div></div></section>
+<!-- 3. DISCOVERY CONTROLS & FILTER SYSTEM -->
+<section class="space-y-4"><div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4"><div class="relative flex-1"><span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full pl-12 pr-11 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-md placeholder:text-outline shadow-sm border border-surface-container focus:outline-none focus:ring-2 focus:ring-secondary/30 transition-all" id="localitySearch" placeholder="Search by locality, tech park, or metro line (e.g. Indiranagar 100ft Rd, Ecospace)..." type="text" value="Indiranagar, Bengaluru"><button class="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface p-1 rounded-full hover:bg-surface-container transition-colors" title="Detect location"><span class="material-symbols-outlined text-[18px]">near_me</span></button></div><div class="flex items-center gap-3 self-end lg:self-center"><label class="font-label-md text-on-surface-variant whitespace-nowrap font-medium" for="sortBySelect">Sort by:</label><div class="relative"><select class="appearance-none pl-3.5 pr-9 py-2 rounded-xl bg-surface-container-lowest text-on-surface font-title-sm border border-surface-container shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/30 cursor-pointer" id="sortBySelect" onchange="handleSortChange(this.value)"><option value="compat">Highest Compatibility (Default)</option><option value="recent">Recently Active</option><option value="budget_asc">Budget: Low to High</option><option value="distance">Distance to Workplace</option></select><span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[18px]">unfold_more</span></div></div></div><div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none"><button class="filter-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-title-sm whitespace-nowrap shadow-sm border border-secondary-container"><span class="font-medium">₹15k – ₹28k</span><span class="material-symbols-outlined text-[16px]">close</span></button><button class="filter-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-title-sm whitespace-nowrap shadow-sm border border-surface-container transition-colors"><span class="font-medium">Within 30 Days</span><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></button><button class="filter-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-title-sm whitespace-nowrap shadow-sm border border-surface-container transition-colors"><span class="material-symbols-outlined text-secondary text-[16px]">wb_sunny</span><span class="font-medium">Early Bird / Normal (7 AM – 11 PM)</span></button><button class="filter-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-title-sm whitespace-nowrap shadow-sm border border-surface-container transition-colors"><span class="font-medium">Veg / Eggetarian Friendly</span><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></button><button class="filter-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-title-sm whitespace-nowrap shadow-sm border border-surface-container transition-colors"><span class="font-medium">Hybrid / Remote</span></button><button class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary text-on-secondary font-title-sm whitespace-nowrap shadow-sm" id="verifiedFilterBtn" onclick="toggleVerifiedFilter()"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span><span class="font-medium">Verified Only</span></button><button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-title-sm whitespace-nowrap transition-colors border border-surface-container"><span class="material-symbols-outlined text-[18px]">tune</span><span class="font-medium">More Filters</span><span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm flex items-center justify-center font-bold">4</span></button></div></section>
+<!-- 4. COMPATIBLE ROOMMATES GRID (6 REALISTIC INDIAN PERSONAS) -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="candidatesGrid"><!-- CARD 1: Rohan Varma (Connect) -->
+<article class="candidate-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-surface-container">
+  <div class="space-y-4">
+    <!-- Photo Zone & Dominant Compatibility Badge -->
+    <div class="relative w-full h-56 rounded-xl overflow-hidden bg-surface-container">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Rohan Varma" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi9tKgtvmcBhUckc5NdR_Bm3pzn4vaZN4wtHVCbzAUwXU_kplmCEb2OWplDP8QCpEWlS97_YcXZ0XeurPHjdHSUDplp3KhcgfouKlsKW1TunPF8sq-Cou6aj6Ux06okbbf0BolaGz741HTQfRcNhU4tuFj7-R9bcIHCQEZd2-gEtpfzGoTgWUWvQoiT91YzzxUM33G0hJhD5L01HcvQM5vdOLL4fyhze73d6FUJEG4">
+      <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+      
+      <!-- Bookmark Icon Button -->
+      <button class="absolute top-3 left-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary shadow-md transition-colors border border-surface-container/30" title="Save Profile" onclick="toggleBookmark(this, 'Rohan Varma')">
+        <span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+      </button>
+
+      <!-- Dominant Compatibility Badge -->
+      <div class="absolute top-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-1.5 rounded-2xl shadow-xl flex items-center gap-2.5 border border-secondary/30 ring-2 ring-secondary/20">
+        <div class="relative w-8 h-8 flex items-center justify-center flex-shrink-0">
+          <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+            <path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4"></path>
+            <path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="96, 100" stroke-linecap="round" stroke-width="4"></path>
+          </svg>
+          <span class="absolute font-label-md font-extrabold text-secondary">96</span>
+        </div>
+        <div class="leading-none">
+          <span class="block font-title-sm font-bold text-primary">96% Match</span>
+          <span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Exceptional Fit</span>
+        </div>
+      </div>
+
+      <!-- Distance Tag -->
+      <div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-md border border-surface-container/30">
+        <span class="material-symbols-outlined text-[14px] text-secondary">near_me</span>
+        <span class="font-medium">1.2 km from preferred hub</span>
+      </div>
+    </div>
+
+    <!-- Details Zone -->
+    <div class="space-y-3">
+      <div class="flex items-start justify-between">
+        <div>
+          <h3 class="font-headline-sm font-bold text-primary flex items-center gap-2">
+            <span>Rohan Varma</span>
+            <span class="text-on-surface-variant font-normal text-title-md">26</span>
+          </h3>
+          <p class="font-body-sm text-on-surface-variant">Product Designer at <span class="font-semibold text-on-surface">Swiggy</span></p>
+        </div>
+        <div class="text-right">
+          <span class="font-title-md font-bold text-primary">₹22,000</span>
+          <span class="block font-label-sm text-outline">/mo target</span>
+        </div>
+      </div>
+
+      <!-- Trust & Verification Badge -->
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary-container/40 text-on-secondary-container font-label-sm font-bold border border-secondary-container/50">
+          <span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Govt ID + Work Email Verified
+        </span>
+      </div>
+
+      <!-- 3 Strongest Compatibility Dimensions Chips -->
+      <div class="space-y-1.5">
+        <span class="text-label-sm font-bold text-outline uppercase tracking-wider block">Strongest Dimensions</span>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">payments</span>Financials 98%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">alarm</span>Routine 96%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">cleaning_services</span>Cleanliness 94%
+          </span>
+        </div>
+      </div>
+
+      <!-- Potential Lifestyle Difference / Discussion Point -->
+      <div class="p-2.5 rounded-xl bg-surface-container-low border border-surface-container text-body-sm flex items-start gap-2">
+        <span class="material-symbols-outlined text-outline text-[16px] flex-shrink-0 mt-0.5">tune</span>
+        <p class="font-label-md text-on-surface-variant"><strong class="text-on-surface font-semibold">Discussion:</strong> AC Setting: 24°C eco vs 21°C chill mode</p>
+      </div>
+
+      <!-- Lifestyle Tags -->
+      <div class="flex flex-wrap gap-1.5 pt-0.5">
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Early Riser</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Non-Smoker</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Eggetarian</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Hybrid Worker</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Actions -->
+  <div class="pt-4 flex items-center gap-2 border-t border-surface-container mt-4">
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm font-semibold flex items-center justify-center gap-1.5 transition-colors border border-surface-container" onclick="openCompatModal('Rohan Varma', 'Product Designer at Swiggy • Indiranagar', 98, 96, 94, 92, 'Identical 7:30 AM wake-up schedule. Both value Sunday chore deep-cleaning and quiet weekdays.', 'Connect')">
+      <span class="material-symbols-outlined text-[16px]">query_stats</span>
+      Breakdown
+    </button>
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-secondary hover:bg-on-secondary-container text-on-secondary font-title-sm font-semibold flex items-center justify-center gap-1.5 shadow-md shadow-secondary/20 transition-all" onclick="sendConnectionRequest('Rohan Varma')">
+      <span class="material-symbols-outlined text-[18px]">person_add</span>
+      Connect
+    </button>
+  </div>
+</article>
+
+<!-- CARD 2: Ananya Iyer (Request Sent / Pending) -->
+<article class="candidate-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-surface-container">
+  <div class="space-y-4">
+    <!-- Photo Zone & Dominant Compatibility Badge -->
+    <div class="relative w-full h-56 rounded-xl overflow-hidden bg-surface-container">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Ananya Iyer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLGYP-fZ1NWsIdXVwzRr-LKR4DpreSp0vkcb8UtT5anldpiAOpprapVzk2k_KnL7g_vkexxNHMcYxeg9wlUHQN-7QJIyF8wvA4fBCiAcZWlU_77WxKwbsNggbLTJQHrrfKYtG7Iqq9wj3mDxhygvozGp2lX_Xk_HV5lNC2gG9YpAO-5FVPu_QgXNuTCLo_hAwOf3pMkH7jzvEasYJ3k389YSZ_qzeR4KY1433KNj1v">
+      <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+      
+      <!-- Bookmark Icon Button -->
+      <button class="absolute top-3 left-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary shadow-md transition-colors border border-surface-container/30" title="Save Profile" onclick="toggleBookmark(this, 'Ananya Iyer')">
+        <span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+      </button>
+
+      <!-- Dominant Compatibility Badge -->
+      <div class="absolute top-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-1.5 rounded-2xl shadow-xl flex items-center gap-2.5 border border-secondary/30 ring-2 ring-secondary/20">
+        <div class="relative w-8 h-8 flex items-center justify-center flex-shrink-0">
+          <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+            <path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4"></path>
+            <path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="93, 100" stroke-linecap="round" stroke-width="4"></path>
+          </svg>
+          <span class="absolute font-label-md font-extrabold text-secondary">93</span>
+        </div>
+        <div class="leading-none">
+          <span class="block font-title-sm font-bold text-primary">93% Match</span>
+          <span class="text-[10px] font-bold text-secondary uppercase tracking-wider">High Synergy</span>
+        </div>
+      </div>
+
+      <!-- Distance Tag -->
+      <div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-md border border-surface-container/30">
+        <span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+        <span class="font-medium">Koramangala, 4th Block</span>
+      </div>
+    </div>
+
+    <!-- Details Zone -->
+    <div class="space-y-3">
+      <div class="flex items-start justify-between">
+        <div>
+          <h3 class="font-headline-sm font-bold text-primary flex items-center gap-2">
+            <span>Ananya Iyer</span>
+            <span class="text-on-surface-variant font-normal text-title-md">24</span>
+          </h3>
+          <p class="font-body-sm text-on-surface-variant">Data Analyst at <span class="font-semibold text-on-surface">Razorpay</span></p>
+        </div>
+        <div class="text-right">
+          <span class="font-title-md font-bold text-primary">₹20,000</span>
+          <span class="block font-label-sm text-outline">Move-in Dec 1</span>
+        </div>
+      </div>
+
+      <!-- Trust & Verification Badge -->
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary-container/40 text-on-secondary-container font-label-sm font-bold border border-secondary-container/50">
+          <span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">school</span>
+          Govt ID + BITS Pilani Alum Verified
+        </span>
+      </div>
+
+      <!-- 3 Strongest Compatibility Dimensions Chips -->
+      <div class="space-y-1.5">
+        <span class="text-label-sm font-bold text-outline uppercase tracking-wider block">Strongest Dimensions</span>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">cleaning_services</span>Cleanliness 96%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">payments</span>Budget 95%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">self_improvement</span>Privacy 94%
+          </span>
+        </div>
+      </div>
+
+      <!-- Potential Lifestyle Difference / Discussion Point -->
+      <div class="p-2.5 rounded-xl bg-surface-container-low border border-surface-container text-body-sm flex items-start gap-2">
+        <span class="material-symbols-outlined text-outline text-[16px] flex-shrink-0 mt-0.5">tune</span>
+        <p class="font-label-md text-on-surface-variant"><strong class="text-on-surface font-semibold">Discussion:</strong> Weekend Visitor Policy: 24h prior head-up</p>
+      </div>
+
+      <!-- Lifestyle Tags -->
+      <div class="flex flex-wrap gap-1.5 pt-0.5">
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Vegetarian</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Quiet Environment</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Book Reader</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Fitness</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Actions -->
+  <div class="pt-4 flex items-center gap-2 border-t border-surface-container mt-4">
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm font-semibold flex items-center justify-center gap-1.5 transition-colors border border-surface-container" onclick="openCompatModal('Ananya Iyer', 'Data Analyst at Razorpay • Koramangala', 90, 96, 95, 94, 'High focus on personal space, no random weekday visitors, strict vegetarian kitchen alignment.', 'Request Sent')">
+      <span class="material-symbols-outlined text-[16px]">query_stats</span>
+      Breakdown
+    </button>
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-surface-container-high text-on-surface font-title-sm font-semibold flex items-center justify-center gap-1.5 border border-surface-container cursor-default opacity-80">
+      <span class="material-symbols-outlined text-[18px] text-secondary">hourglass_top</span>
+      Request Sent
+    </button>
+  </div>
+</article>
+
+<!-- CARD 3: Karthik Subramanian (Connected / Message CTA) -->
+<article class="candidate-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-surface-container">
+  <div class="space-y-4">
+    <!-- Photo Zone & Dominant Compatibility Badge -->
+    <div class="relative w-full h-56 rounded-xl overflow-hidden bg-surface-container">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Karthik Subramanian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ONRc8toTP-dATebvtNzAVZh6VYvWeQs9mKKhkiwdH3AM8B5kueAqndCd3PeN-QkbUaVYr1pmgkStWWqcUiXt83x38xDsmCFLcHmWPPztAVjeQ1Am1fK2PDJS59-fqsvsYSbaVX6iOm3XJB6bhGrRM4n1ToxhaTMZ-vx66K3tzgCuczmVckVet4TA4N3y2-tBp5LNqigjLaXjNY6BHAPeAZ_vUoAWVDwhjye_voyC">
+      <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+      
+      <!-- Bookmark Icon Button -->
+      <button class="absolute top-3 left-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary shadow-md transition-colors border border-surface-container/30" title="Save Profile" onclick="toggleBookmark(this, 'Karthik Subramanian')">
+        <span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+      </button>
+
+      <!-- Dominant Compatibility Badge -->
+      <div class="absolute top-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-1.5 rounded-2xl shadow-xl flex items-center gap-2.5 border border-secondary/30 ring-2 ring-secondary/20">
+        <div class="relative w-8 h-8 flex items-center justify-center flex-shrink-0">
+          <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+            <path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4"></path>
+            <path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="91, 100" stroke-linecap="round" stroke-width="4"></path>
+          </svg>
+          <span class="absolute font-label-md font-extrabold text-secondary">91</span>
+        </div>
+        <div class="leading-none">
+          <span class="block font-title-sm font-bold text-primary">91% Match</span>
+          <span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Strong Match</span>
+        </div>
+      </div>
+
+      <!-- Distance Tag -->
+      <div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-md border border-surface-container/30">
+        <span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+        <span class="font-medium">HSR Layout, Sector 3</span>
+      </div>
+    </div>
+
+    <!-- Details Zone -->
+    <div class="space-y-3">
+      <div class="flex items-start justify-between">
+        <div>
+          <h3 class="font-headline-sm font-bold text-primary flex items-center gap-2">
+            <span>Karthik Subramanian</span>
+            <span class="text-on-surface-variant font-normal text-title-md">27</span>
+          </h3>
+          <p class="font-body-sm text-on-surface-variant">Backend Engineer at <span class="font-semibold text-on-surface">Zepto</span></p>
+        </div>
+        <div class="text-right">
+          <span class="font-title-md font-bold text-primary">₹24,000</span>
+          <span class="block font-label-sm text-outline">Move-in Flexible</span>
+        </div>
+      </div>
+
+      <!-- Trust & Verification Badge -->
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary-container/40 text-on-secondary-container font-label-sm font-bold border border-secondary-container/50">
+          <span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">badge</span>
+          Govt ID + LinkedIn Verified
+        </span>
+      </div>
+
+      <!-- 3 Strongest Compatibility Dimensions Chips -->
+      <div class="space-y-1.5">
+        <span class="text-label-sm font-bold text-outline uppercase tracking-wider block">Strongest Dimensions</span>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">payments</span>Budget 96%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">laptop_mac</span>Work 94%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">cleaning_services</span>Cleanliness 92%
+          </span>
+        </div>
+      </div>
+
+      <!-- Potential Lifestyle Difference / Discussion Point -->
+      <div class="p-2.5 rounded-xl bg-surface-container-low border border-surface-container text-body-sm flex items-start gap-2">
+        <span class="material-symbols-outlined text-outline text-[16px] flex-shrink-0 mt-0.5">tune</span>
+        <p class="font-label-md text-on-surface-variant"><strong class="text-on-surface font-semibold">Discussion:</strong> Work From Home Days: 3 days vs 2 days overlap</p>
+      </div>
+
+      <!-- Lifestyle Tags -->
+      <div class="flex flex-wrap gap-1.5 pt-0.5">
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Techie</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Early Riser</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Filter Coffee</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Non-Smoker</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Actions -->
+  <div class="pt-4 flex items-center gap-2 border-t border-surface-container mt-4">
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm font-semibold flex items-center justify-center gap-1.5 transition-colors border border-surface-container" onclick="openCompatModal('Karthik Subramanian', 'Backend Engineer at Zepto • HSR Layout', 94, 92, 96, 90, 'Both follow agile standup schedules and spend 2 days working from home.', 'Connected')">
+      <span class="material-symbols-outlined text-[16px]">query_stats</span>
+      Breakdown
+    </button>
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-title-sm font-semibold flex items-center justify-center gap-1.5 shadow-md transition-all" onclick="showToast('Opened chat thread with Karthik Subramanian!')">
+      <span class="material-symbols-outlined text-[18px] text-secondary-container">chat</span>
+      Message
+    </button>
+  </div>
+</article>
+
+<!-- CARD 4: Meera Nair (Connect) -->
+<article class="candidate-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-surface-container">
+  <div class="space-y-4">
+    <!-- Photo Zone & Dominant Compatibility Badge -->
+    <div class="relative w-full h-56 rounded-xl overflow-hidden bg-surface-container">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Meera Nair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLsXzCG1BvGwEyvKw30KxHt2SygQC3rNgrNhnHWeZoljbElqvxY5--iZWak7vva8v0GznMFocBJkaMS9S9pQXkwpKhGDMqhSf-1nhNz3Q5AdiAKFEpfnZ4fxrKOz0ixaPI2_0kb8HGNKJWbVzejQL8VSMHqhjCfkJdZY2Syv_Y7FtIUbIOH-cqDKhsFn7Iqgl7NBPjwm1G_Xv_hqyRmH_xSY1IFQI3_kXt1yV7Ghjk">
+      <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+      
+      <!-- Bookmark Icon Button -->
+      <button class="absolute top-3 left-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary shadow-md transition-colors border border-surface-container/30" title="Save Profile" onclick="toggleBookmark(this, 'Meera Nair')">
+        <span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+      </button>
+
+      <!-- Dominant Compatibility Badge -->
+      <div class="absolute top-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-1.5 rounded-2xl shadow-xl flex items-center gap-2.5 border border-secondary/30 ring-2 ring-secondary/20">
+        <div class="relative w-8 h-8 flex items-center justify-center flex-shrink-0">
+          <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+            <path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4"></path>
+            <path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="89, 100" stroke-linecap="round" stroke-width="4"></path>
+          </svg>
+          <span class="absolute font-label-md font-extrabold text-secondary">89</span>
+        </div>
+        <div class="leading-none">
+          <span class="block font-title-sm font-bold text-primary">89% Match</span>
+          <span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Solid Synergy</span>
+        </div>
+      </div>
+
+      <!-- Distance Tag -->
+      <div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-md border border-surface-container/30">
+        <span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+        <span class="font-medium">Domlur / Indiranagar</span>
+      </div>
+    </div>
+
+    <!-- Details Zone -->
+    <div class="space-y-3">
+      <div class="flex items-start justify-between">
+        <div>
+          <h3 class="font-headline-sm font-bold text-primary flex items-center gap-2">
+            <span>Meera Nair</span>
+            <span class="text-on-surface-variant font-normal text-title-md">25</span>
+          </h3>
+          <p class="font-body-sm text-on-surface-variant">Growth Marketing Lead at <span class="font-semibold text-on-surface">FinTech D2C</span></p>
+        </div>
+        <div class="text-right">
+          <span class="font-title-md font-bold text-primary">₹21,000</span>
+          <span class="block font-label-sm text-outline">In 2 weeks</span>
+        </div>
+      </div>
+
+      <!-- Trust & Verification Badge -->
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary-container/40 text-on-secondary-container font-label-sm font-bold border border-secondary-container/50">
+          <span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">shield</span>
+          Govt ID Verified
+        </span>
+      </div>
+
+      <!-- 3 Strongest Compatibility Dimensions Chips -->
+      <div class="space-y-1.5">
+        <span class="text-label-sm font-bold text-outline uppercase tracking-wider block">Strongest Dimensions</span>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">self_improvement</span>Privacy 95%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">payments</span>Budget 92%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">celebration</span>Social 90%
+          </span>
+        </div>
+      </div>
+
+      <!-- Potential Lifestyle Difference / Discussion Point -->
+      <div class="p-2.5 rounded-xl bg-surface-container-low border border-surface-container text-body-sm flex items-start gap-2">
+        <span class="material-symbols-outlined text-outline text-[16px] flex-shrink-0 mt-0.5">tune</span>
+        <p class="font-label-md text-on-surface-variant"><strong class="text-on-surface font-semibold">Discussion:</strong> Plants &amp; Balcony Care: Shared watering duties</p>
+      </div>
+
+      <!-- Lifestyle Tags -->
+      <div class="flex flex-wrap gap-1.5 pt-0.5">
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Hybrid Work</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Plant Lover</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Social Weekends</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Pet Friendly</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Actions -->
+  <div class="pt-4 flex items-center gap-2 border-t border-surface-container mt-4">
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm font-semibold flex items-center justify-center gap-1.5 transition-colors border border-surface-container" onclick="openCompatModal('Meera Nair', 'Growth Marketing Lead • Domlur', 88, 88, 92, 95, 'Zero overlap in room intrusion; common areas kept pristine.', 'Connect')">
+      <span class="material-symbols-outlined text-[16px]">query_stats</span>
+      Breakdown
+    </button>
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-secondary hover:bg-on-secondary-container text-on-secondary font-title-sm font-semibold flex items-center justify-center gap-1.5 shadow-md shadow-secondary/20 transition-all" onclick="sendConnectionRequest('Meera Nair')">
+      <span class="material-symbols-outlined text-[18px]">person_add</span>
+      Connect
+    </button>
+  </div>
+</article>
+
+<!-- CARD 5: Vikram Malhotra (Connect) -->
+<article class="candidate-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-surface-container">
+  <div class="space-y-4">
+    <!-- Photo Zone & Dominant Compatibility Badge -->
+    <div class="relative w-full h-56 rounded-xl overflow-hidden bg-surface-container">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Vikram Malhotra" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAMGU5J74Pyc9yNc3J1hcFPRH9VqAtaP-mZTyDrZo4z2kpNcB4TsAAFtPc3z8nCyOGKKgpiMN3nEwITQbusgpoXQJ9FO6YvqiVN6txketKr3ApaH62R1JpnoAC81DT7wM8klljO98vQmqj_CL300V4DRbZnwIC4B27qcGv357swVItrnC5RRTSytqFZA3Fw_snE0c3H_F6XhN12coHYMLGP2Vf_ANAaDcotU5iCwQW">
+      <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+      
+      <!-- Bookmark Icon Button -->
+      <button class="absolute top-3 left-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary shadow-md transition-colors border border-surface-container/30" title="Save Profile" onclick="toggleBookmark(this, 'Vikram Malhotra')">
+        <span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+      </button>
+
+      <!-- Dominant Compatibility Badge -->
+      <div class="absolute top-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-1.5 rounded-2xl shadow-xl flex items-center gap-2.5 border border-secondary/30 ring-2 ring-secondary/20">
+        <div class="relative w-8 h-8 flex items-center justify-center flex-shrink-0">
+          <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+            <path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4"></path>
+            <path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="4"></path>
+          </svg>
+          <span class="absolute font-label-md font-extrabold text-secondary">88</span>
+        </div>
+        <div class="leading-none">
+          <span class="block font-title-sm font-bold text-primary">88% Match</span>
+          <span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Aligned Fit</span>
+        </div>
+      </div>
+
+      <!-- Distance Tag -->
+      <div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-md border border-surface-container/30">
+        <span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+        <span class="font-medium">Koramangala 5th Block</span>
+      </div>
+    </div>
+
+    <!-- Details Zone -->
+    <div class="space-y-3">
+      <div class="flex items-start justify-between">
+        <div>
+          <h3 class="font-headline-sm font-bold text-primary flex items-center gap-2">
+            <span>Vikram Malhotra</span>
+            <span class="text-on-surface-variant font-normal text-title-md">26</span>
+          </h3>
+          <p class="font-body-sm text-on-surface-variant">Founder Associate at <span class="font-semibold text-on-surface">Seed Venture</span></p>
+        </div>
+        <div class="text-right">
+          <span class="font-title-md font-bold text-primary">₹25,000</span>
+          <span class="block font-label-sm text-outline">Move-in Nov 20</span>
+        </div>
+      </div>
+
+      <!-- Trust & Verification Badge -->
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary-container/40 text-on-secondary-container font-label-sm font-bold border border-secondary-container/50">
+          <span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">domain_verification</span>
+          Govt ID + Workplace Verified
+        </span>
+      </div>
+
+      <!-- 3 Strongest Compatibility Dimensions Chips -->
+      <div class="space-y-1.5">
+        <span class="text-label-sm font-bold text-outline uppercase tracking-wider block">Strongest Dimensions</span>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">payments</span>Budget 100%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">cleaning_services</span>Cleanliness 90%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">fitness_center</span>Lifestyle 88%
+          </span>
+        </div>
+      </div>
+
+      <!-- Potential Lifestyle Difference / Discussion Point -->
+      <div class="p-2.5 rounded-xl bg-surface-container-low border border-surface-container text-body-sm flex items-start gap-2">
+        <span class="material-symbols-outlined text-outline text-[16px] flex-shrink-0 mt-0.5">tune</span>
+        <p class="font-label-md text-on-surface-variant"><strong class="text-on-surface font-semibold">Discussion:</strong> Dinner Timing: 9:30 PM late dinners</p>
+      </div>
+
+      <!-- Lifestyle Tags -->
+      <div class="flex flex-wrap gap-1.5 pt-0.5">
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Gym Goer</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Non-Smoker</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Early Bird</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Board Games</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Actions -->
+  <div class="pt-4 flex items-center gap-2 border-t border-surface-container mt-4">
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm font-semibold flex items-center justify-center gap-1.5 transition-colors border border-surface-container" onclick="openCompatModal('Vikram Malhotra', 'Founder Associate • Koramangala 5th Block', 86, 90, 100, 88, 'Budget match is 100%. Slight difference in evening meal timing.', 'Connect')">
+      <span class="material-symbols-outlined text-[16px]">query_stats</span>
+      Breakdown
+    </button>
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-secondary hover:bg-on-secondary-container text-on-secondary font-title-sm font-semibold flex items-center justify-center gap-1.5 shadow-md shadow-secondary/20 transition-all" onclick="sendConnectionRequest('Vikram Malhotra')">
+      <span class="material-symbols-outlined text-[18px]">person_add</span>
+      Connect
+    </button>
+  </div>
+</article>
+
+<!-- CARD 6: Pooja Hegde (Connect) -->
+<article class="candidate-card bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-surface-container">
+  <div class="space-y-4">
+    <!-- Photo Zone & Dominant Compatibility Badge -->
+    <div class="relative w-full h-56 rounded-xl overflow-hidden bg-surface-container">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Pooja Hegde" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdjug5GIEH-q5B7N0N4awvzRTmgXm9n9KoGERWQ4V8grCUMyTea0dDj-TRmaJpXWyB7P6ud2KxeFqfHHg2eT0Y9lKIxqagchQKL7zpJLs9_a8CADmD9cb_wSEU_iYHlaval-qWacOnV_G-803vJUEn_7j5AyM32Rpdr6Kc3OuNeV5I9z0HB0fNR5NMOwticc4vJd5pDT4QfblqKkRvA5eo_j_DPAnJtFVj8IpOpYnx">
+      <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+      
+      <!-- Bookmark Icon Button -->
+      <button class="absolute top-3 left-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary shadow-md transition-colors border border-surface-container/30" title="Save Profile" onclick="toggleBookmark(this, 'Pooja Hegde')">
+        <span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+      </button>
+
+      <!-- Dominant Compatibility Badge -->
+      <div class="absolute top-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-1.5 rounded-2xl shadow-xl flex items-center gap-2.5 border border-secondary/30 ring-2 ring-secondary/20">
+        <div class="relative w-8 h-8 flex items-center justify-center flex-shrink-0">
+          <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+            <path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4"></path>
+            <path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="87, 100" stroke-linecap="round" stroke-width="4"></path>
+          </svg>
+          <span class="absolute font-label-md font-extrabold text-secondary">87</span>
+        </div>
+        <div class="leading-none">
+          <span class="block font-title-sm font-bold text-primary">87% Match</span>
+          <span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Balanced Synergy</span>
+        </div>
+      </div>
+
+      <!-- Distance Tag -->
+      <div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-md border border-surface-container/30">
+        <span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+        <span class="font-medium">Bellandur / HSR Outer Ring</span>
+      </div>
+    </div>
+
+    <!-- Details Zone -->
+    <div class="space-y-3">
+      <div class="flex items-start justify-between">
+        <div>
+          <h3 class="font-headline-sm font-bold text-primary flex items-center gap-2">
+            <span>Pooja Hegde</span>
+            <span class="text-on-surface-variant font-normal text-title-md">24</span>
+          </h3>
+          <p class="font-body-sm text-on-surface-variant">UX Researcher at <span class="font-semibold text-on-surface">Flipkart</span></p>
+        </div>
+        <div class="text-right">
+          <span class="font-title-md font-bold text-primary">₹19,000</span>
+          <span class="block font-label-sm text-outline">Move-in Dec 1</span>
+        </div>
+      </div>
+
+      <!-- Trust & Verification Badge -->
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary-container/40 text-on-secondary-container font-label-sm font-bold border border-secondary-container/50">
+          <span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Govt ID + Work Verified
+        </span>
+      </div>
+
+      <!-- 3 Strongest Compatibility Dimensions Chips -->
+      <div class="space-y-1.5">
+        <span class="text-label-sm font-bold text-outline uppercase tracking-wider block">Strongest Dimensions</span>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">payments</span>Budget 98%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">cleaning_services</span>Cleanliness 94%
+          </span>
+          <span class="px-2.5 py-1 rounded-lg bg-secondary/10 border border-secondary/20 text-secondary font-label-sm font-bold flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">security</span>Boundaries 92%
+          </span>
+        </div>
+      </div>
+
+      <!-- Potential Lifestyle Difference / Discussion Point -->
+      <div class="p-2.5 rounded-xl bg-surface-container-low border border-surface-container text-body-sm flex items-start gap-2">
+        <span class="material-symbols-outlined text-outline text-[16px] flex-shrink-0 mt-0.5">tune</span>
+        <p class="font-label-md text-on-surface-variant"><strong class="text-on-surface font-semibold">Discussion:</strong> Kitchen Time Sharing: Morning smoothie routine</p>
+      </div>
+
+      <!-- Lifestyle Tags -->
+      <div class="flex flex-wrap gap-1.5 pt-0.5">
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Quiet Nights</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Tea Enthusiast</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Non-Smoker</span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm font-medium">Neat Freak</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Actions -->
+  <div class="pt-4 flex items-center gap-2 border-t border-surface-container mt-4">
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm font-semibold flex items-center justify-center gap-1.5 transition-colors border border-surface-container" onclick="openCompatModal('Pooja Hegde', 'UX Researcher at Flipkart • Bellandur', 85, 94, 98, 92, 'Prioritizes clean kitchen surfaces after every meal and respectful acoustic boundaries during WFH.', 'Connect')">
+      <span class="material-symbols-outlined text-[16px]">query_stats</span>
+      Breakdown
+    </button>
+    <button class="flex-1 py-2.5 px-3 rounded-xl bg-secondary hover:bg-on-secondary-container text-on-secondary font-title-sm font-semibold flex items-center justify-center gap-1.5 shadow-md shadow-secondary/20 transition-all" onclick="sendConnectionRequest('Pooja Hegde')">
+      <span class="material-symbols-outlined text-[18px]">person_add</span>
+      Connect
+    </button>
+  </div>
+</article></section>
+<!-- 5. HELPER BANNER & LOAD MORE PAGINATION -->
+<section class="space-y-6 pt-3 pb-12"><div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl bg-surface-container-low/90 text-on-surface border border-surface-container"><div class="flex items-center gap-3.5"><div class="w-11 h-11 rounded-xl bg-surface-variant flex items-center justify-center text-primary flex-shrink-0 shadow-sm"><span class="material-symbols-outlined text-[24px]">tune</span></div><div><h4 class="font-title-md font-bold text-primary">Can't find an exact match for your dates?</h4><p class="font-body-sm text-on-surface-variant">Adjust your radius by 2 km or broaden routine wake times by ±1 hour to unlock <span class="font-bold text-secondary">14 more verified candidates</span> in Bengaluru.</p></div></div><button class="px-space-md py-2.5 rounded-xl bg-surface-container-highest hover:bg-surface-variant text-primary font-title-sm font-semibold whitespace-nowrap transition-all shadow-sm flex items-center gap-1.5 flex-shrink-0 border border-surface-container" onclick="expandRadius()"><span class="material-symbols-outlined text-[18px]">radar</span><span>Expand Discovery Radius</span></button></div><div class="flex flex-col items-center justify-center gap-2.5 pt-2"><button class="px-8 py-3.5 rounded-full bg-primary-container hover:bg-primary text-on-primary font-title-sm font-semibold flex items-center gap-2.5 shadow-md hover:shadow-lg transition-all" id="loadMoreBtn" onclick="loadMoreRoommates()"><span class="material-symbols-outlined text-[20px]">sync</span><span>Load More Compatible Matches (12 remaining)</span></button><span class="font-label-sm text-outline font-medium">Showing 6 of 18 compatible matches • Matches are 100% ID and workplace verified</span></div></section>
+</div>
+</div>
+<script>
+  // Compatibility Modal Logic
+  let activeCandidate = '';
+
+  function openCompatModal(name, sub, routine, clean, budget, social, desc) {
+    activeCandidate = name;
+    document.getElementById('modalName').textContent = name;
+    document.getElementById('modalSub').textContent = sub;
+    
+    document.getElementById('modalRoutineVal').textContent = routine + '% Match';
+    document.getElementById('modalRoutineBar').style.width = routine + '%';
+
+    document.getElementById('modalCleanVal').textContent = clean + '% Match';
+    document.getElementById('modalCleanBar').style.width = clean + '%';
+
+    document.getElementById('modalBudgetVal').textContent = budget + '% Match';
+    document.getElementById('modalBudgetBar').style.width = budget + '%';
+
+    document.getElementById('modalSocialVal').textContent = social + '% Match';
+    document.getElementById('modalSocialBar').style.width = social + '%';
+
+    document.getElementById('modalDescription').textContent = desc;
+
+    const modal = document.getElementById('compatModal');
+    const card = document.getElementById('modalCard');
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+    card.classList.remove('scale-95');
+    card.classList.add('scale-100');
+  }
+
+  function closeCompatModal() {
+    const modal = document.getElementById('compatModal');
+    const card = document.getElementById('modalCard');
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100');
+    card.classList.add('scale-95');
+    card.classList.remove('scale-100');
+  }
+
+  function handleModalConnect() {
+    closeCompatModal();
+    if(activeCandidate) {
+      sendConnectionRequest(activeCandidate);
+    }
+  }
+
+  // Toast Notification
+  function showToast(message) {
+    const toast = document.getElementById('toast');
+    const msg = document.getElementById('toastMsg');
+    msg.textContent = message;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  function sendConnectionRequest(name) {
+    showToast(`Connection invite & verified profile badge shared with ${name}!`);
+  }
+
+  // Quick Filter interactions
+  let verifiedOnlyActive = true;
+  function toggleVerifiedFilter() {
+    const btn = document.getElementById('verifiedFilterBtn');
+    verifiedOnlyActive = !verifiedOnlyActive;
+    if (verifiedOnlyActive) {
+      btn.className = "flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-on-secondary font-title-sm text-title-sm whitespace-nowrap shadow-sm";
+      showToast("Filtering to 100% ID-verified profiles only");
+    } else {
+      btn.className = "flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-title-sm text-title-sm whitespace-nowrap shadow-sm";
+      showToast("Showing all community profiles (including pending verifications)");
+    }
+  }
+
+  function handleSortChange(val) {
+    const sortLabels = {
+      'compat': 'Highest Compatibility Score',
+      'recent': 'Recently Active Profiles',
+      'budget_asc': 'Budget: Low to High',
+      'distance': 'Distance to Workplace'
+    };
+    showToast(`Sorted feed by: ${sortLabels[val] || val}`);
+  }
+
+  function expandRadius() {
+    const searchInput = document.getElementById('localitySearch');
+    searchInput.value = 'Indiranagar + Koramangala + HSR + Bellandur (Expanded 5km)';
+    showToast("Discovery radius expanded: 14 new candidates unlocked!");
+  }
+
+  function loadMoreRoommates() {
+    const btn = document.getElementById('loadMoreBtn');
+    btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Synchronizing Profiles...</span>`;
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">check</span><span>All 18 Bangalore Matches Loaded</span>`;
+      btn.classList.add('opacity-75', 'pointer-events-none');
+      showToast("Loaded 12 additional verified roommate listings for Bengaluru!");
+    }, 1200);
+  }
+
+  // Close modal when clicking outside
+  document.getElementById('compatModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeCompatModal();
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant"><div class="max-w-[1280px] mx-auto px-margin-desktop py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-lg pb-space-lg"><div class="flex items-center gap-space-sm"><img alt="RoomSync Logo" class="h-6 w-auto object-contain opacity-80" src="https://lh3.googleusercontent.com/aida/ALJJyrBpXrV95-DTFiUO0pDTZkkB_M4ZetqA8A9iW4alzbcOvTURQt9tUAxZpbGpV_15tFAK8G_imvPQJo0x9gsiY_Tykmmd0qOLNqMP8e31M3_1uxaQ1W8-bsuF9pV6JdGYIi5cEeypp1vptwjfy8J_qpXXX2xYCfZs1ApzxvJuPO2U937b6SxdTpfHeGf-nMNcTRTcSTHTtMAxDy9bsQJIHjbhQFL3dz6BFUXnCp0hgFY90A"><span class="font-title-md text-title-md font-bold text-primary">RoomSync</span><span class="hidden sm:inline-block text-outline-variant font-body-sm text-body-sm">|</span><p class="font-body-sm text-body-sm text-on-surface-variant">High-trust roommate matchmaking &amp; verified shared coliving</p></div><div class="flex items-center gap-space-lg font-body-sm text-body-sm"><a class="hover:text-primary transition-colors" href="#">Verified Trust Protocol</a><a class="hover:text-primary transition-colors" href="#">Habit Matrix</a><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" href="#">Support</a></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-md text-label-md text-outline"><p>© 2025 RoomSync Technologies India Pvt. Ltd. All rights reserved.</p><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span>Bengaluru Hub Operational</span></div></div></div></footer>
+
+</body></html>

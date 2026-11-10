@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline-variant": "#c8c5d0", "on-secondary-container": "#006f66", "error-container": "#ffdad6", "inverse-surface": "#283044", "primary": "#070235", "surface-container-high": "#e2e7ff", "surface-container-highest": "#dae2fd", "surface-bright": "#faf8ff", "on-primary": "#ffffff", "secondary-fixed": "#89f5e7", "tertiary-fixed": "#ffddb8", "on-error": "#ffffff", "on-secondary-fixed": "#00201d", "on-tertiary-fixed-variant": "#653e00", "tertiary": "#140900", "primary-fixed-dim": "#c4c1fb", "on-primary-fixed-variant": "#444173", "primary-fixed": "#e3dfff", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#005049", "on-surface-variant": "#47464f", "surface-container-low": "#f2f3ff", "inverse-on-surface": "#eef0ff", "inverse-primary": "#c4c1fb", "tertiary-fixed-dim": "#ffb95f", "on-surface": "#131b2e", "on-secondary": "#ffffff", "primary-container": "#1e1b4b", "on-tertiary-fixed": "#2a1700", "secondary-container": "#86f2e4", "surface": "#faf8ff", "outline": "#787680", "on-error-container": "#93000a", "on-primary-container": "#8683ba", "error": "#ba1a1a", "surface-dim": "#d2d9f4", "tertiary-container": "#331d00", "surface-variant": "#dae2fd", "on-background": "#131b2e", "on-tertiary-container": "#c07a00", "secondary": "#006a61", "on-primary-fixed": "#181445", "surface-tint": "#5b598c", "secondary-fixed-dim": "#6bd8cb", "surface-container": "#eaedff", "background": "#faf8ff", "on-tertiary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "gutter-desktop": "2rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xl": "2.5rem", "margin-desktop": "3rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "display-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "display-md": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Step 2 of 5</span><h1 class="font-title-md text-title-md text-on-surface truncate">Budget & Housing Preferences</h1></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div><div class="w-full h-1 bg-surface-container-high overflow-hidden"><div class="h-full bg-secondary w-2/5 rounded-full transition-all duration-300 ease-out"></div></div></header><main class="flex-1 flex flex-col relative w-full px-gutter-mobile pt-16 pb-28 bg-surface"><div class="flex flex-col w-full pb-6 space-y-6">
+<!-- Micro Header / Contextual Teaser (App shell provides step & title) -->
+<div class="flex flex-col space-y-1">
+<div class="inline-flex items-center gap-1.5 self-start px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wide">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+      Housing Criteria
+    </div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">What kind of home are you looking for?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Set your budget corridor and preferred living arrangements to unlock curated flatmates.</p>
+</div>
+<!-- SECTION 1: Accommodation Type Selector -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Accommodation Intent</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">1 Choice Required</span>
+</div>
+<div class="grid grid-cols-1 gap-3" id="intent-selector">
+<!-- Card 1: Selected state -->
+<div class="relative overflow-hidden cursor-pointer p-4 rounded-xl bg-surface-container-low transition-all duration-200 shadow-sm hover:shadow-md border-l-4 border-secondary group flex items-start justify-between gap-3 bg-gradient-to-r from-secondary-container/20 to-transparent" data-intent="existing" onclick="selectIntent(this)">
+<div class="flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-xl bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">vpn_key</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">Room in an Existing Flat</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Move into an established shared apartment with active leases.</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] text-secondary">flash_on</span> Quick Move-in
+              </span>
+</div>
+</div>
+</div>
+<!-- Radio custom indicator -->
+<div class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center shrink-0 mt-0.5 intent-indicator">
+<div class="w-2 h-2 rounded-full bg-surface"></div>
+</div>
+</div>
+<!-- Card 2: Forming a pod (Popular) -->
+<div class="relative overflow-hidden cursor-pointer p-4 rounded-xl bg-surface-container-lowest transition-all duration-200 shadow-sm hover:shadow-md flex items-start justify-between gap-3" data-intent="pod" onclick="selectIntent(this)">
+<div class="flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">diversity_3</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">Form a Roommate Pod</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">Top Tech Choice</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Team up with pre-screened professionals to hunt fresh 2BHK/3BHKs.</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 mt-0.5 intent-indicator">
+<div class="w-2 h-2 rounded-full bg-transparent"></div>
+</div>
+</div>
+<!-- Card 3: Empty room -->
+<div class="relative overflow-hidden cursor-pointer p-4 rounded-xl bg-surface-container-lowest transition-all duration-200 shadow-sm hover:shadow-md flex items-start justify-between gap-3" data-intent="host" onclick="selectIntent(this)">
+<div class="flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">home_work</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">Have an Empty Room</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Already holding a master lease and looking for a verified flatmate.</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 mt-0.5 intent-indicator">
+<div class="w-2 h-2 rounded-full bg-transparent"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Budget Corridor Slider & Range -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">Monthly Budget Corridor</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Includes maintenance, water & Wi-Fi</span>
+</div>
+<div class="px-2.5 py-1 rounded-lg bg-surface-container text-secondary font-label-md text-label-md">
+        ₹ INR / mo
+      </div>
+</div>
+<!-- Active dynamic readout -->
+<div class="p-4 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Target Bracket</span>
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight" id="budget-display">₹20,000 – ₹28,000</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<!-- Slider Graphic Simulation with interactive handles -->
+<div class="space-y-2 pt-2">
+<div class="relative h-2 rounded-full bg-surface-container-high flex items-center">
+<!-- Filled Track Segment (25% to 65%) -->
+<div class="absolute h-full rounded-full bg-secondary left-[25%] right-[35%]" id="slider-track"></div>
+<!-- Handle Min -->
+<div class="absolute left-[25%] -ml-3 w-6 h-6 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center cursor-pointer transition-transform active:scale-110">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+</div>
+<!-- Handle Max -->
+<div class="absolute right-[35%] -mr-3 w-6 h-6 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center cursor-pointer transition-transform active:scale-110">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>₹10,000</span>
+<span>₹25,000</span>
+<span>₹50,000+</span>
+</div>
+</div>
+<!-- Quick Bracket Chips -->
+<div class="flex flex-col space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Quick Presets</span>
+<div class="grid grid-cols-2 gap-2">
+<button class="px-3 py-2 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container text-center transition-colors" onclick="setPreset(this, '₹10,000 – ₹15,000')" type="button">Under ₹15k</button>
+<button class="px-3 py-2 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md text-center flex items-center justify-center gap-1 shadow-xs font-bold" onclick="setPreset(this, '₹15,000 – ₹25,000')" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> ₹15k – ₹25k
+        </button>
+<button class="px-3 py-2 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container text-center transition-colors" onclick="setPreset(this, '₹25,000 – ₹35,000')" type="button">₹25k – ₹35k</button>
+<button class="px-3 py-2 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container text-center transition-colors" onclick="setPreset(this, '₹35,000 – ₹55,000')" type="button">₹35k+</button>
+</div>
+</div>
+<!-- Flexible budget toggle -->
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low cursor-pointer select-none">
+<input checked="" class="sr-only peer" id="flex-toggle" type="checkbox"/>
+<div class="w-5 h-5 rounded-md bg-surface-container-highest peer-checked:bg-secondary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px] text-on-secondary hidden peer-checked:block">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Flexible corridor (+/- ₹2,000)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Shows candidates in prime gated societies slightly above limits</span>
+</div>
+</label>
+</div>
+<!-- SECTION 3: Room Configuration -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Room Preference</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Self & Guest privacy</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5" id="room-type-group">
+<!-- Option 1: Selected -->
+<button class="w-full text-left p-3.5 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-between transition-all shadow-xs" onclick="selectRoomType(this)" type="button">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px]">bathtub</span>
+<span class="font-title-sm text-title-sm font-bold">Private Room + Attached Bath</span>
+</div>
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</button>
+<!-- Option 2 -->
+<button class="w-full text-left p-3.5 rounded-xl bg-surface-container-lowest text-on-surface flex items-center justify-between hover:bg-surface-container-low transition-all shadow-xs" onclick="selectRoomType(this)" type="button">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">shower</span>
+<span class="font-title-sm text-title-sm">Private Room + Shared Bath</span>
+</div>
+<span class="w-5 h-5 rounded-full bg-surface-container-high"></span>
+</button>
+<!-- Option 3 -->
+<button class="w-full text-left p-3.5 rounded-xl bg-surface-container-lowest text-on-surface flex items-center justify-between hover:bg-surface-container-low transition-all shadow-xs" onclick="selectRoomType(this)" type="button">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">all_inclusive</span>
+<span class="font-title-sm text-title-sm">Flexible / Open to Twin Sharing</span>
+</div>
+<span class="w-5 h-5 rounded-full bg-surface-container-high"></span>
+</button>
+</div>
+</div>
+<!-- SECTION 4: Target Move-in Window -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Target Move-in Date</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">event</span>
+</div>
+<div class="grid grid-cols-2 gap-2" id="movein-window">
+<button class="p-3 rounded-xl bg-surface-container-lowest text-on-surface text-left flex flex-col justify-between hover:bg-surface-container-low transition-all shadow-xs" onclick="selectMoveIn(this)" type="button">
+<span class="font-label-sm text-label-sm text-secondary font-bold">URGENT</span>
+<span class="font-title-sm text-title-sm mt-1">< 7 Days</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Immediate</span>
+</button>
+<button class="p-3 rounded-xl bg-secondary-container text-on-secondary-container text-left flex flex-col justify-between transition-all shadow-xs ring-2 ring-secondary" onclick="selectMoveIn(this)" type="button">
+<span class="font-label-sm text-label-sm text-secondary font-bold">OPTIMAL</span>
+<span class="font-title-sm text-title-sm mt-1 font-bold">Next 15–30 Days</span>
+<span class="font-body-sm text-body-sm text-on-secondary-container/80">Active leasing cycle</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container-lowest text-on-surface text-left flex flex-col justify-between hover:bg-surface-container-low transition-all shadow-xs" onclick="selectMoveIn(this)" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ADVANCE</span>
+<span class="font-title-sm text-title-sm mt-1">1–2 Months</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Early search</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container-lowest text-on-surface text-left flex flex-col justify-between hover:bg-surface-container-low transition-all shadow-xs" onclick="selectMoveIn(this)" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">EXPLORING</span>
+<span class="font-title-sm text-title-sm mt-1">Flexible Date</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Casual matching</span>
+</button>
+</div>
+</div>
+<!-- SECTION 5: Non-Negotiable Amenities -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Non-Negotiable Amenities</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">We filter out flats that fail these standards</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm" id="amenity-count">5 Selected</span>
+</div>
+<!-- Multi-select pill cloud -->
+<div class="flex flex-wrap gap-2" id="amenity-cloud">
+<!-- Pill Selected -->
+<button class="px-3.5 py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="toggleAmenity(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">wifi</span>
+<span>High-speed Wi-Fi</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<!-- Pill Selected -->
+<button class="px-3.5 py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="toggleAmenity(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">local_laundry_service</span>
+<span>In-unit Washing Machine</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<!-- Pill Selected -->
+<button class="px-3.5 py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="toggleAmenity(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">electric_bolt</span>
+<span>Power Backup (UPS/DG)</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<!-- Pill Selected -->
+<button class="px-3.5 py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="toggleAmenity(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">security</span>
+<span>Gated Security</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<!-- Pill Unselected -->
+<button class="px-3.5 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all hover:bg-surface-container-high" onclick="toggleAmenity(this)" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">balcony</span>
+<span>Balcony</span>
+</button>
+<!-- Pill Selected -->
+<button class="px-3.5 py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="toggleAmenity(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">skillet</span>
+<span>Cook / Maid Friendly</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<!-- Pill Unselected -->
+<button class="px-3.5 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all hover:bg-surface-container-high" onclick="toggleAmenity(this)" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">directions_car</span>
+<span>Covered Parking</span>
+</button>
+<!-- Pill Unselected -->
+<button class="px-3.5 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all hover:bg-surface-container-high" onclick="toggleAmenity(this)" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">fitness_center</span>
+<span>Gym / Clubhouse</span>
+</button>
+<!-- Pill Unselected -->
+<button class="px-3.5 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all hover:bg-surface-container-high" onclick="toggleAmenity(this)" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">pets</span>
+<span>Pet Friendly</span>
+</button>
+</div>
+</div>
+<!-- Trust Guarantee Banner / Warm Insight Card -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-sm text-title-sm text-on-surface font-bold">RoomSync Broker-Free Assurance</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Every flat in our network is 100% tenant-posted or landlord direct. Zero brokerage charges, guaranteed deposit safety escrow.</p>
+</div>
+</div>
+</div>
+<script>
+  // Interactive Intent Selector Logic
+  function selectIntent(card) {
+    const parent = document.getElementById('intent-selector');
+    const cards = parent.querySelectorAll('[data-intent]');
+    cards.forEach(c => {
+      c.className = "relative overflow-hidden cursor-pointer p-4 rounded-xl bg-surface-container-lowest transition-all duration-200 shadow-sm hover:shadow-md flex items-start justify-between gap-3";
+      const iconBox = c.querySelector('div > div');
+      iconBox.className = "w-11 h-11 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0";
+      const indicator = c.querySelector('.intent-indicator');
+      indicator.className = "w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 mt-0.5 intent-indicator";
+      indicator.innerHTML = '<div class="w-2 h-2 rounded-full bg-transparent"></div>';
+    });
+
+    // Mark current selected
+    card.className = "relative overflow-hidden cursor-pointer p-4 rounded-xl bg-surface-container-low transition-all duration-200 shadow-sm hover:shadow-md border-l-4 border-secondary group flex items-start justify-between gap-3 bg-gradient-to-r from-secondary-container/20 to-transparent";
+    const activeIconBox = card.querySelector('div > div');
+    activeIconBox.className = "w-11 h-11 rounded-xl bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm";
+    const activeIndicator = card.querySelector('.intent-indicator');
+    activeIndicator.className = "w-5 h-5 rounded-full bg-secondary flex items-center justify-center shrink-0 mt-0.5 intent-indicator";
+    activeIndicator.innerHTML = '<div class="w-2 h-2 rounded-full bg-surface"></div>';
+  }
+
+  // Quick Preset Setter
+  function setPreset(btn, val) {
+    document.getElementById('budget-display').innerText = val;
+    const parent = btn.parentElement;
+    parent.querySelectorAll('button').forEach(b => {
+      b.className = "px-3 py-2 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container text-center transition-colors";
+    });
+    btn.className = "px-3 py-2 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md text-center flex items-center justify-center gap-1 shadow-xs font-bold";
+  }
+
+  // Room Type Selector
+  function selectRoomType(btn) {
+    const group = document.getElementById('room-type-group');
+    group.querySelectorAll('button').forEach(b => {
+      b.className = "w-full text-left p-3.5 rounded-xl bg-surface-container-lowest text-on-surface flex items-center justify-between hover:bg-surface-container-low transition-all shadow-xs";
+      const checkIcon = b.querySelector('.material-symbols-outlined:last-child');
+      if (checkIcon) {
+        checkIcon.outerHTML = '<span class="w-5 h-5 rounded-full bg-surface-container-high"></span>';
+      }
+    });
+
+    btn.className = "w-full text-left p-3.5 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-between transition-all shadow-xs";
+    const lastSpan = btn.lastElementChild;
+    lastSpan.outerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span>';
+  }
+
+  // Move-in Window Selector
+  function selectMoveIn(btn) {
+    const parent = document.getElementById('movein-window');
+    parent.querySelectorAll('button').forEach(b => {
+      b.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'ring-2', 'ring-secondary');
+      b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+    });
+    btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+    btn.classList.add('bg-secondary-container', 'text-on-secondary-container', 'ring-2', 'ring-secondary');
+  }
+
+  // Amenity Multi-select toggle
+  function toggleAmenity(pill) {
+    const isSelected = pill.classList.contains('bg-secondary');
+    if (isSelected) {
+      pill.className = "px-3.5 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all hover:bg-surface-container-high";
+      const checkMark = pill.querySelector('.material-symbols-outlined:last-child');
+      if (checkMark && checkMark.innerText === 'check') checkMark.remove();
+    } else {
+      pill.className = "px-3.5 py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-all";
+      const checkSpan = document.createElement('span');
+      checkSpan.className = "material-symbols-outlined text-[14px]";
+      checkSpan.innerText = "check";
+      pill.appendChild(checkSpan);
+    }
+    updateAmenityCount();
+  }
+
+  function updateAmenityCount() {
+    const count = document.querySelectorAll('#amenity-cloud button.bg-secondary').length;
+    document.getElementById('amenity-count').innerText = `${count} Selected`;
+  }
+</script></main><footer class="fixed bottom-0 inset-x-0 z-40 bg-surface/90 backdrop-blur-xl pb-safe shadow-[0_-4px_16px_rgba(30,27,75,0.04)]"><div class="h-20 px-gutter-mobile flex items-center justify-between gap-space-md"><button class="h-12 px-space-md rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container active:scale-95 transition-all flex items-center justify-center min-w-[5.5rem]" onclick="history.back()" type="button">Back</button><button class="flex-1 h-12 px-space-lg rounded-xl bg-primary text-on-primary font-title-sm text-title-sm shadow-md hover:bg-primary-container active:scale-98 transition-all flex items-center justify-center gap-space-xs" type="button"><span class="truncate">Continue</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></footer></body></html>

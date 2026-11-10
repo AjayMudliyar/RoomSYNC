@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>RoomSync - Rohan Varma Profile &amp; Coliving Compatibility</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin:0; padding:0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    .pb-safe { padding-bottom: max(1.25rem, env(safe-area-inset-bottom)); }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-high": "#e2e7ff",
+            "secondary-fixed": "#89f5e7",
+            "on-primary-container": "#8683ba",
+            "surface-container-highest": "#dae2fd",
+            "on-background": "#131b2e",
+            "outline": "#787680",
+            "primary-fixed": "#e3dfff",
+            "inverse-surface": "#283044",
+            "on-surface-variant": "#47464f",
+            "tertiary-fixed-dim": "#ffb95f",
+            "inverse-on-surface": "#eef0ff",
+            "on-error": "#ffffff",
+            "background": "#faf8ff",
+            "tertiary-container": "#331d00",
+            "on-secondary-container": "#006f66",
+            "secondary-fixed-dim": "#6bd8cb",
+            "on-primary-fixed": "#181445",
+            "surface-container-low": "#f2f3ff",
+            "on-primary-fixed-variant": "#444173",
+            "tertiary": "#140900",
+            "surface-bright": "#faf8ff",
+            "primary-container": "#1e1b4b",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#ffffff",
+            "surface-dim": "#d2d9f4",
+            "on-tertiary-container": "#c07a00",
+            "on-secondary-fixed": "#00201d",
+            "inverse-primary": "#c4c1fb",
+            "error": "#ba1a1a",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed-variant": "#653e00",
+            "secondary-container": "#86f2e4",
+            "surface-tint": "#5b598c",
+            "outline-variant": "#c8c5d0",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed": "#2a1700",
+            "on-surface": "#131b2e",
+            "surface-variant": "#dae2fd",
+            "primary-fixed-dim": "#c4c1fb",
+            "tertiary-fixed": "#ffddb8",
+            "primary": "#070235",
+            "secondary": "#006a61",
+            "surface": "#faf8ff",
+            "surface-container": "#eaedff",
+            "on-secondary-fixed-variant": "#005049",
+            "on-tertiary": "#ffffff",
+            "error-container": "#ffdad6"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+          spacing: {
+            "space-sm": "0.5rem",
+            gutter: "1.5rem",
+            "gutter-mobile": "1rem",
+            "margin-desktop": "3rem",
+            margin: "1.5rem",
+            "margin-mobile": "1rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "gutter-desktop": "2rem"
+          },
+          fontFamily: {
+            "display-lg": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "title-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "metric-display": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "display-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.03em", fontWeight: "800" }],
+            "title-md": ["16px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "600" }],
+            "body-md": ["14px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" }],
+            "body-lg": ["16px", { lineHeight: "26px", letterSpacing: "-0.005em", fontWeight: "400" }],
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+            "title-sm": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "600" }],
+            "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }],
+            "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "headline-md": ["22px", { lineHeight: "30px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "metric-display": ["32px", { lineHeight: "36px", letterSpacing: "-0.03em", fontWeight: "800" }],
+            "headline-sm": ["18px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700" }],
+            "display-md": ["36px", { lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "700" }],
+            "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }],
+            "body-sm": ["12px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="min-h-full bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-40 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-surface-container">
+<div class="h-20 max-w-[1280px] mx-auto px-margin-mobile sm:px-margin lg:px-margin-desktop flex items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-xl flex-shrink-0">
+<a class="flex items-center gap-2 group focus:outline-none" href="#">
+<img alt="RoomSync Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ALJJyrBpXrV95-DTFiUO0pDTZkkB_M4ZetqA8A9iW4alzbcOvTURQt9tUAxZpbGpV_15tFAK8G_imvPQJo0x9gsiY_Tykmmd0qOLNqMP8e31M3_1uxaQ1W8-bsuF9pV6JdGYIi5cEeypp1vptwjfy8J_qpXXX2xYCfZs1ApzxvJuPO2U937b6SxdTpfHeGf-nMNcTRTcSTHTtMAxDy9bsQJIHjbhQFL3dz6BFUXnCp0hgFY90A"/>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary">RoomSync</span>
+</a>
+<nav class="hidden lg:flex items-center gap-1 bg-surface-container-low/80 p-1.5 rounded-full border border-surface-container">
+<a class="relative text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-medium text-title-sm px-4 py-1.5 rounded-full transition-all duration-200" href="#">Discover</a>
+<a class="relative text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-medium text-title-sm px-4 py-1.5 rounded-full transition-all duration-200" href="#">Accommodation</a>
+<a class="relative flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-medium text-title-sm px-4 py-1.5 rounded-full transition-all duration-200" href="#">
+<span>Roommate Groups</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm font-bold leading-none">2</span>
+</a>
+<a class="relative flex items-center gap-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-medium text-title-sm px-4 py-1.5 rounded-full transition-all duration-200" href="#">
+<span>Messages</span>
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+</a>
+</nav>
+</div>
+<div class="flex items-center gap-3 flex-shrink-0">
+<button class="hidden sm:flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container border border-surface-container text-on-surface transition-all duration-200 focus:outline-none shadow-sm min-h-[44px]" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">location_on</span>
+<span class="font-label-lg">Bengaluru, KA</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+<button class="flex items-center gap-2 pl-3.5 pr-2.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container border border-surface-container text-on-surface-variant hover:text-on-surface transition-all duration-200 focus:outline-none shadow-sm min-h-[44px]" type="button">
+<span class="material-symbols-outlined text-[18px]">search</span>
+<span class="hidden xl:inline-block font-body-sm text-outline pr-1">Quick find</span>
+<kbd class="hidden xl:inline-block px-1.5 py-0.5 bg-surface-container-highest text-on-surface-variant font-label-sm font-semibold rounded border border-outline-variant/30">⌘K</kbd>
+</button>
+<button aria-label="Notifications" class="relative p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container border border-surface-container text-on-surface-variant hover:text-primary transition-all duration-200 focus:outline-none shadow-sm min-h-[44px] min-w-[44px] flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute 1 top-1 right-1 min-w-[16px] h-[16px] px-1 rounded-full bg-secondary text-on-secondary font-label-sm flex items-center justify-center font-bold text-[10px]">3</span>
+</button>
+<div class="flex items-center pl-1">
+<button class="flex items-center gap-2 p-1 pr-3 rounded-full hover:bg-surface-container border border-surface-container bg-surface-container-lowest transition-all duration-200 focus:outline-none shadow-sm min-h-[44px]" type="button">
+<div class="relative flex-shrink-0">
+<img alt="Aarav's Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC07VLA1WP6HEJQLX9frcHNZou_TGTSfLUon_zrDp4vTH7BwKPWVJEWhQoQU9zQer7m0vlCQYSvp77x1H-1h1fpMWlvsIj7zQLRTy6no2OhDfDZIXBqWpyWZSN3TOPXkcS5WYMaYiXzA-qqaEwbjp52uOdXC4BncNlW1QjtfqCY4z5lhXqnC7GWTIxw4tv5hFhnpOgiDBqqoQh9mTQqgE7mkqAghPwJV9W85SqIRnx3"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface"></span>
+</div>
+<span class="hidden md:inline-block font-title-sm text-on-surface font-semibold">Aarav</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">keyboard_arrow_down</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+<div class="flex flex-col w-full">
+<!-- Breadcrumbs & Trust Protocol Header -->
+<div class="w-full bg-surface-container-low/80 backdrop-blur-md sticky top-20 z-30 border-b border-surface-container/60">
+<div class="max-w-[1280px] mx-auto px-margin-mobile sm:px-margin lg:px-margin-desktop py-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface hover:bg-surface-container text-primary font-title-sm shadow-sm transition-all duration-200 min-h-[38px]" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Discover</span>
+</a>
+<div class="h-4 w-px bg-outline-variant/40 hidden sm:block"></div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                93% Compatibility
+              </span>
+<span class="font-body-sm text-outline hidden md:inline-block">• Profile active 2h ago</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface hover:bg-surface-container text-on-surface-variant hover:text-primary transition-all duration-200 text-label-md border border-surface-container shadow-sm min-h-[38px]" onclick="openPrivacyGuideModal()">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span class="hidden sm:inline">3-Tier Privacy Milestones</span>
+<span class="sm:hidden">Privacy</span>
+</button>
+<button class="p-2 rounded-full bg-surface hover:bg-surface-container text-on-surface-variant hover:text-primary transition-all duration-200 shadow-sm min-h-[38px] min-w-[38px] flex items-center justify-center border border-surface-container" id="saveBtn" onclick="toggleSave()" title="Save profile">
+<span class="material-symbols-outlined text-[20px]" id="saveIcon">bookmark_border</span>
+</button>
+<button class="p-2 rounded-full bg-surface hover:bg-surface-container text-on-surface-variant hover:text-primary transition-all duration-200 shadow-sm min-h-[38px] min-w-[38px] flex items-center justify-center border border-surface-container" onclick="shareCandidateProfile()" title="Share profile">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Canvas Container -->
+<div class="max-w-[1280px] mx-auto w-full px-margin-mobile sm:px-margin lg:px-margin-desktop py-space-lg space-y-space-xl pb-40">
+<!-- SECTION 1: Hero Dossier: Gallery + Fast Fact Specs -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Media Gallery Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Main High-Res Viewer -->
+<div class="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-2xl overflow-hidden bg-surface-container-high shadow-md group border border-surface-container/60">
+<img alt="Rohan Varma smiling warmly at a sunlit specialty cafe in Bengaluru wearing a clean navy shirt" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" id="mainGalleryImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBID50-Zc4VfEy7r0Z_DL7N9HpbUWm8IoGpnMHWmA5ThUrZ0SYoUJP-GMpKf__BBCLCxeS64F2og9kla78EWvLIdMSFTgCd-cJutruepP2jx76mW1MYPQlqjxDJtH7LsOGG_zNZ9EM8eioh1jJKBV0tDl-YfPl-orbzrGGLQfyF28oPeiskZ6up6G3cpx0dyqHD60zsDMh7fJSZu72tlcPcHP0grym8Dxhz0mepokgv"/>
+<!-- Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-transparent to-black/20 pointer-events-none"></div>
+<!-- Top Left Tag: Identity Vetted -->
+<div class="absolute top-4 left-4 flex items-center gap-1.5 bg-surface/95 backdrop-blur-md px-3 py-1.5 rounded-full text-primary font-label-md shadow-sm border border-white/40">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Govt KYC &amp; Work Email Verified</span>
+</div>
+<!-- Top Right: Public Privacy Tier Badge -->
+<div class="absolute top-4 right-4 flex items-center gap-1.5 bg-primary-container/90 backdrop-blur-md text-on-primary px-3 py-1.5 rounded-full shadow-md border border-primary-fixed-dim/20 text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary-fixed">shield_lock</span>
+<span>Tier 1: Public Dossier</span>
+</div>
+<!-- Bottom Meta with Approximate Zone -->
+<div class="absolute bottom-4 left-4 right-4 flex items-end justify-between">
+<div class="text-on-primary">
+<p class="font-label-sm text-secondary-fixed uppercase tracking-wider text-[11px]">Approximate Search Zone</p>
+<h2 class="font-headline-sm text-on-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">near_me</span>
+                    Indiranagar / Domlur Corridor (~2–3 km buffer)
+                  </h2>
+</div>
+<span class="bg-surface/85 backdrop-blur-sm text-primary font-label-sm px-3 py-1 rounded-full shadow-sm font-semibold" id="photoCounterBadge">
+                  Photo 1 of 4
+                </span>
+</div>
+</div>
+<!-- Thumbnails Strip -->
+<div class="grid grid-cols-4 gap-space-sm" id="thumbnailStrip">
+<button class="relative aspect-video rounded-xl overflow-hidden bg-surface-container ring-2 ring-secondary shadow-sm transition-all focus:outline-none min-h-[44px]" onclick="changePhoto(0)">
+<img alt="Rohan portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBID50-Zc4VfEy7r0Z_DL7N9HpbUWm8IoGpnMHWmA5ThUrZ0SYoUJP-GMpKf__BBCLCxeS64F2og9kla78EWvLIdMSFTgCd-cJutruepP2jx76mW1MYPQlqjxDJtH7LsOGG_zNZ9EM8eioh1jJKBV0tDl-YfPl-orbzrGGLQfyF28oPeiskZ6up6G3cpx0dyqHD60zsDMh7fJSZu72tlcPcHP0grym8Dxhz0mepokgv"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] bg-primary/80 text-on-primary px-1.5 py-0.5 rounded backdrop-blur-sm">Profile</span>
+</button>
+<button class="relative aspect-video rounded-xl overflow-hidden bg-surface-container opacity-80 hover:opacity-100 shadow-sm transition-all focus:outline-none min-h-[44px]" onclick="changePhoto(1)">
+<img alt="Clean bedroom &amp; living setup" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd5HAl9lECHsnOXa8CbXGqDAG6fseDjPc1YJ_iFW8HQ1dBHnAPUoCSy4jbs3fcrmepUCXGbs7F8bhZ9Qc3-Z6D4SwnsqdjXqLFIs8CVfgoJHN4eZuipPppZvih0wBxV6_09LL265voy80Qp7_iwYMpIaDiTqfsx8B2fq7zmqceWb8o49-XNqk5lLcuRivQdcMSDm9hlLwnp7H6xMhFVlIkMRmFczYe6gKcXXgPcaDQ"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] bg-primary/80 text-on-primary px-1.5 py-0.5 rounded backdrop-blur-sm">Living Space</span>
+</button>
+<button class="relative aspect-video rounded-xl overflow-hidden bg-surface-container opacity-80 hover:opacity-100 shadow-sm transition-all focus:outline-none min-h-[44px]" onclick="changePhoto(2)">
+<img alt="Minimal ergonomic workstation" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv6pOhTlUF7tiG5x2dlUdaL-ccKBnoZmoy55Hvfz-CQSuHfj2HreMi4i90ga6JnxAK4VrfNedj9rrCyBxGKdkvaFUN4Hw9BotiOHyXGXt9R2d_HCYjWNHXNUQe6sr8hHW6B5wTW76noIhhTVimSFz1Q243GbcPlKa2FnxzhE4PmWiO7riomEa_q8MhfgWP0VxAGtDNXB22WY0Rs8Awe45ASVLMG7Zmv96zDTLHgmE0"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] bg-primary/80 text-on-primary px-1.5 py-0.5 rounded backdrop-blur-sm">Work Setup</span>
+</button>
+<button class="relative aspect-video rounded-xl overflow-hidden bg-surface-container opacity-80 hover:opacity-100 shadow-sm transition-all focus:outline-none min-h-[44px]" onclick="changePhoto(3)">
+<img alt="Weekend outdoor gravel ride" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVd17iJzklX4pmJEJO2Nswj9V09J40O8IiZDlpNgeWIZ2x_UqA5KyguNv8-WYcGV0nXQl5Cvk9mmykvuuUIOCJZfMXuvqDDUwDU2DM2lII1485Im5u4h-kaMDp0Kul_fCwfFZsoeIQGltnavyu5aCwKGa7K3nof-cUU8jkTCmjzQc5OqcLuk2fSZIiuTKvkfg2KebSMNW0ZFPzjq--1p0M1LrVyCZTl3Mp6x-CMtAx"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] bg-primary/80 text-on-primary px-1.5 py-0.5 rounded backdrop-blur-sm">Outdoors</span>
+</button>
+</div>
+</div>
+<!-- Fast Facts & Grounded Bio (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Personal Identity Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm border border-surface-container/60 flex flex-col gap-space-md">
+<div class="flex items-start justify-between flex-wrap gap-2">
+<div>
+<div class="flex items-center gap-2">
+<h1 class="font-headline-lg text-primary">Rohan Varma</h1>
+<span class="font-headline-md text-outline">24</span>
+</div>
+<p class="font-title-md text-secondary font-semibold flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">design_services</span>
+                    Product Designer @ Swiggy
+                  </p>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-outline uppercase tracking-wider block">Target Rent</span>
+<span class="font-metric-display text-primary leading-none">₹22,000</span>
+<span class="font-body-sm text-outline block mt-0.5">/ month · Private Room in 3BHK</span>
+</div>
+</div>
+<!-- Quick Attribute Badges Grid -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<div class="bg-surface-container-low p-3 rounded-xl border border-surface-container/50">
+<span class="font-label-sm text-on-surface-variant block mb-1">Target Space</span>
+<span class="font-title-sm text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">apartment</span>
+                    Private Room in 2/3 BHK
+                  </span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-xl border border-surface-container/50">
+<span class="font-label-sm text-on-surface-variant block mb-1">Move-In Horizon</span>
+<span class="font-title-sm text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span>
+                    Aug 1 (±5 Days)
+                  </span>
+</div>
+</div>
+<!-- Bio -->
+<div class="bg-surface-container/50 rounded-xl p-3.5 border-l-4 border-secondary">
+<p class="font-body-md text-on-surface italic text-[13px] leading-relaxed">
+                  “Product Designer by day, amateur pour-over barista and weekend gravel cyclist. Relocating near Indiranagar/Domlur to cut down commute to Swiggy office. Looking for a respectful, cooperative flatmate who values a clean kitchen and calm weeknights.”
+                </p>
+</div>
+<!-- Habits Rhythms -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-outline uppercase tracking-wider font-bold">Stated Daily Rhythms</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">Self-Reported</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">wb_sunny</span> Early Riser (7:30 AM)
+                  </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">smoke_free</span> Non-Smoker
+                  </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">egg_alt</span> Eggetarian
+                  </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">coffee</span> Pour-Over Brewing
+                  </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">laptop_chromebook</span> Hybrid (3d Office / 2d WFH)
+                  </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">headphones</span> Headphone Culture
+                  </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: DISENTANGLED COMPATIBILITY TRANSPARENCY ARCHITECTURE -->
+<section class="bg-surface-container-lowest rounded-3xl p-space-md sm:p-space-lg shadow-sm border border-secondary/30 relative overflow-hidden">
+<!-- Binary Deal-Breaker Gate Banner -->
+<div class="mb-space-md bg-secondary/5 rounded-2xl p-3 sm:p-4 border border-secondary/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-primary font-bold">Hard Deal-Breaker Filter Status:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm font-bold text-[11px]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 0 Deal-Breaker Conflicts Passed
+              </span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px] mt-0.5">
+              RoomSync evaluates binary non-negotiables (Smoking, Pet Allergies, Hard Budget Caps) before computing continuous weighted percentage compatibility.
+            </p>
+</div>
+</div>
+<span class="text-[11px] text-secondary font-semibold font-mono bg-white/80 px-2.5 py-1 rounded-full border border-secondary/20 flex-shrink-0">
+            Binary Pre-Screen: PASS
+          </span>
+</div>
+<!-- Three Disentangled Metric Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm sm:gap-space-md pb-space-md">
+<!-- Metric 1: Overall Weighted Alignment -->
+<div class="bg-surface-container-low rounded-2xl p-space-md border border-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-outline uppercase tracking-wider font-bold">1. Overall Compatibility</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm font-semibold text-[10px]">High Synergy</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-metric-display text-primary text-[36px] font-extrabold leading-none">93%</span>
+<span class="font-label-md text-on-surface-variant">Weighted Alignment</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px] mt-2">
+            Standard 8-dimension weighted dot product across confirmed cohabitation lifestyle values.
+          </p>
+</div>
+<!-- Metric 2: Questionnaire Response Coverage -->
+<div class="bg-surface-container-low rounded-2xl p-space-md border border-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-outline uppercase tracking-wider font-bold">2. Response Coverage</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-sm font-semibold text-[10px]">Complete</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-metric-display text-primary text-[36px] font-extrabold leading-none">100%</span>
+<span class="font-label-md text-on-surface-variant">8 of 8 Modules</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px] mt-2">
+            Both Aarav &amp; Rohan completed all standard lifestyle modules. No proxy extrapolations applied.
+          </p>
+</div>
+<!-- Metric 3: Deal-Breakers Status -->
+<div class="bg-surface-container-low rounded-2xl p-space-md border border-surface-container flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-outline uppercase tracking-wider font-bold">3. Deal-Breakers</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm font-semibold text-[10px]">Clear</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-metric-display text-secondary text-[36px] font-extrabold leading-none">0</span>
+<span class="font-label-md text-on-surface-variant">Non-Negotiable Clashes</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px] mt-2">
+            No policy divergences in tobacco usage, dietary kitchen boundaries, or budgetary limits.
+          </p>
+</div>
+</div>
+<!-- Top 3 Strengths & 1 Nuance Banner -->
+<div class="pt-space-md border-t border-surface-container flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1 w-full lg:w-auto">
+<span class="text-[11px] uppercase font-bold text-outline tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">trending_up</span> Top 3 Matching Dimensions (Carry 45% Weight)
+            </span>
+<div class="flex flex-wrap gap-1.5 mt-1">
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-primary border border-surface-container font-medium text-[12px] flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">payments</span>
+<span>Financial Splitting (98% match · 15% wt)</span>
+</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-primary border border-surface-container font-medium text-[12px] flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">bedtime</span>
+<span>Routine &amp; Sleep (96% match · 15% wt)</span>
+</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-primary border border-surface-container font-medium text-[12px] flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">cleaning_services</span>
+<span>Cleanliness Chores (94% match · 15% wt)</span>
+</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 w-full lg:w-auto lg:pl-space-md lg:border-l border-surface-container">
+<span class="text-[11px] uppercase font-bold text-outline tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-on-tertiary-container">tune</span> Primary Discussion Nuance
+            </span>
+<span class="px-3 py-1.5 rounded-xl bg-tertiary-fixed/40 text-on-tertiary-fixed font-semibold text-[12px] flex items-center gap-2 border border-tertiary-fixed-dim/40">
+<span class="material-symbols-outlined text-[16px] text-tertiary">ac_unit</span>
+<span>AC Thermostat: Rohan 24°C eco vs. Aarav 21°C chill</span>
+</span>
+</div>
+</div>
+</section>
+<!-- SECTION 3: COLLAPSIBLE INFORMATION ARCHITECTURE MODULES -->
+<div class="space-y-space-md">
+<!-- ACCORDION MODULE 1: Verified Credentials & Granular Scope -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-surface-container shadow-sm overflow-hidden" open="">
+<summary class="p-space-md sm:p-space-lg flex items-center justify-between cursor-pointer select-none hover:bg-surface-container-low/40 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-primary font-bold">Verification &amp; Trust Credentials</h3>
+<p class="font-body-sm text-on-surface-variant text-[13px]">Granular scope distinctions between third-party verified signals vs self-reported data</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm font-bold">4 of 5 Verified</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</div>
+</summary>
+<div class="px-space-md sm:px-space-lg pb-space-lg pt-2 border-t border-surface-container/60 space-y-3">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<!-- 1. DigiLocker KYC -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container/60 space-y-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 font-title-sm text-primary">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<span class="font-bold">Government ID (DigiLocker KYC)</span>
+</div>
+<span class="font-label-sm text-secondary font-semibold flex items-center gap-1 bg-surface-container-lowest px-2 py-0.5 rounded-full border border-secondary/30">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Verified
+                </span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">Aadhaar / Passport authenticated via 2FA OTP. Legal name &amp; age cryptographically verified.</p>
+<span class="inline-block text-[11px] text-outline font-mono bg-white/70 px-2 py-0.5 rounded border border-surface-container">Scope: Document numbers permanently masked and encrypted.</span>
+</div>
+<!-- 2. Corporate Email Domain -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container/60 space-y-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 font-title-sm text-primary">
+<span class="material-symbols-outlined text-secondary text-[20px]">domain</span>
+<span class="font-bold">Workplace Domain (@swiggy.com)</span>
+</div>
+<span class="font-label-sm text-secondary font-semibold flex items-center gap-1 bg-surface-container-lowest px-2 py-0.5 rounded-full border border-secondary/30">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Verified
+                </span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">SSO token link verified with active corporate mailbox on swiggy.com domain.</p>
+<div class="text-[11px] text-amber-900 bg-amber-50 px-2 py-1 rounded border border-amber-200">
+<strong>Verification Scope Note:</strong> Confirms domain access only; does not independently confirm exact job title or tenure.
+                </div>
+</div>
+<!-- 3. Phone & Email Credentials -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container/60 space-y-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 font-title-sm text-primary">
+<span class="material-symbols-outlined text-secondary text-[20px]">phonelink_ring</span>
+<span class="font-bold">Phone Number &amp; Primary Email</span>
+</div>
+<span class="font-label-sm text-secondary font-semibold flex items-center gap-1 bg-surface-container-lowest px-2 py-0.5 rounded-full border border-secondary/30">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Verified
+                </span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">SMS 6-digit OTP and direct email verification link completed at onboarding.</p>
+<span class="inline-block text-[11px] text-outline font-mono bg-white/70 px-2 py-0.5 rounded border border-surface-container">Scope: Direct digits masked under Tier 3 bilateral consent protocol.</span>
+</div>
+<!-- 4. LinkedIn Network -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container/60 space-y-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 font-title-sm text-primary">
+<span class="material-symbols-outlined text-secondary text-[20px]">hub</span>
+<span class="font-bold">Professional Network (LinkedIn)</span>
+</div>
+<span class="font-label-sm text-secondary font-semibold flex items-center gap-1 bg-surface-container-lowest px-2 py-0.5 rounded-full border border-secondary/30">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Linked
+                </span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">Public profile authentic; 3 mutual first-degree connections in Bengaluru tech ecosystem.</p>
+<div class="text-[11px] text-amber-900 bg-amber-50 px-2 py-1 rounded border border-amber-200">
+<strong>Verification Scope Note:</strong> Self-declared link; does not independently verify past employment history.
+                </div>
+</div>
+<!-- 5. Landlord / Former Flatmate Reference (Pending) -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container/60 space-y-1.5 md:col-span-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 font-title-sm text-primary">
+<span class="material-symbols-outlined text-outline text-[20px]">history_edu</span>
+<span class="font-bold">Landlord / Co-tenant Reference</span>
+</div>
+<span class="font-label-sm text-on-tertiary-container font-semibold flex items-center gap-1 bg-tertiary-fixed/50 px-2 py-0.5 rounded-full border border-tertiary-fixed-dim/40">
+<span class="material-symbols-outlined text-[13px]">hourglass_empty</span> Pending Submission
+                </span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">
+                Reference link sent to former landlord in Indiranagar. Awaiting submission of tenancy verification form.
+              </p>
+</div>
+</div>
+</div>
+</details>
+<!-- ACCORDION MODULE 2: Side-by-Side Coliving Preference Comparison -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-surface-container shadow-sm overflow-hidden" open="">
+<summary class="p-space-md sm:p-space-lg flex items-center justify-between cursor-pointer select-none hover:bg-surface-container-low/40 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">compare_arrows</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-primary font-bold">Side-by-Side Lifestyle Comparison</h3>
+<p class="font-body-sm text-on-surface-variant text-[13px]">Direct cohabitation parameter mapping (Aarav vs. Rohan Varma)</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm font-bold">5 Aligned · 1 Nuance</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</div>
+</summary>
+<div class="px-space-md sm:px-space-lg pb-space-lg pt-2 border-t border-surface-container/60">
+<!-- Responsive Table for Tablet/Desktop -->
+<div class="hidden md:block overflow-x-auto border border-surface-container/60 rounded-xl">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-[11px] uppercase tracking-wider border-b border-surface-container">
+<th class="py-3 px-4 w-[28%]">Parameter</th>
+<th class="py-3 px-4 w-[32%] text-primary font-bold">Aarav (You)</th>
+<th class="py-3 px-4 w-[32%] text-primary font-bold">Rohan Varma</th>
+<th class="py-3 px-4 w-[8%] text-center">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container/60 font-body-sm text-[13px]">
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-4 font-title-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">bedtime</span>
+<span>Wake-up &amp; Sleep Rhythm</span>
+</td>
+<td class="py-3 px-4 text-on-surface">7:30 AM wake / 11:30 PM sleep</td>
+<td class="py-3 px-4 text-on-surface">7:30 AM wake / 11:30 PM sleep</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-secondary/15 text-secondary" title="Aligned">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+</td>
+</tr>
+<tr class="bg-tertiary-fixed/15 hover:bg-tertiary-fixed/25 transition-colors">
+<td class="py-3 px-4 font-title-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">ac_unit</span>
+<span class="font-bold">AC Thermostat Setting</span>
+</td>
+<td class="py-3 px-4 text-on-surface font-semibold">21°C chill mode (bedroom)</td>
+<td class="py-3 px-4 text-on-surface font-semibold">24°C eco-mode (bedroom &amp; hall)</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[11px] font-bold" title="Discussion Nuance">
+                        Nuance
+                      </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-4 font-title-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">cleaning_services</span>
+<span>Cleanliness &amp; Chores</span>
+</td>
+<td class="py-3 px-4 text-on-surface">Daily kitchen wipe, 50/50 maid share</td>
+<td class="py-3 px-4 text-on-surface">Daily counter wipe, equal maid split</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-secondary/15 text-secondary" title="Aligned">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-4 font-title-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">payments</span>
+<span>Target Monthly Budget</span>
+</td>
+<td class="py-3 px-4 text-on-surface">₹20,000–₹25,000 / month</td>
+<td class="py-3 px-4 text-on-surface">₹22,000 / month (Private room)</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-secondary/15 text-secondary" title="Aligned">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-4 font-title-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<span>Guests &amp; Visitors</span>
+</td>
+<td class="py-3 px-4 text-on-surface">Pre-notified weekend daytime friends</td>
+<td class="py-3 px-4 text-on-surface">Notice via WhatsApp, quiet weeknights</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-secondary/15 text-secondary" title="Aligned">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-4 font-title-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">restaurant</span>
+<span>Food &amp; Kitchen Culture</span>
+</td>
+<td class="py-3 px-4 text-on-surface">Eggetarian / flexitarian prep</td>
+<td class="py-3 px-4 text-on-surface">Eggetarian / pour-over coffee brewer</td>
+<td class="py-3 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-secondary/15 text-secondary" title="Aligned">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Mobile-Friendly Stacked Cards (<768px) -->
+<div class="block md:hidden space-y-3">
+<!-- Card 1 -->
+<div class="bg-surface-container-low p-3.5 rounded-xl border border-surface-container space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">bedtime</span> Wake-up &amp; Sleep
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm font-semibold text-[11px]">Aligned</span>
+</div>
+<div class="text-[12px] space-y-1 text-on-surface">
+<div><span class="text-outline">You:</span> 7:30 AM wake / 11:30 PM sleep</div>
+<div><span class="text-outline">Rohan:</span> 7:30 AM wake / 11:30 PM sleep</div>
+</div>
+</div>
+<!-- Card 2: Nuance -->
+<div class="bg-tertiary-fixed/20 p-3.5 rounded-xl border border-tertiary-fixed-dim/40 space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">ac_unit</span> AC Thermostat
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm font-bold text-[11px]">Nuance</span>
+</div>
+<div class="text-[12px] space-y-1 text-on-surface">
+<div><span class="text-outline">You:</span> 21°C chill mode (bedroom)</div>
+<div><span class="text-outline">Rohan:</span> 24°C eco-mode (bedroom &amp; hall)</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low p-3.5 rounded-xl border border-surface-container space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">cleaning_services</span> Cleanliness &amp; Chores
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm font-semibold text-[11px]">Aligned</span>
+</div>
+<div class="text-[12px] space-y-1 text-on-surface">
+<div><span class="text-outline">You:</span> Daily kitchen wipe, 50/50 maid share</div>
+<div><span class="text-outline">Rohan:</span> Daily counter wipe, equal maid split</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low p-3.5 rounded-xl border border-surface-container space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">payments</span> Monthly Budget
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm font-semibold text-[11px]">Aligned</span>
+</div>
+<div class="text-[12px] space-y-1 text-on-surface">
+<div><span class="text-outline">You:</span> ₹20,000–₹25,000 / month</div>
+<div><span class="text-outline">Rohan:</span> ₹22,000 / month (Private room)</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-low p-3.5 rounded-xl border border-surface-container space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">group</span> Guests Policy
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm font-semibold text-[11px]">Aligned</span>
+</div>
+<div class="text-[12px] space-y-1 text-on-surface">
+<div><span class="text-outline">You:</span> Pre-notified weekend daytime friends</div>
+<div><span class="text-outline">Rohan:</span> Notice via WhatsApp, quiet weeknights</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-low p-3.5 rounded-xl border border-surface-container space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">restaurant</span> Kitchen Culture
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm font-semibold text-[11px]">Aligned</span>
+</div>
+<div class="text-[12px] space-y-1 text-on-surface">
+<div><span class="text-outline">You:</span> Eggetarian / flexitarian prep</div>
+<div><span class="text-outline">Rohan:</span> Eggetarian / pour-over coffee brewer</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+<!-- ACCORDION MODULE 3: Official 8-Dimension Mathematical Coliving Matrix -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-surface-container shadow-sm overflow-hidden" open="">
+<summary class="p-space-md sm:p-space-lg flex items-center justify-between cursor-pointer select-none hover:bg-surface-container-low/40 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">calculate</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-primary font-bold">8-Dimension Compatibility Matrix</h3>
+<p class="font-body-sm text-on-surface-variant text-[13px]">Standard RoomSync TDD architecture · 60% foundational weight + 40% secondary</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-mono text-[12px] text-secondary font-bold hidden sm:inline">∑(w × s) = 93.0%</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</div>
+</summary>
+<div class="px-space-md sm:px-space-lg pb-space-lg pt-2 border-t border-surface-container/60 space-y-space-md">
+<!-- Math Formula Explanatory Banner -->
+<div class="bg-primary text-on-primary rounded-xl p-4 space-y-2 border border-primary-container">
+<div class="flex flex-wrap items-center justify-between gap-1 text-[11px]">
+<span class="text-secondary-fixed uppercase tracking-wider font-bold">Calculation Architecture Note</span>
+<span class="font-mono text-surface-container-highest">dot_product(weights, questionnaire_scores)</span>
+</div>
+<p class="font-body-sm text-surface-container-high text-[12px] sm:text-[13px]">
+              Four core foundational pillars (<strong>Sleep 15%, Cleanliness 15%, Financial 15%, Privacy 15%</strong>) carry <strong>60% of total compatibility</strong> because everyday domestic peace hinges on quiet hours and hygiene. Four secondary lifestyle modules distribute the remaining 40%.
+            </p>
+<div class="bg-black/30 rounded-lg p-2.5 font-mono text-[10px] text-surface-container-highest overflow-x-auto border border-white/10 space-y-0.5">
+<div>(15% × 96% = 14.4%) + (15% × 94% = 14.1%) + (15% × 98% = 14.7%) + (15% × 92% = 13.8%) +</div>
+<div>(10% × 88% = 8.8%) + (10% × 90% = 9.0%) + (10% × 88% = 8.8%) + (10% × 94% = 9.4%) = <span class="text-secondary-fixed font-bold">93.0% Final Sum</span></div>
+</div>
+</div>
+<!-- 8 Dimension Cards Grid with official approved weights -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+<!-- 1. Daily Routine & Sleep Rhythm (Weight: 15% | Score: 96% -> 14.4%) -->
+<div class="bg-surface-container-low rounded-xl p-3.5 border border-surface-container">
+<div class="flex items-start justify-between mb-1.5">
+<span class="font-title-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">bedtime</span>
+<span>1. Daily Routine &amp; Sleep Rhythm</span>
+</span>
+<div class="text-right">
+<span class="font-title-sm text-secondary font-bold">96%</span>
+<span class="block font-label-sm text-[10px] text-outline">Weight: 15% (+14.4%)</span>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden mb-2">
+<div class="h-full bg-secondary rounded-full" style="width: 96%"></div>
+</div>
+<p class="font-body-sm text-on-surface text-[12px]">Synchronized 7:30 AM wakeups, 11:00 PM quiet hours, voluntary headphone culture.</p>
+</div>
+<!-- 2. Cleanliness & Domestic Chores (Weight: 15% | Score: 94% -> 14.1%) -->
+<div class="bg-surface-container-low rounded-xl p-3.5 border border-surface-container">
+<div class="flex items-start justify-between mb-1.5">
+<span class="font-title-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">cleaning_services</span>
+<span>2. Cleanliness &amp; Domestic Chores</span>
+</span>
+<div class="text-right">
+<span class="font-title-sm text-secondary font-bold">94%</span>
+<span class="block font-label-sm text-[10px] text-outline">Weight: 15% (+14.1%)</span>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden mb-2">
+<div class="h-full bg-secondary rounded-full" style="width: 94%"></div>
+</div>
+<p class="font-body-sm text-on-surface text-[12px]">Daily kitchen counter wipe-downs, immediate dish rinse, and 50/50 maid service split.</p>
+</div>
+<!-- 3. Financial Expectations & Bill Splitting (Weight: 15% | Score: 98% -> 14.7%) -->
+<div class="bg-surface-container-low rounded-xl p-3.5 border border-surface-container">
+<div class="flex items-start justify-between mb-1.5">
+<span class="font-title-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">payments</span>
+<span>3. Financial Expectations</span>
+</span>
+<div class="text-right">
+<span class="font-title-sm text-secondary font-bold">98%</span>
+<span class="block font-label-sm text-[10px] text-outline">Weight: 15% (+14.7%)</span>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden mb-2">
+<div class="h-full bg-secondary rounded-full" style="width: 98%"></div>
+</div>
+<p class="font-body-sm text-on-surface text-[12px]">Target ₹20k–₹25k per person budget. Unanimous preference for 1st-of-the-month UPI splits.</p>
+</div>
+<!-- 4. Privacy & Personal Boundaries (Weight: 15% | Score: 92% -> 13.8%) -->
+<div class="bg-surface-container-low rounded-xl p-3.5 border border-surface-container">
+<div class="flex items-start justify-between mb-1.5">
+<span class="font-title-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">lock</span>
+<span>4. Privacy &amp; Boundaries</span>
+</span>
+<div class="text-right">
+<span class="font-title-sm text-secondary font-bold">92%</span>
+<span class="block font-label-sm text-[10px] text-outline">Weight: 15% (+13.8%)</span>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden mb-2">
+<div class="h-full bg-secondary rounded-full" style="width: 92%"></div>
+</div>
+<p class="font-body-sm text-on-surface text-[12px]">Closed door = do-not-disturb convention. Mutual decompression time after office hours.</p>
+</div>
+<!-- 5. Social Life & Hosting Vibe (Weight: 10% | Score: 88% -> 8.8%) -->
+<div class="bg-surface-container-low rounded-xl p-3.5 border border-surface-container">
+<div class="flex items-start justify-between mb-1.5">
+<span class="font-title-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">celebration</span>
+<span>5. Social Life &amp; Hosting</span>
+</span>
+<div class="text-right">
+<span class="font-title-sm text-primary font-bold">88%</span>
+<span class="block font-label-sm text-[10px] text-outline">Weight: 10% (+8.8%)</span>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden mb-2">
+<div class="h-full bg-primary/70 rounded-full" style="width: 88%"></div>
+</div>
+<p class="font-body-sm text-on-surface text-[12px]">Low-key Saturday dinners and board games. No unannounced loud workweek parties.</p>
+</div>
+<!-- 6. Food & Kitchen Habits (Weight: 10% | Score: 90% -> 9.0%) -->
+<div class="bg-surface-container-low rounded-xl p-3.5 border border-surface-container">
+<div class="flex items-start justify-between mb-1.5">
+<span class="font-title-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">soup_kitchen</span>
+<span>6. Food &amp; Kitchen Habits</span>
+</span>
+<div class="text-right">
+<span class="font-title-sm text-secondary font-bold">90%</span>
+<span class="block font-label-sm text-[10px] text-outline">Weight: 10% (+9.0%)</span>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden mb-2">
+<div class="h-full bg-secondary rounded-full" style="width: 90%"></div>
+</div>
+<p class="font-body-sm text-on-surface text-[12px]">Both eggetarian comfortable with egg cooking at home; morning coffee enthusiasts.</p>
+</div>
+<!-- 7. Guest & Partner Policies (Weight: 10% | Score: 88% -> 8.8%) -->
+<div class="bg-surface-container-low rounded-xl p-3.5 border border-surface-container">
+<div class="flex items-start justify-between mb-1.5">
+<span class="font-title-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">group</span>
+<span>7. Guest &amp; Partner Policies</span>
+</span>
+<div class="text-right">
+<span class="font-title-sm text-primary font-bold">88%</span>
+<span class="block font-label-sm text-[10px] text-outline">Weight: 10% (+8.8%)</span>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden mb-2">
+<div class="h-full bg-primary/70 rounded-full" style="width: 88%"></div>
+</div>
+<p class="font-body-sm text-on-surface text-[12px]">Pre-notified weekend visitors welcome. Overnight stays require prior WhatsApp notice.</p>
+</div>
+<!-- 8. Work & Study Environment (Weight: 10% | Score: 94% -> 9.4%) -->
+<div class="bg-surface-container-low rounded-xl p-3.5 border border-surface-container">
+<div class="flex items-start justify-between mb-1.5">
+<span class="font-title-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">laptop_mac</span>
+<span>8. Work &amp; Study Environment</span>
+</span>
+<div class="text-right">
+<span class="font-title-sm text-secondary font-bold">94%</span>
+<span class="block font-label-sm text-[10px] text-outline">Weight: 10% (+9.4%)</span>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden mb-2">
+<div class="h-full bg-secondary rounded-full" style="width: 94%"></div>
+</div>
+<p class="font-body-sm text-on-surface text-[12px]">Hybrid schedules (3d office / 2d remote). Calls handled inside bedrooms to keep hall calm.</p>
+</div>
+</div>
+</div>
+</details>
+<!-- ACCORDION MODULE 4: Evidence-Based Lifestyle Synergies -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-surface-container shadow-sm overflow-hidden" open="">
+<summary class="p-space-md sm:p-space-lg flex items-center justify-between cursor-pointer select-none hover:bg-surface-container-low/40 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">auto_awesome</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-primary font-bold">Evidence-Based Lifestyle Synergies</h3>
+<p class="font-body-sm text-on-surface-variant text-[13px]">Explicitly derived from verified onboarding questionnaire submissions</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-space-md sm:px-space-lg pb-space-lg pt-2 border-t border-surface-container/60 space-y-3">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<!-- Synergy 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container/60 space-y-1.5">
+<div class="flex items-center gap-2 font-title-sm text-primary">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">coffee</span>
+</div>
+<span class="font-bold">Morning Coffee Ritual</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">Both independently reported daily pour-over and Aeropress brewing in kitchen habits.</p>
+<span class="text-[10px] text-outline font-mono block">Source: Kitchen Habits Module Q4</span>
+</div>
+<!-- Synergy 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container/60 space-y-1.5">
+<div class="flex items-center gap-2 font-title-sm text-primary">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">directions_run</span>
+</div>
+<span class="font-bold">Outdoor Running Schedule</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">Both indicated a ~7:00 AM outdoor jogging routine around Defence Colony loops.</p>
+<span class="text-[10px] text-outline font-mono block">Source: Wellness &amp; Routine Module Q2</span>
+</div>
+<!-- Synergy 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container/60 space-y-1.5">
+<div class="flex items-center gap-2 font-title-sm text-primary">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+<span class="font-bold">Tech Design Network</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">3 confirmed 1st-degree mutual LinkedIn connections across Bangalore product teams.</p>
+<span class="text-[10px] text-outline font-mono block">Source: LinkedIn API Graph Match</span>
+</div>
+</div>
+</div>
+</details>
+<!-- ACCORDION MODULE 5: Approximate Location & Commute Buffers -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-surface-container shadow-sm overflow-hidden" open="">
+<summary class="p-space-md sm:p-space-lg flex items-center justify-between cursor-pointer select-none hover:bg-surface-container-low/40 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">explore</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-primary font-bold">Approximate Target Zone &amp; Commute Scope</h3>
+<p class="font-body-sm text-on-surface-variant text-[13px]">Strictly masked 2–3 km search radius to protect candidate residential privacy</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm font-semibold">Tier 1 Masked</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</div>
+</summary>
+<div class="px-space-md sm:px-space-lg pb-space-lg pt-2 border-t border-surface-container/60">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<div class="lg:col-span-7 space-y-3">
+<p class="font-body-md text-on-surface-variant text-[13px]">
+                To safeguard individual safety, exact residential buildings and street numbers remain masked until mutual connection and bilateral address-sharing consent.
+              </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
+<div class="p-3 bg-surface-container-low rounded-xl border border-surface-container">
+<span class="font-label-sm text-outline block text-[11px]">Indiranagar Hubs</span>
+<span class="font-title-md text-primary font-bold">10–15 mins</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">Bicycle or short cab</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded-xl border border-surface-container">
+<span class="font-label-sm text-outline block text-[11px]">Koramangala Link</span>
+<span class="font-title-md text-primary font-bold">~15–20 mins</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">Via Intermediate Ring Rd</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded-xl border border-surface-container">
+<span class="font-label-sm text-outline block text-[11px]">Target Security Deposit</span>
+<span class="font-title-md text-primary font-bold">₹60k – ₹80k</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">Per person share</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="w-full h-48 rounded-xl bg-cover bg-center relative overflow-hidden shadow-inner border border-surface-container" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbncOgZYJMMQ_LkACauxco4nycQe8DNwniZVJ0XBVtM4Gsd96NTtXp65wx2loT5oFPemeQKZOnM_-FtyqaWt5ezWkk_K78F1bcNmFNFxL6ZSzQVINCcL9_5_RdSvHW2oQpjude1XFuyF81KFyOPKy4bZt_8O5VygewNv6_UHMavqPvpDIIENARSjDkxZ5BNcDoYdM26yLB54Eu_bD2x61JtClgLInaxb_JMdxIFdZz')">
+<div class="absolute inset-0 bg-primary/25 backdrop-blur-[1px]"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+<span class="w-20 h-20 rounded-full bg-secondary/25 border-2 border-secondary border-dashed animate-pulse"></span>
+<span class="absolute w-3 h-3 rounded-full bg-secondary shadow-lg"></span>
+</div>
+<div class="absolute top-2 right-2 bg-primary/90 text-on-primary font-label-sm px-2.5 py-0.5 rounded-full backdrop-blur-md border border-white/10 text-[10px]">
+                  Approx. 2–3 km Search Radius
+                </div>
+<div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-lg shadow-sm flex items-center gap-1.5 border border-surface-container text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-secondary">explore</span>
+<span class="font-semibold text-primary">Indiranagar / Domlur Buffer</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+</div>
+</div>
+<!-- STICKY BOTTOM BAR WITH PRODUCTION PRIVACY GATING & TRUST PROTOCOL -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-xl border-t border-surface-container shadow-[0_-8px_24px_rgba(0,0,0,0.06)] pb-safe">
+<div class="max-w-[1280px] mx-auto px-margin-mobile sm:px-margin lg:px-margin-desktop py-3 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
+<!-- Trust Protocol & Privacy Gate Microcopy -->
+<div class="flex items-start sm:items-center gap-2 text-on-surface-variant font-body-sm text-[12px] sm:text-[13px]">
+<span class="material-symbols-outlined text-[18px] text-secondary flex-shrink-0 mt-0.5 sm:mt-0">shield</span>
+<div>
+<span class="text-primary font-title-sm font-semibold">Tiered Privacy Active:</span>
+<span class="text-on-surface-variant">Phone number &amp; exact building address remain masked until bilateral mutual consent.</span>
+</div>
+</div>
+<!-- Realistic Production Action Controls -->
+<div class="flex items-center gap-2 flex-shrink-0 justify-end" id="stickyActionsContainer">
+<!-- Disabled Intro Call until mutual connection -->
+<div class="relative group">
+<button class="px-4 py-2.5 rounded-full bg-surface-container-high/70 text-outline cursor-not-allowed font-title-sm flex items-center gap-1.5 min-h-[44px]" disabled="" title="Unlocks after mutual connection">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span class="hidden sm:inline">15-min Intro Call</span>
+</button>
+<div class="absolute bottom-full mb-2 right-0 hidden group-hover:block bg-primary text-on-primary text-[11px] px-2.5 py-1 rounded-lg shadow-lg whitespace-nowrap pointer-events-none z-50">
+              Unlocks after Rohan accepts your request
+            </div>
+</div>
+<!-- Primary Send Request CTA -->
+<button class="px-5 sm:px-6 py-2.5 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container font-title-sm transition-all duration-200 shadow-md flex items-center justify-center gap-2 min-h-[44px]" onclick="openModal()">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Send Connection Request</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal: Send Connection Request with Explicit Privacy & Consent Disclosure -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/40 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200" id="connectModal">
+<div class="bg-surface-container-lowest rounded-3xl p-space-md sm:p-space-lg max-w-lg w-full shadow-2xl transform scale-95 transition-transform duration-200 space-y-space-md border border-surface-container max-h-[90vh] overflow-y-auto">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">outgoing_mail</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-primary leading-tight">Connect with Rohan</h4>
+<span class="font-label-sm text-secondary font-semibold">93% Weighted Alignment · 0 Conflicts</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-primary p-1 min-h-[44px] min-w-[44px] flex items-center justify-center" onclick="closeModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Mandatory Consent & Privacy Disclosure -->
+<div class="p-3 rounded-2xl bg-surface-container-low border border-surface-container space-y-1.5 text-[12px] text-on-surface-variant">
+<div class="flex items-center gap-1.5 font-title-sm text-primary font-bold">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Consent &amp; Privacy Disclosure</span>
+</div>
+<p>
+          Sending a connection request shares your basic RoomSync profile, 8-dimension lifestyle questionnaire scores, and verified workplace domain badges.
+        </p>
+<p class="text-outline font-medium">
+          Your personal phone number and exact residential address remain strictly masked under Tier 3 and will require subsequent bilateral 1-tap consent even after Rohan accepts.
+        </p>
+</div>
+<div>
+<label class="block font-label-sm text-outline uppercase tracking-wider mb-1 font-bold" for="personalizedNoteInput">Personalized Note (Optional)</label>
+<textarea class="w-full text-body-md p-3 rounded-xl border border-surface-container bg-surface-container-low focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface outline-none resize-none text-[13px]" id="personalizedNoteInput" rows="3">Hey Rohan! Saw your listing for Indiranagar/Domlur. I'm also looking for a 2BHK/3BHK private room with matching 7:30 AM routines and clean kitchen habits. Would love to sync up!</textarea>
+</div>
+<div class="flex flex-col sm:flex-row gap-2 pt-1">
+<button class="flex-1 py-3 rounded-full bg-secondary text-on-secondary font-title-sm hover:bg-on-secondary-container transition-colors shadow-sm flex items-center justify-center gap-1.5 min-h-[44px]" onclick="confirmRequestSent()">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Confirm &amp; Send Request</span>
+</button>
+<button class="px-5 py-3 rounded-full bg-surface-container text-on-surface font-title-sm hover:bg-surface-container-high transition-colors min-h-[44px]" onclick="closeModal()">
+            Cancel
+          </button>
+</div>
+</div>
+</div>
+<!-- Modal: 3-Tier Privacy Milestones Explainer -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/40 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200" id="privacyGuideModal">
+<div class="bg-surface-container-lowest rounded-3xl p-space-md sm:p-space-lg max-w-lg w-full shadow-2xl transform scale-95 transition-transform duration-200 space-y-space-md border border-surface-container max-h-[90vh] overflow-y-auto">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">shield</span>
+<h4 class="font-headline-sm text-primary font-bold">RoomSync 3-Tier Privacy Protocol</h4>
+</div>
+<button class="text-on-surface-variant hover:text-primary p-1 min-h-[44px] min-w-[44px] flex items-center justify-center" onclick="closePrivacyGuideModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[13px]">
+        Designed with high-rigor safety standards to protect prospective roommates before, during, and after connection.
+      </p>
+<div class="space-y-3">
+<!-- Tier 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-primary font-bold">Tier 1: Public Compatibility Dossier</span>
+<span class="px-2 py-0.5 rounded bg-secondary/15 text-secondary font-label-sm font-semibold text-[10px]">Current View</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">
+          Approximate locality (2–3 km buffer), lifestyle scores, mutual synergies, and verified credentials badges. Exact contact info and coordinates are completely hidden.
+        </p>
+</div>
+<!-- Tier 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-primary font-bold">Tier 2: Mutual Connection Accepted</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-sm font-semibold text-[10px]">Upon Opt-in</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">
+          Unlocks RoomSync In-App End-to-End Encrypted Chat and automated 15-minute video intro scheduling. No personal phone numbers are exposed.
+        </p>
+</div>
+<!-- Tier 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-primary font-bold">Tier 3: Bilateral Contact &amp; Lease Consent</span>
+<span class="px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-label-sm font-semibold text-[10px]">Explicit 1-Tap</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[12px]">
+          Direct WhatsApp / Phone calls and exact building address require separate, affirmative 1-tap consent from both flatmate candidates.
+        </p>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-full bg-secondary text-on-secondary font-title-sm hover:bg-on-secondary-container transition-colors min-h-[44px]" onclick="closePrivacyGuideModal()">
+        Got It
+      </button>
+</div>
+</div>
+<!-- Notification Toast -->
+<div class="fixed top-24 right-6 z-50 bg-primary text-on-primary px-4 py-3 rounded-2xl shadow-xl flex items-center gap-2.5 transform translate-y-[-20px] opacity-0 transition-all duration-300 pointer-events-none" id="toast">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" id="toastIcon">check_circle</span>
+<span class="font-title-sm text-[13px]" id="toastMessage">Action completed successfully</span>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-low text-on-surface-variant border-t border-surface-container">
+<div class="max-w-[1280px] mx-auto px-margin-mobile sm:px-margin lg:px-margin-desktop py-space-xl">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-lg pb-space-lg">
+<div class="flex items-center gap-space-sm">
+<img alt="RoomSync Logo" class="h-6 w-auto object-contain opacity-80" src="https://lh3.googleusercontent.com/aida/ALJJyrBpXrV95-DTFiUO0pDTZkkB_M4ZetqA8A9iW4alzbcOvTURQt9tUAxZpbGpV_15tFAK8G_imvPQJo0x9gsiY_Tykmmd0qOLNqMP8e31M3_1uxaQ1W8-bsuF9pV6JdGYIi5cEeypp1vptwjfy8J_qpXXX2xYCfZs1ApzxvJuPO2U937b6SxdTpfHeGf-nMNcTRTcSTHTtMAxDy9bsQJIHjbhQFL3dz6BFUXnCp0hgFY90A"/>
+<span class="font-title-md text-title-md font-bold text-primary">RoomSync</span>
+<span class="hidden sm:inline-block text-outline-variant font-body-sm">|</span>
+<p class="font-body-sm text-on-surface-variant">Production-grade roommate matchmaking &amp; verified coliving trust protocol</p>
+</div>
+<div class="flex items-center gap-space-lg font-body-sm">
+<a class="hover:text-primary transition-colors min-h-[44px] flex items-center" href="#" onclick="openPrivacyGuideModal(); return false;">Privacy Shield</a>
+<a class="hover:text-primary transition-colors min-h-[44px] flex items-center" href="#">8-Dimension Algorithm</a>
+<a class="hover:text-primary transition-colors min-h-[44px] flex items-center" href="#">Trust Protocol</a>
+<a class="hover:text-primary transition-colors min-h-[44px] flex items-center" href="#">Support</a>
+</div>
+</div>
+<div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-md text-outline">
+<p>© 2025 RoomSync Technologies India Pvt. Ltd. All rights reserved.</p>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Bengaluru Operational Buffer Zone</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Application Logic -->
+<script>
+    // Gallery Assets
+    const gallery = [
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBID50-Zc4VfEy7r0Z_DL7N9HpbUWm8IoGpnMHWmA5ThUrZ0SYoUJP-GMpKf__BBCLCxeS64F2og9kla78EWvLIdMSFTgCd-cJutruepP2jx76mW1MYPQlqjxDJtH7LsOGG_zNZ9EM8eioh1jJKBV0tDl-YfPl-orbzrGGLQfyF28oPeiskZ6up6G3cpx0dyqHD60zsDMh7fJSZu72tlcPcHP0grym8Dxhz0mepokgv",
+        alt: "Rohan Varma smiling warmly at a sunlit specialty cafe in Bengaluru wearing a clean navy shirt"
+      },
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBd5HAl9lECHsnOXa8CbXGqDAG6fseDjPc1YJ_iFW8HQ1dBHnAPUoCSy4jbs3fcrmepUCXGbs7F8bhZ9Qc3-Z6D4SwnsqdjXqLFIs8CVfgoJHN4eZuipPppZvih0wBxV6_09LL265voy80Qp7_iwYMpIaDiTqfsx8B2fq7zmqceWb8o49-XNqk5lLcuRivQdcMSDm9hlLwnp7H6xMhFVlIkMRmFczYe6gKcXXgPcaDQ",
+        alt: "Clean bedroom & living setup in Indiranagar flat"
+      },
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAv6pOhTlUF7tiG5x2dlUdaL-ccKBnoZmoy55Hvfz-CQSuHfj2HreMi4i90ga6JnxAK4VrfNedj9rrCyBxGKdkvaFUN4Hw9BotiOHyXGXt9R2d_HCYjWNHXNUQe6sr8hHW6B5wTW76noIhhTVimSFz1Q243GbcPlKa2FnxzhE4PmWiO7riomEa_q8MhfgWP0VxAGtDNXB22WY0Rs8Awe45ASVLMG7Zmv96zDTLHgmE0",
+        alt: "Minimal ergonomic workstation with pour-over coffee set"
+      },
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAVd17iJzklX4pmJEJO2Nswj9V09J40O8IiZDlpNgeWIZ2x_UqA5KyguNv8-WYcGV0nXQl5Cvk9mmykvuuUIOCJZfMXuvqDDUwDU2DM2lII1485Im5u4h-kaMDp0Kul_fCwfFZsoeIQGltnavyu5aCwKGa7K3nof-cUU8jkTCmjzQc5OqcLuk2fSZIiuTKvkfg2KebSMNW0ZFPzjq--1p0M1LrVyCZTl3Mp6x-CMtAx",
+        alt: "Weekend outdoor gravel ride near Bengaluru"
+      }
+    ];
+
+    function changePhoto(index) {
+      const mainImg = document.getElementById("mainGalleryImage");
+      const counter = document.getElementById("photoCounterBadge");
+      const thumbBtns = document.querySelectorAll("#thumbnailStrip button");
+
+      if (mainImg && gallery[index]) {
+        mainImg.src = gallery[index].src;
+        mainImg.alt = gallery[index].alt;
+      }
+      if (counter) {
+        counter.innerText = `Photo ${index + 1} of 4`;
+      }
+      thumbBtns.forEach((btn, i) => {
+        if (i === index) {
+          btn.classList.add("ring-2", "ring-secondary");
+          btn.classList.remove("opacity-80");
+        } else {
+          btn.classList.remove("ring-2", "ring-secondary");
+          btn.classList.add("opacity-80");
+        }
+      });
+    }
+
+    // Bookmark Toggle
+    let isSaved = false;
+    function toggleSave() {
+      isSaved = !isSaved;
+      const icon = document.getElementById("saveIcon");
+      const btn = document.getElementById("saveBtn");
+      if (isSaved) {
+        icon.innerText = "bookmark";
+        icon.style.fontVariationSettings = "'FILL' 1";
+        btn.classList.add("text-primary");
+        showToast("Rohan's profile saved to your Shortlist!");
+      } else {
+        icon.innerText = "bookmark_border";
+        icon.style.fontVariationSettings = "'FILL' 0";
+        btn.classList.remove("text-primary");
+        showToast("Removed from Shortlist.");
+      }
+    }
+
+    function shareCandidateProfile() {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(window.location.href);
+      }
+      showToast("Candidate profile link copied to clipboard!");
+    }
+
+    // Real Connection Request Lifecycle
+    let requestSent = false;
+    function confirmRequestSent() {
+      closeModal();
+      requestSent = true;
+      const actionsContainer = document.getElementById("stickyActionsContainer");
+      actionsContainer.innerHTML = `
+        <div class="relative group">
+          <button class="px-4 py-2.5 rounded-full bg-surface-container-high/60 text-outline cursor-not-allowed font-title-sm flex items-center gap-1.5 min-h-[44px]" disabled>
+            <span class="material-symbols-outlined text-[18px]">lock</span>
+            <span class="hidden sm:inline">15-min Intro Call (Locked)</span>
+          </button>
+          <div class="absolute bottom-full mb-2 right-0 hidden group-hover:block bg-primary text-on-primary text-[11px] px-2.5 py-1 rounded-lg shadow-lg whitespace-nowrap pointer-events-none z-50">
+            Awaiting Rohan's acceptance
+          </div>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <button class="px-4 sm:px-5 py-2.5 rounded-full bg-surface-container-high text-primary font-title-sm cursor-default flex items-center gap-2 border border-surface-container min-h-[44px]" disabled>
+            <span class="material-symbols-outlined text-[18px] text-secondary animate-spin">refresh</span>
+            <span>Request Pending</span>
+          </button>
+          <button class="p-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-outline hover:text-error transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center" onclick="cancelRequest()" title="Withdraw request">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </button>
+        </div>
+      `;
+      showToast("Connection request sent with privacy disclosure confirmed!");
+    }
+
+    function cancelRequest() {
+      requestSent = false;
+      const actionsContainer = document.getElementById("stickyActionsContainer");
+      actionsContainer.innerHTML = `
+        <div class="relative group">
+          <button class="px-4 py-2.5 rounded-full bg-surface-container-high/70 text-outline cursor-not-allowed font-title-sm flex items-center gap-1.5 min-h-[44px]" disabled title="Unlocks after mutual connection">
+            <span class="material-symbols-outlined text-[18px]">lock</span>
+            <span class="hidden sm:inline">15-min Intro Call</span>
+          </button>
+          <div class="absolute bottom-full mb-2 right-0 hidden group-hover:block bg-primary text-on-primary text-[11px] px-2.5 py-1 rounded-lg shadow-lg whitespace-nowrap pointer-events-none z-50">
+            Unlocks after Rohan accepts your request
+          </div>
+        </div>
+        <button class="px-5 sm:px-6 py-2.5 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container font-title-sm transition-all duration-200 shadow-md flex items-center justify-center gap-2 min-h-[44px]" onclick="openModal()">
+          <span class="material-symbols-outlined text-[18px]">person_add</span>
+          <span>Send Connection Request</span>
+        </button>
+      `;
+      showToast("Connection request withdrawn.");
+    }
+
+    // Modal Control
+    function openModal() {
+      const modal = document.getElementById("connectModal");
+      modal.classList.remove("hidden");
+      setTimeout(() => {
+        modal.classList.remove("opacity-0");
+        modal.firstElementChild.classList.remove("scale-95");
+      }, 10);
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("connectModal");
+      modal.classList.add("opacity-0");
+      modal.firstElementChild.classList.add("scale-95");
+      setTimeout(() => {
+        modal.classList.add("hidden");
+      }, 200);
+    }
+
+    // Privacy Guide Modal Control
+    function openPrivacyGuideModal() {
+      const modal = document.getElementById("privacyGuideModal");
+      modal.classList.remove("hidden");
+      setTimeout(() => {
+        modal.classList.remove("opacity-0");
+        modal.firstElementChild.classList.remove("scale-95");
+      }, 10);
+    }
+
+    function closePrivacyGuideModal() {
+      const modal = document.getElementById("privacyGuideModal");
+      modal.classList.add("opacity-0");
+      modal.firstElementChild.classList.add("scale-95");
+      setTimeout(() => {
+        modal.classList.add("hidden");
+      }, 200);
+    }
+
+    // Toast Notice Helper
+    function showToast(msg) {
+      const toast = document.getElementById("toast");
+      const msgEl = document.getElementById("toastMessage");
+      msgEl.innerText = msg;
+      toast.classList.remove("opacity-0", "translate-y-[-20px]", "pointer-events-none");
+      setTimeout(() => {
+        toast.classList.add("opacity-0", "translate-y-[-20px]", "pointer-events-none");
+      }, 3500);
+    }
+  </script>
+</body></html>

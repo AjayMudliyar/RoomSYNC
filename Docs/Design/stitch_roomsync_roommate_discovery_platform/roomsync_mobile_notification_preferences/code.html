@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#f2f3ff", "secondary-fixed-dim": "#6bd8cb", "primary-fixed": "#e3dfff", "on-primary-fixed": "#181445", "tertiary-fixed-dim": "#ffb95f", "error": "#ba1a1a", "surface-variant": "#dae2fd", "surface-container-highest": "#dae2fd", "on-error": "#ffffff", "tertiary": "#140900", "on-secondary-fixed": "#00201d", "primary-fixed-dim": "#c4c1fb", "on-surface": "#131b2e", "outline": "#787680", "on-primary-fixed-variant": "#444173", "on-tertiary-fixed": "#2a1700", "surface-dim": "#d2d9f4", "on-primary": "#ffffff", "surface-tint": "#5b598c", "on-tertiary": "#ffffff", "surface-container": "#eaedff", "on-tertiary-container": "#c07a00", "surface-container-high": "#e2e7ff", "background": "#faf8ff", "primary-container": "#1e1b4b", "inverse-surface": "#283044", "secondary-container": "#86f2e4", "on-tertiary-fixed-variant": "#653e00", "secondary": "#006a61", "tertiary-fixed": "#ffddb8", "surface-bright": "#faf8ff", "tertiary-container": "#331d00", "on-surface-variant": "#47464f", "surface-container-lowest": "#ffffff", "on-primary-container": "#8683ba", "on-background": "#131b2e", "on-error-container": "#93000a", "secondary-fixed": "#89f5e7", "outline-variant": "#c8c5d0", "primary": "#070235", "on-secondary-fixed-variant": "#005049", "inverse-primary": "#c4c1fb", "inverse-on-surface": "#eef0ff", "on-secondary-container": "#006f66", "error-container": "#ffdad6", "on-secondary": "#ffffff", "surface": "#faf8ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "margin-desktop": "3rem" }, fontFamily: { "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "display-md": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go Back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-on-surface tracking-tight font-semibold truncate max-w-[200px]">Notification Preferences</h1></div><div class="flex items-center gap-space-xs"><button class="min-h-[44px] px-space-md py-space-xs rounded-full bg-primary text-on-primary font-title-sm text-title-sm font-semibold hover:bg-primary-container transition-all flex items-center justify-center shadow-sm" id="header-action-button">Save</button><button aria-label="More options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full">
+<div class="px-gutter-mobile pt-space-sm pb-space-xl flex flex-col gap-space-lg max-w-md mx-auto w-full" style="padding-bottom: 8rem;">
+<!-- Header Meta & Context Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">tune</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">Dispatch Engine</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Syncing to Android Device · Bangalore</span>
+</div>
+</div>
+<div class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm" id="sync-pill">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span>Auto-Synced</span>
+</div>
+</div>
+<!-- Section 1: Global Dispatch Channels Card -->
+<div class="flex flex-col gap-space-xs">
+<div class="px-space-xs">
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold tracking-tight">Primary Dispatch Channels</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Core pipelines for delivery of roommate matches and pod updates</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Channel 1: Push -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface">Push Notifications</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-1.5 py-0.5 rounded-full">Instant</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Android system trays &amp; head-up alerts</p>
+</div>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm flex-shrink-0" data-toggle="push-global" role="switch" type="button">
+<span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform duration-200 translate-x-6"></span>
+</button>
+</div>
+<div class="h-px bg-surface-container w-full"></div>
+<!-- Channel 2: Email -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">Email Digests</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Weekly synergy roundup &amp; tour passes</p>
+</div>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm flex-shrink-0" data-toggle="email-global" role="switch" type="button">
+<span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform duration-200 translate-x-6"></span>
+</button>
+</div>
+<div class="h-px bg-surface-container w-full"></div>
+<!-- Channel 3: WhatsApp -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface">WhatsApp Instant Alerts</span>
+<span class="bg-surface-variant text-on-surface-variant font-label-sm text-label-sm px-1.5 py-0.5 rounded-full">Optional</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Urgent pod tour confirmations only</p>
+</div>
+</div>
+<button aria-checked="false" class="w-12 h-7 rounded-full bg-outline-variant relative transition-colors duration-200 focus:outline-none shadow-sm flex-shrink-0" data-toggle="wa-global" role="switch" type="button">
+<span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform duration-200 translate-x-1"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section 2: Circadian Quiet Hours Schedule -->
+<div class="flex flex-col gap-space-xs">
+<div class="px-space-xs flex items-center justify-between">
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold tracking-tight">Circadian Rhythm &amp; Sleep</h2>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bedtime</span> Smart DND
+        </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-inverse-primary flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">dark_mode</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-on-surface">Circadian Quiet Mode</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-1.5 py-0.5 rounded-full font-bold">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Pause non-urgent connection requests, synergy buzzes, and pod chit-chat during sleep.</p>
+</div>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm flex-shrink-0" id="toggle-quiet-mode" role="switch" type="button">
+<span class="block w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform duration-200 translate-x-6"></span>
+</button>
+</div>
+<!-- Window Pill Edit Trigger -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">schedule</span>
+<span class="font-label-md text-label-md text-on-surface">Sleep Window:</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">11:00 PM – 7:30 AM</span>
+<span class="font-label-sm text-label-sm text-outline">IST</span>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md hover:bg-secondary-fixed transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span>Edit</span>
+<span class="material-symbols-outlined text-[14px]">edit</span>
+</button>
+</div>
+<!-- Exception Checkbox -->
+<label class="flex items-start gap-space-sm cursor-pointer select-none">
+<div class="relative flex items-center justify-center mt-0.5">
+<input checked="" class="peer sr-only" id="emergency-exception" type="checkbox"/>
+<div class="w-5 h-5 rounded-lg bg-surface-container peer-checked:bg-secondary flex items-center justify-center transition-colors shadow-sm">
+<span class="material-symbols-outlined text-on-secondary text-[16px] scale-0 peer-checked:scale-100 transition-transform">check</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Allow emergency tour slot reminders</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Overrides quiet mode if a shortlisted flat viewing is within 2 hours</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Section 3: Granular Notification Categories Matrix -->
+<div class="flex flex-col gap-space-xs">
+<div class="px-space-xs flex items-center justify-between">
+<div>
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold tracking-tight">Granular Dispatch Matrix</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calibrate delivery routes by event criticality</p>
+</div>
+<div class="flex items-center gap-space-xs text-outline text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px]">devices</span>
+<span>Matrix</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Matrix Column Headers -->
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Event Trigger</span>
+<div class="flex items-center gap-4 pr-1">
+<div class="flex items-center gap-1 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">notifications</span>
+<span>Push</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">mail</span>
+<span>Email</span>
+</div>
+</div>
+</div>
+<!-- Category 1: Match & Synergy -->
+<div class="flex items-start justify-between gap-space-sm pt-space-xs">
+<div class="flex-1 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-title-sm text-title-sm text-on-surface">Match &amp; Synergy Alerts</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">When verified candidate matches 90%+ with your lifestyle habits</p>
+</div>
+<div class="flex items-center gap-3 flex-shrink-0 pt-0.5">
+<!-- Push Toggle ON -->
+<button aria-checked="true" class="w-10 h-6 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm" data-toggle="row1-push" role="switch" type="button">
+<span class="block w-4 h-4 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 translate-x-5"></span>
+</button>
+<!-- Email Toggle ON -->
+<button aria-checked="true" class="w-10 h-6 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm" data-toggle="row1-email" role="switch" type="button">
+<span class="block w-4 h-4 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 translate-x-5"></span>
+</button>
+</div>
+</div>
+<div class="h-px bg-surface-container w-full"></div>
+<!-- Category 2: Connection Requests & Direct Chat -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-title-sm text-title-sm text-on-surface">Connection &amp; Direct Chat</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Inbound requests, direct chat pings, and mutual handshakes</p>
+</div>
+<div class="flex items-center gap-3 flex-shrink-0 pt-0.5">
+<!-- Push Toggle ON -->
+<button aria-checked="true" class="w-10 h-6 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm" data-toggle="row2-push" role="switch" type="button">
+<span class="block w-4 h-4 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 translate-x-5"></span>
+</button>
+<!-- Email Toggle OFF -->
+<button aria-checked="false" class="w-10 h-6 rounded-full bg-outline-variant relative transition-colors duration-200 focus:outline-none shadow-sm" data-toggle="row2-email" role="switch" type="button">
+<span class="block w-4 h-4 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 translate-x-1"></span>
+</button>
+</div>
+</div>
+<div class="h-px bg-surface-container w-full"></div>
+<!-- Category 3: Pod & Consensus Voting -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-title-sm text-title-sm text-on-surface">Roommate Pod Consensus</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Flat shortlisting polls, visit slots, and pod membership invites</p>
+</div>
+<div class="flex items-center gap-3 flex-shrink-0 pt-0.5">
+<!-- Push Toggle ON -->
+<button aria-checked="true" class="w-10 h-6 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm" data-toggle="row3-push" role="switch" type="button">
+<span class="block w-4 h-4 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 translate-x-5"></span>
+</button>
+<!-- Email Toggle ON -->
+<button aria-checked="true" class="w-10 h-6 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm" data-toggle="row3-email" role="switch" type="button">
+<span class="block w-4 h-4 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 translate-x-5"></span>
+</button>
+</div>
+</div>
+<div class="h-px bg-surface-container w-full"></div>
+<!-- Category 4: Property Touring & Landlord Enquiries -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-title-sm text-title-sm text-on-surface">Touring &amp; Landlord Enquiries</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Visit approvals, gated society entry OTPs, and rental token logs</p>
+</div>
+<div class="flex items-center gap-3 flex-shrink-0 pt-0.5">
+<!-- Push Toggle ON -->
+<button aria-checked="true" class="w-10 h-6 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm" data-toggle="row4-push" role="switch" type="button">
+<span class="block w-4 h-4 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 translate-x-5"></span>
+</button>
+<!-- Email Toggle ON -->
+<button aria-checked="true" class="w-10 h-6 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm" data-toggle="row4-email" role="switch" type="button">
+<span class="block w-4 h-4 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 translate-x-5"></span>
+</button>
+</div>
+</div>
+<div class="h-px bg-surface-container w-full"></div>
+<!-- Category 5: Trust & Verification Updates -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-title-sm text-title-sm text-on-surface">Trust &amp; Verification Vault</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">DigiLocker token expiry, employer SSO sync, trust badge score</p>
+</div>
+<div class="flex items-center gap-3 flex-shrink-0 pt-0.5">
+<!-- Push Toggle ON -->
+<button aria-checked="true" class="w-10 h-6 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm" data-toggle="row5-push" role="switch" type="button">
+<span class="block w-4 h-4 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 translate-x-5"></span>
+</button>
+<!-- Email Toggle ON -->
+<button aria-checked="true" class="w-10 h-6 rounded-full bg-secondary relative transition-colors duration-200 focus:outline-none shadow-sm" data-toggle="row5-email" role="switch" type="button">
+<span class="block w-4 h-4 rounded-full bg-surface-container-lowest shadow-sm transform transition-transform duration-200 translate-x-5"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Zero-Spam Reassurance Banner -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary/15 text-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">RoomSync Zero-Spam Policy</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">format_image_left</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+          We strictly protect your attention. We never dispatch promotional marketing SMS, spam property calls, or sell candidate signals to third-party brokers.
+        </p>
+</div>
+</div>
+<!-- Bottom Padding Buffer for Sticky Action -->
+<div class="h-14"></div>
+</div>
+<!-- Sticky Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-surface/90 backdrop-blur-xl px-gutter-mobile py-space-sm shadow-[0_-4px_24px_rgba(0,0,0,0.06)] z-40">
+<div class="max-w-md mx-auto w-full flex items-center gap-space-sm">
+<button class="w-full min-h-[48px] rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm font-semibold hover:bg-secondary/90 active:scale-[0.99] transition-all flex items-center justify-center gap-space-xs shadow-md" id="save-preferences-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Save Notification Preferences</span>
+</button>
+</div>
+</div>
+<!-- Toast Notification (Hidden by default) -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-xl flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300" id="toast">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span class="font-label-md text-label-md">Preferences stored &amp; synced</span>
+</div>
+</div>
+<script>
+  (function () {
+    // Interactive switches handler
+    const toggles = document.querySelectorAll('button[role="switch"]');
+    toggles.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const isChecked = btn.getAttribute('aria-checked') === 'true';
+        const newState = !isChecked;
+        btn.setAttribute('aria-checked', String(newState));
+
+        const thumb = btn.querySelector('span');
+        const isSmall = btn.classList.contains('w-10');
+
+        if (newState) {
+          btn.classList.remove('bg-outline-variant');
+          btn.classList.add('bg-secondary');
+          if (thumb) {
+            thumb.classList.remove('translate-x-1');
+            thumb.classList.add(isSmall ? 'translate-x-5' : 'translate-x-6');
+          }
+        } else {
+          btn.classList.remove('bg-secondary');
+          btn.classList.add('bg-outline-variant');
+          if (thumb) {
+            thumb.classList.remove(isSmall ? 'translate-x-5' : 'translate-x-6');
+            thumb.classList.add('translate-x-1');
+          }
+        }
+
+        triggerPillUpdate();
+      });
+    });
+
+    // Quiet mode schedule toggle interactivity
+    const quietToggle = document.getElementById('toggle-quiet-mode');
+    const emergencyCheckbox = document.getElementById('emergency-exception');
+    if (emergencyCheckbox) {
+      emergencyCheckbox.addEventListener('change', triggerPillUpdate);
+    }
+
+    // Save CTA feedback
+    const saveBtn = document.getElementById('save-preferences-btn');
+    const toast = document.getElementById('toast');
+    const headerActionBtn = document.getElementById('header-action-button');
+
+    function triggerSaveSuccess() {
+      if (!toast) return;
+      toast.classList.remove('opacity-0', 'pointer-events-none', '-translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      const syncPill = document.getElementById('sync-pill');
+      if (syncPill) {
+        syncPill.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>Saved</span>';
+      }
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'pointer-events-none', '-translate-y-2');
+      }, 2400);
+    }
+
+    function triggerPillUpdate() {
+      const syncPill = document.getElementById('sync-pill');
+      if (syncPill) {
+        syncPill.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim animate-pulse"></span><span>Unsaved Changes</span>';
+      }
+    }
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', triggerSaveSuccess);
+    }
+    if (headerActionBtn) {
+      headerActionBtn.addEventListener('click', triggerSaveSuccess);
+    }
+  })();
+</script></main></body></html>

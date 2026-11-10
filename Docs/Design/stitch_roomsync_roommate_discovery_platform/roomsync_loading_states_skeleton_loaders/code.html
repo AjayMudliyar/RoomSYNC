@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>RoomSync</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed-dim":"#c4c1fb","surface-container-lowest":"#ffffff","inverse-surface":"#283044","on-primary-fixed":"#181445","on-tertiary-container":"#c07a00","error-container":"#ffdad6","surface-container-low":"#f2f3ff","on-primary-fixed-variant":"#444173","outline":"#787680","on-tertiary-fixed":"#2a1700","secondary":"#006a61","on-tertiary-fixed-variant":"#653e00","on-primary":"#ffffff","surface-dim":"#d2d9f4","primary-container":"#1e1b4b","on-tertiary":"#ffffff","tertiary-container":"#331d00","secondary-fixed":"#89f5e7","inverse-primary":"#c4c1fb","tertiary":"#140900","outline-variant":"#c8c5d0","surface-container-high":"#e2e7ff","background":"#faf8ff","tertiary-fixed-dim":"#ffb95f","on-surface-variant":"#47464f","surface-tint":"#5b598c","surface-container":"#eaedff","on-primary-container":"#8683ba","on-surface":"#131b2e","surface-variant":"#dae2fd","inverse-on-surface":"#eef0ff","on-secondary":"#ffffff","on-secondary-fixed-variant":"#005049","on-error-container":"#93000a","on-error":"#ffffff","primary-fixed":"#e3dfff","on-secondary-container":"#006f66","tertiary-fixed":"#ffddb8","on-background":"#131b2e","secondary-container":"#86f2e4","surface-container-highest":"#dae2fd","surface":"#faf8ff","secondary-fixed-dim":"#6bd8cb","error":"#ba1a1a","surface-bright":"#faf8ff","on-secondary-fixed":"#00201d","primary":"#070235"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xs":"0.25rem","space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem",gutter:"1.5rem",margin:"1.5rem","margin-mobile":"1rem","gutter-mobile":"1rem","margin-desktop":"3rem","gutter-desktop":"2rem","space-xl":"2.5rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"display-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-md":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"700"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"title-sm":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"600"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"400"}],"metric-display":["32px",{lineHeight:"36px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">hub</span></div><div class="flex flex-col"><div class="flex items-center gap-1"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold">RoomSync</span><span class="material-symbols-outlined text-secondary text-[18px]">verified</span></div></div></div><div class="hidden xl:flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low rounded-full"><span class="material-symbols-outlined text-secondary text-[16px]">location_on</span><span class="font-label-md text-label-md text-on-surface-variant font-medium">Bengaluru:</span><div class="relative flex items-center"><select class="appearance-none bg-transparent font-label-md text-label-md font-semibold text-primary pr-5 pl-1 focus:outline-none cursor-pointer"><option value="indiranagar">Indiranagar</option><option value="hsr">HSR Layout</option><option value="koramangala">Koramangala</option></select><span class="material-symbols-outlined pointer-events-none absolute right-0 text-on-surface-variant text-[14px]">expand_more</span></div></div></div><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg px-3 py-2"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary font-bold rounded-lg px-3 py-2" data-path="discover" href="#">Discover</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface px-3 py-2 transition-colors" data-path="accommodation" href="#">Accommodation</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface px-3 py-2 transition-colors" data-path="roommate-groups" href="#">Roommate Groups</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface px-3 py-2 transition-colors" data-path="trust-safety" href="#">Trust &amp; Safety</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2"><div class="flex items-center gap-1 px-2.5 py-1 bg-surface-container rounded-full"><span class="material-symbols-outlined text-primary text-[14px]">apartment</span><span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">Swiggy SSO</span></div><div class="flex items-center gap-1 px-2.5 py-1 bg-secondary-container/40 rounded-full"><span class="material-symbols-outlined text-secondary text-[14px]">shield_person</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Aadhaar</span></div></div><div class="flex items-center gap-space-sm pl-2"><div class="text-right hidden md:block"><div class="font-title-sm text-title-sm text-on-surface leading-tight font-semibold">Aarav Sharma</div><div class="font-label-sm text-label-sm text-secondary font-bold flex items-center justify-end gap-0.5"><span>Verified Profile</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden bg-primary text-on-primary py-space-xl px-margin-mobile md:px-margin lg:px-margin-desktop">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-20 w-80 h-80 rounded-full bg-primary-fixed-dim/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-start md:items-end justify-between gap-space-lg relative z-10">
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/30 text-secondary-fixed text-label-sm font-label-sm tracking-wider uppercase flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+            Design System Benchmark · CLS &lt; 0.005
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/10 text-surface-container-highest text-label-sm font-label-sm">
+            v2.4 Engineering Handoff
+          </span>
+</div>
+<p class="font-display-md text-display-md font-extrabold tracking-tight text-surface-container-lowest">
+          Loading States &amp; Structural Skeleton Suite
+        </p>
+<p class="font-body-md text-body-md text-surface-dim">
+          Pixel-locked baseline wireframe shimmers matching 1:1 DOM typography bounds for Bengaluru &amp; Tier-1 coliving matchmaking modules.
+        </p>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest/10 backdrop-blur-md p-2 rounded-xl">
+<div class="flex flex-col text-right pl-2">
+<span class="font-label-md text-label-md font-semibold text-surface-container-lowest">Simulation Shimmer</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed" id="shimmerStatusText">Wave Motion Active (60fps)</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary font-title-sm text-title-sm hover:opacity-95 transition-opacity flex items-center gap-1.5 shadow-sm" id="toggleShimmerBtn">
+<span class="material-symbols-outlined text-[18px]">motion_photos_on</span>
+<span>Toggle Sweep</span>
+</button>
+</div>
+</div>
+</div>
+<div class="sticky top-20 z-40 bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop py-3 flex items-center justify-between gap-4 overflow-x-auto">
+<div class="flex items-center gap-2 shrink-0">
+<button class="skeleton-filter-tab px-3.5 py-1.5 rounded-full font-label-lg text-label-lg font-semibold bg-primary text-on-primary shadow-sm transition-all" data-filter="all">
+          All Modules (8)
+        </button>
+<button class="skeleton-filter-tab px-3.5 py-1.5 rounded-full font-label-lg text-label-lg font-medium bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" data-filter="discovery">
+          Discovery &amp; Matrix
+        </button>
+<button class="skeleton-filter-tab px-3.5 py-1.5 rounded-full font-label-lg text-label-lg font-medium bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" data-filter="comms">
+          Messaging &amp; Pods
+        </button>
+<button class="skeleton-filter-tab px-3.5 py-1.5 rounded-full font-label-lg text-label-lg font-medium bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" data-filter="listings">
+          Accommodation
+        </button>
+<button class="skeleton-filter-tab px-3.5 py-1.5 rounded-full font-label-lg text-label-lg font-medium bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" data-filter="dashboard">
+          Dashboard &amp; Logs
+        </button>
+</div>
+<div class="hidden xl:flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm shrink-0">
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Zero Layout Drift
+        </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim"></span> Tone: surface-container
+        </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-dim"></span> Pulse Duration: 1.8s
+        </span>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<section class="skeleton-module flex flex-col gap-4" data-category="discovery">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-label-md text-label-md font-bold">01</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Roommate Discovery Dashboard Feed</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Profile match cards with dual-phase Aadhaar &amp; Corporate credentials shimmer</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-semibold">RoommateCard.tsx</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">CLS 0.000</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col justify-between gap-5 relative overflow-hidden group">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="relative w-16 h-16 rounded-2xl bg-surface-container animate-pulse shrink-0 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-surface-container-lowest/40 to-transparent -translate-x-full animate-[shimmer_1.8s_infinite]"></div>
+</div>
+<div class="flex flex-col gap-2 min-w-0">
+<div class="h-5 w-32 bg-surface-container rounded-md animate-pulse"></div>
+<div class="h-3.5 w-24 bg-surface-container-high rounded animate-pulse"></div>
+<div class="flex items-center gap-1.5">
+<div class="h-4 w-16 bg-secondary-container/50 rounded-full animate-pulse"></div>
+<div class="h-4 w-14 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center p-1 relative shrink-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<div class="w-6 h-3 bg-secondary-fixed-dim/60 rounded animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="h-4 w-28 bg-surface-container-high rounded animate-pulse"></div>
+<div class="h-5 w-20 bg-surface-container rounded-md animate-pulse"></div>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<div class="h-6 w-16 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-6 w-20 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-6 w-24 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-6 w-14 bg-surface-container rounded-full animate-pulse"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<div class="h-10 flex-1 bg-surface-container-high rounded-xl animate-pulse"></div>
+<div class="h-10 w-28 bg-surface-container rounded-xl animate-pulse"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col justify-between gap-5 relative overflow-hidden">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="relative w-16 h-16 rounded-2xl bg-surface-container animate-pulse shrink-0 overflow-hidden"></div>
+<div class="flex flex-col gap-2 min-w-0">
+<div class="h-5 w-36 bg-surface-container rounded-md animate-pulse"></div>
+<div class="h-3.5 w-28 bg-surface-container-high rounded animate-pulse"></div>
+<div class="flex items-center gap-1.5">
+<div class="h-4 w-20 bg-secondary-container/50 rounded-full animate-pulse"></div>
+<div class="h-4 w-12 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center p-1 shrink-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<div class="w-6 h-3 bg-secondary-fixed-dim/60 rounded animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="h-4 w-32 bg-surface-container-high rounded animate-pulse"></div>
+<div class="h-5 w-24 bg-surface-container rounded-md animate-pulse"></div>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<div class="h-6 w-20 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-6 w-16 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-6 w-28 bg-surface-container rounded-full animate-pulse"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<div class="h-10 flex-1 bg-surface-container-high rounded-xl animate-pulse"></div>
+<div class="h-10 w-28 bg-surface-container rounded-xl animate-pulse"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm hidden lg:flex flex-col justify-between gap-5 relative overflow-hidden">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="relative w-16 h-16 rounded-2xl bg-surface-container animate-pulse shrink-0 overflow-hidden"></div>
+<div class="flex flex-col gap-2 min-w-0">
+<div class="h-5 w-28 bg-surface-container rounded-md animate-pulse"></div>
+<div class="h-3.5 w-20 bg-surface-container-high rounded animate-pulse"></div>
+<div class="flex items-center gap-1.5">
+<div class="h-4 w-16 bg-secondary-container/50 rounded-full animate-pulse"></div>
+<div class="h-4 w-14 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center p-1 shrink-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<div class="w-6 h-3 bg-secondary-fixed-dim/60 rounded animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="h-4 w-24 bg-surface-container-high rounded animate-pulse"></div>
+<div class="h-5 w-20 bg-surface-container rounded-md animate-pulse"></div>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<div class="h-6 w-14 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-6 w-24 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-6 w-16 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-6 w-18 bg-surface-container rounded-full animate-pulse"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<div class="h-10 flex-1 bg-surface-container-high rounded-xl animate-pulse"></div>
+<div class="h-10 w-28 bg-surface-container rounded-xl animate-pulse"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="skeleton-module flex flex-col gap-4" data-category="discovery">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-label-md text-label-md font-bold">02</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Compatibility Matrix &amp; Affinity Analytics</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Harmonic radial synergy gauge and 5-tier habit breakdown telemetry</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-semibold">AffinityBreakdownModal.tsx</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold">Radial SVG Metric</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-6 lg:p-8 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-4 flex flex-col items-center text-center gap-4 bg-surface-container-low p-6 rounded-2xl">
+<div class="relative w-40 h-40 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<circle class="text-surface-container-high" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-secondary/30 animate-pulse" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="65" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<div class="h-8 w-16 bg-surface-container rounded-md animate-pulse"></div>
+<div class="h-3 w-12 bg-surface-container-high rounded mt-1.5 animate-pulse"></div>
+</div>
+</div>
+<div class="h-5 w-44 bg-surface-container rounded-md animate-pulse"></div>
+<div class="flex gap-2">
+<div class="h-6 w-24 bg-surface-container-high rounded-full animate-pulse"></div>
+<div class="h-6 w-20 bg-secondary-container/40 rounded-full animate-pulse"></div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-5">
+<div class="flex items-center justify-between pb-1">
+<div class="h-5 w-48 bg-surface-container rounded animate-pulse"></div>
+<div class="h-4 w-24 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+<div class="space-y-4">
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-md bg-surface-container animate-pulse"></div>
+<div class="h-4 w-32 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="h-4 w-10 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary/40 rounded-full w-[94%] animate-pulse"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-md bg-surface-container animate-pulse"></div>
+<div class="h-4 w-28 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="h-4 w-10 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary/40 rounded-full w-[88%] animate-pulse"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-md bg-surface-container animate-pulse"></div>
+<div class="h-4 w-36 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="h-4 w-10 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary/40 rounded-full w-[96%] animate-pulse"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-md bg-surface-container animate-pulse"></div>
+<div class="h-4 w-30 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="h-4 w-10 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary/40 rounded-full w-[80%] animate-pulse"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-md bg-surface-container animate-pulse"></div>
+<div class="h-4 w-32 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="h-4 w-10 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary/40 rounded-full w-[92%] animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="skeleton-module flex flex-col gap-4" data-category="discovery">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-label-md text-label-md font-bold">03</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Roommate Detailed Persona &amp; Verification Deck</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Full portfolio layout with lifestyle photo triad and corporate badge anchors</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-semibold">CandidatePersonaView.tsx</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">Triple Aspect Ratio</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-44 w-full bg-surface-container relative animate-pulse">
+<div class="absolute bottom-4 right-4 flex gap-2">
+<div class="h-7 w-28 bg-surface-container-lowest/80 rounded-full"></div>
+<div class="h-7 w-32 bg-surface-container-lowest/80 rounded-full"></div>
+</div>
+</div>
+<div class="px-6 pb-6 pt-0 flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 -mt-12 relative z-10">
+<div class="flex items-end gap-4">
+<div class="w-24 h-24 rounded-2xl bg-surface-container-low p-1.5 shadow-md">
+<div class="w-full h-full rounded-xl bg-surface-container animate-pulse"></div>
+</div>
+<div class="flex flex-col gap-2 pb-1">
+<div class="h-6 w-48 bg-surface-container rounded-md animate-pulse"></div>
+<div class="h-4 w-36 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="h-10 w-32 bg-secondary-container/50 rounded-xl animate-pulse"></div>
+<div class="h-10 w-10 bg-surface-container rounded-xl animate-pulse"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-2">
+<div class="lg:col-span-2 flex flex-col gap-5">
+<div class="flex flex-col gap-2">
+<div class="h-4 w-full bg-surface-container rounded animate-pulse"></div>
+<div class="h-4 w-[92%] bg-surface-container rounded animate-pulse"></div>
+<div class="h-4 w-[75%] bg-surface-container-high rounded animate-pulse"></div>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<div class="h-32 rounded-xl bg-surface-container animate-pulse"></div>
+<div class="h-32 rounded-xl bg-surface-container animate-pulse"></div>
+<div class="h-32 rounded-xl bg-surface-container animate-pulse"></div>
+</div>
+<div class="flex flex-col gap-2.5">
+<div class="h-4 w-32 bg-surface-container-high rounded animate-pulse"></div>
+<div class="flex flex-wrap gap-2">
+<div class="h-7 w-28 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-7 w-36 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-7 w-24 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-7 w-32 bg-surface-container rounded-full animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-5 flex flex-col gap-4">
+<div class="h-4 w-28 bg-surface-container-high rounded animate-pulse"></div>
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="h-3.5 w-20 bg-surface-container rounded"></div>
+<div class="h-3.5 w-28 bg-surface-container-high rounded"></div>
+</div>
+<div class="flex items-center justify-between">
+<div class="h-3.5 w-24 bg-surface-container rounded"></div>
+<div class="h-3.5 w-24 bg-surface-container-high rounded"></div>
+</div>
+<div class="flex items-center justify-between">
+<div class="h-3.5 w-20 bg-surface-container rounded"></div>
+<div class="h-3.5 w-32 bg-surface-container-high rounded"></div>
+</div>
+<div class="flex items-center justify-between">
+<div class="h-3.5 w-28 bg-surface-container rounded"></div>
+<div class="h-3.5 w-20 bg-surface-container-high rounded"></div>
+</div>
+</div>
+<div class="h-10 w-full bg-primary-container/20 rounded-xl mt-2 animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="skeleton-module flex flex-col gap-4" data-category="comms">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-label-md text-label-md font-bold">04</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Coliving Direct Messaging &amp; Pod Room Chat</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dual-pane messaging interface with staggered conversational chat bubbles</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-semibold">ColivingChatWorkspace.tsx</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold">Dual-Pane Layout</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden grid grid-cols-1 md:grid-cols-12 min-h-[460px]">
+<div class="md:col-span-5 lg:col-span-4 bg-surface-container-lowest p-4 flex flex-col gap-3">
+<div class="h-9 w-full bg-surface-container rounded-xl animate-pulse"></div>
+<div class="flex flex-col gap-2 mt-2">
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-surface-container shrink-0 animate-pulse"></div>
+<div class="flex-1 flex flex-col gap-2 min-w-0">
+<div class="flex justify-between items-center">
+<div class="h-4 w-28 bg-surface-container rounded"></div>
+<div class="h-3 w-8 bg-surface-container-high rounded"></div>
+</div>
+<div class="h-3.5 w-40 bg-surface-container-high rounded"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-surface-container shrink-0 animate-pulse"></div>
+<div class="flex-1 flex flex-col gap-2 min-w-0">
+<div class="flex justify-between items-center">
+<div class="h-4 w-24 bg-surface-container rounded"></div>
+<div class="h-3 w-10 bg-surface-container-high rounded"></div>
+</div>
+<div class="h-3.5 w-32 bg-surface-container-high rounded"></div>
+</div>
+</div>
+<div class="p-3 rounded-xl flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-surface-container shrink-0 animate-pulse"></div>
+<div class="flex-1 flex flex-col gap-2 min-w-0">
+<div class="flex justify-between items-center">
+<div class="h-4 w-32 bg-surface-container rounded"></div>
+<div class="h-3 w-8 bg-surface-container-high rounded"></div>
+</div>
+<div class="h-3.5 w-36 bg-surface-container-high rounded"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 lg:col-span-8 bg-surface-container-low p-4 flex flex-col justify-between">
+<div class="flex items-center justify-between pb-3 bg-surface-container-lowest p-3 rounded-xl shadow-xs">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container animate-pulse"></div>
+<div class="flex flex-col gap-1.5">
+<div class="h-4 w-32 bg-surface-container rounded"></div>
+<div class="h-3 w-20 bg-secondary-container/60 rounded"></div>
+</div>
+</div>
+<div class="flex gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container"></div>
+<div class="w-8 h-8 rounded-lg bg-surface-container"></div>
+</div>
+</div>
+<div class="flex flex-col gap-3 py-6 px-2">
+<div class="flex items-start gap-2 max-w-[75%]">
+<div class="w-7 h-7 rounded-full bg-surface-container shrink-0"></div>
+<div class="p-3 rounded-2xl rounded-tl-xs bg-surface-container-lowest shadow-xs flex flex-col gap-1.5">
+<div class="h-3.5 w-52 bg-surface-container rounded"></div>
+<div class="h-3.5 w-36 bg-surface-container-high rounded"></div>
+</div>
+</div>
+<div class="flex items-start gap-2 max-w-[70%] self-end flex-row-reverse">
+<div class="p-3 rounded-2xl rounded-tr-xs bg-primary-container text-on-primary flex flex-col gap-1.5">
+<div class="h-3.5 w-44 bg-surface-container-lowest/40 rounded"></div>
+<div class="h-3.5 w-24 bg-surface-container-lowest/30 rounded"></div>
+</div>
+</div>
+<div class="flex items-start gap-2 max-w-[80%]">
+<div class="w-7 h-7 rounded-full bg-surface-container shrink-0"></div>
+<div class="p-3 rounded-2xl rounded-tl-xs bg-surface-container-lowest shadow-xs flex flex-col gap-1.5">
+<div class="h-3.5 w-60 bg-surface-container rounded"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<div class="h-11 flex-1 bg-surface-container-lowest rounded-xl flex items-center px-4">
+<div class="h-4 w-48 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="h-11 w-11 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="skeleton-module flex flex-col gap-4" data-category="comms">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-label-md text-label-md font-bold">05</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Roommate Pods &amp; Group Consensus Deck</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Harmonic group compatibility meter with avatar stack and budget corridors</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-semibold">PodGroupCard.tsx</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">Multi-Tenant Stack</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col justify-between gap-5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-2">
+<div class="h-5 w-48 bg-surface-container rounded animate-pulse"></div>
+<div class="flex items-center gap-2">
+<div class="h-4 w-28 bg-surface-container-high rounded animate-pulse"></div>
+<div class="h-4 w-16 bg-secondary-container/50 rounded-full animate-pulse"></div>
+</div>
+</div>
+<div class="h-7 w-24 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+<div class="flex items-center justify-between p-3.5 bg-surface-container-low rounded-xl">
+<div class="flex items-center -space-x-2">
+<div class="w-9 h-9 rounded-full bg-surface-container"></div>
+<div class="w-9 h-9 rounded-full bg-surface-container-high"></div>
+<div class="w-9 h-9 rounded-full bg-surface-container"></div>
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-secondary text-label-sm font-bold">+1</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<div class="h-4 w-24 bg-surface-container rounded animate-pulse"></div>
+<div class="h-3 w-16 bg-surface-container-high rounded"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-label-sm">
+<div class="h-3 w-28 bg-surface-container rounded"></div>
+<div class="h-3 w-12 bg-secondary/50 rounded"></div>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-4/5 rounded-full animate-pulse"></div>
+</div>
+</div>
+<div class="flex items-center gap-3 pt-1">
+<div class="h-10 flex-1 bg-surface-container rounded-xl animate-pulse"></div>
+<div class="h-10 w-28 bg-secondary-container/60 rounded-xl animate-pulse"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col justify-between gap-5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-2">
+<div class="h-5 w-40 bg-surface-container rounded animate-pulse"></div>
+<div class="flex items-center gap-2">
+<div class="h-4 w-32 bg-surface-container-high rounded animate-pulse"></div>
+<div class="h-4 w-20 bg-secondary-container/50 rounded-full animate-pulse"></div>
+</div>
+</div>
+<div class="h-7 w-20 bg-surface-container-high rounded-full animate-pulse"></div>
+</div>
+<div class="flex items-center justify-between p-3.5 bg-surface-container-low rounded-xl">
+<div class="flex items-center -space-x-2">
+<div class="w-9 h-9 rounded-full bg-surface-container"></div>
+<div class="w-9 h-9 rounded-full bg-surface-container-high"></div>
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-secondary text-label-sm font-bold">+2</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<div class="h-4 w-28 bg-surface-container rounded animate-pulse"></div>
+<div class="h-3 w-14 bg-surface-container-high rounded"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-label-sm">
+<div class="h-3 w-32 bg-surface-container rounded"></div>
+<div class="h-3 w-10 bg-secondary/50 rounded"></div>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-3/4 rounded-full animate-pulse"></div>
+</div>
+</div>
+<div class="flex items-center gap-3 pt-1">
+<div class="h-10 flex-1 bg-surface-container rounded-xl animate-pulse"></div>
+<div class="h-10 w-28 bg-secondary-container/60 rounded-xl animate-pulse"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="skeleton-module flex flex-col gap-4" data-category="listings">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-label-md text-label-md font-bold">06</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Accommodation Discovery &amp; Verified Flat Listings</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">16:9 property photo frame with Kaveri 2.0 deed title check placeholder</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-semibold">PropertyCard.tsx</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">16:9 Aspect Ratio</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative w-full aspect-video bg-surface-container animate-pulse">
+<div class="absolute top-3 left-3 flex gap-2">
+<div class="h-6 w-24 bg-surface-container-lowest/90 rounded-md"></div>
+<div class="h-6 w-16 bg-secondary/80 rounded-md"></div>
+</div>
+<div class="absolute bottom-3 right-3 h-7 w-24 bg-primary/80 rounded-lg"></div>
+</div>
+<div class="p-5 flex flex-col gap-4">
+<div class="flex flex-col gap-2">
+<div class="h-5 w-44 bg-surface-container rounded animate-pulse"></div>
+<div class="h-3.5 w-32 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+<div class="flex items-center gap-3">
+<div class="h-4 w-20 bg-surface-container rounded animate-pulse"></div>
+<div class="h-4 w-16 bg-surface-container rounded animate-pulse"></div>
+<div class="h-4 w-24 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="h-6 w-28 bg-surface-container rounded animate-pulse"></div>
+<div class="h-9 w-28 bg-primary rounded-xl animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative w-full aspect-video bg-surface-container animate-pulse">
+<div class="absolute top-3 left-3 flex gap-2">
+<div class="h-6 w-24 bg-surface-container-lowest/90 rounded-md"></div>
+<div class="h-6 w-20 bg-secondary/80 rounded-md"></div>
+</div>
+<div class="absolute bottom-3 right-3 h-7 w-28 bg-primary/80 rounded-lg"></div>
+</div>
+<div class="p-5 flex flex-col gap-4">
+<div class="flex flex-col gap-2">
+<div class="h-5 w-52 bg-surface-container rounded animate-pulse"></div>
+<div class="h-3.5 w-36 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+<div class="flex items-center gap-3">
+<div class="h-4 w-24 bg-surface-container rounded animate-pulse"></div>
+<div class="h-4 w-18 bg-surface-container rounded animate-pulse"></div>
+<div class="h-4 w-20 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="h-6 w-32 bg-surface-container rounded animate-pulse"></div>
+<div class="h-9 w-28 bg-primary rounded-xl animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hidden lg:flex flex-col justify-between">
+<div class="relative w-full aspect-video bg-surface-container animate-pulse">
+<div class="absolute top-3 left-3 flex gap-2">
+<div class="h-6 w-20 bg-surface-container-lowest/90 rounded-md"></div>
+<div class="h-6 w-16 bg-secondary/80 rounded-md"></div>
+</div>
+<div class="absolute bottom-3 right-3 h-7 w-24 bg-primary/80 rounded-lg"></div>
+</div>
+<div class="p-5 flex flex-col gap-4">
+<div class="flex flex-col gap-2">
+<div class="h-5 w-40 bg-surface-container rounded animate-pulse"></div>
+<div class="h-3.5 w-28 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+<div class="flex items-center gap-3">
+<div class="h-4 w-18 bg-surface-container rounded animate-pulse"></div>
+<div class="h-4 w-20 bg-surface-container rounded animate-pulse"></div>
+<div class="h-4 w-22 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="h-6 w-28 bg-surface-container rounded animate-pulse"></div>
+<div class="h-9 w-28 bg-primary rounded-xl animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="skeleton-module flex flex-col gap-4" data-category="dashboard">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-label-md text-label-md font-bold">07</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Notifications Center &amp; Match Action Feed</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Time-sequenced activity list with contextual action triggers</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-semibold">NotificationFeed.tsx</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold">Linear Flow</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+<div class="h-4 w-24 bg-surface-container-high rounded animate-pulse mb-1"></div>
+<div class="flex items-start gap-4 p-3.5 rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">person_check</span>
+</div>
+<div class="flex-1 flex flex-col gap-2 min-w-0">
+<div class="flex justify-between items-center">
+<div class="h-4 w-56 bg-surface-container rounded animate-pulse"></div>
+<div class="h-3 w-14 bg-surface-container-high rounded"></div>
+</div>
+<div class="h-3.5 w-4/5 bg-surface-container-high rounded animate-pulse"></div>
+<div class="flex gap-2 pt-1">
+<div class="h-7 w-20 bg-secondary rounded-lg animate-pulse"></div>
+<div class="h-7 w-16 bg-surface-container-high rounded-lg animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-4 p-3.5 rounded-xl">
+<div class="w-10 h-10 rounded-full bg-surface-container shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">group_add</span>
+</div>
+<div class="flex-1 flex flex-col gap-2 min-w-0">
+<div class="flex justify-between items-center">
+<div class="h-4 w-64 bg-surface-container rounded animate-pulse"></div>
+<div class="h-3 w-16 bg-surface-container-high rounded"></div>
+</div>
+<div class="h-3.5 w-3/4 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+</div>
+<div class="flex items-start gap-4 p-3.5 rounded-xl">
+<div class="w-10 h-10 rounded-full bg-surface-container shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">home_work</span>
+</div>
+<div class="flex-1 flex flex-col gap-2 min-w-0">
+<div class="flex justify-between items-center">
+<div class="h-4 w-48 bg-surface-container rounded animate-pulse"></div>
+<div class="h-3 w-20 bg-surface-container-high rounded"></div>
+</div>
+<div class="h-3.5 w-2/3 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="skeleton-module flex flex-col gap-4" data-category="dashboard">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-label-md text-label-md font-bold">08</span>
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Executive User Dashboard &amp; Activity Overview</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Top-level metrics quadruple grid with activity progress telemetry</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-semibold">UserOverviewMetrics.tsx</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">4-Col Metric Cluster</span>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<div class="h-4 w-20 bg-surface-container-high rounded animate-pulse"></div>
+<div class="w-7 h-7 rounded-lg bg-surface-container animate-pulse"></div>
+</div>
+<div class="h-8 w-24 bg-surface-container rounded-md animate-pulse"></div>
+<div class="h-3 w-16 bg-secondary-container/60 rounded"></div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<div class="h-4 w-24 bg-surface-container-high rounded animate-pulse"></div>
+<div class="w-7 h-7 rounded-lg bg-surface-container animate-pulse"></div>
+</div>
+<div class="h-8 w-20 bg-surface-container rounded-md animate-pulse"></div>
+<div class="h-3 w-20 bg-secondary-container/60 rounded"></div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<div class="h-4 w-22 bg-surface-container-high rounded animate-pulse"></div>
+<div class="w-7 h-7 rounded-lg bg-surface-container animate-pulse"></div>
+</div>
+<div class="h-8 w-16 bg-surface-container rounded-md animate-pulse"></div>
+<div class="h-3 w-14 bg-surface-container-high rounded"></div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<div class="h-4 w-20 bg-surface-container-high rounded animate-pulse"></div>
+<div class="w-7 h-7 rounded-lg bg-surface-container animate-pulse"></div>
+</div>
+<div class="h-8 w-28 bg-surface-container rounded-md animate-pulse"></div>
+<div class="h-3 w-18 bg-secondary-container/60 rounded"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<div class="h-5 w-40 bg-surface-container rounded animate-pulse"></div>
+<div class="h-4 w-24 bg-surface-container-high rounded animate-pulse"></div>
+</div>
+<div class="space-y-4 pt-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+<div class="h-4 w-60 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="h-3 w-16 bg-surface-container-high rounded"></div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim"></div>
+<div class="h-4 w-48 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="h-3 w-20 bg-surface-container-high rounded"></div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-surface-dim"></div>
+<div class="h-4 w-52 bg-surface-container rounded animate-pulse"></div>
+</div>
+<div class="h-3 w-14 bg-surface-container-high rounded"></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+    (function initSkeletonControl() {
+      const filterBtns = document.querySelectorAll('.skeleton-filter-tab');
+      const modules = document.querySelectorAll('.skeleton-module');
+      const toggleShimmerBtn = document.getElementById('toggleShimmerBtn');
+      const shimmerStatusText = document.getElementById('shimmerStatusText');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+            b.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+          btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+          modules.forEach(mod => {
+            const cat = mod.getAttribute('data-category');
+            if (filter === 'all' || cat === filter) {
+              mod.style.display = 'flex';
+            } else {
+              mod.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      let isPulseActive = true;
+      toggleShimmerBtn.addEventListener('click', () => {
+        isPulseActive = !isPulseActive;
+        const pulseElements = document.querySelectorAll('.animate-pulse');
+        pulseElements.forEach(el => {
+          if (isPulseActive) {
+            el.classList.add('animate-pulse');
+          } else {
+            el.classList.remove('animate-pulse');
+          }
+        });
+
+        if (isPulseActive) {
+          shimmerStatusText.textContent = 'Wave Motion Active (60fps)';
+          shimmerStatusText.classList.remove('text-surface-dim');
+          shimmerStatusText.classList.add('text-secondary-fixed');
+          toggleShimmerBtn.querySelector('span:last-child').textContent = 'Pause Sweep';
+        } else {
+          shimmerStatusText.textContent = 'Pulse Paused (Static Freeze)';
+          shimmerStatusText.classList.remove('text-secondary-fixed');
+          shimmerStatusText.classList.add('text-surface-dim');
+          toggleShimmerBtn.querySelector('span:last-child').textContent = 'Resume Sweep';
+        }
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold text-primary">RoomSync</span><span class="font-body-sm text-body-sm text-on-surface-variant">— Verified Roommate Ecosystem for Young Tech Professionals</span></div><div class="font-body-sm text-body-sm text-on-surface-variant">© 2025 RoomSync Technologies India Pvt. Ltd. Bengaluru. All rights reserved.</div></div></div></footer></body></html>

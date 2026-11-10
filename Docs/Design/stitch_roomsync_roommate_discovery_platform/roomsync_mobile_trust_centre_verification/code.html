@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#eef0ff", "on-surface": "#131b2e", "outline": "#787680", "tertiary-fixed-dim": "#ffb95f", "primary-fixed-dim": "#c4c1fb", "on-error-container": "#93000a", "on-primary": "#ffffff", "background": "#faf8ff", "surface-container-highest": "#dae2fd", "surface-variant": "#dae2fd", "outline-variant": "#c8c5d0", "on-secondary": "#ffffff", "primary-fixed": "#e3dfff", "error": "#ba1a1a", "on-tertiary-fixed": "#2a1700", "primary": "#070235", "on-background": "#131b2e", "tertiary-fixed": "#ffddb8", "surface-container-low": "#f2f3ff", "surface-container-high": "#e2e7ff", "on-tertiary": "#ffffff", "on-surface-variant": "#47464f", "on-error": "#ffffff", "error-container": "#ffdad6", "on-primary-container": "#8683ba", "secondary-container": "#86f2e4", "surface-bright": "#faf8ff", "on-primary-fixed": "#181445", "on-secondary-fixed-variant": "#005049", "inverse-surface": "#283044", "tertiary": "#140900", "on-tertiary-container": "#c07a00", "surface-tint": "#5b598c", "on-secondary-fixed": "#00201d", "on-primary-fixed-variant": "#444173", "surface": "#faf8ff", "secondary": "#006a61", "inverse-primary": "#c4c1fb", "tertiary-container": "#331d00", "surface-container-lowest": "#ffffff", "surface-dim": "#d2d9f4", "primary-container": "#1e1b4b", "surface-container": "#eaedff", "secondary-fixed": "#89f5e7", "on-secondary-container": "#006f66", "secondary-fixed-dim": "#6bd8cb", "on-tertiary-fixed-variant": "#653e00" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter-mobile": "1rem", "space-md": "1rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "margin": "1.5rem", "margin-desktop": "3rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-sm": "0.5rem", "margin-mobile": "1rem" }, "fontFamily": { "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "display-md": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),12px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center shrink-0 shadow-[0_2px_8px_rgba(30,27,75,0.2)]"><span class="material-symbols-outlined text-secondary-fixed text-[22px]">sync</span></div><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest leading-none">RoomSync</span><button class="flex items-center gap-space-xs text-left min-w-0 group hover:opacity-80 transition-opacity" type="button"><span class="font-title-sm text-title-sm text-on-surface truncate">Bengaluru • Indiranagar</span><span class="material-symbols-outlined text-on-surface-variant text-[18px] shrink-0">arrow_drop_down</span></button></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Search filters" class="w-12 h-12 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-[0_2px_6px_rgba(7,2,53,0.18)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow -->
+<div class="relative px-gutter-mobile pt-space-md pb-space-lg">
+<!-- Profile & Trust Shield Card -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-md p-space-lg mb-space-md">
+<!-- Glow background accent -->
+<div class="absolute -right-10 -top-10 w-44 h-44 rounded-full bg-secondary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative flex items-start gap-space-md">
+<!-- Avatar with Dual-Ring Tier Badge -->
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-2xl object-cover shadow-sm" data-alt="Close up photographic headshot of Aarav Sharma, a 28-year-old modern Indian software engineer with friendly smile, glasses, clean look, soft office daylight, shot on 85mm lens with shallow depth of field, warm tech aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY0avGQ4AWRO_ZRM5Uun-JOCaqN5JOw0a8nDiVA4CC7ymDEM8cxVF5izikIkb5HARzez0DAUMb8tqrwplZuL_e5WbfJyqymLeKGGYyeZ-9yV0CxHNZw1urqMcAo4Jpcmk-EsGOnMteAzD4w1FFz-haPtGFB230UKSydTo-aTVxsyUgZDQbgrCu32poF0vvFv-cDFX1kRbHnFJiJ977SgRduMcKCB5Iaw1jaMWAFEju"/>
+<div class="absolute -bottom-1.5 -right-1.5 w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h1 class="font-headline-sm text-headline-sm text-primary truncate">Aarav Sharma</h1>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Senior Frontend Engineer @ Swiggy</p>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/50 mt-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-secondary-container">Tier-2 Verified Member</span>
+</div>
+</div>
+</div>
+<!-- Trust Score Radial Progress & Metric Strip -->
+<div class="mt-space-lg pt-space-md bg-surface-container-low rounded-xl p-space-md flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<!-- Radial Progress Ring SVG -->
+<div class="relative w-14 h-14 shrink-0 flex items-center justify-center">
+<svg class="w-14 h-14 -rotate-90 transform" viewbox="0 0 48 48">
+<circle class="text-surface-container-highest" cx="24" cy="24" fill="transparent" r="20" stroke="currentColor" stroke-width="4.5"></circle>
+<circle class="text-secondary" cx="24" cy="24" fill="transparent" r="20" stroke="currentColor" stroke-dasharray="125.6" stroke-dashoffset="2.5" stroke-linecap="round" stroke-width="4.5"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-title-sm text-title-sm text-primary leading-none">98</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-0.5">/100</span>
+</div>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-primary">Maximum Trust Score</div>
+<div class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+              Top 2% of Bangalore Pods
+            </div>
+</div>
+</div>
+<button aria-label="Score info" class="w-9 h-9 rounded-full bg-surface-container-highest/60 text-on-surface flex items-center justify-center shrink-0" type="button">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+</div>
+<!-- Legal Reassurance Footnote -->
+<div class="mt-space-md flex items-start gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">lock_person</span>
+<p class="font-body-sm text-body-sm leading-relaxed">
+          Cryptographically verified under DPDP Act 2023. Documents are non-custodial and never visible to landlords or prospective flatmates.
+        </p>
+</div>
+</div>
+<!-- Section 1: Verification Progress & Credentials -->
+<div class="mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm px-1">
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+<span>Trust Credentials</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">3 of 4 Complete</span>
+</h2>
+<span class="font-label-md text-label-md text-secondary">Tier 3 Unlocks Next</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- 1. DigiLocker Aadhaar -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">badge</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-primary">Government ID (DigiLocker)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">UID Masked • Token: SHA-256 (eSign)</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              Verified
+            </span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-[11px] text-outline">
+<span class="material-symbols-outlined text-[14px]">history</span> Sync cycle: Active
+            </span>
+<button class="text-secondary font-label-md text-label-md hover:underline" type="button">Audit Log</button>
+</div>
+</div>
+<!-- 2. Workplace SSO -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">domain</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-primary">Workplace SSO</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Swiggy India Pvt Ltd (aarav.s****@swiggy.com)</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              Verified
+            </span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-[11px] text-outline">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> Re-verifies in 180 days
+            </span>
+<button class="text-secondary font-label-md text-label-md hover:underline" type="button">Re-authenticate</button>
+</div>
+</div>
+<!-- 3. Phone Verification -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed/50 text-on-secondary-fixed-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">phone_android</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-primary">Primary Phone Number</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">+91 98450 ***** (SIM Binding Enabled)</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              Verified
+            </span>
+</div>
+</div>
+<!-- 4. Landlord Endorsement (Pending / Tier-3) -->
+<div class="rounded-2xl bg-gradient-to-br from-surface-container-lowest to-surface-container-low p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">real_estate_agent</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-primary">Previous Landlord Endorsement</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed-dim/40 text-on-tertiary-fixed px-1.5 py-0.5 rounded">Tier 3</span>
+</div>
+<div class="font-body-sm text-body-sm text-secondary font-medium mt-0.5">Boosts Pod match speed by +40%</div>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
+            Invite your previous landlord or flatmate in HSR/Indiranagar to vouch for rent punctuality and habit adherence.
+          </p>
+<button class="mt-space-md w-full min-h-[44px] rounded-xl bg-primary text-on-primary font-title-sm text-title-sm flex items-center justify-center gap-2 hover:bg-primary-container active:scale-[0.99] transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Request Endorsement</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section 2: Privacy & Data Shield Controls -->
+<div class="mb-space-lg">
+<div class="mb-space-sm px-1">
+<h2 class="font-headline-sm text-headline-sm text-primary">Data Shield &amp; Privacy Controls</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage who can inspect your lifestyle and personal coordinates</p>
+</div>
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm divide-y divide-surface-container">
+<!-- Toggle 1: Mask Phone Number -->
+<div class="p-space-md flex items-center justify-between gap-space-md">
+<div class="min-w-0 pr-space-xs">
+<div class="font-title-sm text-title-sm text-primary flex items-center gap-2">
+<span>Mask Phone Number</span>
+<span class="material-symbols-outlined text-[16px] text-secondary" title="Recommended">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Only revealed after mutual roommate invitation acceptance.
+            </p>
+</div>
+<!-- Custom Accessible Styled Switch -->
+<button aria-checked="true" class="privacy-toggle w-12 h-7 rounded-full bg-secondary p-0.5 flex items-center transition-colors focus:outline-none shrink-0" data-checked="true" role="switch" type="button">
+<span class="toggle-thumb w-6 h-6 rounded-full bg-on-secondary shadow-md transform translate-x-5 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span>
+</span>
+</button>
+</div>
+<!-- Toggle 2: Hide Salary -->
+<div class="p-space-md flex items-center justify-between gap-space-md">
+<div class="min-w-0 pr-space-xs">
+<div class="font-title-sm text-title-sm text-primary">Hide Salary &amp; Bank Statements</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Only showcase verified rent budget range (₹20k - ₹35k/mo).
+            </p>
+</div>
+<button aria-checked="true" class="privacy-toggle w-12 h-7 rounded-full bg-secondary p-0.5 flex items-center transition-colors focus:outline-none shrink-0" data-checked="true" role="switch" type="button">
+<span class="toggle-thumb w-6 h-6 rounded-full bg-on-secondary shadow-md transform translate-x-5 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span>
+</span>
+</button>
+</div>
+<!-- Toggle 3: Circadian Quiet Hours -->
+<div class="p-space-md flex items-center justify-between gap-space-md">
+<div class="min-w-0 pr-space-xs">
+<div class="font-title-sm text-title-sm text-primary">Circadian Quiet Hours</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Silence flatmate ping sounds from 11:00 PM to 7:30 AM IST.
+            </p>
+</div>
+<button aria-checked="true" class="privacy-toggle w-12 h-7 rounded-full bg-secondary p-0.5 flex items-center transition-colors focus:outline-none shrink-0" data-checked="true" role="switch" type="button">
+<span class="toggle-thumb w-6 h-6 rounded-full bg-on-secondary shadow-md transform translate-x-5 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span>
+</span>
+</button>
+</div>
+</div>
+<!-- DPDP Act Rights & Data Purge Panel -->
+<div class="mt-space-sm p-space-md rounded-2xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">policy</span>
+<span>Your Statutory Rights under DPDP Act 2023</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          You have the legal right to revoke data consent, request full rectification, or export your tamper-proof identity logs at any moment.
+        </p>
+<div class="flex items-center gap-space-sm pt-space-xs flex-wrap">
+<button class="min-h-[44px] px-space-md rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm flex items-center gap-1.5 hover:bg-surface-bright active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+            Download Data Dossier
+          </button>
+<button class="min-h-[44px] px-space-md rounded-xl bg-surface-container-highest text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5 hover:text-on-surface active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+            Revoke Consents
+          </button>
+</div>
+</div>
+</div>
+<!-- Section 3: Safety Helpline & Incident Response -->
+<div class="mb-space-md">
+<div class="rounded-2xl bg-primary-container text-on-primary p-space-lg shadow-md relative overflow-hidden">
+<!-- Background decorative wave SVG -->
+<svg class="absolute right-0 bottom-0 text-white/5 w-48 h-48 pointer-events-none" fill="currentColor" viewbox="0 0 100 100">
+<path d="M0,50 Q25,25 50,50 T100,50 L100,100 L0,100 Z"></path>
+</svg>
+<div class="relative flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+              24/7 Rapid Response
+            </span>
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">support_agent</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-white">RoomSync Safety Concierge</h3>
+<p class="font-body-sm text-body-sm text-primary-fixed mt-1">
+              Encountered suspicious identity fraud, lease extortion, or harassment? Our on-ground community liaisons in Bangalore intervene within 15 minutes.
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs flex-col sm:flex-row">
+<a class="w-full sm:w-auto min-h-[44px] px-space-lg rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm flex items-center justify-center gap-2 shadow-sm hover:opacity-90 active:scale-95 transition-all" href="tel:1800-ROOM-SYNC">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>1800-ROOM-SYNC (SOS)</span>
+</a>
+<button class="w-full sm:w-auto min-h-[44px] px-space-md rounded-xl bg-white/10 text-white hover:bg-white/15 font-title-sm text-title-sm flex items-center justify-center gap-2 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">report_problem</span>
+<span>Report Listing / User</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Audit Footer Stamp -->
+<div class="flex items-center justify-center gap-2 py-space-sm text-center text-outline">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase">CERT-In Aligned • AES-256 Vault Secure</span>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for switch toggles
+  document.querySelectorAll('.privacy-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const isChecked = btn.getAttribute('data-checked') === 'true';
+      const newChecked = !isChecked;
+      btn.setAttribute('data-checked', String(newChecked));
+      btn.setAttribute('aria-checked', String(newChecked));
+      
+      const thumb = btn.querySelector('.toggle-thumb');
+      const icon = btn.querySelector('.toggle-thumb span');
+
+      if (newChecked) {
+        btn.classList.remove('bg-surface-container-highest');
+        btn.classList.add('bg-secondary');
+        thumb.classList.remove('translate-x-0');
+        thumb.classList.add('translate-x-5');
+        icon.textContent = 'check';
+        icon.classList.remove('opacity-0');
+      } else {
+        btn.classList.remove('bg-secondary');
+        btn.classList.add('bg-surface-container-highest');
+        thumb.classList.remove('translate-x-5');
+        thumb.classList.add('translate-x-0');
+        icon.textContent = '';
+        icon.classList.add('opacity-0');
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-space-xs text-on-surface-variant transition-colors" data-path="discover" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm mt-space-xs leading-none">Discover</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-space-xs text-on-surface-variant transition-colors" data-path="pods" href="#"><span class="material-symbols-outlined text-[24px]">group_work</span><span class="font-label-sm text-label-sm mt-space-xs leading-none">Pods</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-space-xs text-on-surface-variant transition-colors" data-path="flats" href="#"><span class="material-symbols-outlined text-[24px]">apartment</span><span class="font-label-sm text-label-sm mt-space-xs leading-none">Flats</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-space-xs text-on-surface-variant transition-colors relative" data-path="chat" href="#"><div class="relative"><span class="material-symbols-outlined text-[24px]">chat_bubble</span><span class="absolute -top-1 -right-2 min-w-[16px] h-4 px-1 rounded-full bg-error font-label-sm text-label-sm text-on-error flex items-center justify-center leading-none ring-2 ring-surface">3</span></div><span class="font-label-sm text-label-sm mt-space-xs leading-none">Chat</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-space-xs transition-colors text-secondary" data-path="trust-&amp;-profile" href="#"><span class="material-symbols-outlined text-[24px]">verified_user</span><span class="font-label-sm text-label-sm mt-space-xs leading-none">Trust</span></a></div></nav></body></html>

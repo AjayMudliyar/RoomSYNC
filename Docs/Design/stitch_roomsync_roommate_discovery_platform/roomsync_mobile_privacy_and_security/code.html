@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#f2f3ff", "secondary-fixed-dim": "#6bd8cb", "primary-fixed": "#e3dfff", "on-primary-fixed": "#181445", "tertiary-fixed-dim": "#ffb95f", "error": "#ba1a1a", "surface-variant": "#dae2fd", "surface-container-highest": "#dae2fd", "on-error": "#ffffff", "tertiary": "#140900", "on-secondary-fixed": "#00201d", "primary-fixed-dim": "#c4c1fb", "on-surface": "#131b2e", "outline": "#787680", "on-primary-fixed-variant": "#444173", "on-tertiary-fixed": "#2a1700", "surface-dim": "#d2d9f4", "on-primary": "#ffffff", "surface-tint": "#5b598c", "on-tertiary": "#ffffff", "surface-container": "#eaedff", "on-tertiary-container": "#c07a00", "surface-container-high": "#e2e7ff", "background": "#faf8ff", "primary-container": "#1e1b4b", "inverse-surface": "#283044", "secondary-container": "#86f2e4", "on-tertiary-fixed-variant": "#653e00", "secondary": "#006a61", "tertiary-fixed": "#ffddb8", "surface-bright": "#faf8ff", "tertiary-container": "#331d00", "on-surface-variant": "#47464f", "surface-container-lowest": "#ffffff", "on-primary-container": "#8683ba", "on-background": "#131b2e", "on-error-container": "#93000a", "secondary-fixed": "#89f5e7", "outline-variant": "#c8c5d0", "primary": "#070235", "on-secondary-fixed-variant": "#005049", "inverse-primary": "#c4c1fb", "inverse-on-surface": "#eef0ff", "on-secondary-container": "#006f66", "error-container": "#ffdad6", "on-secondary": "#ffffff", "surface": "#faf8ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "margin-desktop": "3rem" }, fontFamily: { "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "display-md": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go Back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-on-surface tracking-tight font-semibold truncate max-w-[200px]">Privacy And Security</h1></div><div class="flex items-center gap-space-xs"><button class="min-h-[44px] px-space-md py-space-xs rounded-full bg-primary text-on-primary font-title-sm text-title-sm font-semibold hover:bg-primary-container transition-all flex items-center justify-center shadow-sm" id="header-action-button">Save</button><button aria-label="More options" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-10">
+<!-- Status Feedback Banner (Pops up when toggles change) -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 opacity-0 pointer-events-none translate-y-[-8px] flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-space-xs rounded-full shadow-lg" id="toast">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">verified_user</span>
+<span class="font-label-md text-label-md">Privacy preference synced</span>
+</div>
+<div class="px-gutter-mobile flex flex-col gap-space-md mt-space-sm">
+<!-- DPDP Statutory Trust Card -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-low p-space-md shadow-sm">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 bg-secondary/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start gap-space-sm relative z-10">
+<div class="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-on-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">shield_lock</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">India DPDP Act 2023 Certified</span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase tracking-wider font-extrabold">Active Shield</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Your data is non-custodial and cryptographically signed. You retain complete ownership over what prospective flatmates see.
+          </p>
+</div>
+</div>
+<!-- Micro audit seal -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">fingerprint</span>
+<span class="font-label-sm text-label-sm tracking-normal">Hash: #IN-DPDP-9844-BLR</span>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-0.5 hover:underline" href="#audit">
+          Audit Certificate <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Section 1: Profile & Contact Masking -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Identity &amp; Data Masking</h2>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full font-semibold">Self-Sovereign</span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Toggle Item 1: Phone Masking (ON) -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">phone_iphone</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Mask Phone &amp; WhatsApp</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Phone number is never shown publicly. Only revealed after you mutually accept a connection request.
+            </p>
+</div>
+<button aria-checked="true" class="toggle-switch shrink-0 w-12 h-7 rounded-full bg-secondary p-0.5 transition-colors duration-200 ease-in-out focus:outline-none shadow-inner" data-toggle="phone" role="switch" type="button">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest shadow-md transform translate-x-5 transition-transform duration-200 ease-in-out flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-secondary font-bold">check</span>
+</div>
+</button>
+</div>
+<div class="w-full h-px bg-surface-container-high"></div>
+<!-- Toggle Item 2: Salary Masking (ON) -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">payments</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Conceal Exact Compensation</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Only display verified employer badge (<span class="font-semibold text-on-surface">Swiggy</span>) and rental budget corridor (<span class="font-semibold text-on-surface">₹20k–₹28k</span>).
+            </p>
+</div>
+<button aria-checked="true" class="toggle-switch shrink-0 w-12 h-7 rounded-full bg-secondary p-0.5 transition-colors duration-200 ease-in-out focus:outline-none shadow-inner" data-toggle="salary" role="switch" type="button">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest shadow-md transform translate-x-5 transition-transform duration-200 ease-in-out flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-secondary font-bold">check</span>
+</div>
+</button>
+</div>
+<div class="w-full h-px bg-surface-container-high"></div>
+<!-- Toggle Item 3: Geofence Coordinates (OFF) -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-outline text-[18px]">location_off</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Hide Work Coordinates</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Show general tech park area (Indiranagar/EGL) without pinpointing building address.
+            </p>
+</div>
+<button aria-checked="false" class="toggle-switch shrink-0 w-12 h-7 rounded-full bg-surface-variant p-0.5 transition-colors duration-200 ease-in-out focus:outline-none shadow-inner" data-toggle="location" role="switch" type="button">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest shadow-md transform translate-x-0 transition-transform duration-200 ease-in-out flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-outline opacity-0">check</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+<!-- Section 2: Connection & Inbound Request Controls -->
+<div class="flex flex-col gap-space-xs">
+<div class="px-1 flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Inbound Requests Barrier</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Choose the trust boundary for introductory messages</span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm flex flex-col gap-1.5" id="synergy-radio-group">
+<!-- Radio Option 1 -->
+<label class="radio-card flex items-center justify-between p-space-sm rounded-xl cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="radio-indicator w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<div class="radio-dot w-2.5 h-2.5 rounded-full bg-secondary hidden"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-medium truncate">All Verified RoomSync Seekers</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Govt ID or College Alumni badge mandatory</span>
+</div>
+</div>
+<input class="sr-only" name="connection_tier" type="radio" value="all"/>
+</label>
+<!-- Radio Option 2 (Selected by default) -->
+<label class="radio-card active-radio flex items-center justify-between p-space-sm rounded-xl bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="radio-indicator w-5 h-5 rounded-full bg-secondary flex items-center justify-center shrink-0">
+<div class="radio-dot w-2 h-2 rounded-full bg-on-secondary"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">≥ 80% Lifestyle Synergy</span>
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-1.5 py-0.2 rounded font-semibold">Recommended</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Filters out night owl vs early bird conflicts automatically</span>
+</div>
+</div>
+<input checked="" class="sr-only" name="connection_tier" type="radio" value="synergy_80"/>
+</label>
+<!-- Radio Option 3 -->
+<label class="radio-card flex items-center justify-between p-space-sm rounded-xl cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="radio-indicator w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<div class="radio-dot w-2.5 h-2.5 rounded-full bg-secondary hidden"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-medium">Only Intact Pod Admins</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Groups already holding an active lease agreement</span>
+</div>
+</div>
+<input class="sr-only" name="connection_tier" type="radio" value="pod_only"/>
+</label>
+</div>
+</div>
+<!-- Section 3: Security & Session Hub -->
+<div class="flex flex-col gap-space-xs">
+<div class="px-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Security &amp; Sessions</h2>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col">
+<!-- Password Row -->
+<button class="w-full text-left p-space-md flex items-center justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">key</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Change Account Password</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Last updated 45 days ago</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px]">chevron_right</span>
+</button>
+<div class="w-full h-px bg-surface-container-high"></div>
+<!-- 2FA Row -->
+<div class="p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">phonelink_lock</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Two-Factor Authentication</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">Active</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SMS &amp; WhatsApp OTP via DigiLocker</span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface font-semibold hover:bg-surface-container-high transition-colors">Configure</button>
+</div>
+<div class="w-full h-px bg-surface-container-high"></div>
+<!-- Devices Section inside same card -->
+<div class="p-space-md flex flex-col gap-space-sm bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-extrabold">Active Logged-in Devices (2)</span>
+<!-- Device 1: Current -->
+<div class="flex items-start justify-between bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">smartphone</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Google Pixel 8</span>
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-1.5 py-0.2 rounded font-medium">This Device</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bengaluru, India • Active now</span>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary self-center shadow-[0_0_8px_rgba(0,106,97,0.5)]"></span>
+</div>
+<!-- Device 2: Other -->
+<div class="flex items-start justify-between p-space-sm rounded-xl">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[22px] mt-0.5">laptop_mac</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">MacBook Pro 14" • Chrome</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bengaluru, India • Active 2h ago</span>
+</div>
+</div>
+<button class="text-error font-label-md text-label-md font-bold self-center hover:underline">Revoke</button>
+</div>
+<!-- Terminate Other Sessions Button -->
+<button class="mt-1 w-full py-2.5 px-space-md rounded-xl bg-error-container text-on-error-container font-title-sm text-title-sm font-bold flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.99] transition-all" id="logout-others-btn">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+            Log Out of All Other Devices
+          </button>
+</div>
+</div>
+</div>
+<!-- Section 4: Blocked Members & Safety Blacklist -->
+<div class="flex flex-col gap-space-xs">
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
+<button class="w-full text-left p-space-md flex items-center justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">block</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Blocked Members &amp; Blacklist</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">0 members restricted</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-outline text-[22px]">chevron_right</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Section 5: Statutory Data Rights & Erasure (DPDP Chapter III) -->
+<div class="flex flex-col gap-space-xs">
+<div class="px-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">gavel</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Statutory Data Rights</h2>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col">
+<!-- Right to Access: Dossier Download -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">download_for_offline</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Download Personal Data Dossier</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Full cryptographic export of lifestyle matrices, behavioral scores, chat audit logs, and verified credentials.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<button class="flex-1 py-2 px-space-md rounded-xl bg-surface-container text-on-surface font-title-sm text-title-sm font-semibold flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">data_object</span>
+              Export JSON
+            </button>
+<button class="flex-1 py-2 px-space-md rounded-xl bg-surface-container text-on-surface font-title-sm text-title-sm font-semibold flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+              Signed PDF
+            </button>
+</div>
+</div>
+<div class="w-full h-px bg-surface-container-high"></div>
+<!-- Consent Manager Link -->
+<button class="w-full text-left p-space-md flex items-center justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">history_edu</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Manage Consent Logs</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Review DigiLocker &amp; employer SSO authorizations</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px]">chevron_right</span>
+</button>
+<div class="w-full h-px bg-surface-container-high"></div>
+<!-- Right to Erasure / Nominee -->
+<div class="p-space-md flex items-center justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-error font-semibold">Erase Account &amp; Revoke Token</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Irrevocable 72-hour scrub of matching footprint</span>
+</div>
+<button class="px-space-md py-1.5 rounded-full bg-error text-on-error font-title-sm text-title-sm font-bold shadow-sm hover:opacity-90 active:scale-95 transition-all">
+            Delete
+          </button>
+</div>
+</div>
+</div>
+<!-- DPDP Grievance Officer Footer Card -->
+<div class="rounded-2xl bg-surface-container p-space-md flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold uppercase tracking-wider">Statutory Grievance Officer</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Rule 5(1)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+        Ananya Sharma, Data Protection Officer • <span class="text-secondary font-medium">dpo@roomsync.in</span>
+</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Address: Level 4, Outer Ring Road, Bellandur, Bengaluru 560103</span>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction handlers for toggles and UI feedback
+  (function initPrivacyInteractions() {
+    const toast = document.getElementById('toast');
+    let toastTimeout;
+
+    function showToast(message) {
+      if (!toast) return;
+      if (message) {
+        const textNode = toast.querySelector('span:last-child');
+        if (textNode) textNode.textContent = message;
+      }
+      clearTimeout(toastTimeout);
+      toast.classList.remove('opacity-0', 'translate-y-[-8px]', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-[-8px]', 'pointer-events-none');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2400);
+    }
+
+    // Toggle logic with tactility
+    const toggles = document.querySelectorAll('.toggle-switch');
+    toggles.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isChecked = btn.getAttribute('aria-checked') === 'true';
+        const newState = !isChecked;
+        btn.setAttribute('aria-checked', String(newState));
+
+        const thumb = btn.querySelector('div');
+        const icon = btn.querySelector('span');
+
+        if (newState) {
+          btn.classList.remove('bg-surface-variant');
+          btn.classList.add('bg-secondary');
+          thumb.classList.remove('translate-x-0');
+          thumb.classList.add('translate-x-5');
+          if (icon) {
+            icon.classList.remove('opacity-0', 'text-outline');
+            icon.classList.add('text-secondary');
+          }
+          showToast('Privacy Shield heightened');
+        } else {
+          btn.classList.remove('bg-secondary');
+          btn.classList.add('bg-surface-variant');
+          thumb.classList.remove('translate-x-5');
+          thumb.classList.add('translate-x-0');
+          if (icon) {
+            icon.classList.add('opacity-0');
+          }
+          showToast('Setting saved locally');
+        }
+      });
+    });
+
+    // Inbound Synergy Radio Card selector
+    const radioContainer = document.getElementById('synergy-radio-group');
+    if (radioContainer) {
+      const cards = radioContainer.querySelectorAll('.radio-card');
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          cards.forEach(c => {
+            c.classList.remove('active-radio', 'bg-surface-container');
+            const ind = c.querySelector('.radio-indicator');
+            const dot = c.querySelector('.radio-dot');
+            if (ind && dot) {
+              ind.classList.remove('bg-secondary');
+              ind.classList.add('bg-surface-container-highest');
+              dot.classList.add('hidden');
+              dot.classList.remove('bg-on-secondary');
+            }
+          });
+
+          card.classList.add('active-radio', 'bg-surface-container');
+          const activeInd = card.querySelector('.radio-indicator');
+          const activeDot = card.querySelector('.radio-dot');
+          const input = card.querySelector('input[type="radio"]');
+          if (input) input.checked = true;
+
+          if (activeInd && activeDot) {
+            activeInd.classList.add('bg-secondary');
+            activeInd.classList.remove('bg-surface-container-highest');
+            activeDot.classList.remove('hidden');
+            activeDot.classList.add('bg-on-secondary');
+          }
+          showToast('Inbound barrier updated');
+        });
+      });
+    }
+
+    // Terminate session interactive feedback
+    const logoutBtn = document.getElementById('logout-others-btn');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', () => {
+        logoutBtn.disabled = true;
+        logoutBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Terminating Sessions...';
+        setTimeout(() => {
+          logoutBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span> All other sessions cleared';
+          logoutBtn.classList.remove('bg-error-container', 'text-on-error-container');
+          logoutBtn.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+          showToast('Other devices logged out successfully');
+        }, 800);
+      });
+    }
+  })();
+</script></main></body></html>

@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#89f5e7",
+          "surface": "#faf8ff",
+          "on-secondary": "#ffffff",
+          "on-tertiary-fixed-variant": "#653e00",
+          "secondary": "#006a61",
+          "outline": "#787680",
+          "surface-container-high": "#e2e7ff",
+          "on-secondary-container": "#006f66",
+          "outline-variant": "#c8c5d0",
+          "surface-variant": "#dae2fd",
+          "surface-tint": "#5b598c",
+          "on-surface": "#131b2e",
+          "surface-container-lowest": "#ffffff",
+          "secondary-fixed-dim": "#6bd8cb",
+          "tertiary-fixed": "#ffddb8",
+          "on-primary": "#ffffff",
+          "on-background": "#131b2e",
+          "tertiary-fixed-dim": "#ffb95f",
+          "error-container": "#ffdad6",
+          "surface-bright": "#faf8ff",
+          "primary-fixed-dim": "#c4c1fb",
+          "surface-container": "#eaedff",
+          "surface-container-highest": "#dae2fd",
+          "primary-container": "#1e1b4b",
+          "on-primary-fixed-variant": "#444173",
+          "inverse-on-surface": "#eef0ff",
+          "tertiary": "#140900",
+          "on-secondary-fixed-variant": "#005049",
+          "on-tertiary-container": "#c07a00",
+          "tertiary-container": "#331d00",
+          "secondary-container": "#86f2e4",
+          "surface-dim": "#d2d9f4",
+          "inverse-primary": "#c4c1fb",
+          "on-primary-fixed": "#181445",
+          "primary": "#070235",
+          "primary-fixed": "#e3dfff",
+          "on-tertiary": "#ffffff",
+          "surface-container-low": "#f2f3ff",
+          "on-primary-container": "#8683ba",
+          "on-tertiary-fixed": "#2a1700",
+          "background": "#faf8ff",
+          "inverse-surface": "#283044",
+          "on-surface-variant": "#47464f",
+          "error": "#ba1a1a",
+          "on-secondary-fixed": "#00201d",
+          "on-error-container": "#93000a",
+          "on-error": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "margin": "1.5rem",
+          "space-md": "1rem",
+          "gutter-desktop": "2rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem",
+          "margin-desktop": "3rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "metric-display": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "title-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "metric-display": [
+            "32px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-md": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="trust-centre" href="#"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-secondary-fixed shadow-[0_4px_12px_rgba(7,2,53,0.18)]"><span class="material-symbols-outlined text-[24px]">sync_alt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">RoomSync</span><span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">Verified Living</span></div></a><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-secondary text-[18px]">location_on</span><span class="font-label-md text-label-md text-on-surface">Bengaluru, KA</span><span class="material-symbols-outlined text-outline text-[18px]">keyboard_arrow_down</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-full bg-surface-container-low" data-active-classes="bg-secondary-container text-on-secondary-container font-title-sm font-bold shadow-sm"><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="discovery" href="#">Discover</a><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="accommodation-discovery" href="#">Accommodation</a><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="roommate-groups" href="#">Roommate Groups</a><a class="px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all" data-path="trust-centre" href="#">Trust &amp; Safety</a><a class="relative px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" data-path="requests" href="#">Requests<span class="px-1.5 py-0.5 rounded-full bg-surface-variant text-on-surface font-label-sm text-label-sm font-bold">3</span></a><a class="relative px-space-md py-1.5 rounded-full font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" data-path="messages" href="#">Messages<span class="px-1.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">2</span></a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)] border border-surface-container"><span class="material-symbols-outlined text-outline text-[18px]">search</span><span class="font-body-sm text-body-sm text-outline-variant pr-space-md">Search verified profiles, trusts...</span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">⌘K</kbd></div><button class="relative w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-on-surface-variant text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center ring-2 ring-surface"><span class="material-symbols-outlined text-on-secondary text-[11px]">check</span></div></div><div class="hidden sm:flex flex-col"><div class="flex items-center gap-1.5"><span class="font-title-sm text-title-sm text-on-surface leading-tight font-bold">Aarav Sharma</span><span class="px-1.5 py-0.2 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">Swiggy SSO</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">Aadhaar Verified</span></div></div></div></div><div class="bg-surface-container-low/75 backdrop-blur-md border-t border-surface-container"><div class="max-w-[1280px] mx-auto px-gutter-desktop py-2.5 flex items-center justify-between gap-space-md overflow-x-auto"><div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md shrink-0"><span class="font-label-sm text-label-sm uppercase font-bold text-secondary tracking-wider">Trust &amp; Safety</span><span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container-highest text-secondary font-bold"><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="trust-centre" href="#">Trust Centre</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="identity-verification" href="#">Identity Verification</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="verification-status" href="#">Verification Status</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="safety-standards" href="#">Safety Guidelines</a><a class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="privacy-controls" href="#">Privacy Controls</a></nav></div><div class="hidden md:flex items-center gap-space-md shrink-0"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="material-symbols-outlined text-[15px]">shield</span><span>Aadhaar Multi-Factor Active</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium"><span class="material-symbols-outlined text-[15px] text-secondary">lock</span><span>256-Bit Encrypted Data Vault</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient elements -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 right-10 w-96 h-96 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute top-80 -left-20 w-80 h-80 rounded-full bg-surface-container-high/60 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-gutter-mobile md:px-gutter-desktop py-space-lg md:py-space-xl">
+<!-- Breadcrumb Bar -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant mb-space-md">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary tracking-wider">Trust &amp; Safety</span>
+<span class="material-symbols-outlined text-[15px] text-outline">chevron_right</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Safety Guidelines &amp; Scam Prevention</span>
+</nav>
+<!-- Main Header Area (asymmetric high-impact layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end mb-space-xl">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/50 text-on-secondary-container w-fit">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span class="font-label-md text-label-md font-bold tracking-wide">UIDAI-Grade Coliving Standards • Updated Q2 2025</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight">
+            RoomSync Safety Handbook &amp; Coliving Guidelines
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Practical, empowering safety protocols for finding roommates and touring shared accommodations across Bengaluru, Mumbai, and Delhi NCR. Built with India's young urban workforce in mind.
+          </p>
+</div>
+<!-- Quick Summary Micro-Bento Card -->
+<div class="lg:col-span-4 bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary">Community Protection Index</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">99.4% Safe</span>
+</div>
+<div class="flex items-baseline gap-2 my-1">
+<span class="font-metric-display text-metric-display text-primary">0%</span>
+<span class="font-title-sm text-title-sm text-on-surface">Unshielded Financial Transactions</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Our multi-tier verification and escrow buffers intercept over 1,400+ scam attempts across HSR, Indiranagar &amp; Cyber City monthly.
+          </p>
+</div>
+</div>
+<!-- Quick Action Jump Links -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-md mb-space-lg scrollbar-none">
+<a class="px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-on-surface whitespace-nowrap flex items-center gap-1.5" href="#pillar-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">people</span>1. Meeting Prospective Roommates
+        </a>
+<a class="px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-on-surface whitespace-nowrap flex items-center gap-1.5" href="#pillar-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>2. Privacy &amp; Data Shield
+        </a>
+<a class="px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-on-surface whitespace-nowrap flex items-center gap-1.5" href="#pillar-3">
+<span class="material-symbols-outlined text-[16px] text-secondary">gpp_maybe</span>3. Spotting Rental Scams
+        </a>
+<a class="px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-on-surface whitespace-nowrap flex items-center gap-1.5" href="#pillar-4">
+<span class="material-symbols-outlined text-[16px] text-secondary">apartment</span>4. Touring Properties
+        </a>
+<a class="px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-on-surface whitespace-nowrap flex items-center gap-1.5" href="#pillar-5">
+<span class="material-symbols-outlined text-[16px] text-secondary">badge</span>5. Verifying Landlords
+        </a>
+<a class="px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md whitespace-nowrap flex items-center gap-1.5 shadow-sm" href="#quiz-section">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">psychology</span>Interactive Radar Quiz
+        </a>
+</div>
+<!-- 5 Core Pillars Section -->
+<div class="flex flex-col gap-space-xl">
+<!-- Pillar 1: Meeting Roommates Safely -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow" id="pillar-1">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-4 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">PILLAR 01</span>
+<span class="font-label-md text-label-md font-semibold text-outline">First Impressions</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-xs">
+                  Meeting a Prospective Roommate Safely
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Match vibes without compromising personal perimeter. Tech hubs move fast, but physical safety requires calculated checkpoints.
+                </p>
+</div>
+<!-- Contextual Visual Accent -->
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">near_me</span>
+<span class="font-title-sm text-title-sm text-primary">Preferred Bengaluru Meetup Hubs</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Indiranagar 12th Main (Third Wave), Koramangala 4th Block (Blue Tokai), or Bellandur Ecospace central food courts. Always well-lit and monitored.
+                </p>
+</div>
+</div>
+<!-- Actionable Checklist & Scenarios -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Checklist Item 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-secondary-fixed flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Mandatory 15-Min In-App Call</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Always initiate your first synchronous chat via RoomSync's encrypted in-app video room before exchanging personal numbers.
+                    </p>
+</div>
+<div class="mt-space-sm pt-space-xs text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span> Built-in Identity Watermark
+                  </div>
+</div>
+<!-- Checklist Item 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">local_cafe</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Neutral, High-Footfall Cafes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      First physical meet-up must happen during daylight at prominent cafes with active staff. Never meet at secluded personal residences alone.
+                    </p>
+</div>
+<div class="mt-space-sm pt-space-xs text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">public</span> Public Transparency
+                  </div>
+</div>
+<!-- Checklist Item 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">share_location</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Live Location Sharing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Ping your co-workers or emergency contact with live tracking link and the match's RoomSync profile URL before stepping out.
+                    </p>
+</div>
+<div class="mt-space-sm pt-space-xs text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> Automated 60-min Safety Check
+                  </div>
+</div>
+</div>
+<!-- Real Scenario Box -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">lightbulb</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary">Real-world Scenario • Red Flag Avoided</span>
+<p class="font-body-md text-body-md text-on-surface">
+<strong>The Urgent Off-Platform Lure:</strong> "A candidate claims their RoomSync camera is broken and demands an immediate WhatsApp meet at their private apartment after 9 PM." 
+                    <span class="text-secondary font-semibold">Correct Action:</span> Decline immediately, report via the profile flag icon, and keep your communication strictly within the platform.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Pillar 2: Protecting Personal & Financial Info -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow" id="pillar-2">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-4 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">PILLAR 02</span>
+<span class="font-label-md text-label-md font-semibold text-outline">Information Defense</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-xs">
+                  Protecting Personal &amp; Financial Information
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Keep zero-trust privacy until a formal lease is executed through RoomSync's verified digital deed workflow.
+                </p>
+</div>
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-title-sm text-title-sm text-primary">Aadhaar Shield Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  RoomSync uses masked Aadhaar (Virtual ID) and SHA-256 company domain hashing. Potential flatmates never see your raw 12-digit UID.
+                </p>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-secondary-fixed flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">speaker_notes_off</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Shielded In-App Relay</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      All phone numbers are auto-proxied. Your actual contact number remains invisible until both parties confirm pod reservation.
+                    </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-2">Zero Direct Exposure</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">no_sim</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Never Share Sensitive Auth</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      No legitimate landlord or flatmate needs your PAN card scans, bank balance proofs, Aadhaar OTPs, or corporate SSO access.
+                    </p>
+</div>
+<span class="font-label-sm text-label-sm text-error font-bold mt-2">Strict Red Flag</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">visibility_off</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Mask Schedule &amp; Commute</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Use RoomSync's "Fuzzy Habit" privacy switch. Displays "General Night Owl" rather than specific shift timings or office bay numbers.
+                    </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-2">Configurable in Settings</span>
+</div>
+</div>
+<!-- Graphic / Data Representation: Personal Data Security Perimeter -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">enhanced_encryption</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-primary font-bold">RoomSync PII Zero-Exposure Guarantee</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Only compatibility scores (94%), dietary lifestyle, and verified employer badges are visible.</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold">256-Bit Vault</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-bold">DPDP Act Compliant</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Pillar 3: Spotting & Avoiding Rental Scams (High Urgency) -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" id="pillar-3">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-4 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-error mb-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">CRITICAL WARNING</span>
+<span class="font-label-md text-label-md font-semibold text-outline">Fraud Vectors</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-xs">
+                  Spotting &amp; Avoiding Rental Scams
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  From fake military officers to advance inspection tokens, learn the exact scripts deployed by cyber fraudsters targeting IT corridor renters.
+                </p>
+</div>
+<!-- Price Benchmark Metric Visualizer -->
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm font-bold uppercase text-on-surface-variant">Median Tech-Hub Rents (1BHK / Master)</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Q2 Data</span>
+</div>
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface">Indiranagar / Koramangala</span>
+<span class="font-bold text-primary">₹24,000 - ₹38,000</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface">HSR Layout / Bellandur</span>
+<span class="font-bold text-primary">₹18,000 - ₹30,000</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface">Whitefield / Mahadevapura</span>
+<span class="font-bold text-primary">₹15,000 - ₹24,000</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Red Flag 1 -->
+<div class="p-space-md rounded-xl bg-error-container/20 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">"Gate Pass" &amp; Pre-Visit Fees</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Landlords claiming you need a "military gate clearance" or "₹2,000 refundable viewing barcode" are 100% fraudsters.
+                    </p>
+</div>
+<div class="mt-space-sm text-error font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">dangerous</span> Never send UPI advance
+                  </div>
+</div>
+<!-- Red Flag 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-container text-tertiary-fixed flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">price_change</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">The "Unrealistic Price" Bait</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      If an ultra-luxury 3BHK penthouse on 100ft Indiranagar is listed at ₹22,000 total, it's a decoy designed to steal advance deposits.
+                    </p>
+</div>
+<div class="mt-space-sm text-on-tertiary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">warning</span> Check Area Benchmark
+                  </div>
+</div>
+<!-- Protection Mechanism -->
+<div class="p-space-md rounded-xl bg-secondary-container/30 flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">RoomSync Escrow Shield</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Lease deposits are locked in an RBI-compliant fiduciary escrow account. Funds are released ONLY when you verify keys in person.
+                    </p>
+</div>
+<div class="mt-space-sm text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">verified</span> 100% Capital Guaranteed
+                  </div>
+</div>
+</div>
+<!-- Graphic Scam Anatomy Diagram (Inline SVG) -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary">Anatomy of a Bengaluru Rental Scam vs. RoomSync Shield</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">do_not_disturb_on</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Unprotected Classifieds Method</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fake owner shares scanned fake Army ID -&gt; Asks ₹4,000 registration fee via QR code -&gt; Phone switched off immediately.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-secondary font-bold">RoomSync Verified Method</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Title deeds cross-checked with Kaveri 2.0 portal -&gt; Zero upfront inspection fee -&gt; Deposit secured in escrow.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Pillar 4: Visiting Properties Safely -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow" id="pillar-4">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-4 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">PILLAR 04</span>
+<span class="font-label-md text-label-md font-semibold text-outline">Physical Visits</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-xs">
+                  Visiting Properties Safely
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Site walkthroughs are where shared housing dynamics crystallize. Never compromise personal security for flat urgency.
+                </p>
+</div>
+<!-- Daylight Protocol Badge -->
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[32px]">wb_sunny</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary font-bold">Golden Hour Touring Policy</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tour exclusively between 10:00 AM and 5:00 PM for maximum clarity &amp; security.</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Point 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-secondary-fixed flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Tour as a Pod (2+ People)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Always bring your prospective roommate or a trusted friend. If relocating alone, use RoomSync's "Verified Co-Touring Buddy" feature.
+                    </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-2">Buddy System Enabled</span>
+</div>
+<!-- Point 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Audit Society Entry Gates</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Verify if the gated community maintains MyGate/NoBrokerHood registries, 24/7 CCTV in lobbies, and functioning lift power back-up.
+                    </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-2">Physical Perimeter Check</span>
+</div>
+<!-- Point 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">door_front</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Verify Independent Access</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Confirm you will receive primary keys and gate fobs without arbitrary curfew enforcement or invasive landlord walkthroughs.
+                    </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-2">Tenant Rights Preserved</span>
+</div>
+</div>
+<!-- Practical Property Inspection Checklist -->
+<div class="p-space-md rounded-xl bg-surface-container">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary mb-2 block">Quick Physical Tour Checklist (Save to RoomSync Vault)</span>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-on-surface">
+<div class="flex items-center gap-1.5 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_box</span> Mobile network bars (Jio/Airtel)
+                  </div>
+<div class="flex items-center gap-1.5 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_box</span> Water flow &amp; geyser status
+                  </div>
+<div class="flex items-center gap-1.5 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_box</span> Lock integrity on bedroom doors
+                  </div>
+<div class="flex items-center gap-1.5 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_box</span> Distance to metro station/bus bay
+                  </div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Pillar 5: Verifying Property Owners & Landlords -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow" id="pillar-5">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-4 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">PILLAR 05</span>
+<span class="font-label-md text-label-md font-semibold text-outline">Ownership Authentication</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-space-xs">
+                  Verifying Property Owners &amp; Landlords
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Sub-leasing without landlord knowledge is a major legal hazard in metro apartments. Ensure the person signing has genuine title deeds.
+                </p>
+</div>
+<!-- RoomSync Badge Explanation -->
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Deed-Checked Badge</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Properties with this badge have had their latest Khata extract and society share certificate vetted by RoomSync Legal Counsel.
+                </p>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Check 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-secondary-fixed flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Verify Show-Person Role</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Are they the actual title owner, an authorized caretaker, or a departing sub-tenant? Demand proof of authority before committing.
+                    </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-2">POA / Title Deed Check</span>
+</div>
+<!-- Check 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Audit Utility Bills (BESCOM)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Review recent electricity (BESCOM) and water (BWSSB) statements. Massive unpaid balances often point to absentee landlord disputes.
+                    </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-2">Zero Arrears Clearance</span>
+</div>
+<!-- Check 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold mb-1">Standardized Digital Agreement</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Execute 11-month lease agreements via RoomSync e-Sign. Protects lock-in periods, notice terms, and painting deductions by law.
+                    </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-2">Legally Enforceable e-Stamp</span>
+</div>
+</div>
+<!-- Sub-tenancy Warning Box -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">policy</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary">Crucial Legal Nuance</span>
+<p class="font-body-md text-body-md text-on-surface">
+                    In Karnataka and Maharashtra, sub-letting without the landlord's written consent under Section 14 of the Rent Control framework renders the agreement null and void. RoomSync requires bilateral owner NOC upload for all pod group formations.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Section: Interactive Red Flag vs. Green Flag Quiz -->
+<section class="mt-space-xl p-space-lg md:p-space-xl rounded-xl bg-primary text-on-primary shadow-xl relative overflow-hidden" id="quiz-section">
+<!-- Ambient decorative background element -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary-fixed mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider">Test Your Coliving Safety Radar</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight mb-space-xs">
+            Red Flag vs. Green Flag Interactive Simulator
+          </h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim max-w-xl mb-space-lg">
+            Sharpen your intuition before messaging potential flatmates or booking Bangalore site tours. Test 3 rapid-fire real market scenarios:
+          </p>
+<!-- Interactive Container -->
+<div class="w-full bg-surface-container-lowest text-on-surface rounded-xl p-space-lg shadow-2xl text-left transition-all" id="quiz-card">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary" id="quiz-step-counter">Scenario 1 of 3</span>
+<div class="flex items-center gap-1" id="quiz-progress-dots">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-high"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-high"></span>
+</div>
+</div>
+<!-- Quiz Scenario Statement -->
+<div class="py-space-md">
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline-variant block mb-1">Incoming Real-World Prompt</span>
+<p class="font-headline-sm text-headline-sm text-primary font-bold" id="quiz-scenario-text">
+                "Landlord says the flat has immense demand and asks you to transfer ₹5,000 via Google Pay immediately to secure the 'Viewing Slot' before he unlocks the door."
+              </p>
+</div>
+<!-- Choices -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs" id="quiz-actions">
+<button class="w-full py-3 px-space-md rounded-xl bg-error-container text-on-error-container hover:bg-error-container/80 transition-all font-title-sm text-title-sm font-bold flex items-center justify-center gap-2" onclick="handleQuizAnswer('RED_FLAG')">
+<span class="material-symbols-outlined text-[20px]">flag</span> High-Risk Red Flag!
+              </button>
+<button class="w-full py-3 px-space-md rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all font-title-sm text-title-sm font-bold flex items-center justify-center gap-2" onclick="handleQuizAnswer('GREEN_FLAG')">
+<span class="material-symbols-outlined text-[20px] text-secondary">verified</span> Normal Green Flag
+              </button>
+</div>
+<!-- Feedback Result Container (Hidden by default) -->
+<div class="hidden mt-space-md p-space-md rounded-xl flex-col gap-2" id="quiz-feedback">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px]" id="feedback-icon"></span>
+<span class="font-title-sm text-title-sm font-bold" id="feedback-title"></span>
+</div>
+<p class="font-body-sm text-body-sm" id="feedback-explanation"></p>
+<button class="mt-space-xs self-end px-4 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold" id="quiz-next-btn" onclick="nextQuizStep()">
+                Next Scenario →
+              </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: 24x7 Emergency Contact & Incident Support Banner -->
+<section class="mt-space-xl p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Contact Left: Priority Pod Helpline -->
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary tracking-wider">24/7 Rapid Incident Dispatch &amp; Concierge</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Safety Support &amp; Female Flatmate SOS Concierge
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+              Facing harassment, high-pressure extortion for deposits, or an unsafe property visit? Our Bengaluru Trust Ops unit responds within 6 minutes.
+            </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm font-bold flex items-center gap-2 shadow-sm hover:shadow transition-shadow" href="tel:1800-ROOMSYNC">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">call</span>
+                1800-SYNC-SAFE (24x7 Helpline)
+              </a>
+<a class="px-5 py-2.5 rounded-xl bg-secondary-container text-on-secondary-container font-title-sm text-title-sm font-bold flex items-center gap-2 hover:bg-secondary-container/80 transition-colors" href="https://wa.me/919900000000" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+                Women's Pod WhatsApp Desk
+              </a>
+</div>
+</div>
+<!-- Police SOS Directory (Bengaluru East / Tech Corridors) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-1 border-b border-surface-container">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">local_police</span>
+                Local Tech-Zone Police SOS
+              </span>
+<span class="font-label-sm text-label-sm text-outline">Bengaluru City Police</span>
+</div>
+<div class="flex flex-col gap-2 pt-1 font-body-sm text-body-sm">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div>
+<div class="font-semibold text-primary">Indiranagar Police Station</div>
+<div class="text-on-surface-variant text-[11px]">100ft Road / CMH Road Jurisdiction</div>
+</div>
+<a class="px-2.5 py-1 rounded bg-surface-container-lowest text-secondary font-bold font-label-sm text-label-sm" href="tel:08022942544">
+                  080-22942544
+                </a>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div>
+<div class="font-semibold text-primary">Koramangala Police Station</div>
+<div class="text-on-surface-variant text-[11px]">80ft Road &amp; Sony World Junction</div>
+</div>
+<a class="px-2.5 py-1 rounded bg-surface-container-lowest text-secondary font-bold font-label-sm text-label-sm" href="tel:08022942566">
+                  080-22942566
+                </a>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div>
+<div class="font-semibold text-primary">HSR Layout Sector 1 Station</div>
+<div class="text-on-surface-variant text-[11px]">Outer Ring Road &amp; Sector 1-7</div>
+</div>
+<a class="px-2.5 py-1 rounded bg-surface-container-lowest text-secondary font-bold font-label-sm text-label-sm" href="tel:08022943444">
+                  080-22943444
+                </a>
+</div>
+</div>
+<div class="text-center pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pan-India Central Emergency: <strong class="text-primary font-bold">112</strong></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Advisory Banner -->
+<div class="mt-space-xl text-center flex flex-col items-center gap-space-xs text-on-surface-variant">
+<div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<p class="font-body-sm text-body-sm max-w-lg">
+          RoomSync does not permit offline rental tokens or unregulated cash handovers. Protect your security bond by keeping every interaction documented within our platform.
+        </p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  const quizData = [
+    {
+      step: 1,
+      total: 3,
+      scenario: '"Landlord says the flat has immense demand and asks you to transfer ₹5,000 via Google Pay immediately to secure the \'Viewing Slot\' before he unlocks the door."',
+      correctAnswer: 'RED_FLAG',
+      titleCorrect: 'Spot On! That is a Class-A Rental Scam.',
+      titleIncorrect: 'Warning: This is a classic advance-token trap!',
+      explanation: 'Legitimate Bengaluru landlords or brokers will NEVER charge a fee to show an apartment. RoomSync policies strictly forbid pre-visit inspection deposits.'
+    },
+    {
+      step: 2,
+      total: 3,
+      scenario: '"A prospective flatmate asks to schedule a 15-minute video call inside the RoomSync app and requests to meet at Third Wave Coffee on Indiranagar 12th Main to discuss house rules."',
+      correctAnswer: 'GREEN_FLAG',
+      titleCorrect: 'Correct! Model safety protocol.',
+      titleIncorrect: 'Actually, this is totally safe and recommended!',
+      explanation: 'In-app video calls keep personal phone numbers concealed, and meeting in high-footfall public venues is our standard recommended practice.'
+    },
+    {
+      step: 3,
+      total: 3,
+      scenario: '"A person claiming to be the owner\'s son insists on signing the rental deed on a plain piece of notebook paper because the owner is traveling abroad, and asks you to pay cash."',
+      correctAnswer: 'RED_FLAG',
+      titleCorrect: 'Correct! Extreme legal risk.',
+      titleIncorrect: 'Caution: Never agree to unverified sub-leases!',
+      explanation: 'Only the registered deed holder or an authorized Power of Attorney (POA) can execute tenancy. Without digital e-stamping and owner NOC, you can be evicted immediately.'
+    }
+  ];
+
+  let currentQuizIndex = 0;
+
+  function handleQuizAnswer(selectedAnswer) {
+    const currentQ = quizData[currentQuizIndex];
+    const isCorrect = selectedAnswer === currentQ.correctAnswer;
+    const feedbackBox = document.getElementById('quiz-feedback');
+    const feedbackIcon = document.getElementById('feedback-icon');
+    const feedbackTitle = document.getElementById('feedback-title');
+    const feedbackExpl = document.getElementById('feedback-explanation');
+    const actionsBox = document.getElementById('quiz-actions');
+
+    actionsBox.classList.add('opacity-50', 'pointer-events-none');
+    feedbackBox.classList.remove('hidden', 'bg-secondary-container/40', 'bg-error-container/40', 'text-on-secondary-container', 'text-on-error-container');
+
+    if (isCorrect) {
+      feedbackBox.classList.add('bg-secondary-container/40', 'text-on-secondary-container');
+      feedbackIcon.textContent = 'check_circle';
+      feedbackTitle.textContent = currentQ.titleCorrect;
+    } else {
+      feedbackBox.classList.add('bg-error-container/40', 'text-on-error-container');
+      feedbackIcon.textContent = 'warning';
+      feedbackTitle.textContent = currentQ.titleIncorrect;
+    }
+
+    feedbackExpl.textContent = currentQ.explanation;
+  }
+
+  function nextQuizStep() {
+    currentQuizIndex++;
+    const actionsBox = document.getElementById('quiz-actions');
+    const feedbackBox = document.getElementById('quiz-feedback');
+    
+    actionsBox.classList.remove('opacity-50', 'pointer-events-none');
+    feedbackBox.classList.add('hidden');
+
+    if (currentQuizIndex < quizData.length) {
+      const q = quizData[currentQuizIndex];
+      document.getElementById('quiz-step-counter').textContent = `Scenario ${q.step} of ${q.total}`;
+      document.getElementById('quiz-scenario-text').textContent = q.scenario;
+
+      // Update progress dots
+      const dots = document.getElementById('quiz-progress-dots').children;
+      for (let i = 0; i < dots.length; i++) {
+        if (i === currentQuizIndex) {
+          dots[i].className = 'w-2.5 h-2.5 rounded-full bg-secondary';
+        } else if (i < currentQuizIndex) {
+          dots[i].className = 'w-2.5 h-2.5 rounded-full bg-secondary/50';
+        } else {
+          dots[i].className = 'w-2.5 h-2.5 rounded-full bg-surface-container-high';
+        }
+      }
+    } else {
+      // Completed state
+      document.getElementById('quiz-step-counter').textContent = 'Quiz Complete';
+      document.getElementById('quiz-scenario-text').textContent = '🎉 Excellent Radar! You have mastered the foundational safety protocols for shared living in tech hubs.';
+      actionsBox.innerHTML = `
+        <button onclick="resetQuiz()" class="col-span-full py-3 px-space-md rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm font-bold flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">replay</span> Retake Quiz
+        </button>
+      `;
+    }
+  }
+
+  function resetQuiz() {
+    currentQuizIndex = 0;
+    const actionsBox = document.getElementById('quiz-actions');
+    actionsBox.innerHTML = `
+      <button onclick="handleQuizAnswer('RED_FLAG')" class="w-full py-3 px-space-md rounded-xl bg-error-container text-on-error-container hover:bg-error-container/80 transition-all font-title-sm text-title-sm font-bold flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-[20px]">flag</span> High-Risk Red Flag!
+      </button>
+      <button onclick="handleQuizAnswer('GREEN_FLAG')" class="w-full py-3 px-space-md rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all font-title-sm text-title-sm font-bold flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-[20px] text-secondary">verified</span> Normal Green Flag
+      </button>
+    `;
+    const q = quizData[0];
+    document.getElementById('quiz-step-counter').textContent = `Scenario ${q.step} of ${q.total}`;
+    document.getElementById('quiz-scenario-text').textContent = q.scenario;
+    const dots = document.getElementById('quiz-progress-dots').children;
+    dots[0].className = 'w-2.5 h-2.5 rounded-full bg-secondary';
+    dots[1].className = 'w-2.5 h-2.5 rounded-full bg-surface-container-high';
+    dots[2].className = 'w-2.5 h-2.5 rounded-full bg-surface-container-high';
+  }
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1280px] mx-auto px-gutter-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-secondary-fixed"><span class="material-symbols-outlined text-[20px]">sync_alt</span></div><span class="font-headline-sm text-headline-sm text-primary">RoomSync</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Pioneering trusted shared living in India's technology epicenters. End-to-end Aadhaar &amp; SSO Identity Trust Architecture ensuring high-affinity, safe roommate compatibility and verified property leasing.</p><div class="flex items-center gap-space-sm pt-space-xs"><div class="px-3 py-1.5 rounded-lg bg-surface-container-high flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span><span class="font-label-sm text-label-sm text-on-surface">UIDAI Aadhaar Verified</span></div><div class="px-3 py-1.5 rounded-lg bg-surface-container-high flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">corporate_fare</span><span class="font-label-sm text-label-sm text-on-surface">Workplace SSO Verified</span></div></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface font-bold uppercase tracking-wider">Trust &amp; Safety</span><div class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><a class="hover:text-secondary transition-colors" data-path="trust-centre" href="#">Trust Centre Overview</a><a class="hover:text-secondary transition-colors" data-path="identity-verification" href="#">UIDAI Aadhaar Verification</a><a class="hover:text-secondary transition-colors" data-path="verification-status" href="#">Multi-Tier Verification Status</a><a class="hover:text-secondary transition-colors" data-path="safety-standards" href="#">Safety &amp; Community Guidelines</a><a class="hover:text-secondary transition-colors" data-path="privacy-controls" href="#">Privacy &amp; Data Protection</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface font-bold uppercase tracking-wider">Accommodation</span><div class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><a class="hover:text-secondary transition-colors" data-path="accommodation-discovery" href="#">Discover Flats &amp; Coliving</a><a class="hover:text-secondary transition-colors" data-path="group-accommodation-search" href="#">Pod Group Housing Search</a><a class="hover:text-secondary transition-colors" data-path="saved-properties-comparison" href="#">Saved &amp; Side-by-Side Compare</a><a class="hover:text-secondary transition-colors" data-path="property-enquiry-visit-scheduling" href="#">Schedule Property Visits</a><a class="hover:text-secondary transition-colors" data-path="property-details" href="#">Verified Lease Breakdown</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface font-bold uppercase tracking-wider">Roommate Groups</span><div class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><a class="hover:text-secondary transition-colors" data-path="roommate-groups" href="#">Explore Roommate Circles</a><a class="hover:text-secondary transition-colors" data-path="compatibility-matrix" href="#">Compatibility Matrix</a><a class="hover:text-secondary transition-colors" data-path="requests" href="#">Pending Group Requests</a><a class="hover:text-secondary transition-colors" data-path="messages" href="#">Group Chat &amp; Sync</a></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 RoomSync Technologies India Pvt. Ltd. • Verified Accommodation &amp; Co-Living Buffer</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="safety-standards" href="#">Tenant Safety Standards</a></div></div></div></footer></body></html>

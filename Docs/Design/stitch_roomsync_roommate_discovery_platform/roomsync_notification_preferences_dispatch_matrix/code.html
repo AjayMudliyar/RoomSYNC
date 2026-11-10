@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-surface" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>RoomSync - Compatibility-First Roommate Discovery</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container-low": "#f2f3ff",
+          "surface-container-highest": "#dae2fd",
+          "on-primary": "#ffffff",
+          "on-surface": "#131b2e",
+          "on-tertiary-fixed": "#2a1700",
+          "surface": "#faf8ff",
+          "tertiary-container": "#331d00",
+          "surface-container-high": "#e2e7ff",
+          "on-secondary-container": "#006f66",
+          "tertiary": "#140900",
+          "on-tertiary": "#ffffff",
+          "primary": "#070235",
+          "secondary-fixed": "#89f5e7",
+          "error": "#ba1a1a",
+          "primary-fixed": "#e3dfff",
+          "on-background": "#131b2e",
+          "surface-container": "#eaedff",
+          "tertiary-fixed": "#ffddb8",
+          "on-secondary-fixed-variant": "#005049",
+          "on-secondary-fixed": "#00201d",
+          "on-surface-variant": "#47464f",
+          "outline-variant": "#c8c5d0",
+          "on-error-container": "#93000a",
+          "surface-tint": "#5b598c",
+          "error-container": "#ffdad6",
+          "surface-dim": "#d2d9f4",
+          "on-primary-container": "#8683ba",
+          "primary-fixed-dim": "#c4c1fb",
+          "primary-container": "#1e1b4b",
+          "on-secondary": "#ffffff",
+          "on-tertiary-container": "#c07a00",
+          "tertiary-fixed-dim": "#ffb95f",
+          "on-tertiary-fixed-variant": "#653e00",
+          "inverse-on-surface": "#eef0ff",
+          "on-primary-fixed": "#181445",
+          "inverse-primary": "#c4c1fb",
+          "surface-variant": "#dae2fd",
+          "background": "#faf8ff",
+          "surface-bright": "#faf8ff",
+          "secondary-fixed-dim": "#6bd8cb",
+          "outline": "#787680",
+          "inverse-surface": "#283044",
+          "secondary-container": "#86f2e4",
+          "on-error": "#ffffff",
+          "on-primary-fixed-variant": "#444173",
+          "surface-container-lowest": "#ffffff",
+          "secondary": "#006a61"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "margin-mobile": "1rem",
+          "gutter": "1.5rem",
+          "gutter-desktop": "2rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "gutter-mobile": "1rem",
+          "margin": "1.5rem",
+          "space-xs": "0.25rem",
+          "margin-desktop": "3rem"
+        },
+        "fontFamily": {
+          "label-md": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "display-lg": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-lg-mobile": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "title-sm": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "display-md": ["Plus Jakarta Sans"],
+          "body-md": ["Plus Jakarta Sans"],
+          "title-md": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "metric-display": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+          "headline-lg": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+          "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+          "headline-md": ["22px", {"lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "title-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600"}],
+          "headline-sm": ["18px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "display-md": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700"}],
+          "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "metric-display": ["32px", {"lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "800"}]
+        }
+      }
+    }
+  }</script></head><body class="min-h-full bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(7,2,53,0.06)]"><div class="h-20 w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">hub</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary">RoomSync</span><span class="material-symbols-outlined text-secondary text-[18px]" title="Verified Living Platform">verified</span></div><span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Verified Living</span></div></div><div class="h-8 w-px bg-surface-container-high hidden md:block"></div><button class="hidden sm:flex items-center gap-space-xs py-1.5 px-3 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface" type="button"><span class="material-symbols-outlined text-secondary text-[16px]">location_on</span><span class="font-label-md text-label-md text-on-surface">Bengaluru, KA</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></button></div><nav class="hidden xl:flex items-center gap-space-xs p-1" data-active-classes="text-primary font-bold bg-surface-container rounded-lg"><a class="px-3 py-2 font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-all" data-path="discover" href="#">Discover</a><a class="px-3 py-2 font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-all" data-path="accommodation" href="#">Accommodation</a><a class="px-3 py-2 font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-all" data-path="roommate-groups" href="#">Roommate Groups</a><a class="px-3 py-2 font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-all" data-path="trust-and-safety" href="#">Trust & Safety</a></nav><div class="flex items-center gap-space-md justify-end flex-1 max-w-xl"><div class="relative hidden lg:flex items-center flex-1 max-w-xs"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-12 py-2 rounded-xl bg-surface-container-low border-0 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:bg-surface-container-lowest transition-all" placeholder="Search flats, roommates..." readonly="" type="text"/><div class="absolute right-2.5 flex items-center px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">⌘K</div></div><div class="flex items-center gap-space-xs"><a class="relative p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center justify-center" data-path="notifications-and-activity-hub" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 min-w-4 px-1 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-[10px] leading-none font-bold">4</span></a><a class="relative p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center justify-center" data-path="chat-hub" href="#"><span class="material-symbols-outlined text-[22px]">chat_bubble</span><span class="absolute top-1.5 right-1.5 flex h-4 min-w-4 px-1 items-center justify-center rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] leading-none font-bold">2</span></a></div><div class="h-8 w-px bg-surface-container-high hidden sm:block"></div><div class="flex items-center gap-space-sm pl-1 py-1 pr-2 rounded-full bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-on-surface">Aarav Sharma</span><span class="material-symbols-outlined text-secondary text-[14px]" title="Aadhaar & Workplace Verified">verified_user</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Product Designer @ Swiggy</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="bg-surface-container-low py-3"><div class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">shield</span><span class="uppercase font-bold tracking-wider text-secondary">RoomSync Core</span><span class="text-outline-variant">/</span><span class="text-on-surface uppercase tracking-wider font-bold">Notifications & Activity Hub</span></div><div class="hidden sm:flex items-center gap-space-sm font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-2.5 py-1 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span>Aadhaar SSO ID Live Matching</span></div></div></div><div class="flex flex-col w-full">
+<!-- Top Utility Context Bar -->
+<div class="w-full bg-surface-container-low/70 py-4">
+<div class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant flex-wrap">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Settings</span>
+</a>
+<span class="text-outline-variant font-normal">/</span>
+<a class="hover:text-primary transition-colors" href="#">Communication & Alerts</a>
+<span class="text-outline-variant font-normal">/</span>
+<span class="text-primary font-bold">Notification Channels & Dispatch</span>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-bold bg-secondary-container/40 px-3 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+          Matrix Sync: Real-Time Active
+        </span>
+<span class="text-outline-variant hidden sm:inline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SSO: Bangalore-Bellandur Node</span>
+</div>
+</div>
+</div>
+<!-- Main Work Area -->
+<div class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop py-space-xl space-y-space-xl">
+<!-- Hero / Header Title Section -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px] text-secondary">notifications_active</span>
+          Dispatch Orchestrator v2.4
+        </div>
+<h1 class="font-display-md text-display-md font-bold text-primary tracking-tight">Notification Preferences & Delivery Rules</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Configure real-time alerts for roommate handshakes, pod decisions, and property tours. Tune delivery channels to your work and sleep rhythms.</p>
+</div>
+<!-- Quick Preset Filter Buttons -->
+<div class="bg-surface-container-low p-1.5 rounded-2xl flex items-center gap-1 shadow-sm shrink-0 self-start lg:self-auto">
+<button class="preset-btn px-4 py-2 rounded-xl font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface hover:bg-surface transition-all cursor-pointer" data-preset="essential" type="button">
+          Essential Only
+        </button>
+<button class="preset-btn active-preset px-4 py-2 rounded-xl font-title-sm text-title-sm bg-primary text-on-primary shadow-sm transition-all cursor-pointer" data-preset="balanced" type="button">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">auto_awesome</span>
+            Standard Balanced
+          </span>
+</button>
+<button class="preset-btn px-4 py-2 rounded-xl font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface hover:bg-surface transition-all cursor-pointer" data-preset="realtime" type="button">
+          Real-Time Immediate
+        </button>
+</div>
+</div>
+<!-- Master Delivery Channels Status Row (4 High-Visual Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Channel 1: In-App -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden transition-all duration-300 hover:shadow-md flex flex-col justify-between">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">devices</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Always Active
+          </span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold">In-App Notifications</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Chime audio, badge counts & floating action tray within RoomSync web & mobile.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Priority Ring</span>
+<span class="font-label-md text-label-md text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">lock</span> Mandatory Base
+          </span>
+</div>
+</div>
+<!-- Channel 2: Desktop & Mobile Push -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden transition-all duration-300 hover:shadow-md flex flex-col justify-between">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer channel-master-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold">Desktop & Mobile Push</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Active (Chrome macOS Sonoma & iOS RoomSync PWA v1.4.2)</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> Encrypted FCM
+          </span>
+<button class="font-label-md text-label-md text-primary font-bold hover:text-secondary transition-colors" type="button">Test Ping</button>
+</div>
+</div>
+<!-- Channel 3: Workplace Email -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden transition-all duration-300 hover:shadow-md flex flex-col justify-between">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer channel-master-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div>
+<div class="flex items-center gap-1">
+<h3 class="font-title-md text-title-md text-primary font-bold">Workplace Email</h3>
+<span class="material-symbols-outlined text-secondary text-[16px]" title="SSO Authenticated">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 truncate" title="aarav.sharma@swiggy.com">aarav.sharma@swiggy.com</p>
+<span class="inline-block mt-1 px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Daily Smart Digest</span>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-medium">Delivery: 8:30 AM & 7 PM</span>
+<a class="font-label-md text-label-md text-secondary font-bold hover:underline" href="#">Change</a>
+</div>
+</div>
+<!-- Channel 4: WhatsApp Concierge -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden transition-all duration-300 hover:shadow-md flex flex-col justify-between">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer channel-master-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div>
+<div class="flex items-center gap-1">
+<h3 class="font-title-md text-title-md text-primary font-bold">WhatsApp Concierge</h3>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">+91 98765 ••••• (Verified Phone)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 text-[11px] mt-1 leading-tight">High-priority visits & landlord milestones only.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">bolt</span> Instant Dispatch
+          </span>
+<button class="font-label-md text-label-md text-primary font-bold hover:text-secondary transition-colors" type="button">Manage Bot</button>
+</div>
+</div>
+</div>
+<!-- Main Two-Column Layout: Matrix Table (8 cols) + Timing & Circadian Rhythms (4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Left Column: Granular Notification Matrix (Span 8) -->
+<div class="lg:col-span-8 space-y-space-lg">
+<!-- Table Card Header & Explainer -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md mb-space-md gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">Granular Notification Dispatch Matrix</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Set custom transmission channels for each life-event in your roommate search.</p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bulk Action:</span>
+<button class="px-3 py-1 rounded-lg bg-surface-container font-label-md text-label-md text-primary hover:bg-surface-container-high transition-colors" id="toggle-all-push" type="button">Toggle Push All</button>
+</div>
+</div>
+<!-- Section 1: Roommate Connections & Handshakes -->
+<div class="space-y-space-sm mb-space-xl">
+<div class="flex items-center justify-between bg-surface-container-low px-4 py-2.5 rounded-xl">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">handshake</span>
+<span class="font-title-sm text-title-sm font-bold text-primary uppercase tracking-wider">1. Roommate Connections & Handshakes</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">3 Event Triggers</span>
+</div>
+<!-- Matrix Head Labels for Desktop -->
+<div class="hidden sm:grid grid-cols-12 px-4 py-2 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<div class="col-span-6">Trigger Event & Scope</div>
+<div class="col-span-2 text-center">In-App</div>
+<div class="col-span-1 text-center">Push</div>
+<div class="col-span-2 text-center">Email</div>
+<div class="col-span-1 text-center">WhatsApp</div>
+</div>
+<!-- Row 1.1: Inbound Handshake -->
+<div class="bg-surface rounded-xl p-space-md transition-colors hover:bg-surface-container-low/50 grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-6">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm font-bold text-primary">Inbound Handshake Requests</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">High Priority</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">When a verified candidate sends a mutual accommodation interest signal.</p>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">In-App:</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Push:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Email:</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-1 rounded text-primary font-bold">Instant</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">WhatsApp:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+</div>
+<!-- Row 1.2: Mutual Handshake Unlocked -->
+<div class="bg-surface rounded-xl p-space-md transition-colors hover:bg-surface-container-low/50 grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-6">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm font-bold text-primary">Mutual Handshake Unlocked</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Match Unlocked</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Contact coordinates and Aadhaar trust passports exchanged reciprocally.</p>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">In-App:</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Push:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Email:</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-1 rounded text-primary font-bold">Instant</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">WhatsApp:</span>
+<input class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+</div>
+<!-- Row 1.3: Handshake Expiry Warning -->
+<div class="bg-surface rounded-xl p-space-md transition-colors hover:bg-surface-container-low/50 grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-6">
+<span class="font-title-sm text-title-sm font-bold text-primary">48-Hour Handshake Expiry Warning</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Gentle nudge before pending compatibility invites auto-expire to protect queue velocity.</p>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">In-App:</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Push:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Email:</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-semibold">Digest</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">WhatsApp:</span>
+<input class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+</div>
+</div>
+<!-- Section 2: Roommate Groups & Pod Decisioning -->
+<div class="space-y-space-sm mb-space-xl">
+<div class="flex items-center justify-between bg-surface-container-low px-4 py-2.5 rounded-xl">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">groups</span>
+<span class="font-title-sm text-title-sm font-bold text-primary uppercase tracking-wider">2. Roommate Groups & Pod Decisioning</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Bellandur Tech Pod #4</span>
+</div>
+<!-- Row 2.1: Pod Join Requests -->
+<div class="bg-surface rounded-xl p-space-md transition-colors hover:bg-surface-container-low/50 grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-6">
+<span class="font-title-sm text-title-sm font-bold text-primary">Pod Join Requests & Candidate Applications</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Prospective 3rd roommate applies to join your active shared flat hunting group.</p>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">In-App:</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Push:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Email:</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-1 rounded text-primary font-bold">Instant</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">WhatsApp:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+</div>
+<!-- Row 2.2: Consensus Voting Alerts -->
+<div class="bg-surface rounded-xl p-space-md transition-colors hover:bg-surface-container-low/50 grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-6">
+<span class="font-title-sm text-title-sm font-bold text-primary">Pod Consensus Voting Alerts</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">When co-members vote Yes/No on a shortlisted property or shared budget change.</p>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">In-App:</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Push:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Email:</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-semibold">Digest</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">WhatsApp:</span>
+<input class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+</div>
+<!-- Row 2.3: High-Synergy Auto Detection -->
+<div class="bg-surface rounded-xl p-space-md transition-colors hover:bg-surface-container-low/50 grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-6">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm font-bold text-primary">High-Synergy Auto-Detection (>90% match)</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">bolt</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Algorithm identifies candidates with matching sleep, dietary & commute alignment.</p>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">In-App:</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Push:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Email:</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-semibold">Daily</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">WhatsApp:</span>
+<input class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+</div>
+</div>
+<!-- Section 3: Accommodation, Landlords & Tours -->
+<div class="space-y-space-sm mb-space-xl">
+<div class="flex items-center justify-between bg-surface-container-low px-4 py-2.5 rounded-xl">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">apartment</span>
+<span class="font-title-sm text-title-sm font-bold text-primary uppercase tracking-wider">3. Accommodation, Landlords & Tours</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold bg-secondary-container/30 px-2 py-0.5 rounded">Real-World Bookings</span>
+</div>
+<!-- Row 3.1: Inspection Confirmed -->
+<div class="bg-surface rounded-xl p-space-md transition-colors hover:bg-surface-container-low/50 grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-6">
+<span class="font-title-sm text-title-sm font-bold text-primary">Landlord Inspection Confirmed / Rescheduled</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Physical tour slot booking confirmation or schedule modification by landlord.</p>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">In-App:</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Push:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Email:</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-1 rounded text-primary font-bold">Instant</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">WhatsApp:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+</div>
+<!-- Row 3.2: Price Drops & Availability -->
+<div class="bg-surface rounded-xl p-space-md transition-colors hover:bg-surface-container-low/50 grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-6">
+<span class="font-title-sm text-title-sm font-bold text-primary">Pod Shortlisted Flat Price Drops & Availability</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Rental cuts or occupancy changes on saved flats in Kadubeesanahalli / HSR.</p>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">In-App:</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Push:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Email:</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-semibold">Weekly</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">WhatsApp:</span>
+<input class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+</div>
+<!-- Row 3.3: Lease & Digital Escrow -->
+<div class="bg-surface rounded-xl p-space-md transition-colors hover:bg-surface-container-low/50 grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-6">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm font-bold text-primary">Lease Agreement & Digital Escrow Milestones</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">Legal Shield</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">e-Sign requests via Aadhaar, escrow deposit lock status, and token receipts.</p>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">In-App:</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Push:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Email:</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-1 rounded text-primary font-bold">Instant</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">WhatsApp:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+</div>
+</div>
+<!-- Section 4: Chat & Direct Messages -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between bg-surface-container-low px-4 py-2.5 rounded-xl">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">forum</span>
+<span class="font-title-sm text-title-sm font-bold text-primary uppercase tracking-wider">4. Chat & Direct Messages</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Live Comms</span>
+</div>
+<!-- Row 4.1: 1-on-1 Direct Messages -->
+<div class="bg-surface rounded-xl p-space-md transition-colors hover:bg-surface-container-low/50 grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-6">
+<span class="font-title-sm text-title-sm font-bold text-primary">1-on-1 Direct Messages</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Direct chat from verified roommate matches inquiring about your habit matrix.</p>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">In-App:</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Push:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Email:</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-semibold">Hourly (Unread)</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">WhatsApp:</span>
+<input class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+</div>
+<!-- Row 4.2: Pod Mentions -->
+<div class="bg-surface rounded-xl p-space-md transition-colors hover:bg-surface-container-low/50 grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-6">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm font-bold text-primary">Pod Group Chat Mentions (@Aarav)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">@Mentions</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Explicit @name pings inside active multi-member flat discovery groups.</p>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">In-App:</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Push:</span>
+<input checked="" class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+<div class="sm:col-span-2 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">Email:</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-semibold">Hourly Digest</span>
+</div>
+<div class="sm:col-span-1 flex items-center justify-between sm:justify-center">
+<span class="sm:hidden font-label-sm text-label-sm text-on-surface-variant font-semibold">WhatsApp:</span>
+<input class="w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Circadian Quiet Hours, Delivery Profiles & Visual Rhythm (Span 4) -->
+<div class="lg:col-span-4 space-y-space-lg">
+<!-- Circadian Quiet Hours Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm space-y-space-md relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">bedtime</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Circadian Quiet Hours</h3>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Synchronized to Sleep Habits</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="quiet-hours-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Active Quiet Window</span>
+<span class="font-label-md text-label-md text-primary font-bold">8.5 Hours of Rest</span>
+</div>
+<!-- Time Picker / Sliders Visual -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-lowest p-2.5 rounded-lg">
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Bedtime Mute</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-title-md text-title-md font-bold text-primary">11:00 PM</span>
+<span class="material-symbols-outlined text-outline text-[18px]">nights_stay</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg">
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Wake-Up Resume</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-title-md text-title-md font-bold text-primary">07:30 AM</span>
+<span class="material-symbols-outlined text-outline text-[18px]">wb_sunny</span>
+</div>
+</div>
+</div>
+<!-- Inline SVG Rhythm Visualizer -->
+<div class="pt-2">
+<div class="flex justify-between text-outline text-[10px] font-bold uppercase mb-1">
+<span>10 PM</span>
+<span>2 AM</span>
+<span>6 AM</span>
+<span>10 AM</span>
+</div>
+<svg class="w-full h-12 text-secondary" fill="none" viewbox="0 0 300 48" xmlns="http://www.w3.org/2000/svg">
+<!-- Background track -->
+<rect class="fill-surface-container-high" height="8" rx="4" width="300" x="0" y="20"></rect>
+<!-- Active Quiet Range (11 PM - 7:30 AM) -->
+<rect class="fill-secondary" height="8" rx="4" width="180" x="30" y="20"></rect>
+<!-- Markers -->
+<circle class="fill-primary" cx="30" cy="24" r="7" stroke="white" stroke-width="2"></circle>
+<circle class="fill-secondary" cx="210" cy="24" r="7" stroke="white" stroke-width="2"></circle>
+<!-- Moon icon placement text -->
+<text class="fill-primary font-bold text-[11px] font-sans" text-anchor="middle" x="120" y="14">Silent Queueing Active</text>
+</svg>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Mute all non-emergency push notifications during rest hours. Urgent landlord tour confirmations will queue quietly in the morning digest.
+          </p>
+<div class="flex items-center gap-space-xs p-2.5 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[18px]">info</span>
+<span>Matched to Aarav's declared ‘Night Owl Tech’ compatibility badge.</span>
+</div>
+</div>
+<!-- Email Digest Frequency Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Email Digest Frequency</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Optimize your corporate inbox</p>
+</div>
+</div>
+<div class="space-y-space-sm">
+<!-- Option 1 -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-xl bg-surface hover:bg-surface-container-low transition-colors cursor-pointer">
+<input class="mt-1 w-4 h-4 accent-secondary cursor-pointer" name="email_freq" type="radio"/>
+<div>
+<span class="font-title-sm text-title-sm text-primary font-bold block">Real-time Instant</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Send transactional emails the moment actions occur.</span>
+</div>
+</label>
+<!-- Option 2 (Active) -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-xl bg-secondary-container/20 transition-colors cursor-pointer">
+<input checked="" class="mt-1 w-4 h-4 accent-secondary cursor-pointer" name="email_freq" type="radio"/>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-primary font-bold">Twice Daily Batch</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] font-bold">Recommended</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">8:30 AM (Metro Commute) & 7:00 PM (Post-Work) — Optimal for Swiggy Workday schedule.</span>
+</div>
+</label>
+<!-- Option 3 -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-xl bg-surface hover:bg-surface-container-low transition-colors cursor-pointer">
+<input class="mt-1 w-4 h-4 accent-secondary cursor-pointer" name="email_freq" type="radio"/>
+<div>
+<span class="font-title-sm text-title-sm text-primary font-bold block">Daily Morning Summary</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">One bundled digest delivered at 8:00 AM every calendar day.</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Roommate Verification Trust Card -->
+<div class="bg-primary text-on-primary rounded-2xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary-fixed text-[28px]">verified_user</span>
+<span class="px-2.5 py-1 rounded bg-on-primary/10 text-secondary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Zero Spam Guarantee</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-primary">DPDP Act 2023 Shielded</h4>
+<p class="font-body-sm text-body-sm text-on-primary/80 mt-1">
+              RoomSync never discloses your phone or personal WhatsApp to unverified prospects. Channels are provisioned through a virtual concierge broker.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-primary/70 font-label-sm text-label-sm">
+<span>256-Bit E2E Delivery</span>
+<a class="text-secondary-fixed hover:underline flex items-center gap-0.5" href="#">Privacy Charter <span class="material-symbols-outlined text-[14px]">arrow_outward</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Action Bar -->
+<div class="sticky bottom-0 z-40 w-full bg-surface-container-lowest/95 backdrop-blur-xl py-4 shadow-[0_-4px_20px_rgba(7,2,53,0.06)]">
+<div class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Context Status Indicator -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">nightlight</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm text-primary font-bold">Night Owl Profile Auto-Tuned</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All 11 alert categories synced with Bellandur Pod settings.</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end">
+<button class="px-5 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-title-sm text-title-sm transition-all cursor-pointer" id="reset-rules-btn" type="button">
+          Reset to Recommended
+        </button>
+<button class="px-6 py-2.5 rounded-xl bg-secondary hover:bg-on-secondary-container text-on-secondary font-title-sm text-title-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2 cursor-pointer" id="save-preferences-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Notification Preferences</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Micro-Interactions Vanilla JS -->
+<script>
+    (function() {
+      // Preset switching logic
+      const presetButtons = document.querySelectorAll('.preset-btn');
+      presetButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          presetButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+          });
+          this.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+          this.classList.remove('text-on-surface-variant');
+
+          const mode = this.dataset.preset;
+          const matrixCheckboxes = document.querySelectorAll('input[type="checkbox"]:not(.sr-only)');
+          
+          if (mode === 'essential') {
+            matrixCheckboxes.forEach((cb, idx) => {
+              cb.checked = (idx % 3 === 0);
+            });
+          } else if (mode === 'balanced') {
+            matrixCheckboxes.forEach((cb, idx) => {
+              cb.checked = (idx % 4 !== 3);
+            });
+          } else if (mode === 'realtime') {
+            matrixCheckboxes.forEach(cb => {
+              cb.checked = true;
+            });
+          }
+        });
+      });
+
+      // Toggle Push All button
+      const toggleAllPushBtn = document.getElementById('toggle-all-push');
+      let pushState = true;
+      if (toggleAllPushBtn) {
+        toggleAllPushBtn.addEventListener('click', function() {
+          pushState = !pushState;
+          const inputs = document.querySelectorAll('input[type="checkbox"]:not(.channel-master-toggle)');
+          inputs.forEach(input => {
+            input.checked = pushState;
+          });
+          this.textContent = pushState ? 'Mute All Channels' : 'Activate All Channels';
+        });
+      }
+
+      // Save Preferences Feedback
+      const saveBtn = document.getElementById('save-preferences-btn');
+      if (saveBtn) {
+        saveBtn.addEventListener('click', function() {
+          const originalContent = this.innerHTML;
+          this.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>Saving Changes...</span>';
+          this.disabled = true;
+          
+          setTimeout(() => {
+            this.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Preferences Saved!</span>';
+            this.classList.remove('bg-secondary');
+            this.classList.add('bg-primary');
+
+            setTimeout(() => {
+              this.innerHTML = originalContent;
+              this.classList.remove('bg-primary');
+              this.classList.add('bg-secondary');
+              this.disabled = false;
+            }, 2000);
+          }, 600);
+        });
+      }
+
+      // Reset Preferences Feedback
+      const resetBtn = document.getElementById('reset-rules-btn');
+      if (resetBtn) {
+        resetBtn.addEventListener('click', function() {
+          const balancedBtn = document.querySelector('[data-preset="balanced"]');
+          if (balancedBtn) balancedBtn.click();
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-space-xl"><div class="lg:col-span-2 flex flex-col items-start gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[18px]">hub</span></div><span class="font-headline-sm text-headline-sm font-bold text-primary">RoomSync</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">India's first compatibility-scored roommate discovery network. Built for tech professionals, relocation fellows, and verified shared accommodation across Tier-1 tech clusters.</p><div class="flex flex-wrap items-center gap-space-xs"><span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">lock</span> ISO/IEC 27001 Certified</span><span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">gavel</span> DPDP Act 2023 Compliant</span></div></div><div><h4 class="font-title-sm text-title-sm text-primary mb-space-md uppercase tracking-wider">Discover & Match</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Bengaluru Tech Hubs</a></li><li><a class="hover:text-primary transition-colors" href="#">Hyderabad Cyberabad</a></li><li><a class="hover:text-primary transition-colors" href="#">Pune Hinjawadi & Baner</a></li><li><a class="hover:text-primary transition-colors" href="#">Gurugram Cyber Hub</a></li><li><a class="hover:text-primary transition-colors" href="#">Lifestyle Match Matrix</a></li></ul></div><div><h4 class="font-title-sm text-title-sm text-primary mb-space-md uppercase tracking-wider">Trust & Platform</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Aadhaar Verification Vault</a></li><li><a class="hover:text-primary transition-colors" href="#">Corporate SSO Badging</a></li><li><a class="hover:text-primary transition-colors" href="#">Deposit Escrow Shield</a></li><li><a class="hover:text-primary transition-colors" href="#">Roommate Agreement Builder</a></li><li><a class="hover:text-primary transition-colors" href="#">Community Guidelines</a></li></ul></div><div><h4 class="font-title-sm text-title-sm text-primary mb-space-md uppercase tracking-wider">Accommodations</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Gated Society Penthouses</a></li><li><a class="hover:text-primary transition-colors" href="#">Shared 2BHK & 3BHK Homes</a></li><li><a class="hover:text-primary transition-colors" href="#">Co-Living Managed Studios</a></li><li><a class="hover:text-primary transition-colors" href="#">List Vacant Room</a></li><li><a class="hover:text-primary transition-colors" href="#">Tenant Legal Support</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="font-body-sm text-body-sm text-on-surface-variant">© 2025 RoomSync Technologies India Pvt. Ltd. All rights reserved. Registered under Digital Personal Data Protection Act, 2023.</div><div class="flex items-center gap-space-lg font-label-md text-label-md text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" href="#">Terms of Service</a><a class="hover:text-primary transition-colors" href="#">Data Security</a><a class="hover:text-primary transition-colors" href="#">Grievance Redressal</a></div></div></div></footer></body></html>

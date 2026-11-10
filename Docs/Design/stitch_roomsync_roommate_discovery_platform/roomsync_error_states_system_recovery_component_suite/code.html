@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed":"#ffddb8","secondary-container":"#86f2e4","surface-bright":"#faf8ff","on-secondary":"#ffffff","on-secondary-fixed-variant":"#005049","surface-container-highest":"#dae2fd","error":"#ba1a1a","primary-fixed-dim":"#c4c1fb","on-tertiary-fixed-variant":"#653e00","tertiary":"#140900","primary":"#070235","on-primary-fixed-variant":"#444173","inverse-primary":"#c4c1fb","on-tertiary-container":"#c07a00","on-error-container":"#93000a","surface-dim":"#d2d9f4","tertiary-fixed-dim":"#ffb95f","outline-variant":"#c8c5d0","error-container":"#ffdad6","on-secondary-fixed":"#00201d","surface":"#faf8ff","on-surface-variant":"#47464f","on-background":"#131b2e","primary-fixed":"#e3dfff","surface-variant":"#dae2fd","inverse-surface":"#283044","outline":"#787680","primary-container":"#1e1b4b","on-tertiary-fixed":"#2a1700","on-error":"#ffffff","on-primary-fixed":"#181445","surface-container-high":"#e2e7ff","secondary-fixed":"#89f5e7","on-surface":"#131b2e","secondary":"#006a61","secondary-fixed-dim":"#6bd8cb","surface-container":"#eaedff","surface-container-low":"#f2f3ff","background":"#faf8ff","on-primary":"#ffffff","on-secondary-container":"#006f66","surface-tint":"#5b598c","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","inverse-on-surface":"#eef0ff","on-primary-container":"#8683ba","tertiary-container":"#331d00"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-desktop":"3rem","space-xl":"2.5rem","space-sm":"0.5rem","gutter":"1.5rem","gutter-desktop":"2rem","margin":"1.5rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-md":"1rem","margin-mobile":"1rem","space-xs":"0.25rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-md":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"metric-display":["32px",{"lineHeight":"36px","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"title-sm":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}],"display-md":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs" data-path="discover" href="#"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold">RoomSync</span><span class="material-symbols-outlined text-secondary text-[20px]" title="Verified Network">verified</span></a><div class="hidden md:flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[16px]">location_on</span><span class="font-label-md text-label-md text-on-surface font-medium">Bengaluru, Indiranagar</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">keyboard_arrow_down</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="discover" href="#">Discover</a><a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="accommodation" href="#">Accommodation</a><a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="roommate-groups" href="#">Roommate Groups</a><a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="trust-and-safety" href="#">Trust &amp; Safety</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40"><span class="material-symbols-outlined text-secondary text-[16px]">shield_person</span><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Aarav Sharma</span><span class="font-label-sm text-label-sm text-secondary font-medium leading-none">Verified Profile</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Spec Sub-header / Context Ribbon -->
+<section class="w-full bg-surface-container-low px-6 lg:px-12 py-8">
+<div class="max-w-7xl mx-auto flex flex-col gap-6">
+<!-- Meta Badge & Title Block -->
+<div class="flex flex-col gap-3">
+<div class="flex flex-wrap items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">shield_lock</span>
+            System Resilience Specification • Fault Recovery Suite v2.8
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            Production Calibrated (Web &amp; React Native)
+          </span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+<div class="max-w-3xl">
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight">
+              Error States &amp; Failure Recovery Catalog
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+              Graceful, human-friendly recovery patterns designed to reassure users, preserve unsaved form states, and guide seamless re-engagement across Web and React Native.
+            </p>
+</div>
+<div class="flex items-center gap-2 self-start lg:self-auto">
+<button class="px-4 py-2.5 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm shadow-md hover:bg-primary-container transition-all flex items-center gap-2" onclick="window.scrollTo({top: 500, behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">view_comfy</span>
+<span>Browse 12 States</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Top Metric Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-2">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Mean Time to Recovery (MTTR)</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">timer</span>
+</div>
+<div class="mt-3">
+<span class="font-metric-display text-metric-display text-primary block leading-none">1.8s</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium mt-1.5 block">Automated retry with exponential backoff</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Draft State Preservation</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">save</span>
+</div>
+<div class="mt-3">
+<span class="font-metric-display text-metric-display text-primary block leading-none">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 block">Zero-Data-Loss via LocalStorage cache</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Tone Calibration</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">favorite</span>
+</div>
+<div class="mt-3">
+<span class="font-headline-md text-headline-md text-primary font-bold block leading-tight">Warm &amp; Transparent</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 block">Zero accusatory jargon / No raw status codes</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Scenarios Covered</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">checklist</span>
+</div>
+<div class="mt-3">
+<span class="font-metric-display text-metric-display text-primary block leading-none">12 States</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium mt-1.5 block">Exhaustive resilience catalog active</span>
+</div>
+</div>
+</div>
+<!-- Color Semantic Guidance Strip -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">palette</span>
+<span class="font-title-sm text-title-sm text-primary">System Semantic Severity Hierarchy:</span>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-error"></span> Critical Failure (Server 500, Session Expired)
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span> Transient Network / Sync Warning
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-outline"></span> Recoverable / Permission / Restrictive Filters
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Primary Resolution &amp; Retry Trigger
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- 12-Card Component Catalog Grid Section -->
+<section class="w-full px-6 lg:px-12 py-12">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- CARD 01: Network connection lost -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">01 • Connectivity Fault</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-ping"></span>
+                Transient • Offline
+              </span>
+</div>
+<!-- Custom Vector Illustration: Cloud with WiFi Slash -->
+<div class="h-44 w-full rounded-xl bg-surface-container-low flex items-center justify-center p-4">
+<div class="relative flex items-center justify-center">
+<svg class="text-secondary" fill="none" height="96" viewbox="0 0 120 96" width="120">
+<path class="opacity-50" d="M96 72H28C14.7452 72 4 61.2548 4 48C4 35.8673 13.0617 25.8643 24.8459 24.2372C28.4616 12.3392 39.5303 3.66666 52.6667 3.66666C68.6473 3.66666 81.866 15.3409 84.1487 30.6405C94.1352 32.3279 101.667 40.978 101.667 51.3333C101.667 62.7472 92.4139 72 81 72" stroke="currentColor" stroke-dasharray="6 6" stroke-linecap="round" stroke-width="4"></path>
+<path d="M44 56C49.3333 50.6667 70.6667 50.6667 76 56" stroke="#c07a00" stroke-linecap="round" stroke-width="4"></path>
+<path d="M52 64C55 61 65 61 68 64" stroke="#c07a00" stroke-linecap="round" stroke-width="4"></path>
+<circle cx="60" cy="72" fill="#c07a00" r="3.5"></circle>
+<path d="M22 82L98 14" stroke="#ba1a1a" stroke-linecap="round" stroke-width="4"></path>
+</svg>
+<span class="absolute -bottom-2 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold shadow-sm">Ping: Failed (3002ms)</span>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">You're offline right now</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                We couldn't connect to RoomSync servers. Check your internet connection or Wi-Fi to refresh matches.
+              </p>
+</div>
+<!-- Reassurance Note -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface">Your search filters and active chats remain safely cached on this device.</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Retry Connection</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors text-center">
+              View Cached Roommates
+            </button>
+</div>
+</div>
+<!-- CARD 02: Server error (500) -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">02 • Infrastructure</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Critical • Server 500
+              </span>
+</div>
+<!-- Custom Vector Illustration: Server Rack with Alert Heartbeat -->
+<div class="h-44 w-full rounded-xl bg-error-container/20 flex items-center justify-center p-4">
+<div class="relative flex flex-col items-center">
+<svg fill="none" height="90" viewbox="0 0 110 90" width="110">
+<rect fill="#faf8ff" height="20" rx="4" stroke="#ba1a1a" stroke-width="2.5" width="80" x="15" y="10"></rect>
+<rect fill="#faf8ff" height="20" rx="4" stroke="#ba1a1a" stroke-width="2.5" width="80" x="15" y="35"></rect>
+<rect fill="#faf8ff" height="20" rx="4" stroke="#ba1a1a" stroke-width="2.5" width="80" x="15" y="60"></rect>
+<circle cx="27" cy="20" fill="#006a61" r="3"></circle>
+<circle cx="37" cy="20" fill="#006a61" r="3"></circle>
+<circle cx="27" cy="45" fill="#ba1a1a" r="3"></circle>
+<circle cx="37" cy="45" fill="#ffb95f" r="3"></circle>
+<circle cx="27" cy="70" fill="#006a61" r="3"></circle>
+<path d="M50 45H85" stroke="#ba1a1a" stroke-dasharray="3 3" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+<span class="mt-2 text-error font-label-sm text-label-sm font-bold tracking-tight">Incident Ref #IN-BLR-8921</span>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">Something hiccuped on our end</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Our servers had trouble processing that request. Our engineering team has been automatically alerted and is resolving it.
+              </p>
+</div>
+<!-- Diagnostic Note -->
+<div class="p-3 rounded-xl bg-error-container/30 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">lock_clock</span>
+<span class="font-body-sm text-body-sm text-on-surface">No data was lost and no connection requests were duplicated during this incident.</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Try Again Now</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Check System Status (Operational)</span>
+</button>
+</div>
+</div>
+<!-- CARD 03: Failed profile update -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">03 • State Sync</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Recoverable Sync
+              </span>
+</div>
+<!-- Custom Vector Illustration: ID Profile with sync pause -->
+<div class="h-44 w-full rounded-xl bg-surface-container-low flex items-center justify-center p-4">
+<div class="relative flex items-center justify-center">
+<div class="w-28 h-36 bg-surface-container-lowest rounded-xl shadow-sm p-3 flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary font-bold">AS</div>
+<div class="w-16 h-2 rounded-full bg-surface-container-high"></div>
+<div class="w-20 h-2 rounded-full bg-surface-container"></div>
+<div class="w-12 h-2 rounded-full bg-surface-container"></div>
+</div>
+<div class="absolute -right-3 -top-1 w-9 h-9 rounded-full bg-tertiary-fixed flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-[20px]">sync_problem</span>
+</div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">Couldn't save profile changes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                We encountered a temporary sync glitch while saving your updated lifestyle preferences and rent budget.
+              </p>
+</div>
+<!-- Reassurance Note -->
+<div class="p-3 rounded-xl bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">cloud_done</span>
+<span class="font-body-sm text-body-sm text-on-surface">Your unsaved changes are held safely in your browser memory and will not be erased.</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Changes Again</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors text-center">
+              Review Unsaved Edits (3 fields pending)
+            </button>
+</div>
+</div>
+<!-- CARD 04: Questionnaire submission failed -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">04 • Form Processing</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Cache Preserved
+              </span>
+</div>
+<!-- Vector Illustration: Questionnaire with Checkmarks and Retry Pin -->
+<div class="h-44 w-full rounded-xl bg-surface-container-low flex items-center justify-center p-4">
+<div class="w-36 bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="h-2 w-12 bg-primary rounded"></div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">18/18</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_box</span>
+<div class="h-2 w-16 bg-surface-container-high rounded"></div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_box</span>
+<div class="h-2 w-20 bg-surface-container-high rounded"></div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container text-[16px]">pending</span>
+<div class="h-2 w-14 bg-tertiary-fixed rounded"></div>
+</div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">Quiz responses couldn't be submitted</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                We couldn't submit your lifestyle compatibility answers due to a brief timeout. No need to start over!
+              </p>
+</div>
+<!-- Reassurance Note -->
+<div class="p-3 rounded-xl bg-secondary-container/20 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">task_alt</span>
+<span class="font-body-sm text-body-sm text-on-surface">All 18 question answers are intact on your device. Zero answers lost.</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Resubmit Answers</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors text-center">
+              Save Draft &amp; Finish Later
+            </button>
+</div>
+</div>
+<!-- CARD 05: Image upload failed -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">05 • Media Pipeline</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Validation Error
+              </span>
+</div>
+<!-- Vector Illustration: Photo Box with Alert Overlay -->
+<div class="h-44 w-full rounded-xl bg-surface-container-low flex items-center justify-center p-4">
+<div class="relative w-36 h-32 rounded-xl bg-surface-container-high flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-outline text-[40px]">image</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">aarav_profile.jpg</span>
+<div class="absolute inset-0 bg-primary/10 rounded-xl flex items-center justify-center backdrop-blur-[1px]">
+<span class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-[20px]">warning</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">Photo upload didn't go through</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                The selected image could not be processed. It may exceed our 10MB limit or had an unstable connection.
+              </p>
+</div>
+<!-- Diagnostic Note -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">info</span>
+<span class="font-body-sm text-body-sm text-on-surface">Supported formats: JPG, PNG, WebP up to 10MB. Ensure natural lighting.</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add_photo_alternate</span>
+<span>Choose Another Photo</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors text-center">
+              Retry Uploading 'aarav_profile.jpg'
+            </button>
+</div>
+</div>
+<!-- CARD 06: Session expired -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">06 • Authentication</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Critical • Auth Expired
+              </span>
+</div>
+<!-- Vector Illustration: Lock with Expired Timer -->
+<div class="h-44 w-full rounded-xl bg-error-container/20 flex items-center justify-center p-4">
+<div class="relative flex items-center justify-center">
+<div class="w-24 h-24 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-error text-[48px]">lock_reset</span>
+</div>
+<div class="absolute -bottom-1 -right-1 px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">schedule</span> 15m idle
+                </div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">Your session has timed out</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                To keep your account and personal identity data safe under DPDP Act privacy rules, please sign in again.
+              </p>
+</div>
+<!-- Security Note -->
+<div class="p-3 rounded-xl bg-error-container/30 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">security</span>
+<span class="font-body-sm text-body-sm text-on-surface">You'll be returned immediately to your current screen after entering your PIN.</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>Sign In to Resume</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors text-center">
+              Switch Account
+            </button>
+</div>
+</div>
+<!-- CARD 07: No search results due to restrictive filters -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">07 • Discovery Constraint</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Calm • Non-Error State
+              </span>
+</div>
+<!-- Vector Illustration: Funnel with 0 results & relaxed pills -->
+<div class="h-44 w-full rounded-xl bg-surface-container-low flex flex-col items-center justify-center p-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">filter_alt_off</span>
+<span class="font-headline-sm text-headline-sm text-primary">0 Strict Matches</span>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary text-label-sm font-medium">Early Bird &lt; 6 AM</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary text-label-sm font-medium">Vegan Only</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary text-label-sm font-medium">≤ ₹15k/mo</span>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">No flatmates match all current filters</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Your combination of "Early Bird + Vegan Kitchen + ₹15k max in Indiranagar" is narrow for the active pool.
+              </p>
+</div>
+<!-- Insight Note -->
+<div class="p-3 rounded-xl bg-secondary-container/20 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">tips_and_updates</span>
+<span class="font-body-sm text-body-sm text-on-surface">28 verified flatmates match 4 out of 5 of your criteria nearby.</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Relax Non-Essential Filters</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors text-center">
+              Expand to Domlur &amp; Koramangala
+            </button>
+</div>
+</div>
+<!-- CARD 08: Failed connection request -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">08 • Social Handshake</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+                Transient Sync Delay
+              </span>
+</div>
+<!-- Vector Illustration: Handshake with paused sync -->
+<div class="h-44 w-full rounded-xl bg-surface-container-low flex items-center justify-center p-4">
+<div class="flex items-center gap-3">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-bold">AS</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-on-tertiary-container text-[24px]">send_and_archive</span>
+<span class="text-[10px] text-on-surface-variant font-bold">DELAYED</span>
+</div>
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-primary font-bold">PN</div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">Connection request couldn't be sent</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                We couldn't dispatch your handshake invitation to Priya Nair due to a momentary sync delay.
+              </p>
+</div>
+<!-- Quota Safety Note -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface">Your daily handshake quota was not deducted. 4 out of 5 left today.</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">waving_hand</span>
+<span>Resend Handshake</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors text-center">
+              Save to Shortlist
+            </button>
+</div>
+</div>
+<!-- CARD 09: Message sending failed -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">09 • Realtime Chat</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Delivery Dropped
+              </span>
+</div>
+<!-- Visual Chat Bubble Error Mockup -->
+<div class="h-44 w-full rounded-xl bg-surface-container-low flex flex-col justify-center px-4 py-2 gap-2">
+<div class="self-end max-w-[85%] bg-primary text-on-primary rounded-2xl rounded-tr-xs p-3 text-body-sm shadow-sm relative">
+                Hey Rohan, are we still visiting the Indiranagar flat tomorrow at 11?
+                <div class="absolute -left-3 bottom-0 flex items-center justify-center">
+<span class="w-5 h-5 rounded-full bg-error text-on-error flex items-center justify-center font-bold text-[12px] shadow-sm">!</span>
+</div>
+</div>
+<span class="self-end font-label-sm text-label-sm text-error font-medium">Not delivered • Tap to retry</span>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">Message didn't deliver</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Your message to Rohan Varma couldn't be sent. Check your internet connection or retry immediately.
+              </p>
+</div>
+<!-- Context Preservation Note -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-outline text-[18px] shrink-0 mt-0.5">content_copy</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Text preserved: "Hey Rohan, are we still visiting the Indiranagar flat..."</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Tap to Retry</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors text-center">
+              Copy Message Text
+            </button>
+</div>
+</div>
+<!-- CARD 10: Location permission denied -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">10 • Hardware / Geolocation</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                User Permission Required
+              </span>
+</div>
+<!-- Map Mockup Graphic with Off-pin -->
+<div class="h-44 w-full rounded-xl bg-surface-container-low relative overflow-hidden flex flex-col items-center justify-center p-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[32px]">location_disabled</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">Outer Ring Road Corridors</span>
+<!-- Quick neighborhood pill buttons -->
+<div class="flex flex-wrap items-center justify-center gap-1.5 mt-3">
+<button class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary text-label-sm font-semibold hover:bg-surface-container transition-colors shadow-xs">Indiranagar</button>
+<button class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary text-label-sm font-semibold hover:bg-surface-container transition-colors shadow-xs">HSR Layout</button>
+<button class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary text-label-sm font-semibold hover:bg-surface-container transition-colors shadow-xs">Koramangala</button>
+<button class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary text-label-sm font-semibold hover:bg-surface-container transition-colors shadow-xs">Bellandur</button>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">Location access is turned off</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                RoomSync uses your location to calculate exact commute times to Outer Ring Road tech parks and suggest walking-distance flatmates.
+              </p>
+</div>
+<!-- Helpful Manual Option -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">map</span>
+<span class="font-body-sm text-body-sm text-on-surface">You can pick your neighborhood manually without granting device GPS permissions.</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+<span>Enable in Browser Settings</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors text-center">
+              Select Neighborhood Manually
+            </button>
+</div>
+</div>
+<!-- CARD 11: Property enquiry failed -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">11 • Lead Dispatch</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+                Dispatch Retrying
+              </span>
+</div>
+<!-- Vector Illustration: Apartment with Visit Calendar slot held -->
+<div class="h-44 w-full rounded-xl bg-surface-container-low flex items-center justify-center p-4">
+<div class="w-40 bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">apartment</span>
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">Prestige Palms 3BHK</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">person</span>
+<span class="font-body-sm text-body-sm">Col. Suresh Nair</span>
+</div>
+<div class="mt-1 px-2 py-1 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_available</span>
+                  Sat 11:00 AM Held
+                </div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">Property enquiry could not be sent</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                We couldn't deliver your visit request to Col. Suresh Nair for Prestige Palms 3BHK right now.
+              </p>
+</div>
+<!-- Held Slot Guarantee -->
+<div class="p-3 rounded-xl bg-secondary-container/20 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface">Your preferred slot (Saturday 11:00 AM) has been tentatively held for 2 hours.</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Retry Submitting Visit Request</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors text-center flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">support_agent</span>
+<span>Call Concierge Desk (+91 80 4455 9900)</span>
+</button>
+</div>
+</div>
+<!-- CARD 12: Verification submission failed -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<!-- Header Tag & Severity Pill -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">12 • Trust &amp; Safety / KYC</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Zero Penalty
+              </span>
+</div>
+<!-- Vector Illustration: Smart ID Card with glare warning -->
+<div class="h-44 w-full rounded-xl bg-surface-container-low flex items-center justify-center p-4">
+<div class="relative w-44 h-28 bg-surface-container-lowest rounded-xl shadow-sm p-3 flex flex-col justify-between overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary text-[18px]">badge</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">GOVT OF INDIA</span>
+</div>
+<!-- Glare ray visual -->
+<div class="absolute -right-6 -bottom-6 w-20 h-20 bg-tertiary-fixed/60 rounded-full blur-md"></div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-surface-container-high"></div>
+<div class="flex flex-col gap-1">
+<div class="w-16 h-2 bg-surface-container-high rounded"></div>
+<div class="w-12 h-1.5 bg-surface-container rounded"></div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">brightness_high</span> Lighting Glare Detected
+                </span>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex flex-col gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">Couldn't verify your document photo</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                We had trouble reading the photo upload. Ensure your ID has no lighting glare, no clipped corners, and full name is clearly legible.
+              </p>
+</div>
+<!-- Security & Zero Penalty Guarantee -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface">No verification attempts penalized. IDs are encrypted end-to-end (DPDP Act).</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-2 mt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm shadow-sm hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span>Retake or Upload Clearer Photo</span>
+</button>
+<button class="w-full py-2 px-4 rounded-xl text-primary font-title-sm text-title-sm hover:bg-surface-container transition-colors text-center flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">cloud_sync</span>
+<span>Use DigiLocker Direct Link Instead</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Engineering Architecture Guidance & Implementation Standard Section -->
+<section class="w-full bg-surface-container px-6 lg:px-12 py-10">
+<div class="max-w-7xl mx-auto flex flex-col gap-6">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider block mb-1">Architecture Specification</span>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Fault Recovery Engineering Principles</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+            WCAG 2.1 AAA Compliant
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary">shield</span>
+            DPDP Act 2023 Audited
+          </span>
+</div>
+</div>
+<!-- Core Architectural Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">repeat</span>
+<span>Idempotent API Retries</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            UUID mutation tokens prevent duplicate match handshakes, message deliveries, or deposit holds on multi-clicks.
+          </p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">network_ping</span>
+<span>Exponential Backoff</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Automatic background retries schedule at 500ms, 1.5s, 4s with random jitter to protect backend ingress.
+          </p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">storage</span>
+<span>IndexedDB / MMKV Cache</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Full client form serialization preserves questionnaire inputs, draft chats, and pending photo files offline.
+          </p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">sentiment_satisfied</span>
+<span>Zero Accusatory Copy</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Error messages never blame the user, avoid raw HTTP codes (like "403 Forbidden"), and clearly suggest next steps.
+          </p>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold">RoomSync</span><span class="material-symbols-outlined text-secondary text-[18px]">verified</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Decisive roommate matching and trust infrastructure across India tech corridors.</p><div class="inline-flex items-center gap-space-xs mt-2 px-2.5 py-1 rounded-full bg-surface-container-highest"><span class="material-symbols-outlined text-secondary text-[14px]">gavel</span><span class="font-label-sm text-label-sm text-on-surface">DPDP Act 2023 Compliant</span></div></div><div class="flex flex-wrap gap-8 items-center"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="trust-and-safety" href="#">Trust Architecture</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy-security" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="system-status" href="#">System Status</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="help-desk" href="#">Resolution Desk</a></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 pb-8 flex flex-col sm:flex-row items-center justify-between gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant">© 2025 RoomSync Technologies India Pvt. Ltd. All rights reserved.</span><span class="font-label-md text-label-md text-on-surface-variant">Secured with Govt-ID Verification &amp; Alumni SSO</span></div></footer></body></html>
