@@ -9,6 +9,10 @@ SECRET_KEY = (
     os.environ.get("DJANGO_SECRET_KEY", "")
     or "local-dev-only-insecure-fallback-change-in-env"
 )
+JWT_SIGNING_KEY = (
+    os.environ.get("JWT_SIGNING_KEY", "").strip()
+    or "local-dev-only-insecure-jwt-signing-key-32-bytes"
+)
 
 SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = False

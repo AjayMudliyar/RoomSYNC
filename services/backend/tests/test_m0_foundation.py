@@ -7,7 +7,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 from django.contrib.auth import get_user_model
-from django.test import Client
+from django.test import Client, override_settings
 from rest_framework import exceptions
 from rest_framework.test import APIRequestFactory
 
@@ -67,7 +67,7 @@ def test_health_ready_returns_503_without_leaking_secrets_when_redis_fails(clien
 
 
 def test_system_status_envelope_and_request_id(client: Client) -> None:
-    response = client.get("/api/v1/system/status/", HTTP_X_REQUEST_ID="m0-status-1")
+    response = client.get("/api/v1/system/status", HTTP_X_REQUEST_ID="m0-status-1")
     assert response.status_code == 200
     body = response.json()
     assert body == {
@@ -75,6 +75,15 @@ def test_system_status_envelope_and_request_id(client: Client) -> None:
         "meta": {"request_id": "m0-status-1"},
     }
     assert response.headers["X-Request-ID"] == "m0-status-1"
+
+    trailing = client.get("/api/v1/system/status/")
+    assert trailing.status_code == 404
+    assert trailing.json()["error"]["code"] == "NOT_FOUND"
+
+    with override_settings(DEBUG=True):
+        debug_trailing = client.get("/api/v1/system/status/")
+        assert debug_trailing.status_code == 404
+        assert debug_trailing.json()["error"]["code"] == "NOT_FOUND"
 
 
 def test_custom_exception_handler_canonical_envelope() -> None:

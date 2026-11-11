@@ -4,12 +4,16 @@ import logging
 import time
 import uuid
 from collections.abc import Callable
+from typing import Any
 
-from django.http import HttpRequest, HttpResponse
+from django.http import HttpRequest, HttpResponse, HttpResponseForbidden
+from django.middleware.csrf import CsrfViewMiddleware
 
 from common.logging import actor_id_ctx, request_id_ctx
 
 logger = logging.getLogger("backend.http")
+
+_API_AUTH_COOKIES = ("rs_access", "rs_refresh", "sessionid", "csrftoken")
 
 
 class RequestContextMiddleware:
@@ -29,24 +33,69 @@ class RequestContextMiddleware:
 
         try:
             response = self.get_response(request)
-        finally:
-            user = getattr(request, "user", None)
-            if user is not None and getattr(user, "is_authenticated", False):
-                actor_id_ctx.set(str(getattr(user, "pk", "authenticated")))
+            content_type = str(response.get("Content-Type", "") or "")
+            if (
+                request.path.startswith("/api/")
+                and response.status_code == 404
+                and "application/json" not in content_type.lower()
+            ):
+                from common.exceptions import json_not_found_view
 
-        latency_ms = round((time.perf_counter() - started) * 1000, 2)
-        response["X-Request-ID"] = request_id
-        logger.info(
-            "Request completed",
-            extra={
-                "structured": {
-                    "route": request.path,
-                    "method": request.method,
-                    "status_code": response.status_code,
-                    "latency_ms": latency_ms,
-                }
-            },
-        )
-        request_id_ctx.reset(req_token)
-        actor_id_ctx.reset(actor_token)
-        return response
+                response = json_not_found_view(request)
+            user = getattr(request, "user", None)
+            if (
+                actor_id_ctx.get() == "anonymous"
+                and user is not None
+                and getattr(user, "is_authenticated", False)
+            ):
+                actor_id_ctx.set(str(getattr(user, "pk", "authenticated")))
+            latency_ms = round((time.perf_counter() - started) * 1000, 2)
+            response["X-Request-ID"] = request_id
+            logger.info(
+                "Request completed",
+                extra={
+                    "structured": {
+                        "route": request.path,
+                        "method": request.method,
+                        "status_code": response.status_code,
+                        "latency_ms": latency_ms,
+                    }
+                },
+            )
+            return response
+        finally:
+            request_id_ctx.reset(req_token)
+            actor_id_ctx.reset(actor_token)
+
+
+def _csrf_enforced_marker(*_args: Any, **_kwargs: Any) -> HttpResponse:
+    """Non-csrf-exempt callback marker so DRF's @csrf_exempt wrapper cannot bypass Web CSRF."""
+    return HttpResponse()
+
+
+class RoomSyncCsrfMiddleware(CsrfViewMiddleware):
+    """Enforce Django CSRF on Admin/Web cookie flows while allowing stateless mobile calls."""
+
+    def process_view(
+        self,
+        request: HttpRequest,
+        callback: Callable[..., Any],
+        callback_args: tuple[Any, ...],
+        callback_kwargs: dict[str, Any],
+    ) -> HttpResponseForbidden | None:
+        if request.path.startswith("/api/"):
+            has_browser_cookie = any(name in request.COOKIES for name in _API_AUTH_COOKIES)
+            if not has_browser_cookie:
+                platform = request.headers.get("X-Client-Platform", "web").strip().lower()
+                auth_header = request.headers.get("Authorization", "").strip()
+                if platform == "android" or auth_header.startswith("Bearer "):
+                    return None
+            # DRF APIView.as_view() marks callbacks csrf_exempt=True; pass a non-exempt marker
+            # so Web SPA and cookie-bearing API requests always validate Django CSRF tokens.
+            return super().process_view(
+                request,
+                _csrf_enforced_marker,
+                callback_args,
+                callback_kwargs,
+            )
+        return super().process_view(request, callback, callback_args, callback_kwargs)

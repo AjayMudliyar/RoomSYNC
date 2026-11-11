@@ -62,3 +62,33 @@ export interface ApiErrorEnvelope {
 }
 
 export type * from "./generated/openapi";
+import type { components } from "./generated/openapi";
+
+export type SchemaComponents = components["schemas"];
+export type AuthUser = SchemaComponents["AuthUser"];
+export type AuthTokens = SchemaComponents["AuthTokens"];
+export type AuthSessionData = SchemaComponents["AuthSessionData"];
+export type CsrfTokenData = SchemaComponents["CsrfTokenData"];
+export type UserCapabilities = SchemaComponents["UserCapabilities"];
+export type UserSessionItem = SchemaComponents["UserSessionItem"];
+export type DataExportData = SchemaComponents["DataExportData"];
+export type EmailVerifyResponseData = SchemaComponents["EmailVerifyResponseData"];
+export type GenericAcceptedData = SchemaComponents["GenericAcceptedData"];
+export type LogoutResponseData = SchemaComponents["LogoutResponseData"];
+export type PasswordResetResponseData = SchemaComponents["PasswordResetResponseData"];
+export type PasswordChangeResponseData = SchemaComponents["PasswordChangeResponseData"];
+export type DeletionRequestResponseData = SchemaComponents["DeletionRequestResponseData"];
+
+export type RegisterRequest = SchemaComponents["RegisterRequestRequest"];
+export type LoginRequest = SchemaComponents["LoginRequestRequest"];
+export type GoogleAuthRequest = SchemaComponents["GoogleAuthRequestRequest"];
+export type GoogleLinkRequest = SchemaComponents["GoogleLinkRequestRequest"];
+export type RefreshRequest = SchemaComponents["RefreshRequestRequest"];
+export type LogoutRequest = SchemaComponents["LogoutRequestRequest"];
+export type EmailVerifyRequest = SchemaComponents["EmailVerifyRequestRequest"];
+export type EmailResendRequest = SchemaComponents["EmailResendRequestRequest"];
+export type PasswordForgotRequest = SchemaComponents["PasswordForgotRequestRequest"];
+export type PasswordResetRequest = SchemaComponents["PasswordResetRequestRequest"];
+export type PasswordChangeRequest = SchemaComponents["PasswordChangeRequestRequest"];
+export type MeUpdateRequest = SchemaComponents["PatchedMeUpdateRequestRequest"];
+export type DeletionRequest = SchemaComponents["DeletionRequestRequest"];
